@@ -22,9 +22,7 @@
 <header>Ivan's Vans Aircraft RV-7 Build</header>
 <Nav categories={categories} />
 <main>
-	<article>
-		<slot />
-	</article>
+	<slot />
 </main>
 <footer>
 	<a target="_blank" href="mailto:dubrov.ivan@gmail.com?subject=RV project feedback"

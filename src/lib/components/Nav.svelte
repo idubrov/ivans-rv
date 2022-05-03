@@ -6,12 +6,13 @@
 <nav>
 	<ul>
 		<li><a href="/">Home</a></li>
+		<li><a href="/blog">All updates</a></li>
 		<li>
 			By Category:
 			<ul>
                 {#each categories as category}
                     <li>
-					    <a href="/category/{category.code}">{category.description} (0 hours)</a>
+					    <a href="/category/{category.code}">{category.description} ({category.totalTime} hours, {category.totalLogs} logs)</a>
 				    </li>
                 {/each}
 			</ul>
@@ -20,7 +21,7 @@
 			Other:
 			<ul>
 				<li><a href="/workbenches">Workbenches</a></li>
-				<li><a href="/deburring">Deburring</a></li>
+<!--				<li><a href="/deburring">Deburring</a></li>-->
 			</ul>
 		</li>
 	</ul>

@@ -39,6 +39,11 @@ body {
     grid-area: footer;
 }
 
+// Article images go
+article.markdown img {
+    display: block;
+}
+
 @media (max-width: 840px) {
     #app {
         grid-template-rows: auto 1fr auto auto;

@@ -1,17 +1,20 @@
 <script context="module" lang="ts">
-	import type { Load } from '@sveltejs/kit';
-	export const load: Load = ({ params }) => {
-		return {
-			props: {
-				category: params.category
-			}
-		};
-	};
+    import { getPostsByCategory } from '$lib/blog';
+    import PostsList from '$lib/components/PostsList.svelte';
+    import type { PostMetadata } from '$lib/types';
+
+    export const load = async ( { params }) => {
+        const posts = await getPostsByCategory(params.category);
+        return {
+            props: {
+                posts
+            }
+        };
+    };
 </script>
 
 <script lang="ts">
-	import type {Category} from "$lib/types";
-    export let category: Category;
+    export let posts: PostMetadata[];
 </script>
 
-Some category... {category}
+<PostsList {posts} />

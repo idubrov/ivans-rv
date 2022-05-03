@@ -1,3 +1,5 @@
+- code: empennage
+  description: Empennage
 - code: empennage-horizontal-stabilizer
   description: Horizontal stabilizer
 - code: empennage-elevator
@@ -6,3 +8,5 @@
   description: Vertical stabilizer
 - code: empennage-rudder
   description: Rudder
+- code: practice-kit
+  description: Practice Kit

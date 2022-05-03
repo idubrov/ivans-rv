@@ -39,12 +39,43 @@ ${assets.map((asset, index) => `        "${asset}": { url: asset${index}, alt: $
         const script = {
             type: 'html',
             value: `<script>
+    import Mistake from "$lib/components/Mistake.svelte";
     import { setContext } from 'svelte';
     import { assetsKey } from '$lib/assets';
     setContext(assetsKey, assets);
+    
+    export let format = "full";
+    const showSummary = format === "summary" || format === "full";
+    const showBody = format === "full";
 </script>`,
         };
         tree.children.splice(1, 0, script);
+
+        const more = tree.children.findIndex(node => node.type === "html" && node.value === "<!-- more -->") + 1;
+        const summaryStart = {
+            type: 'svelteBlock',
+            value: '{#if showSummary}',
+            name: 'if',
+        }
+        const summaryEnd = {
+            type: 'svelteBlock',
+            value: '{/if}',
+            name: 'if',
+        }
+        const bodyStart = {
+            type: 'svelteBlock',
+            value: '{#if showBody}',
+            name: 'if',
+        }
+        const bodyEnd = {
+            type: 'svelteBlock',
+            value: '{/if}',
+            name: 'if',
+        }
+        tree.children.splice(0, 0, summaryStart);
+        tree.children.splice(more, 0, summaryEnd);
+        tree.children.splice(more + 1, 0, bodyStart);
+        tree.children.push(bodyEnd);
         return tree;
     }
 }

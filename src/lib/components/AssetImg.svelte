@@ -1,23 +1,10 @@
+<!-- Show page asset as an image -->
 <script lang="ts">
-    import {isNetlify, resolveAsset, simulateNetlifyStyle} from '$lib/assets';
+    import type {Asset} from "$lib/types";
+    import SmartImg from "./SmartImg.svelte";
 
-    export let src: string;
-    export let alt: string | undefined = undefined;
-
-    const isLocal = !src.startsWith("http://") && !src.startsWith("https://");
-    const { asset, query } = resolveAsset(src);
-
-    // This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
-    if (asset) {
-        src = asset.url + query;
-        alt = asset.alt;
-    }
-
-    let style: string | undefined = undefined;
-    if (query && !isNetlify() && isLocal) {
-        // While developing, simulate Netlify image transformations for local images (https://docs.netlify.com/large-media/transform-images/)
-        style = simulateNetlifyStyle(query);
-    }
+    export let asset: Asset;
+    export let query = "";
+    const src = `${asset.url}${query}`;
 </script>
-
-<img src={src} alt={alt} style={style} />
+<SmartImg src={src} alt={asset.alt} />

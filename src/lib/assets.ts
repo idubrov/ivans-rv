@@ -24,7 +24,11 @@ export function resolveAsset(src: string): { asset?: Asset, query: string } {
     };
 }
 
-export function simulateNetlifyStyle(query: string): string | undefined {
+/**
+ * Generates inline style to simulate Netlify transformation API. Only used during local development.
+ * @param query
+ */
+export function simulateNetlifyTransform(query: string): string | undefined {
     const parsed = queryString.parse(query);
     if (parsed.nf_resize) {
         // Netlify simulation for local development
@@ -36,6 +40,16 @@ export function simulateNetlifyStyle(query: string): string | undefined {
                 }
                 if (typeof parsed.h === "string") {
                     style += ` max-height: ${parsed.h}px;`;
+                }
+                return style;
+            }
+            case "smartcrop": {
+                let style = "object-fit: cover;";
+                if (typeof parsed.w === "string") {
+                    style += ` width: ${parsed.w}px;`;
+                }
+                if (typeof parsed.h === "string") {
+                    style += ` height: ${parsed.h}px;`;
                 }
                 return style;
             }
