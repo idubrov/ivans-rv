@@ -8,7 +8,7 @@
     <ul>
         <li>
             <a href={postLink(post)}>
-                <PostThumbnail {post} /> {post.date.toISOString()}
+                <PostThumbnail {post} /> {post.title} {post.date.toISOString()}
             </a>
             <svelte:component this={post.component} format="summary" />
         </li>
