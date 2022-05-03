@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type { Category } from "$lib/categories";
-	export let categories: Category[];
+    import type { CategoryInfo } from "$lib/types";
+	export let categories: CategoryInfo[];
 </script>
 
 <nav>

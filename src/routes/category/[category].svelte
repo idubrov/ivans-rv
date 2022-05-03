@@ -13,6 +13,10 @@
     };
 </script>
 
+<svelte:head>
+    <title>Ivan's RV-7</title>
+</svelte:head>
+
 <script lang="ts">
     export let posts: PostMetadata[];
 </script>

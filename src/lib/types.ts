@@ -21,9 +21,13 @@ export interface Asset {
 
 export type Assets = Record<string, Asset>;
 
+
 export interface Category {
   code: string;
   description: string;
+}
+
+export interface CategoryInfo extends Category {
   totalTime: number;
   totalLogs: number;
 }

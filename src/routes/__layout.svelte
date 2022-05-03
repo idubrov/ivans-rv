@@ -1,11 +1,12 @@
 <script context="module" lang="ts">
 	import type { Load } from '@sveltejs/kit';
-	export const load: Load = async ({ fetch }) => {
-		const res = await fetch('/api/categories.json');
-		const categories = await res.json();
+	import { aggregateCategories } from '$lib/categories';
+
+	export const load: Load = async () => {
+		const categories = await aggregateCategories();
 		return {
 			props: {
-				categories,
+				categories
 			}
 		};
 	};
@@ -13,14 +14,15 @@
 
 <script lang="ts">
 	import 'ress/dist/ress.min.css';
-  	import '$lib/styles/main.scss'
-	import type { Category } from '$lib/categories';
+	import '$lib/styles/main.scss';
+	import type { CategoryInfo } from '$lib/types';
 	import Nav from '$lib/components/Nav.svelte';
-	export let categories: Category[];
+
+	export let categories: CategoryInfo[];
 </script>
 
 <header>Ivan's Vans Aircraft RV-7 Build</header>
-<Nav categories={categories} />
+<Nav {categories} />
 <main>
 	<slot />
 </main>
