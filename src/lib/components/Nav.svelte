@@ -1,0 +1,27 @@
+<script lang="ts">
+    import type { Category } from "$lib/categories";
+	export let categories: Category[];
+</script>
+
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li>
+			By Category:
+			<ul>
+                {#each categories as category}
+                    <li>
+					    <a href="/category/{category.code}">{category.description} (0 hours)</a>
+				    </li>
+                {/each}
+			</ul>
+		</li>
+		<li>
+			Other:
+			<ul>
+				<li><a href="/workbenches">Workbenches</a></li>
+				<li><a href="/deburring">Deburring</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>

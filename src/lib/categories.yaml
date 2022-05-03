@@ -1,0 +1,8 @@
+- code: empennage-horizontal-stabilizer
+  description: Horizontal stabilizer
+- code: empennage-elevator
+  description: Elevator
+- code: empennage-vertical-stabilizer
+  description: Vertical stabilizer
+- code: empennage-rudder
+  description: Rudder

@@ -1,0 +1,17 @@
+<script lang="ts">
+	import {resolveAsset} from '$lib/assets';
+
+	export let href: string;
+	export let rel: string | undefined = undefined;
+
+	const { asset, query } = resolveAsset(href);
+
+	// This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
+	if (asset) {
+		href = asset.url + query;
+	}
+</script>
+
+<a {href} {rel}>
+	<slot />
+</a>
