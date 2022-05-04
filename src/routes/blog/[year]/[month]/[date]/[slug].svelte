@@ -1,24 +1,28 @@
-<script context="module">
-    import { getPost } from "$lib/blog";
+<script context="module" lang="ts">
+    import {getPostAndSiblings} from '$lib/blog';
 
-    export const load = async ({ params }) => {
-        const key = `${params.year}-${params.month}-${params.date}-${params.slug}`;
-        try {
-            const post = await getPost(key);
-            return {
-                props: {
-                    PostContent: post.component,
-                }
+	export const load = async ({ params }) => {
+		const postKey = `${params.year}-${params.month}-${params.date}-${params.slug}`;
+        const { previous, current, next } = await getPostAndSiblings(postKey);
+        return {
+            props: {
+                previous,
+                current,
+                next,
             }
-        } catch (error) {
-            return {
-                status: 404,
-                error: error.message
-            }
-        }
-    }
+        };
+	};
 </script>
+
 <script>
-    export let PostContent
+	import NavLinks from '$lib/components/NavLinks.svelte';
+    import Gallery from "$lib/components/Gallery.svelte";
+
+	export let previous;
+    export let current;
+    export let next;
 </script>
-<svelte:component this={PostContent} />
+
+<svelte:component this={current.component} />
+<Gallery assets={current.assets} />
+<NavLinks {previous} {next} />

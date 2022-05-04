@@ -16,13 +16,13 @@
 	import 'ress/dist/ress.min.css';
 	import '$lib/styles/main.scss';
 	import type { CategoryInfo } from '$lib/types';
-	import Nav from '$lib/components/Nav.svelte';
+	import NavMenu from '../lib/components/NavMenu.svelte';
 
 	export let categories: CategoryInfo[];
 </script>
 
 <header>Ivan's Vans Aircraft RV-7 Build</header>
-<Nav {categories} />
+<NavMenu {categories} />
 <main>
 	<slot />
 </main>

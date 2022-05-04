@@ -4,10 +4,6 @@
 </script>
 <script>
     export let title;
-    export let time = undefined;
-    export let tags = undefined;
-    export let categories = undefined;
-    export let format = undefined;
 </script>
 <svelte:head>
     <title>{title} -- Ivan's RV-7</title>

@@ -7,11 +7,18 @@ export interface PostRef {
 }
 
 export interface PostMetadata extends PostRef {
+  key: string;
   title: string;
   assets: Asset[];
   categories: string[];
   component: SvelteComponent;
   time: number;
+}
+
+export interface CurrentPost {
+  previous?: PostMetadata;
+  current: PostMetadata;
+  next?: PostMetadata;
 }
 
 export interface Asset {

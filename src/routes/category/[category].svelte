@@ -7,7 +7,7 @@
         const posts = await getPostsByCategory(params.category);
         return {
             props: {
-                posts
+                posts: [...posts].reverse()
             }
         };
     };
