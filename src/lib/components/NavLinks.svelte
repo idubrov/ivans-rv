@@ -6,5 +6,5 @@
 	export let next: PostMetadata;
 </script>
 
-{#if previous}<a href={postLink(previous)}>Previous</a>{/if}
-{#if next}<a href={postLink(next)}>Next</a>{/if}
+{#if previous}<a href={postLink(previous)}>Earlier</a>{/if}
+{#if next}<a href={postLink(next)}>Later</a>{/if}
