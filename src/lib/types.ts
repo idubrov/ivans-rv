@@ -8,6 +8,7 @@ export interface PostRef {
 
 export interface PostMetadata extends PostRef {
 	key: string;
+	draft: boolean;
 	title: string;
 	assets: Asset[];
 	categories: string[];

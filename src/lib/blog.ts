@@ -1,4 +1,5 @@
 import type { CurrentPost, PostMetadata } from './types';
+import { dev } from '$app/env';
 
 const PATH_REGEXP =
 	/content\/(?<year>\d{4})-(?<month>\d{2})-(?<date>\d{2})-(?<slug>[^/]+)\/index.md$/;
@@ -21,6 +22,7 @@ async function createPost(
 	const module = await resolver();
 	const entry: PostMetadata = {
 		key: postKey(postDate, slug),
+		draft: !!module.metadata.draft,
 		date: postDate,
 		slug,
 		categories: module.metadata.categories || [],
@@ -39,6 +41,10 @@ async function listPostsInternal(): Promise<readonly PostMetadata[]> {
 		const post = await createPost(path, modules[path]);
 		if (!post) {
 			console.warn(`Content entry path '${path}' does not have proper format, ignored`);
+			continue;
+		}
+		if (post.draft && !dev) {
+			console.info(`Ignoring draft post '${path}' as we are not running in dev mode`);
 			continue;
 		}
 		entries.push(post);

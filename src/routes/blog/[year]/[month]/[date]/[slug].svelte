@@ -3,7 +3,13 @@
 
 	export const load = async ({ params }) => {
 		const postKey = `${params.year}-${params.month}-${params.date}-${params.slug}`;
-		const { previous, current, next } = await getPostAndSiblings(postKey);
+        const postAndSiblings = await getPostAndSiblings(postKey);
+        if (typeof postAndSiblings === "undefined") {
+            return {
+                status: 404,
+            }
+        }
+		const { previous, current, next } = postAndSiblings;
 		return {
 			props: {
 				previous,
