@@ -1,8 +1,7 @@
 import queryString from 'query-string';
 import type { Asset } from '$lib/types';
 import { getContext } from 'svelte';
-
-export const assetsKey = Symbol('assets');
+import { assetsKey } from '$lib/types';
 
 export function isNetlify(): boolean {
 	return import.meta.env.VITE_NETLIFY === 'true';

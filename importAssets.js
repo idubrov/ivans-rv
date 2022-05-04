@@ -46,7 +46,7 @@ ${assets
 			value: `<script>
     import Mistake from "$lib/components/Mistake.svelte";
     import { setContext } from 'svelte';
-    import { assetsKey } from '$lib/assets';
+    import { assetsKey } from '$lib/types';
     setContext(assetsKey, assets);
     
     export let format = "full";

@@ -20,18 +20,27 @@
 			query: '?nf_resize=smartcrop&w=90&h=90'
 		}));
 
-	export let gallery;
+	export let opener;
+	let element;
 	onMount(() => {
-		lightGallery(gallery, {
+		const gallery = lightGallery(element, {
 			plugins: [lgThumbnail],
 			speed: 500,
 			zoomFromOrigin: false
 			//licenseKey: 'your_license_key'
 		});
+		opener = {
+			openAsset(asset) {
+				const item = gallery.galleryItems.findIndex((el) => el.downloadUrl === asset.url);
+				if (item !== -1) {
+					gallery.openGallery(item);
+				}
+			}
+		};
 	});
 </script>
 
-<section bind:this={gallery}>
+<section bind:this={element}>
 	{#each orderedAssets as asset, index}
 		<a href="{asset.url}?nf_resize=fit&w=1008&h=1008" target="_blank" data-download-url={asset.url}>
 			<img

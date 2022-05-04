@@ -14,15 +14,26 @@
 	};
 </script>
 
-<script>
+<script lang="ts">
 	import NavLinks from '$lib/components/NavLinks.svelte';
 	import Gallery from '$lib/components/Gallery.svelte';
+	import { setContext } from 'svelte';
+	import { writable } from 'svelte/store';
+	import { galleryKey } from '$lib/types';
+	import type { GalleryOpener } from '$lib/types';
 
 	export let previous;
 	export let current;
 	export let next;
+
+	const opener = writable<GalleryOpener>({
+		openAsset() {
+			// nothing
+		}
+	});
+	setContext(galleryKey, opener);
 </script>
 
 <svelte:component this={current.component} />
-<Gallery assets={current.assets} />
+<Gallery assets={current.assets} bind:opener={$opener} />
 <NavLinks {previous} {next} />

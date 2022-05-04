@@ -1,6 +1,11 @@
 <!-- <img> component for Markdown generation: tries to resolve the image link against page "assets" -->
 <script lang="ts">
+	import type { Readable } from 'svelte/store';
+	import type { GalleryOpener } from '$lib/types';
 	import { isNetlify, resolveAsset, simulateNetlifyTransform } from '$lib/assets';
+	import { getContext } from 'svelte';
+	import { get } from 'svelte/store';
+	import { galleryKey } from '$lib/types';
 
 	export let src: string;
 	export let alt: string | undefined = undefined;
@@ -19,6 +24,19 @@
 		// While developing, simulate Netlify image transformations for local images (https://docs.netlify.com/large-media/transform-images/)
 		style = simulateNetlifyTransform(query);
 	}
+
+	const galleryStore: Readable<GalleryOpener> = getContext(galleryKey);
+	function openGallery() {
+		get(galleryStore).openAsset(asset);
+	}
+
+	const galleryImage = asset && galleryStore;
 </script>
 
-<img {src} {alt} {style} />
+{#if galleryImage}
+	<a href={src} on:click|preventDefault={openGallery}>
+		<img {src} {alt} {style} />
+	</a>
+{:else}
+	<img {src} {alt} {style} />
+{/if}
