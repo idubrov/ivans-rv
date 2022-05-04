@@ -1,6 +1,6 @@
 ---
-title: "Unriveting apart"
-categories: ["practice-kit"]
+title: 'Unriveting apart'
+categories: ['practice-kit']
 time: 1
 ---
 

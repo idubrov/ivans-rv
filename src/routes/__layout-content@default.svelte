@@ -1,14 +1,16 @@
 <script context="module">
-    export { default as img } from "$lib/components/MarkdownImg.svelte";
-    export { default as a } from "$lib/components/MarkdownLink.svelte";
+	export { default as img } from '$lib/components/MarkdownImg.svelte';
+	export { default as a } from '$lib/components/MarkdownLink.svelte';
 </script>
+
 <script>
-    export let title;
+	export let title;
 </script>
+
 <svelte:head>
-    <title>{title} -- Ivan's RV-7</title>
-    <!-- FIXME: og metadata -->
+	<title>{title} -- Ivan's RV-7</title>
+	<!-- FIXME: og metadata -->
 </svelte:head>
 <article class="markdown">
-    <slot/>
+	<slot />
 </article>

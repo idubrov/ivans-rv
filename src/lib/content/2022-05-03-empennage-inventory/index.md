@@ -1,6 +1,6 @@
 ---
-title: "Empennage inventory"
-categories: ["empennage"]
+title: 'Empennage inventory'
+categories: ['empennage']
 time: 3
 ---
 
@@ -18,12 +18,12 @@ Everything was nicely packaged, with some duct tape and paper. Not too many part
 
 Well, that I thought until I started doing an inventory. Counting bolts gets tedious. I am sure it will be ten times worse for the other kits, though.
 
-Every single nut was counted, and I did not find any missing parts! Good job, Van's Aircraft! 
+Every single nut was counted, and I did not find any missing parts! Good job, Van's Aircraft!
 
-For managing my inventory, I've created a simple table in [Notion](https://www.notion.so/) (it could be used  like Excel but for us, young kids). I don't have any experience organizing a warehouse, so I came up with the following columns:
+For managing my inventory, I've created a simple table in [Notion](https://www.notion.so/) (it could be used like Excel but for us, young kids). I don't have any experience organizing a warehouse, so I came up with the following columns:
 
 | Part #     | In use? | Remaining | Quantity | Location | Notes             |
-|------------|---------|-----------|----------|----------|-------------------|
+| ---------- | ------- | --------- | -------- | -------- | ----------------- |
 | AN470AD4-4 | No      | 0.06      | 0.06     | O1-S     | bag 1908          |
 | AN470AD4-5 | No      | 0.1       | 0.1      | O1-M     | bag 405           |
 | VS-702     | No      | 1         | 1        | S2-2     | back of the shelf |

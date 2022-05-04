@@ -1,6 +1,6 @@
 ---
-title: "Stiffeners, deburring"
-categories: ["practice-kit"]
+title: 'Stiffeners, deburring'
+categories: ['practice-kit']
 time: 1
 ---
 

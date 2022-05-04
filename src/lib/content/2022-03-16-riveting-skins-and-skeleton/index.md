@@ -1,7 +1,7 @@
 ---
-title: "Backriveting stiffeners and riveting skeleton"
-categories: ["practice-kit"]
-tags: ["mistakes"]
+title: 'Backriveting stiffeners and riveting skeleton'
+categories: ['practice-kit']
+tags: ['mistakes']
 time: 2
 ---
 
@@ -11,17 +11,18 @@ Started riveting parts together: stiffeners to the skins and ribs to the spar.
 
 For stiffeners, I followed suggested method of backriveting. It all went together really fast, but there were some issues.
 
-According to the [military specification](https://www.vansaircraft.com/wp-content/uploads/2019/02/MIL-R-47196A_MI.pdf) (Table III) for rivets, rivet 3/32 shop head should fit in the following tolerances: 
+According to the [military specification](https://www.vansaircraft.com/wp-content/uploads/2019/02/MIL-R-47196A_MI.pdf) (Table III) for rivets, rivet 3/32 shop head should fit in the following tolerances:
 
-|Rivet Size|Minimum Diameter|Minimum Thickness|Maximum Thickness|
-|----------|----------------|-----------------|-----------------|
-|3/32      |0.122           |0.038            | 0.050           |
-|1/8       |0.163           |0.050            |0.070            |
-|5/32      |0.203           |0.062            |0.092            |
+| Rivet Size | Minimum Diameter | Minimum Thickness | Maximum Thickness |
+| ---------- | ---------------- | ----------------- | ----------------- |
+| 3/32       | 0.122            | 0.038             | 0.050             |
+| 1/8        | 0.163            | 0.050             | 0.070             |
+| 5/32       | 0.203            | 0.062             | 0.092             |
 
 The results I got (for 3/32 rivet) were:
-* Rivet head diameter was ranging from .138" to .162" -- acceptable.
-* However, head thickness was from .029" to .053" -- out of range. I don't think too thick of the head is necessary an issue, but .029" is too flat.
+
+- Rivet head diameter was ranging from .138" to .162" -- acceptable.
+- However, head thickness was from .029" to .053" -- out of range. I don't think too thick of the head is necessary an issue, but .029" is too flat.
 
 This happened probably due to the pressure being a bit too high. I should have stopped riveting after first couple of rivets, but I was too captivated by the process! But also, most of them were acceptable. Borderline overdriven, but acceptable.
 

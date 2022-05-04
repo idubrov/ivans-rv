@@ -1,16 +1,16 @@
 ---
-title: "Workbenches"
+title: 'Workbenches'
 ---
 
 I made four EAA workbenches total. They are pretty much as per [the original plans](https://www.eaa.org/eaa/aircraft-building/builderresources/while-youre-building/building-articles/tools-and-workshop/worktables), with the following small modifications:
 
-* Framing is 3" shorter and narrower to get 1-1/2" overhang for the table countertop (so I can clamp parts to the table).
-* Legs are 3" longer
+- Framing is 3" shorter and narrower to get 1-1/2" overhang for the table countertop (so I can clamp parts to the table).
+- Legs are 3" longer
 
 I used 11 120" (10 feet) 2x4 boards:
 
 | Quantity | Cuts                                        |
-|----------|---------------------------------------------|
+| -------- | ------------------------------------------- |
 | 4        | 57" 20-1/2" 20-1/2" 18"                     |
 | 4        | 54" 36" 18" 8-1/2"                          |
 | 2        | 2x36" 18" 18" 8-1/2"                        |
@@ -37,4 +37,4 @@ The second two tables I only covered with [water-based polyurethane](./4-polyure
 
 ![](1-second-two-tables.jpeg?nf_resize=fit&w=480&h=360)
 
-I haven't put [DRDT-2](http://experimentalaero.com/products/DRDT-2/DRDT-2.html) dimpler on them nor the backriveting plate. I don't want to permanently modify them just yet, to keep them flexible. For DRDT-2 I am considering "hanging" it between two tables on some sort of a fixture so DRDT-2 throat is at the same height as the tables. Not sure what my plan for backriveting plate is. Might inlay it into the table in the end. 
+I haven't put [DRDT-2](http://experimentalaero.com/products/DRDT-2/DRDT-2.html) dimpler on them nor the backriveting plate. I don't want to permanently modify them just yet, to keep them flexible. For DRDT-2 I am considering "hanging" it between two tables on some sort of a fixture so DRDT-2 throat is at the same height as the tables. Not sure what my plan for backriveting plate is. Might inlay it into the table in the end.

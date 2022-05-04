@@ -1,40 +1,39 @@
-import type {SvelteComponent} from "svelte";
+import type { SvelteComponent } from 'svelte';
 
 export interface PostRef {
-  // Date of the post. Note that we use UTC dates internally.
-  date: Date,
-  slug: string;
+	// Date of the post. Note that we use UTC dates internally.
+	date: Date;
+	slug: string;
 }
 
 export interface PostMetadata extends PostRef {
-  key: string;
-  title: string;
-  assets: Asset[];
-  categories: string[];
-  component: SvelteComponent;
-  time: number;
+	key: string;
+	title: string;
+	assets: Asset[];
+	categories: string[];
+	component: SvelteComponent;
+	time: number;
 }
 
 export interface CurrentPost {
-  previous?: PostMetadata;
-  current: PostMetadata;
-  next?: PostMetadata;
+	previous?: PostMetadata;
+	current: PostMetadata;
+	next?: PostMetadata;
 }
 
 export interface Asset {
-  url: string;
-  alt?: string;
+	url: string;
+	alt?: string;
 }
 
 export type Assets = Record<string, Asset>;
 
-
 export interface Category {
-  code: string;
-  description: string;
+	code: string;
+	description: string;
 }
 
 export interface CategoryInfo extends Category {
-  totalTime: number;
-  totalLogs: number;
+	totalTime: number;
+	totalLogs: number;
 }

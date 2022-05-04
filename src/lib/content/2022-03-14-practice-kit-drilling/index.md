@@ -1,6 +1,6 @@
 ---
-title: "Drilling and assembling with clecos"
-categories: ["practice-kit"]
+title: 'Drilling and assembling with clecos'
+categories: ['practice-kit']
 time: 1
 ---
 

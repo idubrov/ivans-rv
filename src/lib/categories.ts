@@ -30,14 +30,16 @@ export const CATEGORIES: Category[] = [
 
 export async function aggregateCategories(): Promise<CategoryInfo[]> {
 	const posts = await getAllPosts();
-	return CATEGORIES.map((template) => {
-		const categoryPosts = posts.filter((entry) => entry.categories.includes(template.code));
-		return {
-			...template,
-			totalTime: categoryPosts.map((post) => post.time).reduce((a, b) => a + b, 0),
-			totalLogs: categoryPosts.length
-		};
-	})
-		// Skip empty categories
-		.filter(category => category.totalLogs > 0);
+	return (
+		CATEGORIES.map((template) => {
+			const categoryPosts = posts.filter((entry) => entry.categories.includes(template.code));
+			return {
+				...template,
+				totalTime: categoryPosts.map((post) => post.time).reduce((a, b) => a + b, 0),
+				totalLogs: categoryPosts.length
+			};
+		})
+			// Skip empty categories
+			.filter((category) => category.totalLogs > 0)
+	);
 }

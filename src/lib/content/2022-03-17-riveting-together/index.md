@@ -1,7 +1,7 @@
 ---
-title: "Riveting together"
-categories: ["practice-kit"]
-tags: ["mistakes"]
+title: 'Riveting together'
+categories: ['practice-kit']
+tags: ['mistakes']
 time: 2
 ---
 

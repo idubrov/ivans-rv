@@ -1,7 +1,7 @@
 <!-- <a> component for Markdown generation: tries to resolve the link against page "assets" -->
 <script lang="ts">
-	import {resolveAsset} from '$lib/assets';
-	import {resolveRelativeLink} from "$lib/navigation";
+	import { resolveAsset } from '$lib/assets';
+	import { resolveRelativeLink } from '$lib/navigation';
 
 	export let href: string;
 	export let rel: string | undefined = undefined;

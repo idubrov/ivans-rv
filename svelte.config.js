@@ -14,20 +14,15 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess({
-			preserve: ['module'],
+			preserve: ['module']
 		}),
 		mdsvex({
 			extensions: ['.md'],
-			remarkPlugins: [
-				importAssets,
-			],
-			rehypePlugins: [
-				rehypeSlug,
-				rehypeAutolinkHeadings,
-			],
+			remarkPlugins: [importAssets],
+			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
 			smartypants: false,
-			layout: "./src/routes/__layout-content@default.svelte",
-		}),
+			layout: './src/routes/__layout-content@default.svelte'
+		})
 	],
 
 	kit: {
@@ -37,12 +32,12 @@ const config = {
 		},
 		vite: {
 			build: {
-				assetsInlineLimit: 0,
-			},
+				assetsInlineLimit: 0
+			}
 		}
 	},
 
-	extensions: ['.svelte', '.md'],
+	extensions: ['.svelte', '.md']
 };
 
 export default config;

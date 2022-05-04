@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { CategoryInfo } from "$lib/types";
+	import type { CategoryInfo } from '$lib/types';
 	export let categories: CategoryInfo[];
 </script>
 
@@ -10,18 +10,20 @@
 		<li>
 			By Category:
 			<ul>
-                {#each categories as category}
-                    <li>
-					    <a href="/category/{category.code}">{category.description} ({category.totalTime} hours, {category.totalLogs} logs)</a>
-				    </li>
-                {/each}
+				{#each categories as category}
+					<li>
+						<a href="/category/{category.code}"
+							>{category.description} ({category.totalTime} hours, {category.totalLogs} logs)</a
+						>
+					</li>
+				{/each}
 			</ul>
 		</li>
 		<li>
 			Other:
 			<ul>
 				<li><a href="/workbenches">Workbenches</a></li>
-<!--				<li><a href="/deburring">Deburring</a></li>-->
+				<!--				<li><a href="/deburring">Deburring</a></li>-->
 			</ul>
 		</li>
 	</ul>

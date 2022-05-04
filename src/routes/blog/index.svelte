@@ -7,7 +7,7 @@
 		const posts = await getAllPosts();
 		return {
 			props: {
-				posts: [...posts].reverse(),
+				posts: [...posts].reverse()
 			}
 		};
 	};

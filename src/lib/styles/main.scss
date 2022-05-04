@@ -1,56 +1,56 @@
 html {
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+		Arial, sans-serif;
 }
 
 // Layout
 
 body {
-    margin: 0;
+	margin: 0;
 }
 
 #app {
-    height: 100vh;
-    
-    /* grid container settings */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-        'header header'
-        'nav main'
-        'footer footer';
+	height: 100vh;
+
+	/* grid container settings */
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+		'header header'
+		'nav main'
+		'footer footer';
 }
 
 #app > header {
-    grid-area: header;
+	grid-area: header;
 }
 
 #app > nav {
-    grid-area: nav;
+	grid-area: nav;
 }
 
-
 #app > main {
-    grid-area: main;
-    padding: 15px 5px 10px 5px;
+	grid-area: main;
+	padding: 15px 5px 10px 5px;
 }
 
 #app > footer {
-    grid-area: footer;
+	grid-area: footer;
 }
 
 // Article images go
 article.markdown img {
-    display: block;
+	display: block;
 }
 
 @media (max-width: 840px) {
-    #app {
-        grid-template-rows: auto 1fr auto auto;
-        grid-template-areas: 
-            'header'
-            'main'
-            'nav'
-            'footer';
-    }
+	#app {
+		grid-template-rows: auto 1fr auto auto;
+		grid-template-areas:
+			'header'
+			'main'
+			'nav'
+			'footer';
+	}
 }
