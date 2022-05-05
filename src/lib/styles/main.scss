@@ -37,7 +37,7 @@ body {
 	grid-area: nav;
 }
 
-#SearchBox {
+section[role="search"] {
 	color: #616161;
 	font-size: 14px;
 	font-weight: 400;

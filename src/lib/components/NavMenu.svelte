@@ -12,7 +12,11 @@
 </script>
 
 <nav>
-	<p id="SearchBox">Search &#x1F50D;</p>
+	{#if dev}
+		<section role="search">
+			Search &#x1F50D;
+		</section>
+	{/if}
 	<ul>
 		<li>
 			<span>Most recent</span>
