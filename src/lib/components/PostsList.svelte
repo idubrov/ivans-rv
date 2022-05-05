@@ -9,7 +9,7 @@
 	<ul>
 		<li>
 			<a href={postLink(post)}>
-				{#if post.assets?.[0]}<PostThumbnail {post} />{/if}
+				<PostThumbnail {post} />
 				{post.title}
 				{post.date.toISOString()}
 			</a>
