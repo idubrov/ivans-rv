@@ -1,30 +1,65 @@
+<script context="module">
+	import dayjs from 'dayjs';
+	import { postLink } from '$lib/navigation';
+	import { dev } from '$app/env';
+</script>
+
 <script lang="ts">
 	import type { CategoryInfo } from '$lib/types';
+	import PostThumbnail from './PostThumbnail.svelte';
 	export let categories: CategoryInfo[];
+	export let recent;
 </script>
 
 <nav>
+	<p id="SearchBox">Search &#x1F50D;</p>
 	<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="/blog">All updates</a></li>
 		<li>
-			By Category:
+			<span>Most recent</span>
 			<ul>
-				{#each categories as category}
+				{#each recent as post}
 					<li>
-						<a href="/category/{category.code}"
-							>{category.description} ({category.totalTime} hours, {category.totalLogs} logs)</a
+						<a href={postLink(post)}>
+							<PostThumbnail {post} width={40} height={40} />
+							{post.title}<br />{dayjs.utc(post.date).format('MMMM D, YYYY')}</a
 						>
 					</li>
 				{/each}
 			</ul>
 		</li>
 		<li>
-			Other:
+			<span>Categories</span>
+			<ul>
+				{#each categories as category}
+					<li>
+						<a href="/category/{category.code}"
+							>{category.description} ({category.totalLogs} posts)</a
+						>
+					</li>
+				{/each}
+			</ul>
+		</li>
+		<li>
+			<span>Highlights</span>
 			<ul>
 				<li><a href="/workbenches">Workbenches</a></li>
 				<!--				<li><a href="/deburring">Deburring</a></li>-->
 			</ul>
 		</li>
+		{#if dev}
+			<!-- FIXME -->
+			<li>
+				<span>Tags</span>
+				<ul>
+					<li><a href="/workbenches">Tag1 Tag2 Tag3</a></li>
+				</ul>
+			</li>
+			<li>
+				<span>Lesson of the day</span>
+				<ul>
+					<li><p>Slow and steady wins the race</p></li>
+				</ul>
+			</li>
+		{/if}
 	</ul>
 </nav>

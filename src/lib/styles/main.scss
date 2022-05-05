@@ -1,6 +1,5 @@
 html {
-	font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-		Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 // Layout
@@ -12,31 +11,170 @@ body {
 #app {
 	height: 100vh;
 
+	margin-left: 200px;
+	margin-right: 200px;
+
 	/* grid container settings */
 	display: grid;
-	grid-template-columns: auto 1fr;
-	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto auto 1fr;
 	grid-template-areas:
 		'header header'
-		'nav main'
-		'footer footer';
+		'footer footer'
+		'main nav';
 }
 
 #app > header {
 	grid-area: header;
+	color: #393939;
+	font-weight: 400;
+	font-size: 36px;
+	margin: 45px 5px;
 }
 
 #app > nav {
+	margin-top: 36px;
 	grid-area: nav;
 }
 
+#SearchBox {
+	color: #616161;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 5px 12px;
+	border: #f3f3f3 solid 2px;
+	margin-bottom: 36px;
+}
+
+#app > nav ul {
+	list-style: none;
+}
+
+#app > nav > ul > li > span {
+	text-transform: uppercase;
+	color: #60beae;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#app > nav > ul > li {
+	margin-top: 40px;
+}
+
+#app > nav > ul > li > ul {
+	margin-top: 12px;
+}
+
+#app > nav > ul > li > ul > li {
+	margin-top: 12px;
+}
+
+#app > nav a,
+#app > nav p {
+	color: #616161;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+#app > nav a:link,
+#app > nav a:visited,
+#app > nav a:hover,
+#app > nav a:active {
+	text-decoration: none;
+	color: #616161;
+	padding-right: 30px;
+}
+
+#app > nav a > img {
+	float: left;
+	margin-right: 8px;
+}
+
 #app > main {
+	margin: 36px 16px 16px 0px;
 	grid-area: main;
-	padding: 15px 5px 10px 5px;
+}
+
+#app > main > ul {
+	list-style: none;
+}
+
+#app > main > ul {
+	border: #f3f3f3 solid 2px;
+	margin-bottom: 32px;
+	padding: 18px 20px 8px 20px;
+}
+
+#app > main a:link,
+#app > main a:visited,
+#app > main a:hover,
+#app > main a:active {
+	text-decoration: none;
+	color: #616161;
+}
+
+#app > main > ul > li h1 {
+	border-bottom: #f3f3f3 solid 2px;
+	text-transform: capitalize;
+	color: #393939;
+	font-weight: 400;
+	font-size: 20px;
+	padding-bottom: 14px;
+}
+
+#app > main > ul > li h2 {
+	text-transform: uppercase;
+	color: #9d9d9d;
+	font-size: 13px;
+	font-weight: 500;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+#app > main > ul > li h3 {
+	text-transform: capitalize;
+	color: #60beae;
+	font-size: 13px;
+	font-weight: 500;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+#app > main > ul > li h2 > span {
+	text-transform: uppercase;
+	color: #60beae;
+	font-size: 13px;
+	font-weight: 500;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+#app > main > ul > li p {
+	color: #616161;
+	font-size: 13px;
+	font-weight: 400;
+	padding-top: 14px;
+	padding-bottom: 14px;
 }
 
 #app > footer {
 	grid-area: footer;
+	height: 54px;
+	text-transform: uppercase;
+	border-top: #f3f3f3 2px solid;
+	border-bottom: #f3f3f3 2px solid;
+	padding: 18px 20px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+#app > footer > a:link,
+#app > footer > a:visited,
+#app > footer > a:hover,
+#app > footer > a:active {
+	text-decoration: none;
+	color: #616161;
+	padding-right: 30px;
 }
 
 // Article images go

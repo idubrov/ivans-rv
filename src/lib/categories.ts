@@ -3,24 +3,8 @@ import { getAllPosts } from './blog';
 
 export const CATEGORIES: Category[] = [
 	{
-		code: 'empennage-horizontal-stabilizer',
-		description: 'Horizontal stabilizer'
-	},
-	{
-		code: 'empennage-elevator',
-		description: 'Elevator'
-	},
-	{
-		code: 'empennage-vertical-stabilizer',
-		description: 'Vertical stabilizer'
-	},
-	{
-		code: 'empennage-rudder',
-		description: 'Rudder'
-	},
-	{
 		code: 'empennage',
-		description: 'All of the empennage'
+		description: 'Empennage'
 	},
 	{
 		code: 'practice-kit',

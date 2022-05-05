@@ -1,6 +1,6 @@
 ---
 title: 'Vertical stabilizer skeleton'
-categories: ['empennage', 'empennage-vertical-stabilizer']
+categories: ['empennage']
 time: 3
 ---
 
