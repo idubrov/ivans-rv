@@ -3,10 +3,6 @@ import { getAllPosts } from './blog';
 
 export const CATEGORIES: Category[] = [
 	{
-		code: 'empennage',
-		description: 'Empennage'
-	},
-	{
 		code: 'empennage-horizontal-stabilizer',
 		description: 'Horizontal stabilizer'
 	},
@@ -21,6 +17,10 @@ export const CATEGORIES: Category[] = [
 	{
 		code: 'empennage-rudder',
 		description: 'Rudder'
+	},
+	{
+		code: 'empennage',
+		description: 'All of the empennage'
 	},
 	{
 		code: 'practice-kit',

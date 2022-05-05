@@ -40,11 +40,11 @@ Only after about 3 hours, I got all my parts stored on the shelf and hardware in
 
 ![](3-inventory-hardware.jpeg?nf_resize=smartcrop&w=480&h=360)
 
-One thing I noticed is that some similar parts sometimes look quite different. For example, on this image, both parts are ribs, one for the horizontal stabilizer and another one for the vertical stabilizer. The horizontal stabilizer part looks to what I used to see in the practice kit: shiny aluminum behind the blue vinyl. However, vertical stabilizer part is dull and has something that looks like stains (could it be some primer?). Also, vertical stabilizer part is much newer -- maybe, this difference is due to the change in the manufacturing process?
+One thing I noticed is that some parts that serve similar function sometimes look quite different. For example, on this image, both parts are ribs, one for the horizontal stabilizer and another one for the vertical stabilizer. The horizontal stabilizer part looks to what I used to see in the practice kit: shiny aluminum behind the blue vinyl. However, vertical stabilizer part is dull and has something that looks like some stains. The vertical stabilizer part is much newer -- maybe, this difference is due to the change in the manufacturing process?
 
 ![](4-similar-parts.jpeg?nf_resize=smartcrop&w=480&h=360)
 
-In any case, I am going to scuff and prime everything, so it should not matter.
+In any case, I am going to scuff and prime everything, so it should not matter. Also, it is a rib after all 😆
 
 The next order of business would be to figure out if I need to worry about any of the Service Bulletin. I don't think I need to, I've looked at some bulletins, and it _seems like_ reinforcing part were already included into the instructions.
 
