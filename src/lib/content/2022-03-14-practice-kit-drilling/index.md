@@ -12,7 +12,7 @@ Today I drilled and assembled the whole "control surface" with clecos (don't min
 
 ![](0-practice-kit-clecoed.jpeg?nf_resize=smartcrop&w=480&h=360)
 
-Drilling the trailing edge worked better this time. Cleco clamp did not hold it too well, but holding edge with my hand did help. One hole did turn out tiny bit elongated, but based on my previous experience, it should work okay.
+Drilling the trailing edge worked better this time. Cleco clamp did not hold it too well, but holding the edge with my hand did help. One hole did turn out a tiny bit elongated, but based on my previous experience, it should work okay.
 
 ![](1-elongated-hole.jpeg?nf_resize=smartcrop&w=480&h=360)
 
