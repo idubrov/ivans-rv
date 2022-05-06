@@ -18,13 +18,13 @@ Here are some of the mistakes I made that I will try to avoid on my next attempt
 
   In the end, final holes were horrendous. Few of them were really elongated because of drill bit movement. Surprisingly, rivets still did squeeze okay (I used [a flat squeezer set](https://www.cleavelandtool.com/products/flat-squeezer-sets) from Cleaveland Aircraft Tool).
 
-![](1-squeezed-rivets.jpeg)
-![](2-squeezed-rivets.jpeg)
+  ![](1-squeezed-rivets.jpeg)
+  ![](2-squeezed-rivets.jpeg)
 
 - While dimpling with the pneumatic squeezer, I accidentally punched an extra hole in the rib flange. The reason was that due to a very tight spacing, I was not able to align male punch guide into the hole. Instead, I was relying on my ability to bring dies together slowly by slowly advancing the trigger. It worked few times, but then one time it didn't, I squeezed the trigger too hard and it poked an extra hole. Next time I will use my custom-made [dimpling bucking bar](0-dimpling-bucking-bar.jpeg) which worked fine for the tightest rivet (two rivets on the rib which are closest to the trailing edge).
 - Pull rivets (AD-41-ABS) on the leading edge did not set properly. The leading edge rolled okay (to my assessment), but skins were not tight to one another when I pulled the rivet. I hoped that pulling the rivet would bring both skins together, but this did not happen. I don't know if this is normal and I should have clamped skins tight or I am not using my pull riveter correctly (I mean... It seems like it should be hard to use it incorrectly, but maybe I was applying side pressure which caused rivet stem to break prematurely?). I might get a cheap pneumatic pull riveter.
 
-![](3-leading-edge.jpeg)
+  ![](3-leading-edge.jpeg)
 
 - Trailing edge wedge interfered with the stiffeners (perhaps, wedge moved inside a bit).
 
