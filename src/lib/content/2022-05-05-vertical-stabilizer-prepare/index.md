@@ -8,7 +8,7 @@ The next goal was to countersink the doubler, deburr all of the holes, and clean
 
 <!-- more -->
 
-The first step was to set up a Micro-stop countersink cage. I used some angle from Home Depot which I had in my aluminum scrap bin. 
+The first step was to set up a Micro-stop countersink cage. I used some angle from Home Depot which I had in my aluminum scrap bin.
 
 ![](1-setting-up-countersink-cage.jpeg)
 
@@ -40,7 +40,7 @@ For the doubler, I used the same soft Scotch-Brite wheel. It took several passes
 
 I have a harder wheel, too, but I removed it to reduce the vibration: my buffer vibrates A LOT. I have it on a Harbor Freight grinder pedestal, but this pedestal is not attached to anything. I don't want to drill into the concrete since I live in rental apartments. Maybe, I'll put it on a sheet of heavy plywood? Or make plywood big enough so I can stand on it? I want to keep the buffer far enough from assembly tables so it does not contaminate everything with aluminum dust.
 
-Another thing is that wheel is not exactly straight (it wobbles). Initially, I used plastic bushings that came with the wheel, but I am never happy with those. So I machined exact sized aluminum bushing on my lathe. But the wheel still wobbles from side to side. Might be the buffer itself, Harbor Freight tools quality ... varies. 
+Another thing is that wheel is not exactly straight (it wobbles). Initially, I used plastic bushings that came with the wheel, but I am never happy with those. So I machined exact sized aluminum bushing on my lathe. But the wheel still wobbles from side to side. Might be the buffer itself, Harbor Freight tools quality ... varies.
 
 ![](5-scotch-brite-wheel.jpeg)
 
@@ -48,4 +48,3 @@ Finally, all the parts are ready for priming. Before that, though, I need to lea
 
 ![](6-ready-for-priming.jpeg)
 ![](7-skin-ready-for-priming.jpeg)
-

@@ -23,20 +23,16 @@
 	import 'ress/dist/ress.min.css';
 	import '$lib/styles/main.scss';
 	import type { CategoryInfo } from '$lib/types';
-	import NavMenu from '../lib/components/NavMenu.svelte';
+	import MainMenu from '$lib/components/MainMenu.svelte';
+	import SideMenu from '$lib/components/SideMenu.svelte';
 
 	export let categories: CategoryInfo[];
 	export let recent;
 </script>
 
 <header>Ivan's RV-7</header>
-<NavMenu {categories} {recent} />
 <main>
 	<slot />
 </main>
-<footer>
-	<a href="/">Home</a>
-	<a href="/blog">Blog</a>
-	<a target="_blank" href="mailto:dubrov.ivan@gmail.com?subject=RV project feedback">Contact</a>
-	<a target="_blank" href="https://t.me/s/ivans_rv">Telegram</a>
-</footer>
+<MainMenu />
+<SideMenu {categories} {recent} />

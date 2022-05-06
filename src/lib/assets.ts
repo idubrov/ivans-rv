@@ -17,7 +17,7 @@ export function resolveAsset(src: string): { asset?: Asset; query: string } {
 	const asset = pos != -1 ? assets[src.slice(startPos, pos)] : assets[src.slice(startPos)];
 	if (asset && !query) {
 		// For assets, use standard size of 480x360
-		query = "?nf_resize=fit&w=480&h=360";
+		query = '?nf_resize=fit&w=480&h=360';
 	}
 	return {
 		asset,

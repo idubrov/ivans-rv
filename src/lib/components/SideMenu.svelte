@@ -11,11 +11,9 @@
 	export let recent;
 </script>
 
-<nav>
+<nav class="sidemenu">
 	{#if dev}
-		<section role="search">
-			Search &#x1F50D;
-		</section>
+		<section role="search">Search &#x1F50D;</section>
 	{/if}
 	<ul>
 		<li>

@@ -11,7 +11,7 @@
 </script>
 
 {#each posts as post}
-	<ul>
+	<ul class="postslist">
 		<li>
 			<a href={postLink(post)}>
 				<h1>{post.title}</h1>
