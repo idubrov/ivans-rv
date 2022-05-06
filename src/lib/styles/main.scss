@@ -184,6 +184,9 @@ article.markdown img {
 
 @media (max-width: 840px) {
 	#app {
+		margin-left: 10px;
+		margin-right: 10px;
+
 		grid-template-rows: auto 1fr auto auto;
 		grid-template-areas:
 			'header'
