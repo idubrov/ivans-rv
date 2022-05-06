@@ -12,5 +12,5 @@
 </script>
 
 {#if asset}
-	<SmartImg src={url} alt={alt} />
+	<SmartImg src={url} {alt} />
 {/if}

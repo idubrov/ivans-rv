@@ -33,10 +33,10 @@ export function resolveAsset(src: string): Asset {
  * @param asset
  * @param default_query
  */
-export function prepareAsset(asset: Asset, default_query = ""): PreparedAsset {
+export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 	const isRemote = asset.url.startsWith('http://') || asset.url.startsWith('https://');
 
-	const pos = asset.url.indexOf("?");
+	const pos = asset.url.indexOf('?');
 	const query = pos !== -1 ? asset.url.slice(pos) : default_query;
 	const parsed = queryString.parse(query);
 
@@ -46,9 +46,8 @@ export function prepareAsset(asset: Asset, default_query = ""): PreparedAsset {
 
 	const w = dimension(parsed.w);
 	const h = dimension(parsed.h);
-	const smallResolutionImage = isNetlify()
-		&& typeof w !== "undefined" && w < 160
-		&& typeof h !== "undefined" && h < 160;
+	const smallResolutionImage =
+		isNetlify() && typeof w !== 'undefined' && w < 160 && typeof h !== 'undefined' && h < 160;
 	if (isNetlify()) {
 		if (smallResolutionImage) {
 			// 2x scale the image
@@ -56,8 +55,8 @@ export function prepareAsset(asset: Asset, default_query = ""): PreparedAsset {
 			return {
 				...asset,
 				url: `${url}?nf_resize=${parsed.nf_resize}&w=${w * 2}&h=${h * 2}`,
-				style: `width: ${w}px; height: ${h}px`,
-			}
+				style: `width: ${w}px; height: ${h}px`
+			};
 		} else {
 			return asset;
 		}
@@ -99,7 +98,7 @@ export function prepareAsset(asset: Asset, default_query = ""): PreparedAsset {
 }
 
 function dimension(value: string | (string | null)[] | null): number | undefined {
-	if (typeof value === "string") {
+	if (typeof value === 'string') {
 		return parseInt(value, 10);
 	}
 	return undefined;

@@ -9,13 +9,13 @@
 </script>
 
 <svelte:head>
-	{#if format !== "summary"}
+	{#if format !== 'summary'}
 		<!-- FIXME: og metadata -->
 		<title>{title} -- Ivan's RV-7</title>
 	{/if}
 </svelte:head>
 
-{#if format === "summary"}
+{#if format === 'summary'}
 	<slot />
 {:else}
 	<!-- Full page specific stuff -->
