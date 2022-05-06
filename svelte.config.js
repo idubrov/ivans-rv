@@ -21,7 +21,7 @@ const config = {
 			remarkPlugins: [importAssets],
 			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
 			smartypants: false,
-			layout: './src/routes/__layout-content@default.svelte'
+			layout: './src/routes/__layout-content.svelte'
 		})
 	],
 

@@ -8,7 +8,7 @@
 	import { galleryKey } from '$lib/types';
 
 	export let src: string;
-	export let style: string;
+	export let style: string | undefined = undefined;
 	export let alt: string | undefined = undefined;
 
 	const asset = prepareAsset(resolveAsset(src));

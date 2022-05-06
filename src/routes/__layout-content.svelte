@@ -5,12 +5,19 @@
 
 <script>
 	export let title;
+	export let format;
 </script>
 
 <svelte:head>
-	<title>{title} -- Ivan's RV-7</title>
-	<!-- FIXME: og metadata -->
+	{#if format !== "summary"}
+		<!-- FIXME: og metadata -->
+		<title>{title} -- Ivan's RV-7</title>
+	{/if}
 </svelte:head>
-<article class="markdown">
+
+{#if format === "summary"}
 	<slot />
-</article>
+{:else}
+	<!-- Full page specific stuff -->
+	<slot />
+{/if}

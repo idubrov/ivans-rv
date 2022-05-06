@@ -129,6 +129,15 @@ section[role='search'] {
 	margin-bottom: 36px;
 }
 
+.gallery {
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		text-decoration: none;
+	}
+}
+
 main {
 	margin: 36px 16px 16px 0;
 	grid-area: main;

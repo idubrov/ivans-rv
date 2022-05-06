@@ -18,7 +18,7 @@
 				<h2>{dayjs.utc(post.date).format('MMMM D, YYYY')}</h2>
 			</a>
 			<PostThumbnail {post} />
-			<p><svelte:component this={post.component} format="summary" /></p>
+			<svelte:component this={post.component} format="summary" />
 			<a href={postLink(post)}>
 				<h3>Continue reading &rarr;</h3>
 			</a>
