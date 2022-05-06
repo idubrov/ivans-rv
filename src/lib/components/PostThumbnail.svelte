@@ -1,13 +1,16 @@
 <script lang="ts">
 	import type { Asset, PostMetadata } from '$lib/types';
-	import AssetImg from './AssetImg.svelte';
+	import SmartImg from './SmartImg.svelte';
 	export let post: PostMetadata;
 	const sorted = [...Object.keys(post.assets)].sort();
 	const asset: Asset = post.assets[sorted[0]];
 	export let width = 480;
 	export let height = 360;
+
+	const url = `${asset.url}?nf_resize=smartcrop&w=${width}&h=${height}`;
+	const alt = asset.alt;
 </script>
 
 {#if asset}
-	<AssetImg {asset} query="?nf_resize=smartcrop&w={width}&h={height}" style="width: 40px; height: 40px;"/>
+	<SmartImg src={url} alt={alt} />
 {/if}

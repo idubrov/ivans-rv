@@ -22,7 +22,7 @@
 				{#each recent as post}
 					<li>
 						<a href={postLink(post)}>
-							<PostThumbnail class="thumbnail" {post} width={80} height={80} />
+							<PostThumbnail class="thumbnail" {post} width={40} height={40} />
 							{post.title}<br />{dayjs.utc(post.date).format('MMMM D, YYYY')}</a
 						>
 					</li>
