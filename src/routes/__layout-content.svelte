@@ -10,14 +10,18 @@
 
 <svelte:head>
 	{#if format !== 'summary'}
-		<!-- FIXME: og metadata -->
-		<title>{title} -- Ivan's RV-7</title>
+		<title>{title}</title>
+	{:else}
+		<title>Ivan's RV-7</title>
 	{/if}
 </svelte:head>
 
 {#if format === 'summary'}
 	<slot />
 {:else}
-	<!-- Full page specific stuff -->
-	<slot />
+	<section id = 'Post'>
+		<!-- Full page specific stuff -->
+		<h1>{title}</h1>
+		<slot />
+	</section>	
 {/if}

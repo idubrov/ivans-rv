@@ -18,14 +18,14 @@
 	<section id="follow">
 		<a target="_blank" href="https://t.me/ivans_rv"
 			><img
-				src="/icons8-telegram-24.png"
+				src="/icons8-telegram.svg"
 				alt="Telegram icon"
 				style="object-fit: cover; width: 24px; height: 24px;"
 			/></a
 		>
 		<a target="_blank" href="https://t.me/ivans_rv"
 			><img
-				src="/icons8-instagram-24.png"
+				src="/icons8-instagram.svg"
 				alt="Instagram icon"
 				style="object-fit: cover; width: 24px; height: 24px;"
 			/></a
@@ -66,10 +66,13 @@
 		</li>
 		{#if dev}
 			<!-- FIXME -->
-			<li>
+			<li id = 'Tags'>
 				<span>Tags</span>
 				<ul>
-					<li><a href="/workbenches">Tag1 Tag2 Tag3</a></li>
+					<li><a href="/workbenches">Tag1</a>
+						<a href="/workbenches">Tag2</a>
+						<a href="/workbenches">Tag3</a>
+					</li>
 				</ul>
 			</li>
 			<li>

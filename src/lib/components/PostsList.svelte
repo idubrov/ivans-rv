@@ -24,7 +24,7 @@
 			</a>
 			{#if dev}
 				<!-- FIXME -->
-				<h2>Tagged <span>Know-how</span></h2>
+				<h2>Tagged: <span>Know-how</span></h2>
 			{/if}
 		</li>
 	</ul>

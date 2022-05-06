@@ -42,15 +42,17 @@ body {
 }
 
 // Components
-
+// Header
 header {
 	grid-area: header;
 	color: #393939;
 	font-weight: 400;
 	font-size: 36px;
 	margin: 45px 5px;
+	cursor: default;
 }
 
+// Top menu
 nav.menubar {
 	grid-area: menubar;
 	height: 54px;
@@ -66,11 +68,21 @@ nav.menubar {
 	a:hover,
 	a:active {
 		text-decoration: none;
-		color: #616161;
 		padding-right: 30px;
+	}
+
+	a:link,
+	a:visited {
+		color: #616161;
+	}
+
+	a:hover,
+	a:active {
+		color: #393939;
 	}
 }
 
+// Side menu
 nav.sidemenu {
 	margin-top: 36px;
 	grid-area: sidebar;
@@ -91,16 +103,29 @@ nav.sidemenu {
 
 			span {
 				text-transform: uppercase;
+				cursor: default;
 				color: #60beae;
 				font-size: 14px;
 				font-weight: 500;
 			}
 		}
+
+		> li#Tags > ul > li > a {
+			background-color: #f3f3f3;
+			border-radius: 2px;
+			padding: 3px 8px;
+			margin-right: 6px;
+		}
 	}
 
-	a,
 	p {
 		color: #616161;
+		font-size: 13px;
+		font-weight: 500;
+		cursor: default;
+	}
+
+	a {
 		font-size: 13px;
 		font-weight: 500;
 	}
@@ -110,8 +135,16 @@ nav.sidemenu {
 	a:hover,
 	a:active {
 		text-decoration: none;
+	}
+
+	a:link,
+	a:visited {
 		color: #616161;
-		padding-right: 30px;
+	}
+
+	a:hover,
+	a:active {
+		color: #393939;
 	}
 
 	a > img {
@@ -129,11 +162,20 @@ section[role='search'] {
 	margin-bottom: 16px;
 }
 
-section#follow img {
-	margin-right: 16px;
-	opacity: 0.65;
+section#follow {
+	overflow: hidden;
+	img {
+		margin-right: 16px;
+		opacity: 0.6;
+	}
+
+	a:hover > img,
+	a:active > img {
+		opacity: 0.8;
+	}
 }
 
+// Posts
 .gallery {
 	a:link,
 	a:visited,
@@ -147,6 +189,94 @@ main {
 	margin: 36px 16px 16px 0;
 	grid-area: main;
 }
+
+section#Post {
+	border: #f3f3f3 solid 2px;
+	margin-bottom: 32px;
+	padding: 18px 20px;
+
+	> p {
+		cursor: default;
+		color: #616161;
+		font-size: 13px;
+		font-weight: 400;
+		padding-top: 14px;
+		line-height: 18px;
+		text-align: justify;
+	}
+
+	> h1 {
+		cursor: default;
+		border-bottom: #f3f3f3 solid 2px;
+		text-transform: capitalize;
+		color: #393939;
+		font-weight: 400;
+		font-size: 20px;
+		padding-bottom: 14px;
+	}
+
+	a {
+		color: #60beae;
+	}
+
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		text-decoration: none;
+	}
+
+	a:link,
+	a:visited {
+		font-weight: 400;
+	}
+
+	a:hover,
+	a:active {
+		font-weight: 500;
+	}
+
+	// FIXME: image size on Home page
+	img {
+		width: 100%;
+	}
+}
+
+section#Paging {
+	text-align: center;
+	margin-top: 24px;
+	margin-bottom: 24px;
+
+	> a {
+		font-size: 16px;
+		margin-right: 24px;
+		color: #60beae;
+	}
+
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		text-decoration: none;
+	}
+
+	a:link,
+	a:visited {
+		font-weight: 400;
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:active {
+		font-weight: 500;
+		text-decoration: none;
+	}
+}
+
+
+
+
+
 
 // FIXME: should only be for categories?..
 ul.postslist {
@@ -165,6 +295,7 @@ ul.postslist {
 		}
 
 		p {
+			cursor: default;
 			color: #616161;
 			font-size: 13px;
 			font-weight: 400;
