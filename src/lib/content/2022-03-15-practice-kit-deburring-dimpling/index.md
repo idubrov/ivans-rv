@@ -15,11 +15,11 @@ In the final step, I countersinked the trailing wedge. I used [countersink jig](
 
 In my [first attempt](../2022-03-10-practice-kit-lessons), I was drilling by hand and all the holes were quite inconsistent. This time, I did everything in my [small milling/drilling machine](https://www.harborfreight.com/two-speed-variable-bench-mill-drill-machine-44991.html) where I have more control over the pressure and more consistent support for the work.
 
-![](0-okay-holes.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](0-okay-holes.jpeg)
 
 <Mistake /> Still, the last hole I countersinked got waaay too deep. Not sure what happened there. It seems like it chattered, maybe, I was running the tool too fast (~800 RPM).
 
-![](1-hole-too-large.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](1-hole-too-large.jpeg)
 
 You can also see that holes don't align exactly -- this is likely because I was not keeping exact 84°. The fixture I used was just a piece of cardboard with the angle.
 
@@ -27,5 +27,5 @@ You can also see that holes don't align exactly -- this is likely because I was 
 
 Dimpling ribs was pretty straightforward, except for the last one. For the last one, even the flat squeezer yoke does not fit, so I used a dimpling bucking bar, as per instructions.
 
-![](2-dimpling-setup.jpeg?nf_resize=smartcrop&w=480&h=360)
-![](3-dimpling-bucking-bar.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](2-dimpling-setup.jpeg)
+![](3-dimpling-bucking-bar.jpeg)

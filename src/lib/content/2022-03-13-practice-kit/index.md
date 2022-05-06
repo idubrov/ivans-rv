@@ -10,7 +10,7 @@ Started working on my next practice kit.
 
 The first steps were to cut the stiffeners with snips and deburr everything.
 
-![](0-practice-kit-1.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](0-practice-kit-1.jpeg)
 
 My go-to setup for deburring is a 3M™ Scotch-Brite deburring wheel (7A, medium grade, part number 12-00875 on [Aircraft Spruce](https://www.aircraftspruce.com/)). This wheel is simply amazing. It's very quick and finish is superb. It's a bit harder to use for parts which are thin and large (like skins) or when it's hard to access their interior features (like ribs).
 

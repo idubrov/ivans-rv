@@ -10,11 +10,11 @@ Finally! Got my empennage kit today. Time to do some inventory!
 
 Nothing special about the box, except for the "high dollar aircraft parts" label 😛
 
-![](0-handle-with-care.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](0-handle-with-care.jpeg)
 
 Everything was nicely packaged, with some duct tape and paper. Not too many parts inside!
 
-![](1-package-opened.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](1-package-opened.jpeg)
 
 Well, that I thought until I started doing an inventory. Counting bolts gets tedious. I am sure it will be ten times worse for the other kits, though.
 
@@ -36,13 +36,13 @@ For managing my inventory, I've created a simple table in [Notion](https://www.n
 
 Only after about 3 hours, I got all my parts stored on the shelf and hardware in the plastic organizer:
 
-![](2-inventory-parts.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](2-inventory-parts.jpeg)
 
-![](3-inventory-hardware.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](3-inventory-hardware.jpeg)
 
 One thing I noticed is that some parts that serve similar functions sometimes look quite different. For example, in this image, both parts are ribs, one for the horizontal stabilizer and another one for the vertical stabilizer. The horizontal stabilizer part looks like what I used to see in the practice kit: shiny aluminum behind the blue vinyl. However, the vertical stabilizer part is dull and has something that looks like some stains. The vertical stabilizer part is much newer -- maybe, this difference is due to the change in the manufacturing process?
 
-![](4-similar-parts.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](4-similar-parts.jpeg)
 
 In any case, I am going to scuff and prime everything, so it should not matter. Also, it is a rib after all 😆
 

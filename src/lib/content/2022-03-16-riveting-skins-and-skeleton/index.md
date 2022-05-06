@@ -28,8 +28,8 @@ This happened probably due to the pressure being a bit too high. I should have s
 
 The intermediate result looks like this. Note that due to lighting, shop heads look way flatter than they are (I promise!).
 
-![](0-stiffeners-riveted.jpeg?nf_resize=smartcrop&w=480&h=360)
-![](1-stiffeners-riveted.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](0-stiffeners-riveted.jpeg)
+![](1-stiffeners-riveted.jpeg)
 
 I drilled out several rivets with #45 drill bit (slightly smaller than nominal size #40 so I have less risk of damaging the hole). #45 might be a tad too small, though, as sometimes the head does not easily break off.
 
@@ -37,8 +37,8 @@ There was another minor issue with back riveting. For some reason, sometimes it 
 
 <Mistake /> The next step was to assemble the skeleton. Well, I made one mistake there, too. All 10 universal head rivets could be squeezed by a pneumatic squeezer, which should give a very consistent result (for a newbie who has not mastered rivet gun yet!). However, I made a logistical mistake: I attached a rib before I squeezed the central rivet. Which made it impossible to squeeze it as it was too close to the rib. I tried driving the rivet with the rivet gun but wasn't able to hold the bucking bar just right. The last, third attempt was kind of okay, but I missed that I left a couple of deep scratches around the rivet.
 
-![](2-damaged-spar.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](2-damaged-spar.jpeg)
 
 Well, it was a good opportunity to train my rivet removal skill, so I decided to drill out both the central rivet and also two rivets holding the rib. This way I was able to sand all the scratches without rib getting into my way (there is still some minor scratch left, but it is relatively smooth) and then squeeze the central rivet.
 
-![](3-scratches-removed.jpeg?nf_resize=smartcrop&w=480&h=360)
+![](3-scratches-removed.jpeg)
