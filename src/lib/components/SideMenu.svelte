@@ -16,16 +16,16 @@
 		<section role="search">Search &#x1F50D;</section>
 	{/if}
 	<section id="follow">
-		<a target="_blank" href="https://t.me/s/ivans_rv"
+		<a target="_blank" href="https://t.me/ivans_rv"
 			><img
-				src="/src/lib/styles/icons8-telegram-24.png"
+				src="/icons8-telegram-24.png"
 				alt="Telegram icon"
 				style="object-fit: cover; width: 24px; height: 24px;"
 			/></a
 		>
-		<a target="_blank" href="https://t.me/s/ivans_rv"
+		<a target="_blank" href="https://t.me/ivans_rv"
 			><img
-				src="/src/lib/styles/icons8-instagram-24.png"
+				src="/icons8-instagram-24.png"
 				alt="Instagram icon"
 				style="object-fit: cover; width: 24px; height: 24px;"
 			/></a
