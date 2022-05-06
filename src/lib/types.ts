@@ -49,3 +49,7 @@ export const galleryKey = Symbol('gallery');
 export interface GalleryOpener {
 	openAsset(asset: Asset): void;
 }
+
+export interface PreparedAsset extends Asset {
+	style?: string;
+}

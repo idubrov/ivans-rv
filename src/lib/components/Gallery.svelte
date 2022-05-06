@@ -6,8 +6,8 @@
 </script>
 
 <script lang="ts">
-	import type { Assets } from '$lib/types';
-	import { simulateNetlifyTransform } from '$lib/assets';
+	import type { Assets, Asset } from '$lib/types';
+	import { prepareAsset } from '$lib/assets';
 	import { onMount } from 'svelte';
 
 	export let assets: Assets = {};
@@ -15,13 +15,10 @@
 	const orderedAssets = [...Object.keys(assets)]
 		.sort()
 		.map((name) => assets[name])
-		.map((asset) => ({
-			...asset,
-			query: '?nf_resize=smartcrop&w=90&h=90'
-		}));
+		.map((asset) => prepareAsset(asset, '?nf_resize=smartcrop&w=90&h=90'));
 
 	export let opener;
-	let element;
+	let element: any;
 	onMount(() => {
 		const gallery = lightGallery(element, {
 			plugins: [lgThumbnail],
@@ -30,8 +27,8 @@
 			//licenseKey: 'your_license_key'
 		});
 		opener = {
-			openAsset(asset) {
-				const item = gallery.galleryItems.findIndex((el) => el.downloadUrl === asset.url);
+			openAsset(asset: Asset) {
+				const item = gallery.galleryItems.findIndex((el: number) => el.downloadUrl === asset.url);
 				if (item !== -1) {
 					gallery.openGallery(item);
 				}
@@ -43,11 +40,7 @@
 <section bind:this={element}>
 	{#each orderedAssets as asset, index}
 		<a href="{asset.url}?nf_resize=fit&w=1008&h=1008" target="_blank" data-download-url={asset.url}>
-			<img
-				src="{asset.url}{asset.query}"
-				alt={asset.alt}
-				style={simulateNetlifyTransform(asset.query)}
-			/>
+			<img src="{asset.url}" alt={asset.alt} style={asset.style} />
 		</a>
 	{/each}
 </section>

@@ -11,11 +11,11 @@
 	export let href: string;
 	export let rel: string | undefined = undefined;
 
-	const { asset, query } = resolveAsset(href);
+	const asset = resolveAsset(href);
 
 	// This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
 	if (asset) {
-		href = asset.url + query;
+		href = asset.url;
 	} else {
 		href = resolveRelativeLink(href);
 	}

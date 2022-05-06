@@ -5,7 +5,8 @@
 
 	export let asset: Asset;
 	export let query = '';
+    export let style = '';
 	const src = `${asset.url}${query}`;
 </script>
 
-<SmartImg {src} alt={asset.alt} />
+<SmartImg {src} alt={asset.alt} {style} />

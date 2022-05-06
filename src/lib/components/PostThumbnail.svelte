@@ -9,5 +9,5 @@
 </script>
 
 {#if asset}
-	<AssetImg {asset} query="?nf_resize=smartcrop&w={width}&h={height}" />
+	<AssetImg {asset} query="?nf_resize=smartcrop&w={width}&h={height}" style="width: 40px; height: 40px;"/>
 {/if}
