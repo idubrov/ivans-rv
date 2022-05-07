@@ -47,14 +47,16 @@
 	});
 </script>
 
-<section bind:this={element} class="gallery">
-	{#each orderedAssets as asset, index}
-		<a
-			href="{asset.downloadUrl}?nf_resize=fit&w=1008&h=1008"
-			target="_blank"
-			data-download-url={asset.downloadUrl}
-		>
-			<img src={asset.url} alt={asset.alt} style={asset.style} />
-		</a>
-	{/each}
-</section>
+{#if orderedAssets.length > 0}
+	<section bind:this={element} class="gallery">
+		{#each orderedAssets as asset, index}
+			<a
+				href="{asset.downloadUrl}?nf_resize=fit&w=1008&h=1008"
+				target="_blank"
+				data-download-url={asset.downloadUrl}
+			>
+				<img src={asset.url} alt={asset.alt} style={asset.style} />
+			</a>
+		{/each}
+	</section>
+{/if}
