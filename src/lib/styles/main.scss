@@ -47,6 +47,7 @@ body {
 // iPads, Tablets
 @media (max-width: 768px) {
 	#app {
+		grid-template-columns: 1fr;
 		grid-template-rows: auto auto 1fr auto auto;
 		grid-template-areas:
 			'header'
