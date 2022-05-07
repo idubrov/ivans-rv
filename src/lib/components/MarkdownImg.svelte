@@ -21,7 +21,7 @@
 			e.preventDefault();
 		}
 	}
-	$: effectiveStyle = `${asset.style ?? ""} ${style ?? ""}`.trim();
+	$: effectiveStyle = `${asset.style ?? ''} ${style ?? ''}`.trim();
 </script>
 
 {#if origAsset && galleryStore}

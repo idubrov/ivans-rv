@@ -6,9 +6,9 @@
 </script>
 
 <script lang="ts">
-	import type {Assets, Asset, PreparedAsset} from '$lib/types';
+	import type { Assets, Asset, PreparedAsset } from '$lib/types';
 	import { prepareAsset } from '$lib/assets';
-	import {afterUpdate} from 'svelte';
+	import { afterUpdate } from 'svelte';
 
 	export let assets: Assets = {};
 
@@ -17,7 +17,7 @@
 		.map((name) => assets[name])
 		.map((asset) => ({
 			...prepareAsset(asset, '?nf_resize=smartcrop&w=90&h=90'),
-			downloadUrl: asset.url,
+			downloadUrl: asset.url
 		}));
 
 	export let opener;
@@ -38,7 +38,7 @@
 					gallery.openGallery(item);
 					return true;
 				} else {
-					const items = gallery.galleryItems.map(el => el.downloadUrl).join(", ");
+					const items = gallery.galleryItems.map((el) => el.downloadUrl).join(', ');
 					console.warn(`Did not find asset '${assetUrl}', looked through [${items}]`);
 					return false;
 				}
@@ -49,7 +49,11 @@
 
 <section bind:this={element} class="gallery">
 	{#each orderedAssets as asset, index}
-		<a href="{asset.downloadUrl}?nf_resize=fit&w=1008&h=1008" target="_blank" data-download-url={asset.downloadUrl}>
+		<a
+			href="{asset.downloadUrl}?nf_resize=fit&w=1008&h=1008"
+			target="_blank"
+			data-download-url={asset.downloadUrl}
+		>
 			<img src={asset.url} alt={asset.alt} style={asset.style} />
 		</a>
 	{/each}

@@ -8,10 +8,10 @@
 <script>
 	import TimeSpent from '$lib/components/TimeSpent.svelte';
 	import Gallery from '$lib/components/Gallery.svelte';
-	import NavLinks from "$lib/components/NavLinks.svelte";
-	import {writable} from "svelte/store";
-	import {galleryKey, assetsKey} from "$lib/types";
-	import {getContext, setContext} from "svelte";
+	import NavLinks from '$lib/components/NavLinks.svelte';
+	import { writable } from 'svelte/store';
+	import { galleryKey, assetsKey } from '$lib/types';
+	import { getContext, setContext } from 'svelte';
 
 	export let title;
 	export let format;
@@ -47,7 +47,7 @@
 		<section>
 			<slot />
 		</section>
-		<Gallery assets={assets} bind:opener={$opener} />
+		<Gallery {assets} bind:opener={$opener} />
 		<NavLinks {previous} {next} />
 	</article>
 {/if}

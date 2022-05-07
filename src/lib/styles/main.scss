@@ -370,6 +370,11 @@ ul.postslist {
 	padding: 18px 20px 8px 20px;
 
 	> li {
+		// FIXME: should we only limit to thumbnail?
+		img {
+			width: 100%;
+		}
+
 		a:link,
 		a:visited,
 		a:hover,

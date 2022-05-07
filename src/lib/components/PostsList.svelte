@@ -8,15 +8,18 @@
 <script lang="ts">
 	import PostThumbnail from './PostThumbnail.svelte';
 	import TimeSpent from './TimeSpent.svelte';
+
 	export let posts: PostMetadata[];
 </script>
 
-{#each posts as post}
-	<ul class="postslist">
+<ul class="postslist">
+	{#each posts as post}
 		<li>
 			<a href={postLink(post)}>
 				<h1>
-					{post.title}<sup><TimeSpent time={post.time} /></sup>
+					{post.title}<sup>
+						<TimeSpent time={post.time} />
+					</sup>
 				</h1>
 			</a>
 			<h2>{dayjs.utc(post.date).format('MMMM D, YYYY')}</h2>
@@ -32,5 +35,5 @@
 				<h2>Tagged: <span>Know-how</span></h2>
 			{/if}
 		</li>
-	</ul>
-{/each}
+	{/each}
+</ul>

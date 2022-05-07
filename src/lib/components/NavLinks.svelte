@@ -7,8 +7,8 @@
 </script>
 
 {#if previous || next}
-<nav class="paging" aria-label="Pagination Navigation">
-	{#if previous}<a href={postLink(previous)}>&larr; Earlier</a>{/if}
-	{#if next}<a href={postLink(next)}>Later &rarr;</a>{/if}
-</nav>
+	<nav class="paging" aria-label="Pagination Navigation">
+		{#if previous}<a href={postLink(previous)}>&larr; Earlier</a>{/if}
+		{#if next}<a href={postLink(next)}>Later &rarr;</a>{/if}
+	</nav>
 {/if}

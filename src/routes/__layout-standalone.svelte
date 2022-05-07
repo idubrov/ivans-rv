@@ -4,10 +4,10 @@
 </script>
 
 <script>
-	import Gallery from "$lib/components/Gallery.svelte";
-	import {writable} from "svelte/store";
-	import {galleryKey, assetsKey} from "$lib/types";
-	import {getContext, setContext} from "svelte";
+	import Gallery from '$lib/components/Gallery.svelte';
+	import { writable } from 'svelte/store';
+	import { galleryKey, assetsKey } from '$lib/types';
+	import { getContext, setContext } from 'svelte';
 
 	export let title;
 	export let format;
@@ -37,6 +37,6 @@
 		<section>
 			<slot />
 		</section>
-		<Gallery assets={assets} bind:opener={$opener} />
+		<Gallery {assets} bind:opener={$opener} />
 	</article>
 {/if}

@@ -56,7 +56,7 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 		} else {
 			return {
 				...asset,
-				url: `${url}${query}`,
+				url: `${url}${query}`
 			};
 		}
 	}
