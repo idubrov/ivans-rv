@@ -28,7 +28,11 @@
 	export let recent;
 </script>
 
-<header>Ivan's RV-7</header>
+<svelte:head>
+	<title>Ivan's RV-7</title>
+</svelte:head>
+
+<header class="main">Ivan's RV-7</header>
 <main>
 	<slot />
 </main>

@@ -38,8 +38,9 @@
 		}
 	});
 	setContext(galleryKey, opener);
+	const { component, ...metadata } = current;
 </script>
 
-<svelte:component this={current.component} />
+<svelte:component this={current.component} {...metadata} />
 <Gallery assets={current.assets} bind:opener={$opener} />
 <NavLinks {previous} {next} />

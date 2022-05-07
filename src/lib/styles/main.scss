@@ -26,7 +26,6 @@ body {
 		'footer footer';
 }
 
-
 // Extra large screens TV
 #app {
 	max-width: 900px;
@@ -60,7 +59,7 @@ body {
 
 // Components
 // Header
-header {
+header.main {
 	grid-area: header;
 	color: #393939;
 	font-weight: 400;
@@ -102,6 +101,7 @@ nav.menubar {
 // Side menu
 nav.sidemenu {
 	margin-top: 36px;
+	margin-bottom: 36px;
 	grid-area: sidebar;
 
 	ul {
@@ -127,7 +127,7 @@ nav.sidemenu {
 			}
 		}
 
-		> li#Tags > ul > li > a {
+		> li.tags > ul > li > a {
 			background-color: #f3f3f3;
 			border-radius: 2px;
 			padding: 3px 8px;
@@ -168,6 +168,12 @@ nav.sidemenu {
 		float: left;
 		margin-right: 8px;
 	}
+	a > img.timer {
+		float: none;
+		margin-right: 0;
+		vertical-align: middle;
+		padding-bottom: 3px;
+	}
 }
 
 section[role='search'] {
@@ -179,7 +185,7 @@ section[role='search'] {
 	margin-bottom: 16px;
 }
 
-section#follow {
+section.follow {
 	overflow: hidden;
 	img {
 		margin-right: 16px;
@@ -207,11 +213,46 @@ main {
 	grid-area: main;
 }
 
-section#Post {
+article.markdown {
 	border: #f3f3f3 solid 2px;
 	margin-bottom: 32px;
 	padding: 18px 20px;
 
+	> h1 {
+		cursor: default;
+		border-bottom: #f3f3f3 solid 2px;
+		text-transform: capitalize;
+		color: #393939;
+		font-weight: 400;
+		font-size: 20px;
+		padding-bottom: 14px;
+
+		> sup {
+			color: #60beae;
+			font-weight: 300;
+			font-size: 14px;
+
+			> img {
+				float: none;
+				margin-left: 12px;
+				margin-right: 0;
+				vertical-align: middle;
+				padding-bottom: 3px;
+			}
+		}
+	}
+
+	> h2 {
+		text-transform: uppercase;
+		color: #9d9d9d;
+		font-size: 13px;
+		font-weight: 500;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+}
+
+article.markdown > section {
 	li {
 		margin-left: 24px;
 	}
@@ -224,16 +265,6 @@ section#Post {
 		padding-top: 14px;
 		line-height: 18px;
 		text-align: justify;
-	}
-
-	> h1 {
-		cursor: default;
-		border-bottom: #f3f3f3 solid 2px;
-		text-transform: capitalize;
-		color: #393939;
-		font-weight: 400;
-		font-size: 20px;
-		padding-bottom: 14px;
 	}
 
 	a {
@@ -263,7 +294,8 @@ section#Post {
 	}
 
 	// Tables
-	table, tr {
+	table,
+	tr {
 		border: 1px solid #f3f3f3;
 		border-left: none;
 		border-right: none;
@@ -284,13 +316,14 @@ section#Post {
 			font-weight: 300;
 		}
 
-		thead > tr > th, tbody > tr > td {
+		thead > tr > th,
+		tbody > tr > td {
 			padding: 4px 12px;
 		}
 	}
 }
 
-section#Paging {
+section.paging {
 	text-align: center;
 	margin-top: 24px;
 	margin-bottom: 24px;
@@ -320,11 +353,6 @@ section#Paging {
 		text-decoration: none;
 	}
 }
-
-
-
-
-
 
 // FIXME: should only be for categories?..
 ul.postslist {
@@ -358,6 +386,20 @@ ul.postslist {
 			font-weight: 400;
 			font-size: 20px;
 			padding-bottom: 14px;
+
+			> sup {
+				color: #60beae;
+				font-weight: 300;
+				font-size: 14px;
+
+				> img {
+					float: none;
+					margin-left: 12px;
+					margin-right: 0px;
+					vertical-align: middle;
+					padding-bottom: 3px;
+				}
+			}
 		}
 
 		h2 {
@@ -388,9 +430,4 @@ ul.postslist {
 			padding-bottom: 14px;
 		}
 	}
-}
-
-// Article images always go vertical
-article.markdown img {
-	display: block;
 }

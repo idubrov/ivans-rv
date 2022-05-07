@@ -9,6 +9,10 @@ export const CATEGORIES: Category[] = [
 	{
 		code: 'practice-kit',
 		description: 'Practice Kit'
+	},
+	{
+		code: 'side-project',
+		description: 'Side Projects'
 	}
 ];
 

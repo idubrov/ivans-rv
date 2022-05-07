@@ -11,17 +11,18 @@
 <svelte:head>
 	{#if format !== 'summary'}
 		<title>{title}</title>
-	{:else}
-		<title>Ivan's RV-7</title>
 	{/if}
 </svelte:head>
 
 {#if format === 'summary'}
 	<slot />
 {:else}
-	<section id = 'Post'>
-		<!-- Full page specific stuff -->
-		<h1>{title}</h1>
-		<slot />
-	</section>	
+	<article class="markdown">
+		<h1>
+			{title}
+		</h1>
+		<section>
+			<slot />
+		</section>
+	</article>
 {/if}

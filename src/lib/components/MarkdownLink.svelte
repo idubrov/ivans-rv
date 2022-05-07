@@ -22,7 +22,7 @@
 		if (crossLink) {
 			href = crossLink;
 		} else {
-			target = target ?? "_blank";
+			target = target ?? '_blank';
 		}
 	}
 

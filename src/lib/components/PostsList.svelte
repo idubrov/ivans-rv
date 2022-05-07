@@ -7,6 +7,7 @@
 
 <script lang="ts">
 	import PostThumbnail from './PostThumbnail.svelte';
+	import TimeSpent from './TimeSpent.svelte';
 	export let posts: PostMetadata[];
 </script>
 
@@ -14,7 +15,9 @@
 	<ul class="postslist">
 		<li>
 			<a href={postLink(post)}>
-				<h1>{post.title}</h1>
+				<h1>
+					{post.title}<sup><TimeSpent time={post.time} /></sup>
+				</h1>
 				<h2>{dayjs.utc(post.date).format('MMMM D, YYYY')}</h2>
 			</a>
 			<PostThumbnail {post} />

@@ -6,7 +6,7 @@
 	export let next: PostMetadata;
 </script>
 
-<section id = 'Paging'>
+<nav class="paging" aria-label="Pagination Navigation">
 	{#if previous}<a href={postLink(previous)}>&larr; Earlier</a>{/if}
 	{#if next}<a href={postLink(next)}>Later &rarr;</a>{/if}
-</section>
+</nav>

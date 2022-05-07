@@ -7,6 +7,8 @@
 <script lang="ts">
 	import type { CategoryInfo, PostMetadata } from '$lib/types';
 	import PostThumbnail from './PostThumbnail.svelte';
+	import TimeSpent from './TimeSpent.svelte';
+
 	export let categories: CategoryInfo[];
 	export let recent: PostMetadata[];
 </script>
@@ -15,7 +17,7 @@
 	{#if dev}
 		<section role="search">Search &#x1F50D;</section>
 	{/if}
-	<section id="follow">
+	<section class="follow">
 		<a target="_blank" href="https://t.me/ivans_rv"
 			><img
 				src="/icons8-telegram.svg"
@@ -51,7 +53,9 @@
 				{#each categories as category}
 					<li>
 						<a href="/category/{category.code}"
-							>{category.description} ({category.totalLogs} posts)</a
+							>{category.description} ({category.totalLogs} posts, <TimeSpent
+								time={category.totalTime}
+							/>)</a
 						>
 					</li>
 				{/each}
@@ -66,10 +70,11 @@
 		</li>
 		{#if dev}
 			<!-- FIXME -->
-			<li id = 'Tags'>
+			<li class="tags">
 				<span>Tags</span>
 				<ul>
-					<li><a href="/workbenches">Tag1</a>
+					<li>
+						<a href="/workbenches">Tag1</a>
 						<a href="/workbenches">Tag2</a>
 						<a href="/workbenches">Tag3</a>
 					</li>
