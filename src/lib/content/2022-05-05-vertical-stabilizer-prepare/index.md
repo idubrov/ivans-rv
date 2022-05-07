@@ -2,6 +2,7 @@
 title: 'Deburring vertical stabilizer parts'
 categories: ['empennage']
 time: 4
+tags: ['preparing']
 ---
 
 The next goal was to countersink the doubler, deburr all of the holes, and clean up before priming.

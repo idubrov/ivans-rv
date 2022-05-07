@@ -2,6 +2,7 @@
 title: 'Vertical stabilizer skeleton'
 categories: ['empennage']
 time: 3
+tags: ['skeleton']
 ---
 
 So I started working on a vertical stabilizer!

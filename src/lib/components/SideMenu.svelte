@@ -10,6 +10,7 @@
 	import TimeSpent from './TimeSpent.svelte';
 
 	export let categories: CategoryInfo[];
+	export let tags: string[];
 	export let recent: PostMetadata[];
 </script>
 
@@ -73,11 +74,11 @@
 			<li class="tags">
 				<span>Tags</span>
 				<ul>
-					<li>
-						<a href="/workbenches">Tag1</a>
-						<a href="/workbenches">Tag2</a>
-						<a href="/workbenches">Tag3</a>
-					</li>
+					{#each tags as tag}
+						<li>
+							<a href="/tag/{tag}">{tag}</a>
+						</li>
+					{/each}
 				</ul>
 			</li>
 			<li>

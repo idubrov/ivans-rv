@@ -2,6 +2,7 @@
 title: 'Drilling and assembling with clecos'
 categories: ['practice-kit']
 time: 1
+tags: ['skeleton']
 ---
 
 Drilling at assembling control surface with clecos.

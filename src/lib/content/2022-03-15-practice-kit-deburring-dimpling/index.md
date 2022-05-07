@@ -1,7 +1,7 @@
 ---
 title: 'Deburring, dimpling and countersinking'
 categories: ['practice-kit']
-tags: ['mistakes']
+tags: ['mistakes', 'preparing']
 time: 1.5
 ---
 

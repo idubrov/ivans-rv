@@ -2,6 +2,7 @@
 title: 'Empennage inventory'
 categories: ['empennage']
 time: 3
+tags: ['inventory']
 ---
 
 Finally! Got my empennage kit today. Time to do some inventory!

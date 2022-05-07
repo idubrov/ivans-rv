@@ -1,18 +1,20 @@
 <script context="module">
 	import dayjs from 'dayjs';
 	import utc from 'dayjs/plugin/utc.js';
-	import { aggregateCategories } from '$lib/categories';
+	import { aggregateCategories, aggregateTags } from '$lib/blog';
 	import { getAllPosts } from '$lib/blog';
 
 	dayjs.extend(utc);
 
 	export const load = async () => {
 		const categories = await aggregateCategories();
+		const tags = await aggregateTags();
 		const posts = await getAllPosts();
 		return {
 			props: {
 				categories,
-				recent: [...posts].reverse().slice(0, 2)
+				tags,
+				recent: [...posts].reverse().slice(0, 5)
 			}
 		};
 	};
@@ -26,6 +28,7 @@
 
 	export let categories;
 	export let recent;
+	export let tags;
 </script>
 
 <svelte:head>
@@ -37,4 +40,4 @@
 	<slot />
 </main>
 <MainMenu />
-<SideMenu {categories} {recent} />
+<SideMenu {categories} {tags} {recent} />

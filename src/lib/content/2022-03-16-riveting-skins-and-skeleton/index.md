@@ -1,7 +1,7 @@
 ---
 title: 'Backriveting stiffeners and riveting skeleton'
 categories: ['practice-kit']
-tags: ['mistakes']
+tags: ['mistakes', 'riveting']
 time: 2
 ---
 

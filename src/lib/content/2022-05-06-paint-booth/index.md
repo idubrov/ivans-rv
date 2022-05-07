@@ -2,6 +2,7 @@
 title: 'Building a paint booth'
 categories: ['side-project']
 time: 2
+tags: ['painting']
 ---
 
 Since I will need to prime all of the parts, I built a paint booth.

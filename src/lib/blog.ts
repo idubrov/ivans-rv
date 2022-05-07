@@ -1,4 +1,4 @@
-import type { CurrentPost, PostMetadata } from './types';
+import type { CurrentPost, PostMetadata, Category, CategoryInfo } from './types';
 import { dev } from '$app/env';
 
 const PATH_REGEXP =
@@ -26,6 +26,7 @@ async function createPost(
 		date: postDate,
 		slug,
 		categories: module.metadata.categories || [],
+		tags: module.metadata.tags || [],
 		time: module.metadata.time ?? 0,
 		title: module.metadata.title,
 		assets: module.assets,
@@ -75,6 +76,10 @@ export async function getPostsByCategory(category: string): Promise<PostMetadata
 	return (await ENTRIES).filter((entry) => entry.categories.includes(category));
 }
 
+export async function getPostsByTag(tag: string): Promise<PostMetadata[]> {
+	return (await ENTRIES).filter((entry) => entry.tags.includes(tag));
+}
+
 export async function getPost(key: string): Promise<PostMetadata | undefined> {
 	const posts = await ENTRIES;
 	return posts.find((post) => post.key === key);
@@ -91,4 +96,40 @@ export async function getPostAndSiblings(key: string): Promise<CurrentPost | und
 		current: posts[pos],
 		next: pos < posts.length - 1 ? posts[pos + 1] : undefined
 	};
+}
+
+export const CATEGORIES: Category[] = [
+	{
+		code: 'empennage',
+		description: 'Empennage'
+	},
+	{
+		code: 'practice-kit',
+		description: 'Practice Kit'
+	},
+	{
+		code: 'side-project',
+		description: 'Side Projects'
+	}
+];
+
+export async function aggregateCategories(): Promise<CategoryInfo[]> {
+	const posts = await getAllPosts();
+	return (
+		CATEGORIES.map((template) => {
+			const categoryPosts = posts.filter((entry) => entry.categories.includes(template.code));
+			return {
+				...template,
+				totalTime: categoryPosts.map((post) => post.time).reduce((a, b) => a + b, 0),
+				totalLogs: categoryPosts.length
+			};
+		})
+			// Skip empty categories
+			.filter((category) => category.totalLogs > 0)
+	);
+}
+
+export async function aggregateTags(): Promise<string[]> {
+	const posts = await getAllPosts();
+	return [...new Set(posts.flatMap((post) => post.tags))].sort();
 }

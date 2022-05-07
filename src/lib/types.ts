@@ -12,6 +12,7 @@ export interface PostMetadata extends PostRef {
 	title: string;
 	assets: Record<string, Asset>;
 	categories: string[];
+	tags: string[];
 	component: SvelteComponent;
 	time: number;
 }
