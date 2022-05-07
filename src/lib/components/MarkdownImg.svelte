@@ -21,7 +21,7 @@
 			e.preventDefault();
 		}
 	}
-	$: effectiveStyle = asset.style || style ? (asset.style ? `${asset.style} ${style}` : style) : '';
+	$: effectiveStyle = `${asset.style ?? ""} ${style ?? ""}`.trim();
 </script>
 
 {#if origAsset && galleryStore}

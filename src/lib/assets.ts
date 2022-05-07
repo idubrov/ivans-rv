@@ -51,7 +51,7 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 			return {
 				...asset,
 				url: `${url}?nf_resize=${parsed.nf_resize}&w=${w * 2}&h=${h * 2}`,
-				style: `width: ${w}px; height: ${h}px`
+				style: `max-width: ${w}px; max-height: ${h}px`
 			};
 		} else {
 			return {
@@ -79,10 +79,10 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 		case 'smartcrop': {
 			let style = 'object-fit: cover;';
 			if (typeof parsed.w === 'string') {
-				style += ` width: ${parsed.w}px;`;
+				style += ` max-width: ${parsed.w}px;`;
 			}
 			if (typeof parsed.h === 'string') {
-				style += ` height: ${parsed.h}px;`;
+				style += ` max-height: ${parsed.h}px;`;
 			}
 			return {
 				...asset,

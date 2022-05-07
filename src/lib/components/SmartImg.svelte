@@ -10,8 +10,7 @@
 		url: src,
 		alt
 	});
-	$: effectiveStyle =
-		asset.style || style ? (asset.style ? `${asset.style} ${style}` : style) : '';
+    $: effectiveStyle = `${asset.style ?? ""} ${style ?? ""}`.trim();
 </script>
 
 <img src={asset.url} alt={asset.alt} style={effectiveStyle} />
