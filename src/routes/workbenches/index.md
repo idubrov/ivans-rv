@@ -28,14 +28,14 @@ I did not add any casters or any other modifications (yet). Will see how it goes
 
 The first two tables I primed and painted (I had nothing better to do, I guess). I put "air station" on the first one (filter-regulator-lubricator, plus manifold):
 
-![](2-first-table-air-station.jpeg?nf_resize=fit&w=480&h=360)
+![](2-first-table-air-station.jpeg)
 
 The second table I used for my 8x12 bench lathe and X2 mill. Not that I need them (could be useful for making small fixtures, though), but I gave away their dedicated workbenches when we moved. I just don't want them to rot and rust in the corner. In fact, I even did a [small side project](5-side-project.jpeg) while I was waiting for my RV-7 parts!
 
-![](3-second-table-machines.jpeg?nf_resize=fit&w=480&h=360)
+![](3-second-table-machines.jpeg)
 
 The second two tables I only covered with [water-based polyurethane](./4-polyurethane.jpeg). They don't have any specific purpose, I intend to re-arrange them as needed during the build.
 
-![](1-second-two-tables.jpeg?nf_resize=fit&w=480&h=360)
+![](1-second-two-tables.jpeg)
 
 I haven't put [DRDT-2](http://experimentalaero.com/products/DRDT-2/DRDT-2.html) dimpler on them nor the backriveting plate. I don't want to permanently modify them just yet, to keep them flexible. For DRDT-2 I am considering "hanging" it between two tables on some sort of a fixture so DRDT-2 throat is at the same height as the tables. Not sure what my plan for backriveting plate is. Might inlay it into the table in the end.

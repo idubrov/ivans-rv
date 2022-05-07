@@ -20,4 +20,4 @@ Sometimes head does not snap fully off (usually, this happened when the hole sta
 
 In a short time, it was all back to a pile of parts:
 
-![](2-pile-of-parts.jpeg)
+![](0-pile-of-parts.jpeg)
