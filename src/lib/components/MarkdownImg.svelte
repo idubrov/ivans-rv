@@ -12,18 +12,20 @@
 	export let alt: string | undefined = undefined;
 
 	const origAsset = resolveAsset(src);
-	const asset = prepareAsset(origAsset ?? { url: src });
+	const asset = prepareAsset(origAsset ?? { url: src }, '?nf_resize=fit&w=480&h=360');
 	const galleryStore: Readable<GalleryOpener> = getContext(galleryKey);
 	function openGallery() {
 		get(galleryStore).openAsset(asset);
 	}
 	const galleryImage = origAsset && galleryStore;
+	const effectiveStyle =
+			asset.style || style ? (asset.style ? `${asset.style} ${style}` : style) : '';
 </script>
 
 {#if galleryImage}
 	<a href={asset.url} on:click|preventDefault={openGallery}>
-		<img src={asset.url} alt={alt ?? asset.alt} style="{asset.style} {style}" />
+		<img src={asset.url} alt={alt ?? asset.alt} style={effectiveStyle} />
 	</a>
 {:else}
-	<img src={asset.url} alt={alt ?? asset.alt} style="{asset.style} {style}" />
+	<img src={asset.url} alt={alt ?? asset.alt} style={effectiveStyle} />
 {/if}

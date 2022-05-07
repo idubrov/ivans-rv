@@ -18,9 +18,11 @@
 				<h1>
 					{post.title}<sup><TimeSpent time={post.time} /></sup>
 				</h1>
-				<h2>{dayjs.utc(post.date).format('MMMM D, YYYY')}</h2>
 			</a>
-			<PostThumbnail {post} />
+			<h2>{dayjs.utc(post.date).format('MMMM D, YYYY')}</h2>
+			<a href={postLink(post)}>
+				<PostThumbnail {post} />
+			</a>
 			<svelte:component this={post.component} format="summary" />
 			<a href={postLink(post)}>
 				<h3>Continue reading &rarr;</h3>

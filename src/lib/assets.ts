@@ -13,8 +13,7 @@ export function resolveAsset(src: string): Asset | undefined {
 
 	const pos = src.indexOf('?');
 	const startPos = src.startsWith('./') ? 2 : 0;
-	// FIXME: don't default here...
-	const query = pos !== -1 ? src.slice(pos) : '?nf_resize=fit&w=480&h=360';
+	const query = pos !== -1 ? src.slice(pos) : '';
 	const asset = pos != -1 ? assets[src.slice(startPos, pos)] : assets[src.slice(startPos)];
 	if (asset) {
 		return {
@@ -25,7 +24,7 @@ export function resolveAsset(src: string): Asset | undefined {
 }
 
 /**
- * Generates inline style to simulate Netlify transformation API. Only used during local development.
+ * Prepares asset for rendering. Generates query and inline style to make it fit
  * @param asset
  * @param default_query
  */
@@ -33,6 +32,7 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 	const isRemote = asset.url.startsWith('http://') || asset.url.startsWith('https://');
 
 	const pos = asset.url.indexOf('?');
+	const url = pos !== -1 ? asset.url.slice(0, pos) : asset.url;
 	const query = pos !== -1 ? asset.url.slice(pos) : default_query;
 	const parsed = queryString.parse(query);
 
@@ -47,14 +47,17 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 	if (isNetlify()) {
 		if (smallResolutionImage) {
 			// 2x scale the image
-			const url = pos !== -1 ? asset.url.slice(0, pos) : asset.url;
+
 			return {
 				...asset,
 				url: `${url}?nf_resize=${parsed.nf_resize}&w=${w * 2}&h=${h * 2}`,
 				style: `width: ${w}px; height: ${h}px`
 			};
 		} else {
-			return asset;
+			return {
+				...asset,
+				url: `${url}${query}`,
+			};
 		}
 	}
 

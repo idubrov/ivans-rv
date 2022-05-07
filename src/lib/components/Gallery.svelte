@@ -6,16 +6,20 @@
 </script>
 
 <script lang="ts">
-	import type { Assets, Asset } from '$lib/types';
+	import type {Assets, Asset, PreparedAsset} from '$lib/types';
 	import { prepareAsset } from '$lib/assets';
 	import { onMount } from 'svelte';
 
 	export let assets: Assets = {};
 
-	const orderedAssets = [...Object.keys(assets)]
+	type GalleryAsset = PreparedAsset & { downloadUrl: string };
+	const orderedAssets: GalleryAsset[] = [...Object.keys(assets)]
 		.sort()
 		.map((name) => assets[name])
-		.map((asset) => prepareAsset(asset, '?nf_resize=smartcrop&w=90&h=90'));
+		.map((asset) => ({
+			...prepareAsset(asset, '?nf_resize=smartcrop&w=90&h=90'),
+			downloadUrl: asset.url,
+		}));
 
 	export let opener;
 	let element: any;
@@ -41,7 +45,7 @@
 
 <section bind:this={element} class="gallery">
 	{#each orderedAssets as asset, index}
-		<a href="{asset.url}?nf_resize=fit&w=1008&h=1008" target="_blank" data-download-url={asset.url}>
+		<a href="{asset.url}?nf_resize=fit&w=1008&h=1008" target="_blank" data-download-url={asset.downloadUrl}>
 			<img src={asset.url} alt={asset.alt} style={asset.style} />
 		</a>
 	{/each}
