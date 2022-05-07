@@ -10,6 +10,8 @@
 		url: src,
 		alt
 	});
+	const effectiveStyle =
+		asset.style || style ? (asset.style ? `${asset.style} ${style}` : style) : '';
 </script>
 
-<img src={asset.url} alt={asset.alt} style="{asset.style} {style}" />
+<img src={asset.url} alt={asset.alt} style={effectiveStyle} />
