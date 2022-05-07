@@ -12,8 +12,7 @@
 
 	export let assets: Assets = {};
 
-	type GalleryAsset = PreparedAsset & { downloadUrl: string };
-	const orderedAssets: GalleryAsset[] = [...Object.keys(assets)]
+	$: orderedAssets = [...Object.keys(assets)]
 		.sort()
 		.map((name) => assets[name])
 		.map((asset) => ({

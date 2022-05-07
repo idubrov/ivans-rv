@@ -16,7 +16,7 @@
 
 	// This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
 	if (asset) {
-		href = asset.url;
+		href = `${asset.url}?nf_resize=fit&w=480&h=360`;
 	} else {
 		const crossLink = resolveCrossLink(href);
 		if (crossLink) {
