@@ -6,7 +6,7 @@ const PATH_REGEXP =
 
 async function createPost(
 	path: string,
-	resolver: () => Record<string, any>
+	resolver: () => Promise<Record<string, any>>
 ): Promise<PostMetadata | undefined> {
 	const matcher = path.match(PATH_REGEXP);
 	if (!matcher) {

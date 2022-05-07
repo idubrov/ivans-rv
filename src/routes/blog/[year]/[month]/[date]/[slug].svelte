@@ -26,11 +26,11 @@
 	import { setContext } from 'svelte';
 	import { writable } from 'svelte/store';
 	import { galleryKey } from '$lib/types';
-	import type { GalleryOpener } from '$lib/types';
+	import type { GalleryOpener, PostMetadata } from '$lib/types';
 
-	export let previous;
-	export let current;
-	export let next;
+	export let previous: PostMetadata;
+	export let current: PostMetadata;
+	export let next: PostMetadata;
 
 	const opener = writable<GalleryOpener>({
 		openAsset() {

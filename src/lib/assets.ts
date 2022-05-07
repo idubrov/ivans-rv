@@ -7,7 +7,7 @@ export function isNetlify(): boolean {
 	return import.meta.env.VITE_NETLIFY === 'true';
 }
 
-export function resolveAsset(src: string): Asset {
+export function resolveAsset(src: string): Asset | undefined {
 	// Load assets from the context
 	const assets: Record<string, Asset> = getContext(assetsKey) ?? {};
 
@@ -20,10 +20,6 @@ export function resolveAsset(src: string): Asset {
 		return {
 			url: `${asset.url}${query}`,
 			alt: asset.alt
-		};
-	} else {
-		return {
-			url: src
 		};
 	}
 }

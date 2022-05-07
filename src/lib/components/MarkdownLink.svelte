@@ -23,7 +23,9 @@
 	const galleryStore: Readable<GalleryOpener> = getContext(galleryKey);
 
 	function openGallery() {
-		get(galleryStore).openAsset(asset);
+		if (asset) {
+			get(galleryStore).openAsset(asset);
+		}
 	}
 	const galleryImage = asset && galleryStore;
 </script>

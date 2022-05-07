@@ -1,8 +1,8 @@
 <script context="module" lang="ts">
 	import 'lightgallery/css/lightgallery.css';
 	import 'lightgallery/css/lg-thumbnail.css';
-	import lightGallery from 'lightgallery/lightgallery.es5';
-	import lgThumbnail from 'lightgallery/plugins/thumbnail/lg-thumbnail.es5';
+	import lightGallery from 'lightgallery';
+	import lgThumbnail from '../../../node_modules/lightgallery/plugins/thumbnail';
 </script>
 
 <script lang="ts">
@@ -28,7 +28,9 @@
 		});
 		opener = {
 			openAsset(asset: Asset) {
-				const item = gallery.galleryItems.findIndex((el: number) => el.downloadUrl === asset.url);
+				const pos = asset.url.indexOf('?');
+				const assetUrl = pos !== -1 ? asset.url.slice(0, pos) : asset.url;
+				const item = gallery.galleryItems.findIndex((el) => el.downloadUrl === assetUrl);
 				if (item !== -1) {
 					gallery.openGallery(item);
 				}

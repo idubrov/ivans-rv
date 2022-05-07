@@ -11,12 +11,13 @@
 	export let style: string | undefined = undefined;
 	export let alt: string | undefined = undefined;
 
-	const asset = prepareAsset(resolveAsset(src));
+	const origAsset = resolveAsset(src);
+	const asset = prepareAsset(origAsset ?? { url: src });
 	const galleryStore: Readable<GalleryOpener> = getContext(galleryKey);
 	function openGallery() {
 		get(galleryStore).openAsset(asset);
 	}
-	const galleryImage = asset && galleryStore;
+	const galleryImage = origAsset && galleryStore;
 </script>
 
 {#if galleryImage}

@@ -5,10 +5,10 @@
 </script>
 
 <script lang="ts">
-	import type { CategoryInfo } from '$lib/types';
+	import type { CategoryInfo, PostMetadata } from '$lib/types';
 	import PostThumbnail from './PostThumbnail.svelte';
 	export let categories: CategoryInfo[];
-	export let recent;
+	export let recent: PostMetadata[];
 </script>
 
 <nav class="sidemenu">

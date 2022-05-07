@@ -2,8 +2,9 @@
 	import { getPostsByCategory } from '$lib/blog';
 	import PostsList from '$lib/components/PostsList.svelte';
 	import type { PostMetadata } from '$lib/types';
+	import type {Load} from "@sveltejs/kit";
 
-	export const load = async ({ params }) => {
+	export const load: Load = async ({ params }) => {
 		const posts = await getPostsByCategory(params.category);
 		return {
 			props: {
