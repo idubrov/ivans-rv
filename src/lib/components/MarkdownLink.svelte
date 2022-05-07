@@ -39,7 +39,7 @@
 </script>
 
 {#if asset && galleryStore}
-	<a {href} {rel} on:click={openGallery}>
+	<a {href} {rel} on:click={openGallery} target="_blank">
 		<slot />
 	</a>
 {:else}

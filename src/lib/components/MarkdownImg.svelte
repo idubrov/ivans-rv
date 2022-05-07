@@ -25,7 +25,7 @@
 </script>
 
 {#if origAsset && galleryStore}
-	<a href={asset.url} on:click={openGallery}>
+	<a href={asset.url} on:click={openGallery} target="_blank">
 		<img src={asset.url} alt={alt ?? asset.alt} style={effectiveStyle} />
 	</a>
 {:else}
