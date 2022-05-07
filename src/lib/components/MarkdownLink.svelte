@@ -3,13 +3,14 @@
 	import type { Readable } from 'svelte/store';
 	import type { GalleryOpener } from '$lib/types';
 	import { resolveAsset } from '$lib/assets';
-	import { resolveRelativeLink } from '$lib/navigation';
+	import { resolveCrossLink } from '$lib/navigation';
 	import { get } from 'svelte/store';
 	import { galleryKey } from '$lib/types';
 	import { getContext } from 'svelte';
 
 	export let href: string;
 	export let rel: string | undefined = undefined;
+	export let target: string | undefined = undefined;
 
 	const asset = resolveAsset(href);
 
@@ -17,7 +18,12 @@
 	if (asset) {
 		href = asset.url;
 	} else {
-		href = resolveRelativeLink(href);
+		const crossLink = resolveCrossLink(href);
+		if (crossLink) {
+			href = crossLink;
+		} else {
+			target = target ?? "_blank";
+		}
 	}
 
 	const galleryStore: Readable<GalleryOpener> = getContext(galleryKey);
@@ -35,7 +41,7 @@
 		<slot />
 	</a>
 {:else}
-	<a {href} {rel}>
+	<a {href} {rel} {target}>
 		<slot />
 	</a>
 {/if}

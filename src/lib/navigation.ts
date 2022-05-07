@@ -13,7 +13,7 @@ const RELATIVE_POST_LINK =
 /**
  * Resolves relative links between markdown content to an absolute post links.
  */
-export function resolveRelativeLink(href: string): string {
+export function resolveCrossLink(href: string): string | undefined {
 	const matcher = href.match(RELATIVE_POST_LINK);
 	if (matcher) {
 		const year = parseInt(matcher.groups!.year, 10);
@@ -24,5 +24,4 @@ export function resolveRelativeLink(href: string): string {
 			slug: matcher.groups!.slug
 		});
 	}
-	return href;
 }
