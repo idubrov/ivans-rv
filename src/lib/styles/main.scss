@@ -212,7 +212,11 @@ section#Post {
 	margin-bottom: 32px;
 	padding: 18px 20px;
 
-	> p {
+	li {
+		margin-left: 24px;
+	}
+
+	p {
 		cursor: default;
 		color: #616161;
 		font-size: 13px;
@@ -257,6 +261,11 @@ section#Post {
 	img {
 		width: 100%;
 	}
+
+	// Tables
+
+
+
 }
 
 section#Paging {

@@ -17,7 +17,9 @@ In my [first attempt](../2022-03-10-practice-kit-lessons), I was drilling by han
 
 ![](0-okay-holes.jpeg)
 
-<Mistake /> Still, the last hole I countersinked got waaay too deep. Not sure what happened there. It seems like it chattered, maybe, I was running the tool too fast (~800 RPM).
+<Mistake />
+
+Still, the last hole I countersinked got waaay too deep. Not sure what happened there. It seems like it chattered, maybe, I was running the tool too fast (~800 RPM).
 
 ![](1-hole-too-large.jpeg)
 

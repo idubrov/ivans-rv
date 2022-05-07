@@ -30,7 +30,9 @@ Overall, it turned out to be fine. After fiddling with the edges, I was able to 
 ![](4-edges-seems-tight.jpeg)
 ![](6-edges-external.jpeg)
 
-<Mistake blunder /> This was also the moment of my biggest blunder in this project. Just 5 minutes to the end. After I drilled the holes, I realized that I used #40 drill instead of #30. I started re-drilling the holes, but the drill bit was grabbing because the size difference between #40 and #30 is relatively small (also, I used an electric drill since it was relatively late). It is embarrassing to admit, but somehow I got this brilliant idea that a finger is a good stop for a drill bit. Well, it sort of is. But I don't recommend it -- too much blood everywhere. And of course, it got inside the leading edge where it is hard to remove it... oh well, I'll keep it there as a reminder. The good thing is it is just a #30 hole in the fingertip.
+<Mistake blunder />
+
+This was also the moment of my biggest blunder in this project. Just 5 minutes to the end. After I drilled the holes, I realized that I used #40 drill instead of #30. I started re-drilling the holes, but the drill bit was grabbing because the size difference between #40 and #30 is relatively small (also, I used an electric drill since it was relatively late). It is embarrassing to admit, but somehow I got this brilliant idea that a finger is a good stop for a drill bit. Well, it sort of is. But I don't recommend it -- too much blood everywhere. And of course, it got inside the leading edge where it is hard to remove it... oh well, I'll keep it there as a reminder. The good thing is it is just a #30 hole in the fingertip.
 
 ...and that concludes my practice kit #2!
 
