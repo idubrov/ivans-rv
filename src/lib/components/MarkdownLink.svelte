@@ -16,8 +16,8 @@
 	$: {
 		asset = resolveAsset(href);
 		if (asset) {
-			// FIXME: we also default in prepareAsset
-			href = `${asset.url}?nf_resize=fit&w=480&h=480`;
+			// FIXME: we also default in MarkdownLink
+			href = `${asset.url}?nf_resize=fit&w=720&h=540`;
 		} else {
 			// This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
 			const crossLink = resolveCrossLink(href);

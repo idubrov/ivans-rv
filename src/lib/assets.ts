@@ -43,7 +43,7 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 	const w = dimension(parsed.w);
 	const h = dimension(parsed.h);
 	const smallResolutionImage =
-		isNetlify() && typeof w !== 'undefined' && w < 160 && typeof h !== 'undefined' && h < 160;
+		isNetlify() && typeof w !== 'undefined' && w < 1000 && typeof h !== 'undefined' && h < 1000;
 	if (isNetlify()) {
 		if (smallResolutionImage) {
 			// 2x scale the image

@@ -2,8 +2,8 @@
 	import type { PostMetadata } from '$lib/types';
 	import SmartImg from './SmartImg.svelte';
 	export let post: PostMetadata;
-	export let width = 480;
-	export let height = 360;
+	export let width = 720;
+	export let height = 540;
 
 	$: sorted = [...Object.keys(post.assets)].sort();
 	$: asset = post.assets[sorted[0]];
