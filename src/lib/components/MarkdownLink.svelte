@@ -30,15 +30,15 @@
 
 	let galleryStore: Readable<GalleryOpener>;
 	$: galleryStore = getContext(galleryKey);
-	function openGallery() {
-		if (asset) {
-			get(galleryStore).openAsset(asset);
+	function openGallery(e) {
+		if (asset && get(galleryStore).openAsset(asset)) {
+			e.preventDefault();
 		}
 	}
 </script>
 
 {#if asset && galleryStore}
-	<a {href} {rel} on:click|preventDefault={openGallery}>
+	<a {href} {rel} on:click={openGallery}>
 		<slot />
 	</a>
 {:else}

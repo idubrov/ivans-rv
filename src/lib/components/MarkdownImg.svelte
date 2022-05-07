@@ -16,14 +16,16 @@
 
 	let galleryStore: Readable<GalleryOpener>;
 	$: galleryStore = getContext(galleryKey);
-	function openGallery() {
-		get(galleryStore).openAsset(asset);
+	function openGallery(e) {
+		if (get(galleryStore).openAsset(asset)) {
+			e.preventDefault();
+		}
 	}
 	$: effectiveStyle = asset.style || style ? (asset.style ? `${asset.style} ${style}` : style) : '';
 </script>
 
 {#if origAsset && galleryStore}
-	<a href={asset.url} on:click|preventDefault={openGallery}>
+	<a href={asset.url} on:click={openGallery}>
 		<img src={asset.url} alt={alt ?? asset.alt} style={effectiveStyle} />
 	</a>
 {:else}

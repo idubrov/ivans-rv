@@ -48,7 +48,7 @@ export const galleryKey = Symbol('gallery');
  * Open given asset in the light gallery. Provided via readable store in the `galleryKey` context.
  */
 export interface GalleryOpener {
-	openAsset(asset: Asset): void;
+	openAsset(asset: Asset): boolean;
 }
 
 export interface PreparedAsset extends Asset {

@@ -6,13 +6,28 @@
 </script>
 
 <script>
-	import TimeSpent from '../lib/components/TimeSpent.svelte';
+	import TimeSpent from '$lib/components/TimeSpent.svelte';
+	import Gallery from '$lib/components/Gallery.svelte';
+	import NavLinks from "$lib/components/NavLinks.svelte";
+	import {writable} from "svelte/store";
+	import {galleryKey, assetsKey} from "$lib/types";
+	import {getContext, setContext} from "svelte";
 
 	export let title;
 	export let format;
 	export let date;
 	export let time;
 	export let key;
+	export let previous;
+	export let next;
+
+	const opener = writable({
+		openAsset() {
+			return false;
+		}
+	});
+	setContext(galleryKey, opener);
+	const assets = getContext(assetsKey) ?? {};
 </script>
 
 <svelte:head>
@@ -32,5 +47,7 @@
 		<section>
 			<slot />
 		</section>
+		<Gallery assets={assets} bind:opener={$opener} />
+		<NavLinks {previous} {next} />
 	</article>
 {/if}

@@ -4,8 +4,21 @@
 </script>
 
 <script>
+	import Gallery from "$lib/components/Gallery.svelte";
+	import {writable} from "svelte/store";
+	import {galleryKey, assetsKey} from "$lib/types";
+	import {getContext, setContext} from "svelte";
+
 	export let title;
 	export let format;
+
+	const opener = writable({
+		openAsset() {
+			return false;
+		}
+	});
+	setContext(galleryKey, opener);
+	const assets = getContext(assetsKey) ?? {};
 </script>
 
 <svelte:head>
@@ -24,5 +37,6 @@
 		<section>
 			<slot />
 		</section>
+		<Gallery assets={assets} bind:opener={$opener} />
 	</article>
 {/if}

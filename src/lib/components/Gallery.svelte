@@ -36,9 +36,11 @@
 				const item = gallery.galleryItems.findIndex((el) => el.downloadUrl === assetUrl);
 				if (item !== -1) {
 					gallery.openGallery(item);
+					return true;
 				} else {
 					const items = gallery.galleryItems.map(el => el.downloadUrl).join(", ");
 					console.warn(`Did not find asset '${assetUrl}', looked through [${items}]`);
+					return false;
 				}
 			}
 		};

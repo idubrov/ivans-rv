@@ -1,5 +1,6 @@
 ---
 title: 'Workbenches'
+layout: standalone
 ---
 
 I made four EAA workbenches total. They are pretty much as per [the original plans](https://www.eaa.org/eaa/aircraft-building/builderresources/while-youre-building/building-articles/tools-and-workshop/worktables), with the following small modifications:
