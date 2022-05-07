@@ -12,6 +12,7 @@
 	export let format;
 	export let date;
 	export let time;
+	export let key;
 </script>
 
 <svelte:head>
@@ -23,7 +24,7 @@
 {#if format === 'summary'}
 	<slot />
 {:else}
-	<article class="markdown">
+	<article id={key} class="markdown">
 		<h1>
 			{title}<sup><TimeSpent {time} /></sup>
 		</h1>

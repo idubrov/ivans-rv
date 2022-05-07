@@ -11,18 +11,18 @@
 	export let style: string | undefined = undefined;
 	export let alt: string | undefined = undefined;
 
-	const origAsset = resolveAsset(src);
-	const asset = prepareAsset(origAsset ?? { url: src }, '?nf_resize=fit&w=480&h=360');
-	const galleryStore: Readable<GalleryOpener> = getContext(galleryKey);
+	$: origAsset = resolveAsset(src);
+	$: asset = prepareAsset(origAsset ?? { url: src }, '?nf_resize=fit&w=480&h=360');
+
+	let galleryStore: Readable<GalleryOpener>;
+	$: galleryStore = getContext(galleryKey);
 	function openGallery() {
 		get(galleryStore).openAsset(asset);
 	}
-	const galleryImage = origAsset && galleryStore;
-	const effectiveStyle =
-			asset.style || style ? (asset.style ? `${asset.style} ${style}` : style) : '';
+	$: effectiveStyle = asset.style || style ? (asset.style ? `${asset.style} ${style}` : style) : '';
 </script>
 
-{#if galleryImage}
+{#if origAsset && galleryStore}
 	<a href={asset.url} on:click|preventDefault={openGallery}>
 		<img src={asset.url} alt={alt ?? asset.alt} style={effectiveStyle} />
 	</a>

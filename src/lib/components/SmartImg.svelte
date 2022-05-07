@@ -6,11 +6,11 @@
 	export let alt: string | undefined = undefined;
 	export let style = '';
 
-	const asset = prepareAsset({
+	$: asset = prepareAsset({
 		url: src,
 		alt
 	});
-	const effectiveStyle =
+	$: effectiveStyle =
 		asset.style || style ? (asset.style ? `${asset.style} ${style}` : style) : '';
 </script>
 

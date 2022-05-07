@@ -8,7 +8,7 @@
 <script lang="ts">
 	import type {Assets, Asset, PreparedAsset} from '$lib/types';
 	import { prepareAsset } from '$lib/assets';
-	import { onMount } from 'svelte';
+	import {afterUpdate} from 'svelte';
 
 	export let assets: Assets = {};
 
@@ -22,7 +22,7 @@
 
 	export let opener;
 	let element: any;
-	onMount(() => {
+	afterUpdate(() => {
 		const gallery = lightGallery(element, {
 			plugins: [lgThumbnail],
 			speed: 500,
@@ -36,6 +36,9 @@
 				const item = gallery.galleryItems.findIndex((el) => el.downloadUrl === assetUrl);
 				if (item !== -1) {
 					gallery.openGallery(item);
+				} else {
+					const items = gallery.galleryItems.map(el => el.downloadUrl).join(", ");
+					console.warn(`Did not find asset '${assetUrl}', looked through [${items}]`);
 				}
 			}
 		};
@@ -44,7 +47,7 @@
 
 <section bind:this={element} class="gallery">
 	{#each orderedAssets as asset, index}
-		<a href="{asset.url}?nf_resize=fit&w=1008&h=1008" target="_blank" data-download-url={asset.downloadUrl}>
+		<a href="{asset.downloadUrl}?nf_resize=fit&w=1008&h=1008" target="_blank" data-download-url={asset.downloadUrl}>
 			<img src={asset.url} alt={asset.alt} style={asset.style} />
 		</a>
 	{/each}

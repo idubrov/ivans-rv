@@ -1,7 +1,7 @@
 <!-- <a> component for Markdown generation: tries to resolve the link against page "assets" -->
 <script lang="ts">
 	import type { Readable } from 'svelte/store';
-	import type { GalleryOpener } from '$lib/types';
+	import type { GalleryOpener, Asset } from '$lib/types';
 	import { resolveAsset } from '$lib/assets';
 	import { resolveCrossLink } from '$lib/navigation';
 	import { get } from 'svelte/store';
@@ -12,31 +12,32 @@
 	export let rel: string | undefined = undefined;
 	export let target: string | undefined = undefined;
 
-	const asset = resolveAsset(href);
-
-	// This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
-	if (asset) {
-		href = `${asset.url}?nf_resize=fit&w=480&h=360`;
-	} else {
-		const crossLink = resolveCrossLink(href);
-		if (crossLink) {
-			href = crossLink;
+	let asset: Asset;
+	$: {
+		asset = resolveAsset(href);
+		if (asset) {
+			href = `${asset.url}?nf_resize=fit&w=480&h=360`;
 		} else {
-			target = target ?? '_blank';
+			// This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
+			const crossLink = resolveCrossLink(href);
+			if (crossLink) {
+				href = crossLink;
+			} else {
+				target = target ?? '_blank';
+			}
 		}
 	}
 
-	const galleryStore: Readable<GalleryOpener> = getContext(galleryKey);
-
+	let galleryStore: Readable<GalleryOpener>;
+	$: galleryStore = getContext(galleryKey);
 	function openGallery() {
 		if (asset) {
 			get(galleryStore).openAsset(asset);
 		}
 	}
-	const galleryImage = asset && galleryStore;
 </script>
 
-{#if galleryImage}
+{#if asset && galleryStore}
 	<a {href} {rel} on:click|preventDefault={openGallery}>
 		<slot />
 	</a>
