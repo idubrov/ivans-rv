@@ -263,9 +263,31 @@ section#Post {
 	}
 
 	// Tables
+	table, tr {
+		border: 1px solid #f3f3f3;
+		border-left: none;
+		border-right: none;
+		border-collapse: collapse;
+	}
 
+	table {
+		margin: 16px 0px;
+		cursor: default;
+		color: #616161;
+		font-size: 12px;
 
+		thead > tr > th {
+			font-weight: 500;
+		}
 
+		tbody > tr > td {
+			font-weight: 300;
+		}
+
+		thead > tr > th, tbody > tr > td {
+			padding: 4px 12px;
+		}
+	}
 }
 
 section#Paging {
