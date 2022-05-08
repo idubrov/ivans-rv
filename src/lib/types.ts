@@ -6,10 +6,12 @@ export interface PostRef {
 	slug: string;
 }
 
+// FIXME: ...
 export interface PostMetadata extends PostRef {
 	key: string;
 	draft: boolean;
 	title: string;
+	summary: string;
 	assets: Record<string, Asset>;
 	categories: string[];
 	tags: string[];

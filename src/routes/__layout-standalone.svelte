@@ -7,10 +7,11 @@
 	import Gallery from '$lib/components/Gallery.svelte';
 	import { writable } from 'svelte/store';
 	import { galleryKey, assetsKey } from '$lib/types';
-	import { getContext, setContext } from 'svelte';
+	import { setContext } from 'svelte';
 
 	export let title;
 	export let format;
+	export let assets;
 
 	const opener = writable({
 		openAsset() {
@@ -18,7 +19,7 @@
 		}
 	});
 	setContext(galleryKey, opener);
-	const assets = getContext(assetsKey) ?? {};
+	setContext(assetsKey, assets);
 </script>
 
 <svelte:head>

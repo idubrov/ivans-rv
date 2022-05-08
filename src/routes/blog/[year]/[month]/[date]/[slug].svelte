@@ -26,8 +26,6 @@
 	export let previous: PostMetadata;
 	export let current: PostMetadata;
 	export let next: PostMetadata;
-
-	const { component, ...metadata } = current;
 </script>
 
-<svelte:component this={current.component} {...metadata} {previous} {next} />
+<svelte:component this={current.component} {previous} {next} />

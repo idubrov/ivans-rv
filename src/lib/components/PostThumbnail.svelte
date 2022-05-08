@@ -7,10 +7,10 @@
 
 	$: sorted = [...Object.keys(post.assets)].sort();
 	$: asset = post.assets[sorted[0]];
-	$: url = `${asset.url}?nf_resize=smartcrop&w=${width}&h=${height}`;
-	$: alt = asset.alt;
+	$: url = asset && `${asset.url}?nf_resize=smartcrop&w=${width}&h=${height}`;
+	$: alt = asset && asset.alt;
 </script>
 
-{#if asset}
+{#if url}
 	<SmartImg src={url} {alt} />
 {/if}

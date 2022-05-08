@@ -11,7 +11,9 @@
 	import NavLinks from '$lib/components/NavLinks.svelte';
 	import { writable } from 'svelte/store';
 	import { galleryKey, assetsKey } from '$lib/types';
-	import { getContext, setContext } from 'svelte';
+	import { setContext } from 'svelte';
+	import { get } from 'svelte/store';
+	import { page } from '$app/stores';
 
 	export let title;
 	export let format;
@@ -20,6 +22,8 @@
 	export let key;
 	export let previous;
 	export let next;
+	export let summary;
+	export let assets;
 
 	const opener = writable({
 		openAsset() {
@@ -27,12 +31,25 @@
 		}
 	});
 	setContext(galleryKey, opener);
-	const assets = getContext(assetsKey) ?? {};
+	setContext(assetsKey, assets);
+
+	$: sorted = [...Object.keys(assets)].sort();
+	$: thumbnail = assets[sorted[0]];
+	$: image = thumbnail && new URL(thumbnail.url, get(page).url);
 </script>
 
 <svelte:head>
 	{#if format !== 'summary'}
 		<title>{title}</title>
+		<meta data-key="description" name="description" content="{summary}">
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={summary} />
+		{#if thumbnail}
+		<meta property="og:image" content="{image}?nf_resize=smartcrop&w=1440&h=1080" />
+		<meta property="og:image:width" content="1440" />
+		<meta property="og:image:height" content="1080" />
+		{/if}
 	{/if}
 </svelte:head>
 

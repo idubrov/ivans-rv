@@ -2,9 +2,10 @@
 	"name": "ivans-rv-sveltekit",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"package": "svelte-kit package",
+		"prebuild": "esbuild src/remark/importAssets.ts --outfile=./importAssets.js",
+		"dev": "npm run prebuild && svelte-kit dev",
+		"build": "npm run prebuild && svelte-kit build",
+		"package": "npm run prebuild && svelte-kit package",
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -16,13 +17,16 @@
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@types/js-yaml": "^4.0.5",
+		"@types/mdast": "^3.0.10",
 		"@typescript-eslint/eslint-plugin": "^5.10.1",
 		"@typescript-eslint/parser": "^5.10.1",
+		"dayjs": "^1.11.1",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
 		"js-yaml": "^4.1.0",
 		"lightgallery": "^2.4.0",
+		"mdast": "^3.0.0",
 		"mdsvex": "^0.10.5",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
@@ -37,8 +41,5 @@
 		"tslib": "^2.3.1",
 		"typescript": "~4.6.2"
 	},
-	"type": "module",
-	"dependencies": {
-		"dayjs": "^1.11.1"
-	}
+	"type": "module"
 }

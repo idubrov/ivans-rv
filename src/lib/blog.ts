@@ -1,38 +1,28 @@
-import type { CurrentPost, PostMetadata, Category, CategoryInfo } from './types';
+import type { Category, CategoryInfo, CurrentPost, PostMetadata } from './types';
 import { dev } from '$app/env';
-
-const PATH_REGEXP =
-	/content\/(?<year>\d{4})-(?<month>\d{2})-(?<date>\d{2})-(?<slug>[^/]+)\/index.md$/;
 
 async function createPost(
 	path: string,
 	resolver: () => Promise<Record<string, any>>
 ): Promise<PostMetadata | undefined> {
-	const matcher = path.match(PATH_REGEXP);
-	if (!matcher) {
+	const module = await resolver();
+	if (!module.metadata.key) {
 		console.warn(`Content entry path '${path}' does not have proper format, ignored`);
 		return;
 	}
-
-	const year = parseInt(matcher.groups!.year, 10);
-	const month = parseInt(matcher.groups!.month, 10);
-	const date = parseInt(matcher.groups!.date, 10);
-	const postDate = new Date(Date.UTC(year, month - 1, date));
-	const slug: string = matcher.groups!.slug;
-	const module = await resolver();
-	const entry: PostMetadata = {
-		key: postKey(postDate, slug),
-		draft: !!module.metadata.draft,
-		date: postDate,
-		slug,
-		categories: module.metadata.categories || [],
-		tags: module.metadata.tags || [],
-		time: module.metadata.time ?? 0,
+	return {
+		component: module.default,
+		key: module.metadata.key,
+		draft: module.metadata.draft,
+		date: module.metadata.date,
+		slug: module.metadata.slug,
+		categories: module.metadata.categories,
+		tags: module.metadata.tags,
+		time: module.metadata.time,
 		title: module.metadata.title,
 		assets: module.assets,
-		component: module.default
+		summary: module.summary
 	};
-	return entry;
 }
 
 async function listPostsInternal(): Promise<readonly PostMetadata[]> {
@@ -54,13 +44,6 @@ async function listPostsInternal(): Promise<readonly PostMetadata[]> {
 	// Sort from oldest to nevest
 	entries.sort((a, b) => a.date.getTime() - b.date.getTime());
 	return Object.freeze(entries);
-}
-
-export function postKey(postDate: Date, slug: string): string {
-	const year = postDate.getUTCFullYear().toString().padStart(4, '0');
-	const month = (postDate.getUTCMonth() + 1).toString().padStart(2, '0');
-	const date = postDate.getUTCDate().toString().padStart(2, '0');
-	return `${year}-${month}-${date}-${slug}`;
 }
 
 export const ENTRIES = listPostsInternal();
