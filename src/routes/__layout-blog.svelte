@@ -63,7 +63,7 @@
 			{title}<sup><TimeSpent {time} /></sup>
 		</h1>
 		<h2>{dayjs.utc(date).format('MMMM D, YYYY')}</h2>
-		<section>
+		<section class="content">
 			<slot />
 		</section>
 		<Gallery {assets} bind:opener={$opener} />

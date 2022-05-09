@@ -216,6 +216,11 @@ section.follow {
 	a:active {
 		text-decoration: none;
 	}
+
+	img {
+		width: 90px;
+		height: 90px;
+	}
 }
 
 main {
@@ -262,7 +267,7 @@ article.markdown {
 	}
 }
 
-article.markdown > section {
+article.markdown > section.content {
 	li {
 		margin-left: 24px;
 	}
