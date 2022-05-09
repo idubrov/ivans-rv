@@ -20,8 +20,9 @@ async function createPost(
 		tags: module.metadata.tags,
 		time: module.metadata.time,
 		title: module.metadata.title,
-		assets: module.assets,
-		summary: module.summary
+		assets: module.metadata.assets,
+		summary: module.metadata.summary,
+		thumbnail: module.metadata.thumbnail
 	};
 }
 

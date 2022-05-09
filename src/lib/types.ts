@@ -17,6 +17,7 @@ export interface PostMetadata extends PostRef {
 	tags: string[];
 	component: SvelteComponent;
 	time: number;
+	thumbnail?: string;
 }
 
 export interface CurrentPost {

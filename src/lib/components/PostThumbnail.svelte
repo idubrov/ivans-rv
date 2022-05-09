@@ -5,12 +5,16 @@
 	export let width = 720;
 	export let height = 540;
 
-	$: sorted = [...Object.keys(post.assets)].sort();
-	$: asset = post.assets[sorted[0]];
-	$: url = asset && `${asset.url}?nf_resize=smartcrop&w=${width}&h=${height}`;
-	$: alt = asset && asset.alt;
+	function selectThumbnail(): { url?: string; alt?: string } {
+		const assetKey = post.thumbnail ?? [...Object.keys(post.assets)].sort()[0];
+		const asset = post.assets[assetKey];
+		const url = asset && `${asset.url}?nf_resize=smartcrop&w=${width}&h=${height}`;
+		const alt = asset && asset.alt;
+		return { url, alt };
+	}
+	$: thumbnail = selectThumbnail();
 </script>
 
-{#if url}
-	<SmartImg src={url} {alt} />
+{#if thumbnail.url}
+	<SmartImg src={thumbnail.url} alt={thumbnail.alt} />
 {/if}

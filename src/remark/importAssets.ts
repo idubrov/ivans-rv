@@ -1,6 +1,6 @@
 import { dirname, join } from 'path';
 import { readdirSync, readFileSync } from 'fs';
-import type {Content, Root} from "mdast";
+import type { Content, Root } from 'mdast';
 
 interface VFile {
 	filename: string;
@@ -29,7 +29,6 @@ const BODY_END = {
 	value: '{/if}',
 	name: 'if'
 } as unknown as Content;
-
 
 /**
  * Import static assets co-located with markdown content. Imported assets are available in `assets` map that
@@ -75,7 +74,7 @@ function isAsset(name: string) {
 	return name.endsWith('.jpeg');
 }
 
-function parsePostRef(path: string): { key: string, date: Date, slug: string } | undefined {
+function parsePostRef(path: string): { key: string; date: Date; slug: string } | undefined {
 	const PATH_REGEXP =
 		/content\/(?<year>\d{4})-(?<month>\d{2})-(?<date>\d{2})-(?<slug>[^/]+)\/index.md$/;
 
@@ -93,8 +92,8 @@ function parsePostRef(path: string): { key: string, date: Date, slug: string } |
 	return {
 		key,
 		slug,
-		date: postDate,
-	}
+		date: postDate
+	};
 }
 
 function generateModuleScriptBlock(
@@ -102,9 +101,9 @@ function generateModuleScriptBlock(
 	alts: string[],
 	summary: string | undefined,
 	path: string
-) : Content {
+): Content {
 	const postRef = parsePostRef(path);
-	let ref = "";
+	let ref = '';
 	// For blogs posts, we generate date, slug and a key as well.
 	if (postRef) {
 		ref = `
@@ -117,7 +116,7 @@ function generateModuleScriptBlock(
 		type: 'html',
 		value: `<script context="module">
 ${assets.map((asset, index) => `    import asset${index} from "./${asset}";`).join('\n')}
-    export const assets = {
+    const assets = {
 ${assets
 	.map(
 		(asset, index) =>
@@ -125,7 +124,7 @@ ${assets
 	)
 	.join('\n')}
 };
-	export const summary = ${JSON.stringify(summary)};
+	const summary = ${JSON.stringify(summary)};
 
 	// Standard metadata
 ${ref}
@@ -139,7 +138,7 @@ ${ref}
 	};
 }
 
-function generateScriptBlock() : Content {
+function generateScriptBlock(): Content {
 	return {
 		type: 'html',
 		value: `<script>
@@ -151,13 +150,11 @@ function generateScriptBlock() : Content {
 
 function mergeParagraphs(children: Content[]): string {
 	return children
-		.flatMap(e => e.type === "paragraph"
-			? mergeParagraphs(e.children)
-			: e.type === "text"
-			? e.value
-			: "")
-		.filter(e => !!e)
-		.join(" ");
+		.flatMap((e) =>
+			e.type === 'paragraph' ? mergeParagraphs(e.children) : e.type === 'text' ? e.value : ''
+		)
+		.filter((e) => !!e)
+		.join(' ');
 }
 
 function postKey(postDate: Date, slug: string): string {
@@ -166,4 +163,3 @@ function postKey(postDate: Date, slug: string): string {
 	const date = postDate.getUTCDate().toString().padStart(2, '0');
 	return `${year}-${month}-${date}-${slug}`;
 }
-

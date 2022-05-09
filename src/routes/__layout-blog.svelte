@@ -41,14 +41,14 @@
 <svelte:head>
 	{#if format !== 'summary'}
 		<title>{title}</title>
-		<meta data-key="description" name="description" content="{summary}">
+		<meta data-key="description" name="description" content={summary} />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={summary} />
 		{#if thumbnail}
-		<meta property="og:image" content="{image}?nf_resize=smartcrop&w=1440&h=1080" />
-		<meta property="og:image:width" content="1440" />
-		<meta property="og:image:height" content="1080" />
+			<meta property="og:image" content="{image}?nf_resize=smartcrop&w=1440&h=1080" />
+			<meta property="og:image:width" content="1440" />
+			<meta property="og:image:height" content="1080" />
 		{/if}
 	{/if}
 </svelte:head>
