@@ -6,8 +6,8 @@
 </script>
 
 <script lang="ts">
-	import type { Assets, Asset, PreparedAsset } from '$lib/types';
-	import { prepareAsset } from '$lib/assets';
+	import type { Assets, Asset } from '$lib/types';
+	import { lightGalleryLicense, prepareAsset } from '$lib/assets';
 	import { afterUpdate } from 'svelte';
 
 	export let assets: Assets = {};
@@ -22,12 +22,13 @@
 
 	export let opener;
 	let element: any;
+	const licenseKey = lightGalleryLicense();
 	afterUpdate(() => {
 		const gallery = lightGallery(element, {
 			plugins: [lgThumbnail],
 			speed: 500,
-			zoomFromOrigin: false
-			//licenseKey: 'your_license_key'
+			zoomFromOrigin: false,
+			licenseKey
 		});
 		opener = {
 			openAsset(asset: Asset) {

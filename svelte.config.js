@@ -5,8 +5,9 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import { importAssets } from './importAssets.js';
 
-// Make variable visible for the vite
+// Make variables visible for the vite
 process.env.VITE_NETLIFY = process.env.NETLIFY;
+process.env.VITE_LIGHTGALLERY_LICENSE = process.env.LIGHTGALLERY_LICENSE;
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

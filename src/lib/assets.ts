@@ -7,6 +7,10 @@ export function isNetlify(): boolean {
 	return import.meta.env.VITE_NETLIFY === 'true';
 }
 
+export function lightGalleryLicense(): string | undefined {
+	return import.meta.env.VITE_LIGHTGALLERY_LICENSE;
+}
+
 export function resolveAsset(src: string): Asset | undefined {
 	// Load assets from the context
 	const assets: Record<string, Asset> = getContext(assetsKey) ?? {};
