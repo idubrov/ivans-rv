@@ -1,5 +1,8 @@
 <script context="module">
 	import dayjs from 'dayjs';
+	import utc from 'dayjs/plugin/utc.js';
+
+	dayjs.extend(utc);
 
 	export { default as img } from '$lib/components/MarkdownImg.svelte';
 	export { default as a } from '$lib/components/MarkdownLink.svelte';
@@ -12,8 +15,7 @@
 	import { writable } from 'svelte/store';
 	import { galleryKey, assetsKey } from '$lib/types';
 	import { setContext } from 'svelte';
-	import { get } from 'svelte/store';
-	import { page } from '$app/stores';
+	import { baseUrl } from '$lib/assets';
 
 	export let title;
 	export let format;
@@ -35,7 +37,7 @@
 
 	$: sorted = [...Object.keys(assets)].sort();
 	$: thumbnail = assets[sorted[0]];
-	$: image = thumbnail && new URL(thumbnail.url, get(page).url);
+	$: image = thumbnail && new URL(thumbnail.url, baseUrl());
 </script>
 
 <svelte:head>
@@ -53,7 +55,7 @@
 	{/if}
 </svelte:head>
 
-{#if format === 'summary'}
+{#if format === 'summary' || format === 'rss'}
 	<slot />
 {:else}
 	<article id={key} class="markdown">

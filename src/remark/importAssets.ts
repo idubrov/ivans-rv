@@ -8,7 +8,7 @@ interface VFile {
 
 const SUMMARY_START = {
 	type: 'svelteBlock',
-	value: '{#if format === "summary" || format === "full"}',
+	value: '{#if format === "summary" || format === "full" || format === "rss"}',
 	name: 'if'
 } as unknown as Content;
 
@@ -20,7 +20,7 @@ const SUMMARY_END = {
 
 const BODY_START = {
 	type: 'svelteBlock',
-	value: '{#if format === "full"}',
+	value: '{#if format === "full" || format === "rss"}',
 	name: 'if'
 } as unknown as Content;
 

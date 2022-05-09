@@ -11,6 +11,11 @@ export function lightGalleryLicense(): string | undefined {
 	return import.meta.env.VITE_LIGHTGALLERY_LICENSE;
 }
 
+export function baseUrl(): URL {
+	const url = import.meta.env.VITE_URL ?? 'http://localhost:3000';
+	return new URL(url);
+}
+
 export function resolveAsset(src: string): Asset | undefined {
 	// Load assets from the context
 	const assets: Record<string, Asset> = getContext(assetsKey) ?? {};

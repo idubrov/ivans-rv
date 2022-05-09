@@ -42,7 +42,7 @@ async function listPostsInternal(): Promise<readonly PostMetadata[]> {
 		entries.push(post);
 	}
 
-	// Sort from oldest to nevest
+	// Sort from oldest to newest
 	entries.sort((a, b) => a.date.getTime() - b.date.getTime());
 	return Object.freeze(entries);
 }

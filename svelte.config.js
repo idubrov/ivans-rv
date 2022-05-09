@@ -6,8 +6,15 @@ import rehypeSlug from 'rehype-slug';
 import { importAssets } from './importAssets.js';
 
 // Make variables visible for the vite
-process.env.VITE_NETLIFY = process.env.NETLIFY;
-process.env.VITE_LIGHTGALLERY_LICENSE = process.env.LIGHTGALLERY_LICENSE;
+if (process.env.NETLIFY) {
+	process.env.VITE_NETLIFY = process.env.NETLIFY;
+}
+if (process.env.LIGHTGALLERY_LICENSE) {
+	process.env.VITE_LIGHTGALLERY_LICENSE = process.env.LIGHTGALLERY_LICENSE;
+}
+if (process.env.URL) {
+	process.env.VITE_URL = process.env.URL;
+}
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
