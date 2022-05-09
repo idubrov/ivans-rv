@@ -8,7 +8,9 @@ body {
 	margin: 0;
 }
 
-// Main layout
+ul {
+	list-style: none;
+}
 
 #app {
 	height: 100vh;
@@ -105,35 +107,42 @@ nav.sidemenu {
 	margin-bottom: 36px;
 	grid-area: sidebar;
 
-	ul {
-		list-style: none;
+	img.thumbnail {
+		width: 40px;
+		height: 40px;
+		object-fit: contain;
+	}
 
-		> li {
-			margin-top: 40px;
+	section.search,
+	section.follow {
+		margin-top: 0;
+	}
 
-			> ul {
-				margin-top: 12px;
-			}
+	> section {
+		margin-top: 40px;
 
-			> ul > li {
-				margin-top: 12px;
-			}
-
-			span {
-				text-transform: uppercase;
-				cursor: default;
-				color: #60beae;
-				font-size: 14px;
-				font-weight: 500;
-			}
+		> ul {
+			margin-top: 12px;
 		}
 
-		> li.tags > ul > li > a {
-			background-color: #f3f3f3;
-			border-radius: 2px;
-			padding: 3px 8px;
-			margin-right: 6px;
+		> ul > li {
+			margin-top: 12px;
 		}
+
+		> h1 {
+			text-transform: uppercase;
+			cursor: default;
+			color: #60beae;
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+
+	section.tags > ul > li > a {
+		background-color: #f3f3f3;
+		border-radius: 2px;
+		padding: 3px 8px;
+		margin-right: 6px;
 	}
 
 	p {
@@ -177,7 +186,7 @@ nav.sidemenu {
 	}
 }
 
-section[role='search'] {
+input[type='search'] {
 	color: #616161;
 	font-size: 14px;
 	font-weight: 400;
@@ -365,7 +374,6 @@ section.paging {
 
 // FIXME: should only be for categories?..
 ul.postslist {
-	list-style: none;
 	border: #f3f3f3 solid 2px;
 	margin-bottom: 32px;
 	padding: 18px 20px 8px 20px;

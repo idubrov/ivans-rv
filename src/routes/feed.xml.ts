@@ -2,7 +2,7 @@ import { getAllPosts } from '$lib/blog';
 import { postLink } from '$lib/navigation';
 import type { PostMetadata } from '$lib/types';
 import { baseUrl } from '$lib/assets';
-import image from "$lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.jpeg";
+import image from '$lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.jpeg';
 
 const title = "Ivan's RV-7";
 
@@ -40,7 +40,7 @@ const render = (
 <guid isPermaLink="true">${new URL(postLink(post), base)}</guid>
 <title>${post.title}</title>
 <link>${new URL(postLink(post), base)}</link>
-<description>${escapeHtml(post.component.render({ format: "rss" }).html)}</description>
+<description>${escapeHtml(post.component.render({ format: 'rss' }).html)}</description>
 <pubDate>${post.date.toUTCString()}</pubDate>
 </item>`
 					)

@@ -16,5 +16,5 @@
 </script>
 
 {#if thumbnail.url}
-	<SmartImg src={thumbnail.url} alt={thumbnail.alt} />
+	<SmartImg class="thumbnail" src={thumbnail.url} alt={thumbnail.alt} />
 {/if}

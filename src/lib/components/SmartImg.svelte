@@ -2,6 +2,8 @@
 <script lang="ts">
 	import { prepareAsset } from '$lib/assets';
 
+	let clazz;
+	export { clazz as class };
 	export let src: string;
 	export let alt: string | undefined = undefined;
 	export let style = '';
@@ -13,4 +15,4 @@
 	$: effectiveStyle = `${asset.style ?? ''} ${style ?? ''}`.trim();
 </script>
 
-<img src={asset.url} alt={asset.alt} style={effectiveStyle} />
+<img class={clazz} src={asset.url} alt={asset.alt} style={effectiveStyle} />

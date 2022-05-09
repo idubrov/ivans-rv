@@ -6,15 +6,18 @@
 
 	dayjs.extend(utc);
 
-	export const load = async () => {
+	export const load = async ({ fetch }) => {
 		const categories = await aggregateCategories();
 		const tags = await aggregateTags();
 		const posts = await getAllPosts();
+		const indexResponse = await fetch('/search.json');
+		const searchIndex = await indexResponse.json();
 		return {
 			props: {
 				categories,
 				tags,
-				recent: [...posts].reverse().slice(0, 5)
+				recent: [...posts].reverse().slice(0, 5),
+				searchIndex
 			}
 		};
 	};
@@ -29,6 +32,7 @@
 	export let categories;
 	export let recent;
 	export let tags;
+	export let searchIndex;
 </script>
 
 <svelte:head>
@@ -40,4 +44,4 @@
 	<slot />
 </main>
 <MainMenu />
-<SideMenu {categories} {tags} {recent} />
+<SideMenu {categories} {tags} {recent} {searchIndex} />
