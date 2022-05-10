@@ -3,7 +3,7 @@ title: 'Priming the vertical stabilizer'
 categories: ['empennage']
 time: 2.5
 thumbnail: 7-parts-primed.jpeg
-tags: ['painting']
+tags: ['priming']
 ---
 
 Getting to the priming of the vertical stabilizer.

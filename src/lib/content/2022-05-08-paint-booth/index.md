@@ -2,7 +2,7 @@
 title: 'Building a paint booth'
 categories: ['side-project']
 time: 2
-tags: ['painting']
+tags: ['painting', 'priming']
 thumbnail: 2-ready-for-business.jpeg
 ---
 

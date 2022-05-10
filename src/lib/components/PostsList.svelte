@@ -30,9 +30,15 @@
 			<a href={postLink(post)}>
 				<h3>Continue reading &rarr;</h3>
 			</a>
+			{#if post.tags.length > 0}
+				<h2 class="tagged">Tagged:
+					{#each post.tags as tag}
+						<a href="/tag/{tag}">{tag}</a>&nbsp;
+					{/each}
+				</h2>
+			{/if}
 			{#if dev}
-				<!-- FIXME -->
-				<h2>Tagged: <span>Know-how</span></h2>
+
 			{/if}
 		</li>
 	{/each}

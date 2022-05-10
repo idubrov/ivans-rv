@@ -47,6 +47,10 @@ export function importAssets(): (tree: Root, file: VFile) => Root {
 				try {
 					return readFileSync(join(dir, `${asset}.txt`), 'utf8')
 				} catch (e) {
+					if (process.env.NETLIFY) {
+						throw e;
+					}
+					console.warn(`Image '${asset}' does not have an alt text associated with it, ignoring in dev.`);
 					return "";
 				}
 			});

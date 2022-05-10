@@ -434,7 +434,7 @@ ul.postslist {
 			}
 		}
 
-		h2 {
+		h2.tagged {
 			text-transform: uppercase;
 			color: #9d9d9d;
 			font-size: 13px;
@@ -443,8 +443,7 @@ ul.postslist {
 			padding-bottom: 14px;
 		}
 
-		// FIXME: those are tags
-		h2 > span {
+		h2.tagged > a {
 			text-transform: uppercase;
 			color: #60beae;
 			font-size: 13px;
