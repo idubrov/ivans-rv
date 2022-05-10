@@ -43,7 +43,13 @@ export function importAssets(): (tree: Root, file: VFile) => Root {
 		if (file.filename.endsWith('/index.md')) {
 			const dir = dirname(file.filename);
 			assets = readdirSync(dir).filter(isAsset);
-			alts = assets.map((asset) => readFileSync(join(dir, `${asset}.txt`), 'utf8'));
+			alts = assets.map((asset) => {
+				try {
+					return readFileSync(join(dir, `${asset}.txt`), 'utf8')
+				} catch (e) {
+					return "";
+				}
+			});
 		}
 
 		const more = tree.children.findIndex(
@@ -131,7 +137,7 @@ ${ref}
 	metadata.draft = !!metadata.draft;
 	metadata.categories = metadata.categories || [];
 	metadata.tags = metadata.tags || [];
-	metadata.time = parseInt(metadata.time, 10) || 0;
+	metadata.time = parseFloat(metadata.time, 10) || 0;
 	metadata.assets = assets;
 	metadata.summary = summary;
 </script>`
