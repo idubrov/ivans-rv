@@ -1,8 +1,8 @@
 ---
-title: 'Vertical stabilizer skeleton'
+title: 'Drilling the vertical stabilizer'
 categories: ['empennage']
 time: 3
-tags: ['skeleton']
+tags: ['drilling']
 ---
 
 So I started working on a vertical stabilizer!
