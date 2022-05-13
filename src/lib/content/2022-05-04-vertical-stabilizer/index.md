@@ -2,7 +2,7 @@
 title: 'Drilling the vertical stabilizer'
 categories: ['empennage']
 time: 3
-tags: ['drilling']
+tags: ['drilling', 'ribs']
 ---
 
 So I started working on a vertical stabilizer!
