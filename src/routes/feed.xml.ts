@@ -3,12 +3,18 @@ import { postLink } from '$lib/navigation';
 import type { PostMetadata } from '$lib/types';
 import { baseUrl } from '$lib/assets';
 import image from '$lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.jpeg';
+import dayjs from "dayjs";
+import utc from 'dayjs/plugin/utc.js';
+import timezone from 'dayjs/plugin/timezone.js';
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 const title = "Ivan's RV-7";
 
 export const get = async () => {
 	const posts = await getAllPosts();
-	const body = render(baseUrl(), posts);
+	const body = render(baseUrl(), [...posts].reverse());
 	return {
 		body,
 		headers: {
@@ -40,14 +46,26 @@ const render = (
 <guid isPermaLink="true">${new URL(postLink(post), base)}</guid>
 <title>${post.title}</title>
 <link>${new URL(postLink(post), base)}</link>
-<description>${escapeHtml(post.component.render({ format: 'rss' }).html)}</description>
-<pubDate>${post.date.toUTCString()}</pubDate>
+<description>
+	${thumbnail(post)}
+	${escapeHtml(post.component.render({ format: 'rss' }).html)}
+</description>
+<pubDate>${dayjs.utc(post.date).tz("US/Central", true).toISOString()}</pubDate>
 </item>`
 					)
 					.join('')}
     </channel>
 </rss>
 `;
+
+function thumbnail(post: PostMetadata) : string {
+	if (!post.thumbnail) {
+		return "";
+	}
+
+	const asset = post.assets[post.thumbnail];
+	return `<p><img src="${asset.url}" alt="${asset.alt}" /></p>`;
+}
 
 function escapeHtml(unsafe: string) {
 	return unsafe.replace(/[<>&'"]/g, (c) => {

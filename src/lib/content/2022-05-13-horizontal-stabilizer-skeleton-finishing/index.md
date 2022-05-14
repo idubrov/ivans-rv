@@ -1,8 +1,9 @@
 ---
-title: 'Assembling the horizontal stabilizer skeleton'
+title: 'Finishing the horizontal stabilizer skeleton'
 categories: ['empennage']
 time: 6
 tags: ['drilling', 'ribs', 'mistakes']
+thumbnail: '12-skins-drilled.jpeg'
 ---
 
 Today I fitted the remaining ribs and match-drilled the skin to the structure.

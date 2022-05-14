@@ -3,6 +3,7 @@ title: 'Assembling the horizontal stabilizer skeleton'
 categories: ['empennage']
 time: 4
 tags: ['drilling', 'ribs']
+thumbnail: 2-left-skin-pulled.jpeg
 ---
 
 Continued working on the skeleton for the horizontal stabilizer.
