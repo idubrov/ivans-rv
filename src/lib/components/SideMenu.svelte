@@ -28,6 +28,7 @@
 				style="object-fit: cover; width: 24px; height: 24px;"
 			/></a
 		>
+		{#if dev}
 		<a target="_blank" href="https://t.me/ivans_rv"
 			><img
 				src="/icons8-instagram.svg"
@@ -35,6 +36,7 @@
 				style="object-fit: cover; width: 24px; height: 24px;"
 			/></a
 		>
+		{/if}
 	</section>
 	<section class="recent">
 		<h1>Most recent</h1>

@@ -23,3 +23,7 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
+
+## Published version
+
+Blog is publihed at [https://ivans-rv.idubrov.name/](https://ivans-rv.idubrov.name/).
