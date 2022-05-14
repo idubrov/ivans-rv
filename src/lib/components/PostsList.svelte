@@ -37,9 +37,6 @@
 					{/each}
 				</h2>
 			{/if}
-			{#if dev}
-
-			{/if}
 		</li>
 	{/each}
 </ul>

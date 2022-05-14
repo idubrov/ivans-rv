@@ -21,17 +21,17 @@ This was a bit unexpected -- I am used to that when I machine aluminum I can pus
 
 In the end, I was able to slowly drill from the opposite side, which worked out okay. The holes look fine.
 
-![](0-drilling-the-holes.jpeg)
+![](00-drilling-the-holes.jpeg)
 
 Then I switched to the central bearing assembly. I primed the bearing itself with my epoxy primer, but instead of spraying it, I brushed it with a small paintbrush. It turned out relatively ugly in the end, but it should work. It is going to be hidden between the brackets anyways.
 
-![](1-flanged-bearing-primed.jpeg)
+![](01-flanged-bearing-primed.jpeg)
 
-After [letting the bearing dry](2-flanged-bearing-drying.jpeg), I assembled it with the brackets.
+After [letting the bearing dry](02-flanged-bearing-drying.jpeg), I assembled it with the brackets.
 
 The instructions specifically called for an AN470AD4-5 rivet which I found rivet to be a tad too short (but again, instructions stressed that -5 is the correct length here). It turned out okay, but heads were definitely on the short side (about 50-60 thou, with 50 thou being the minimum as per MIL Spec.).
 
-![](3-bearing-assembly.jpeg)
+![](03-bearing-assembly.jpeg)
 
 The next part was to assemble the front spar. I started with the doubles, separating them and polishing the edges with the Scotch-Brite wheel. After that, I fabricated (well, rather, modified) the front spar itself.
 
@@ -39,8 +39,8 @@ The modification was to shorten flanges and create a relief notch. Shortened fla
 
 Then I filed the pieces to get smooth radiuses.
 
-![](6-front-spar-relief-notches.jpeg)
-![](7-front-spar-relief-notches-2.jpeg)
+![](06-front-spar-relief-notches.jpeg)
+![](07-front-spar-relief-notches-2.jpeg)
 
 Initially, I thought of leaving flanges square until I know how much I could trim them, as I was intimidated by the note "maintain min. edge distance" on the plans (also, it seems like there are a lot of potential edge distance issues in that area)! However, after giving it some thought, I trimmed them. One thing I noted is that plans say that section F-F is a "3/4 scale", but when I place part against it, it looked more like the actual scale. So I trimmed, hopefully on the conservative side.
 
