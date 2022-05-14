@@ -17,9 +17,7 @@
 		<li>
 			<a href={postLink(post)}>
 				<h1>
-					{post.title}<sup>
-						<TimeSpent time={post.time} />
-					</sup>
+					{post.title}<TimeSpent time={post.time} />
 				</h1>
 			</a>
 			<h2>{dayjs.utc(post.date).format('MMMM D, YYYY')}</h2>

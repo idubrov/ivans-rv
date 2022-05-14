@@ -60,7 +60,7 @@
 {:else}
 	<article id={key} class="markdown">
 		<h1>
-			{title}<sup><TimeSpent {time} /></sup>
+			{title}<TimeSpent {time} />
 		</h1>
 		<h2>{dayjs.utc(date).format('MMMM D, YYYY')}</h2>
 		<section class="content">

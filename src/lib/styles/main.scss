@@ -128,14 +128,6 @@ nav.sidemenu {
 		> ul > li {
 			margin-top: 12px;
 		}
-
-		> h1 {
-			text-transform: uppercase;
-			cursor: default;
-			color: #60beae;
-			font-size: 14px;
-			font-weight: 500;
-		}
 	}
 
 	section.tags > ul > li > a {
@@ -241,29 +233,12 @@ article.markdown {
 		font-weight: 400;
 		font-size: 20px;
 		padding-bottom: 14px;
-
-		> sup {
-			color: #60beae;
-			font-weight: 300;
-			font-size: 14px;
-
-			> img {
-				float: none;
-				margin-left: 12px;
-				margin-right: 0;
-				vertical-align: middle;
-				padding-bottom: 3px;
-			}
-		}
 	}
 
-	> h2 {
-		text-transform: uppercase;
-		color: #9d9d9d;
-		font-size: 13px;
-		font-weight: 500;
-		padding-top: 14px;
-		padding-bottom: 14px;
+	// FIXME: duplicated...
+	h1 > sup.timespent {
+		margin-left: 12px;
+		margin-right: 0;
 	}
 }
 
@@ -411,38 +386,6 @@ ul.postslist {
 			padding-bottom: 14px;
 		}
 
-		h1 {
-			border-bottom: #f3f3f3 solid 2px;
-			text-transform: capitalize;
-			color: #393939;
-			font-weight: 400;
-			font-size: 20px;
-			padding-bottom: 14px;
-
-			> sup {
-				color: #60beae;
-				font-weight: 300;
-				font-size: 14px;
-
-				> img {
-					float: none;
-					margin-left: 12px;
-					margin-right: 0px;
-					vertical-align: middle;
-					padding-bottom: 3px;
-				}
-			}
-		}
-
-		h2.tagged {
-			text-transform: uppercase;
-			color: #9d9d9d;
-			font-size: 13px;
-			font-weight: 500;
-			padding-top: 14px;
-			padding-bottom: 14px;
-		}
-
 		h2.tagged > a {
 			text-transform: uppercase;
 			color: #60beae;
@@ -451,14 +394,54 @@ ul.postslist {
 			padding-top: 14px;
 			padding-bottom: 14px;
 		}
-
-		h3 {
-			text-transform: capitalize;
-			color: #60beae;
-			font-size: 13px;
-			font-weight: 500;
-			padding-top: 14px;
-			padding-bottom: 14px;
-		}
 	}
+
+	h1 > sup.timespent {
+		margin-left: 12px;
+		margin-right: 0;
+	}
+}
+
+ul.categories > li sup.timespent {
+	top: inherit;
+}
+
+sup.timespent {
+	color: #60beae;
+	font-weight: 300;
+	font-size: 14px;
+
+	> img {
+		float: none;
+		vertical-align: middle;
+		padding-bottom: 3px;
+	}
+}
+
+
+h1 {
+	border-bottom: #f3f3f3 solid 2px;
+	text-transform: capitalize;
+	color: #393939;
+	font-weight: 400;
+	font-size: 20px;
+	padding-bottom: 14px;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: #9d9d9d;
+	font-size: 13px;
+	font-weight: 500;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+h3 {
+	text-transform: capitalize;
+	color: #60beae;
+	font-size: 13px;
+	font-weight: 500;
+	padding-top: 14px;
+	padding-bottom: 14px;
 }
