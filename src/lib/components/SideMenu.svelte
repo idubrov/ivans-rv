@@ -5,6 +5,7 @@
 </script>
 
 <script lang="ts">
+	import { baseUrl } from "$lib/assets";
 	import type { CategoryInfo, PostMetadata } from '$lib/types';
 	import PostThumbnail from './PostThumbnail.svelte';
 	import TimeSpent from './TimeSpent.svelte';
@@ -25,6 +26,16 @@
 			><img
 				src="/icons8-telegram.svg"
 				alt="Telegram icon"
+				style="object-fit: cover; width: 24px; height: 24px;"
+			/></a
+		>
+		<a
+			href="https://feedly.com/i/subscription/feed%2F{encodeURIComponent(new URL('/feed/rss.xml', baseUrl()))}"
+			target="blank"
+			><img
+				id="feedlyFollow"
+				src="https://s3.feedly.com/img/follows/feedly-follow-square-flat-white_2x.png"
+				alt="follow us in feedly"
 				style="object-fit: cover; width: 24px; height: 24px;"
 			/></a
 		>
@@ -57,9 +68,9 @@
 			{#each categories as category}
 				<li>
 					<a href="/category/{category.code}"
-						>{category.description} ({category.totalLogs} posts, <TimeSpent
-							time={category.totalTime}
-						/>)</a
+						>{category.description} ({category.totalLogs} posts,
+						<TimeSpent time={category.totalTime} />
+						)</a
 					>
 				</li>
 			{/each}
