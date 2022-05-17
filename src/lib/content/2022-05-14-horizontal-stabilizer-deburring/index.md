@@ -3,7 +3,6 @@ title: 'Deburring the horizontal stabilizer parts'
 categories: ['empennage']
 time: 4
 tags: ['preparing']
-draft: true
 ---
 
 The next step for the horizontal stabilizer was to deburr all the parts to prepare them for the priming session.

@@ -33,7 +33,7 @@ I also asked for MSDS sheets for EkoPoxy, mostly to pretend I understand how to 
 
 Back to the build.
 
-For preparing my parts, I followed instructions from [a video from Stewart Systems](https://www.youtube.com/watch?v=AlXxConOX4Y) and also [a video from another builder](https://www.youtube.com/watch?v=rgjXVCwV3V8). 
+For preparing my parts, I followed instructions from [a video from Stewart Systems](https://www.youtube.com/watch?v=AlXxConOX4Y) and also [a video from another builder](https://www.youtube.com/watch?v=rgjXVCwV3V8).
 
 First, I sprayed parts with EkoClean diluted to 15:1 (15 parts of water to one part of EkoClean), then wiped with towels. Second, I sprayed parts with EkoEtch diluted to 2:1, scrubbed them with Scotch-Brite pads, then sprayed them with distilled water and wiped them. Finally, I washed parts in the shower. Instructions recommend using a pressure washer, but I don't want to set up mine just yet.
 
@@ -66,12 +66,12 @@ The first part was ... terrible. Even after all that training with latex paint, 
 I mixed primer three times:
 
 | Part A | Part B | Water |
-|--------|--------|-------|
+| ------ | ------ | ----- |
 | 72g    | 13g    | 9g    |
 | 59g    | 11g    | 8g    |
 | 56g    | 10g    | 7g    |
 
-With a  total of ~245 grams of the primer (I only used half of the last batch). I don't know if that's too much, too little, or just right. And how much of it went into the overspray. 
+With a total of ~245 grams of the primer (I only used half of the last batch). I don't know if that's too much, too little, or just right. And how much of it went into the overspray.
 
 Parts after all of the priming.
 

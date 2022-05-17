@@ -9,7 +9,7 @@ Started working on the horizontal stabilizer.
 
 <!-- more -->
 
-I put the vertical stabilizer aside until I figure out what to do about it, and started working on the horizontal stabilizer. 
+I put the vertical stabilizer aside until I figure out what to do about it, and started working on the horizontal stabilizer.
 
 The first step was to round the corners of rear spar reinforcement bars to make sure they fit into the rear spar. Then I used Scotch-Brite for both the spar itself and the reinforcement bars.
 
@@ -48,8 +48,8 @@ The next step was to bend the front spar and both reinforcing angles. First, I d
 
 Before bending the reinforcement angles, I rounded their corners. This was another scary moment. After rounding corners, I realized that I sanded them just a little. The original edge distance was about 0.25", which is already recommended edge distance for the 0.125" hole. I measured my new distance, and it was 0.222" inches. I checked the [MIL Spec](https://www.vansaircraft.com/wp-content/uploads/2019/02/MIL-R-47196A_MI.pdf) and found that the minimum edge for -4 rivet is 0.219", so I am okay (also, I found a similar question on the forum where distance seemed to be even less, and it was presumably okayed by Van's support since the part is so thick).
 
-And the final result, after bending and drilling holes inboard of the ribs. I've spent a lot of time meditating on the manual and the plans trying to figure out what exactly they want me to drill (it seemed like two steps were kind of repeating each other). In the end, I decided that instructions were a mix of original instructions plus the service bulletin (the one that adds doublers to the front spar), and that's why it was a bit confusing. Also, it referenced figure 6-6 which I did not find at all (which [seems to be a typo](https://vansairforce.net/community/showthread.php?t=206330)). 
+And the final result, after bending and drilling holes inboard of the ribs. I've spent a lot of time meditating on the manual and the plans trying to figure out what exactly they want me to drill (it seemed like two steps were kind of repeating each other). In the end, I decided that instructions were a mix of original instructions plus the service bulletin (the one that adds doublers to the front spar), and that's why it was a bit confusing. Also, it referenced figure 6-6 which I did not find at all (which [seems to be a typo](https://vansairforce.net/community/showthread.php?t=206330)).
 
 ![](11-everything-bent.jpeg)
 
-Also, I [disassembled my vertical stabilizer](12-vertical-stabilizer-disassembled.jpeg) to replace the whole front spar assembly. I asked Van's support if the part could be repaired and they suggested that dressing sharp edges should be enough. However, given that the whole assembly turned out to be not great, I decided it would be better to redo it. Since all holes are pre-punched, new parts should match the skin, more or less.  
+Also, I [disassembled my vertical stabilizer](12-vertical-stabilizer-disassembled.jpeg) to replace the whole front spar assembly. I asked Van's support if the part could be repaired and they suggested that dressing sharp edges should be enough. However, given that the whole assembly turned out to be not great, I decided it would be better to redo it. Since all holes are pre-punched, new parts should match the skin, more or less.

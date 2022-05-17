@@ -29,7 +29,8 @@
 				<h3>Continue reading &rarr;</h3>
 			</a>
 			{#if post.tags.length > 0}
-				<h2 class="tagged">Tagged:
+				<h2 class="tagged">
+					Tagged:
 					{#each post.tags as tag}
 						<a href="/tag/{tag}">{tag}</a>&nbsp;
 					{/each}

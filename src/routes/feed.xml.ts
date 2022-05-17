@@ -3,7 +3,7 @@ import { postLink } from '$lib/navigation';
 import type { PostMetadata } from '$lib/types';
 import { baseUrl } from '$lib/assets';
 import image from '$lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.jpeg';
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import timezone from 'dayjs/plugin/timezone.js';
 
@@ -46,11 +46,11 @@ const render = (
 <guid isPermaLink="true">${new URL(postLink(post), base)}</guid>
 <title>${post.title}</title>
 <link>${new URL(postLink(post), base)}</link>
-<description>
+<description><![CDATA[
 	${thumbnail(post)}
-	${escapeHtml(post.component.render({ format: 'rss' }).html)}
-</description>
-<pubDate>${dayjs.utc(post.date).tz("US/Central", true).toISOString()}</pubDate>
+	${post.component.render({ format: 'rss' }).html}
+]]></description>
+<pubDate>${dayjs.utc(post.date).tz('US/Central', true).toISOString()}</pubDate>
 </item>`
 					)
 					.join('')}
@@ -58,30 +58,11 @@ const render = (
 </rss>
 `;
 
-function thumbnail(post: PostMetadata) : string {
+function thumbnail(post: PostMetadata): string {
 	if (!post.thumbnail) {
-		return "";
+		return '';
 	}
 
 	const asset = post.assets[post.thumbnail];
 	return `<p><img src="${asset.url}" alt="${asset.alt}" /></p>`;
-}
-
-function escapeHtml(unsafe: string) {
-	return unsafe.replace(/[<>&'"]/g, (c) => {
-		switch (c) {
-			case '<':
-				return '&lt;';
-			case '>':
-				return '&gt;';
-			case '&':
-				return '&amp;';
-			case "'":
-				return '&apos;';
-			case '"':
-				return '&quot;';
-			default:
-				return c;
-		}
-	});
 }

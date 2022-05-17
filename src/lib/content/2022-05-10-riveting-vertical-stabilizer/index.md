@@ -35,7 +35,7 @@ Then I moved to the front spar assembly.
 
 This one did not go as well as the rear spar. Even though it has very few rivets, those rivets are located such that accessing them with the squeezer is a bit awkward. Few rivets I had to drill out multiple times until I got them somewhat acceptable. In the end, the rib flanges did not look very tight to the spar (but were not loose either). Also, they curled a bit. In the case of the top rib, I should have put the rivet in the opposite direction. This would have made it both easier to set and also would put the factory head on the flange side, which should help with the curling.
 
-One mistake I made with the squeezer was that I tried to "sneak" up to the rivet by gently pressing the trigger until the anvil moves close to the rivet and therefore could be centered on the domed dimple die. This technique works when it works, but if you make a slight mistake (press trigger a bit too tight), it immediately destroys the rivet and leaves all kinds of marks. Ouch. 
+One mistake I made with the squeezer was that I tried to "sneak" up to the rivet by gently pressing the trigger until the anvil moves close to the rivet and therefore could be centered on the domed dimple die. This technique works when it works, but if you make a slight mistake (press trigger a bit too tight), it immediately destroys the rivet and leaves all kinds of marks. Ouch.
 
 Later I adjusted this technique: I would remove the return spring, pull the movable anvil and position it on the rivet dome, then press the trigger. This worked much better. However, again, the better solution would have been to reverse the rivet.
 
@@ -44,9 +44,10 @@ Finally, I made the worst mistake. I wanted to flatten the flange on the root ri
 ![](4-vs-704-flange-damage.jpeg)
 ![](5-vs-705-flange-damage.jpeg)
 
-Asked Van's support about what can I do here. Since I have not riveted skin yet, I might just rebuild the front spar assembly (and use the current one for more training!). However, I've already dimpled the skin, so I am not sure how to match drill new parts. Probably, could just hope that factory holes are close enough. For now, I am setting it aside and moving on to the horizontal stabilizer. 
+Asked Van's support about what can I do here. Since I have not riveted skin yet, I might just rebuild the front spar assembly (and use the current one for more training!). However, I've already dimpled the skin, so I am not sure how to match drill new parts. Probably, could just hope that factory holes are close enough. For now, I am setting it aside and moving on to the horizontal stabilizer.
 
 Few lessons learned:
+
 1. Don't fix what is not broken.
 2. Learn to be comfortable with the rivet gun. On my practice kit, I had no issues with back riveting stiffeners and riveting skins to the assembly with the rivet gun. However, I am not precise enough with the universal rivet set, so I get smiles when I buck rivets. Also, I have never used an offset rivet set which could have helped with the front spar assembly.
 3. Maybe, get a manual squeezer, for the cases where I need some extra precision?

@@ -25,7 +25,7 @@ Manual suggests doing two sides separately, but I decided to put both of them at
 1. Cleco backside of the skin to aft spar on the bottom. To allow for the clecos I would hang spar off the table. Also, I would do the same for the tip side of the skin.
 2. Put a couple of the foremost few clecos for the nose rib and the tip rib, again, on the bottom side. This pulls the skin up so it starts to curl around the nose tips.
 3. Put all the bottom clecos on the tip rib. Mostly because I can and multiple cleco would hold it better than only a few at the tip.
-4. From that point I would push the skin to the ribs on the top and see if I can cleco the foremost ones on the top. 
+4. From that point I would push the skin to the ribs on the top and see if I can cleco the foremost ones on the top.
    This was the moment when I scratched the inside of the skin the most: since the skin is relatively tight against the nose piece of the ribs, it scratches there. I did several things to reduce the scratching: I rounded nose tips to make sure the outside edges are not sharp, made sure that the rib is aligned well with the holes (so I don't have to move it left-right), and put some painters tape on the skin where nose ribs rub against the skin.
 5. For both of the sides of the skin, it would cleco without much effort. Once those foremost ones are connected, I would start clecoing everything else, moving aft.
 6. Turn over the assembly and put clecos on the bottom side.
