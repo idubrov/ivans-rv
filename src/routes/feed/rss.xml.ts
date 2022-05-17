@@ -1,8 +1,8 @@
-import { getAllPosts } from '$lib/blog';
-import { postLink } from '$lib/navigation';
-import type { PostMetadata } from '$lib/types';
-import { baseUrl } from '$lib/assets';
-import image from '$lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.jpeg';
+import { getAllPosts } from '../../lib/blog';
+import { postLink } from '../../lib/navigation';
+import type { PostMetadata } from '../../lib/types';
+import { baseUrl } from '../../lib/assets';
+import image from '../../lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.jpeg';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import timezone from 'dayjs/plugin/timezone.js';
