@@ -11,7 +11,7 @@ Today I started priming horizontal stabilizer parts.
 
 Okay, this priming session did not go as smoothly as the previous one. First, I misconfigured my paint gun. I used 25 PSI, which, I think, turned out to be a bit too much (I turned it down to ~20 PSI later). Or maybe I was spraying too close to the parts.
 
-The bigger issue, though, was that I sprayed way too much of the primer! My initial mix was about ~131 grams total. I started spraying, and it did not look too bad until I ran out of the primer while still priming the first skin! At this moment I have realized that _maybe_ I am putting too thick of the coat.
+The bigger issue, though, was that I sprayed way too much of the primer! My initial mix was about ~131 grams total. I started spraying, and it did not look too bad until I ran out of the primer while still priming the first skin! At this moment I have realized that _maybe_ I am putting too much of the primer.
 
 So I reduced the primer flow a bit and mixed the next batch of ~280 grams. This one was enough to prime the remaining skin, all the long pieces (spars), and a few more. This still sounds like a lot of the primer, but instructions do require a fairly thick coat of 3 mils. Also, some amount from the first batch probably was stuck in the gun and the mixing bucket, hence the high usage. Or at least this is what I tell myself.
 
@@ -33,7 +33,7 @@ The bigger issue was that I did not notice that I still have water in the holes 
 
 ![](3-water-streaks.jpeg)
 
-Debating if I should redo the part or not, I decided to wait for the streak to dry, and then I just painted it over with the brush using the leftover primer. It kind of looks okay in the end.
+Debating if I should redo the part or not, I decided to wait for the streak to dry, and then I just painted it over with the brush using the leftover primer. It kind of looks okay in the end. After several hours (which, in my understanding, is not even enough for EkoPoxy to fully cure), I tried to peel it with the aluminum duct tape, and it did not lift anything.
 
 My reasoning for doing this was, first, that it is less likely for me to ruin the part. Second, even if the primer peels off in the end, it wouldn't be the end of the world.
 
