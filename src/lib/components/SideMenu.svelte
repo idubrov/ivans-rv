@@ -85,13 +85,9 @@
 	</section>
 	<section class="tags">
 		<h1>Tags</h1>
-		<ul>
-			{#each tags as tag}
-				<li>
-					<a href="/tag/{tag}">{tag}</a>
-				</li>
-			{/each}
-		</ul>
+		{#each tags as tag}
+			<a href="/tag/{tag}">{tag} </a>
+		{/each}
 	</section>
 	{#if dev}
 		<section class="lesson">

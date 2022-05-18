@@ -25,7 +25,7 @@
 </script>
 
 <section role="search">
-	<input type="search" placeholder="Search &#x1F50D;" on:search={search} on:change={search} />
+	<input type="search" placeholder="&#x1F50D;   Search" on:search={search} on:change={search} />
 	{#if results}
 		{#if results.length === 0}
 			<div>No results</div>

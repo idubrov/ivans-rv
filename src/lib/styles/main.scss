@@ -3,7 +3,6 @@ html {
 }
 
 // Main layout
-
 body {
 	margin: 0;
 }
@@ -113,34 +112,54 @@ nav.sidemenu {
 		object-fit: contain;
 	}
 
-	section.search,
-	section.follow {
+	section.search {
 		margin-top: 0;
 	}
 
-	> section {
-		margin-top: 40px;
+	section.follow {
+		margin-top: 4px;
+	}
 
+	section.recent,
+	section.categories,
+	section.highlights,
+	section.tags,
+	section.lesson {
+		margin-top: 40px;
+	}
+	
+	> section {
 		> ul {
-			margin-top: 12px;
+			margin-top: 10px;
 		}
 
 		> ul > li {
-			margin-top: 12px;
+			margin-top: 10px;
 		}
 	}
 
-	section.tags > ul > li > a {
+	section.tags > a {
 		background-color: #f3f3f3;
 		border-radius: 2px;
 		padding: 3px 8px;
 		margin-right: 6px;
+		overflow-wrap: normal;
+		line-height: 28px;
+	}
+
+	h1 {
+		border: none;
+		text-transform: uppercase;
+		cursor: default;
+		color: #60beae;
+		font-size: 14px;
+		font-weight: 500;
 	}
 
 	p {
 		color: #616161;
 		font-size: 13px;
-		font-weight: 500;
+		font-weight: 400;
 		cursor: default;
 	}
 
@@ -176,22 +195,37 @@ nav.sidemenu {
 		vertical-align: middle;
 		padding-bottom: 3px;
 	}
+
+	sup.timespent {
+		top: inherit;
+		color: #60beae;
+		font-weight: 400;
+		font-size: 13px;
+	
+		> img {
+			float: none;
+			vertical-align: middle;
+			padding-bottom: 3px;
+		}
+	}
 }
 
 input[type='search'] {
 	color: #616161;
 	font-size: 14px;
 	font-weight: 400;
-	padding: 5px 12px;
+	padding: 5px 8px;
 	border: #f3f3f3 solid 2px;
 	margin-bottom: 16px;
+	white-space: pre;
+	width: 100%;
 }
 
 section.follow {
 	overflow: hidden;
 	img {
 		margin-right: 16px;
-		opacity: 0.6;
+		opacity: 0.55;
 	}
 
 	a:hover > img,
@@ -201,7 +235,91 @@ section.follow {
 }
 
 // Posts
+main {
+	margin: 36px 16px 16px 0;
+	grid-area: main;
+}
+
+h1 {
+	border-bottom: #f3f3f3 solid 2px;
+	text-transform: capitalize;
+	color: #393939;
+	font-weight: 400;
+	font-size: 20px;
+	padding-bottom: 14px;
+	cursor: default;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: #9d9d9d;
+	font-size: 13px;
+	font-weight: 500;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	cursor: default;
+}
+
+h3 {
+	text-transform: capitalize;
+	color: #60beae;
+	font-size: 14px;
+	font-weight: 500;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+p {
+	cursor: default;
+	color: #616161;
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	line-height: 18px;
+	text-align: justify;
+}
+
+a {
+	color: #60beae;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+a:link,
+a:visited {
+	font-weight: 400;
+}
+
+a:hover,
+a:active {
+	font-weight: 500;
+}
+
+sup.timespent {
+	margin-left: 6px;
+	margin-right: 0;
+	color: #60beae;
+	font-weight: 400;
+	font-size: 13px;
+
+	> img {
+		float: none;
+		vertical-align: middle;
+		padding-bottom: 3px;
+	}
+}
+
+// Single post & Homepage
+// Image gallery
 .gallery {
+	margin-top: 24px;
+
 	a:link,
 	a:visited,
 	a:hover,
@@ -215,34 +333,14 @@ section.follow {
 	}
 }
 
-main {
-	margin: 36px 16px 16px 0;
-	grid-area: main;
-}
-
 article.markdown {
 	border: #f3f3f3 solid 2px;
 	margin-bottom: 32px;
 	padding: 18px 20px;
-
-	> h1 {
-		cursor: default;
-		border-bottom: #f3f3f3 solid 2px;
-		text-transform: capitalize;
-		color: #393939;
-		font-weight: 400;
-		font-size: 20px;
-		padding-bottom: 14px;
-	}
-
-	// FIXME: duplicated...
-	h1 > sup.timespent {
-		margin-left: 12px;
-		margin-right: 0;
-	}
 }
 
 article.markdown > section.content {
+	// Lists
 	ul {
 		list-style: disc;
 	}
@@ -253,41 +351,10 @@ article.markdown > section.content {
 
 	li {
 		color: #616161;
-		font-size: 13px;
+		font-size: 14px;
 		font-weight: 400;
 		line-height: 18px;
 		text-align: justify;
-	}
-
-	p {
-		cursor: default;
-		color: #616161;
-		font-size: 13px;
-		font-weight: 400;
-		padding-top: 14px;
-		line-height: 18px;
-		text-align: justify;
-	}
-
-	a {
-		color: #60beae;
-	}
-
-	a:link,
-	a:visited,
-	a:hover,
-	a:active {
-		text-decoration: none;
-	}
-
-	a:link,
-	a:visited {
-		font-weight: 400;
-	}
-
-	a:hover,
-	a:active {
-		font-weight: 500;
 	}
 
 	// FIXME: image size on Home page
@@ -325,10 +392,10 @@ article.markdown > section.content {
 	}
 }
 
-section.paging {
+nav.paging {
 	text-align: center;
 	margin-top: 24px;
-	margin-bottom: 24px;
+	margin-bottom: 12px;
 
 	> a {
 		font-size: 16px;
@@ -346,43 +413,23 @@ section.paging {
 	a:link,
 	a:visited {
 		font-weight: 400;
-		text-decoration: none;
 	}
 
 	a:hover,
 	a:active {
 		font-weight: 500;
-		text-decoration: none;
 	}
 }
 
-// FIXME: should only be for categories?..
+// Posts list
 ul.postslist {
-	border: #f3f3f3 solid 2px;
-	margin-bottom: 32px;
-	padding: 18px 20px 8px 20px;
-
 	> li {
-		// FIXME: should we only limit to thumbnail?
+		border: #f3f3f3 solid 2px;
+		margin-bottom: 32px;
+		padding: 18px 20px 8px 20px;
+
 		img {
 			width: 100%;
-		}
-
-		a:link,
-		a:visited,
-		a:hover,
-		a:active {
-			text-decoration: none;
-			color: #616161;
-		}
-
-		p {
-			cursor: default;
-			color: #616161;
-			font-size: 13px;
-			font-weight: 400;
-			padding-top: 14px;
-			padding-bottom: 14px;
 		}
 
 		h2.tagged > a {
@@ -390,56 +437,7 @@ ul.postslist {
 			color: #60beae;
 			font-size: 13px;
 			font-weight: 500;
-			padding-top: 14px;
-			padding-bottom: 14px;
+			padding: 14px 4px;
 		}
 	}
-
-	h1 > sup.timespent {
-		margin-left: 12px;
-		margin-right: 0;
-	}
-}
-
-ul.categories > li sup.timespent {
-	top: inherit;
-}
-
-sup.timespent {
-	color: #60beae;
-	font-weight: 300;
-	font-size: 14px;
-
-	> img {
-		float: none;
-		vertical-align: middle;
-		padding-bottom: 3px;
-	}
-}
-
-h1 {
-	border-bottom: #f3f3f3 solid 2px;
-	text-transform: capitalize;
-	color: #393939;
-	font-weight: 400;
-	font-size: 20px;
-	padding-bottom: 14px;
-}
-
-h2 {
-	text-transform: uppercase;
-	color: #9d9d9d;
-	font-size: 13px;
-	font-weight: 500;
-	padding-top: 14px;
-	padding-bottom: 14px;
-}
-
-h3 {
-	text-transform: capitalize;
-	color: #60beae;
-	font-size: 13px;
-	font-weight: 500;
-	padding-top: 14px;
-	padding-bottom: 14px;
 }
