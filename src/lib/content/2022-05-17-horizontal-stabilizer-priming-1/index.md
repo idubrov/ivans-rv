@@ -1,7 +1,7 @@
 ---
 title: 'Priming the skins and the spars'
 categories: ['empennage']
-time: 4
+time: 5
 tags: ['priming']
 ---
 
@@ -15,7 +15,7 @@ The bigger issue, though, was that I sprayed way too much of the primer! My init
 
 So I reduced the primer flow a bit and mixed the next batch of ~280 grams. This one was enough to prime the remaining skin, all the long pieces (spars), and a few more. This still sounds like a lot of the primer, but instructions do require a fairly thick coat of 3 mils. Also, some amount from the first batch probably was stuck in the gun and the mixing bucket, hence the high usage. Or at least this is what I tell myself.
 
-It did not leave streaks on the large areas of the skin, though, and dried pretty quickly, so maybe it was not that much thicker than needed. 
+It did not leave streaks on the large areas of the skin, though, and dried pretty quickly, so maybe it was not that much thicker than needed.
 
 I did get a lot of primer streaks this time, though, but primarily because parts were long, and they were hanging high in my paint booth. So when I started spraying, I would start on the part itself instead of starting the spray outside of the part and then moving across. I am still learning how to control the spray gun.
 
