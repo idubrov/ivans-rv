@@ -5,7 +5,7 @@ layout: standalone
 
 Hello! My name is Ivan, and this is my build log for a Van's Aircraft RV-7 project, #75069.
 
-<!-- ![](./photo-goes-here.jpeg) -->
+![](/cover-2.jpeg)
 
 RV-7 is a side-by-side seat airplane from [Van's Aircraft](https://www.vansaircraft.com/). What you buy from them is a "kit", a set of parts in 4 sub-kits (empennage, wings, fuselage, and finishing kit). Then it is your job to finish the parts, assemble them into an airframe, and complete it with an engine, avionics plus other pieces to get a functional airplane!
 
