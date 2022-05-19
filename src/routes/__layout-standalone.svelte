@@ -35,7 +35,7 @@
 		<h1>
 			{title}
 		</h1>
-		<section>
+		<section class="content">
 			<slot />
 		</section>
 		<Gallery {assets} bind:opener={$opener} />
