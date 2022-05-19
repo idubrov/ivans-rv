@@ -1,5 +1,6 @@
 html {
 	font-family: 'Roboto', sans-serif;
+	padding: 0 16px;
 }
 
 // Main layout
@@ -102,14 +103,12 @@ nav.menubar {
 
 // Side menu
 nav.sidemenu {
-	margin-top: 36px;
-	margin-bottom: 36px;
+	padding: 36px 0 36px 16px;
 	grid-area: sidebar;
 
 	img.thumbnail {
-		width: 40px;
-		height: 40px;
-		object-fit: contain;
+		width: 60px;
+		height: 60px;
 	}
 
 	section.search {
@@ -127,7 +126,7 @@ nav.sidemenu {
 	section.lesson {
 		margin-top: 40px;
 	}
-	
+
 	> section {
 		> ul {
 			margin-top: 10px;
@@ -136,6 +135,10 @@ nav.sidemenu {
 		> ul > li {
 			margin-top: 10px;
 		}
+	}
+
+	section.recent > ul > li {
+		height: 60px;
 	}
 
 	section.tags > a {
@@ -201,7 +204,7 @@ nav.sidemenu {
 		color: #60beae;
 		font-weight: 400;
 		font-size: 13px;
-	
+
 		> img {
 			float: none;
 			vertical-align: middle;
@@ -236,7 +239,7 @@ section.follow {
 
 // Posts
 main {
-	margin: 36px 16px 16px 0;
+	margin: 36px 0 16px 0;
 	grid-area: main;
 }
 

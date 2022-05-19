@@ -5,7 +5,7 @@
 </script>
 
 <script lang="ts">
-	import { baseUrl } from "$lib/assets";
+	import { baseUrl } from '$lib/assets';
 	import type { CategoryInfo, PostMetadata } from '$lib/types';
 	import PostThumbnail from './PostThumbnail.svelte';
 	import TimeSpent from './TimeSpent.svelte';
@@ -30,24 +30,16 @@
 			/></a
 		>
 		<a
-			href="https://feedly.com/i/subscription/feed%2F{encodeURIComponent(new URL('/feed/rss.xml', baseUrl()))}"
+			href="https://feedly.com/i/subscription/feed%2F{encodeURIComponent(
+				new URL('/feed/rss.xml', baseUrl())
+			)}"
 			target="blank"
 			><img
-				id="feedlyFollow"
-				src="https://s3.feedly.com/img/follows/feedly-follow-square-flat-white_2x.png"
-				alt="follow us in feedly"
+				src="/icons8-feedly.svg"
+				alt="Feedly icon"
 				style="object-fit: cover; width: 24px; height: 24px;"
 			/></a
 		>
-		{#if dev}
-			<a target="_blank" href="https://t.me/ivans_rv"
-				><img
-					src="/icons8-instagram.svg"
-					alt="Instagram icon"
-					style="object-fit: cover; width: 24px; height: 24px;"
-				/></a
-			>
-		{/if}
 	</section>
 	<section class="recent">
 		<h1>Most recent</h1>
@@ -55,8 +47,9 @@
 			{#each recent as post}
 				<li>
 					<a href={postLink(post)}>
-						<PostThumbnail {post} width={40} height={40} />
-						{post.title}<br />{dayjs.utc(post.date).format('MMMM D, YYYY')}</a
+						<PostThumbnail {post} width={60} height={60} /><span>
+							{post.title}<br />{dayjs.utc(post.date).format('MMMM D, YYYY')}</span
+						></a
 					>
 				</li>
 			{/each}
@@ -80,7 +73,6 @@
 		<h1>Highlights</h1>
 		<ul>
 			<li><a href="/workbenches">Workbenches</a></li>
-			<!--				<li><a href="/deburring">Deburring</a></li>-->
 		</ul>
 	</section>
 	<section class="tags">
@@ -92,9 +84,7 @@
 	{#if dev}
 		<section class="lesson">
 			<h1>Lesson of the day</h1>
-			<ul>
-				<li><p>Slow and steady wins the race</p></li>
-			</ul>
+			<p>Slow and steady wins the race.</p>
 		</section>
 	{/if}
 </nav>
