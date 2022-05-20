@@ -3,6 +3,7 @@ title: 'Priming the skins and the spars'
 categories: ['empennage']
 time: 5
 tags: ['priming']
+thumbnail: 4-some-of-the-parts.jpeg
 ---
 
 Today I started priming horizontal stabilizer parts.

@@ -3,7 +3,7 @@ title: 'Assembling the rear spar'
 categories: ['empennage']
 time: 2
 tags: ['assembly']
-draft: true
+thumbnail: 6-both-spars.jpeg
 ---
 
 Time to start assembling the horizontal stabilizer.
@@ -27,3 +27,13 @@ I noted that most of the rivets were on the short side (which is well known).
 However, when measured with calipers, they are still perfectly in the MIL Spec.
 
 ![](2-shop-heads-milspec.jpeg)
+
+Then I dimpled flanges of the front spar (almost forgot about it!) and clecoed the parts together. I hope I identified holes correctly. The four holes in the middle are presumably used to attach horizontal stabilizer to the fuselage. The remaining eight holes are where ribs are attached.
+
+![](3-dimpling-for-the-skin.jpeg)
+
+![](4-preparing-front-spar-for-riveting.jpeg)
+
+Finally, I put all the rivets (except for the ribs, as I haven't primed them yet).
+
+![](5-front-spar-riveted.jpeg)

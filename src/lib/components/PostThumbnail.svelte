@@ -8,6 +8,9 @@
 	function selectThumbnail(): { url?: string; alt?: string } {
 		const assetKey = post.thumbnail ?? [...Object.keys(post.assets)].sort()[0];
 		const asset = post.assets[assetKey];
+		if (!asset) {
+			throw new Error(`Thumbnail not found for post '${post.key}'!`);
+		}
 		const url = asset && `${asset.url}?nf_resize=smartcrop&w=${width}&h=${height}`;
 		const alt = asset && asset.alt;
 		return { url, alt };
