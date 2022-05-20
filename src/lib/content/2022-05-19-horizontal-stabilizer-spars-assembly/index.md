@@ -28,7 +28,7 @@ However, when measured with calipers, they are still perfectly in the MIL Spec.
 
 ![](2-shop-heads-milspec.jpeg)
 
-Then I dimpled flanges of the front spar (almost forgot about it!) and clecoed the parts together. I hope I identified holes correctly. The four holes in the middle are presumably used to attach horizontal stabilizer to the fuselage. The remaining eight holes are where ribs are attached.
+Then I dimpled the flanges of the front spar (almost forgot about it!) and clecoed the parts together. I hope I identified holes correctly. The four holes in the middle are presumably used to attach the horizontal stabilizer to the fuselage. The remaining eight holes are where ribs are attached.
 
 ![](3-dimpling-for-the-skin.jpeg)
 
