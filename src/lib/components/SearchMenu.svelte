@@ -24,18 +24,20 @@
 	}
 </script>
 
-<section role="search">
+<section role="search" class="search">
 	<input type="search" placeholder="&#x1F50D;   Search" on:search={search} on:change={search} />
 	{#if results}
 		{#if results.length === 0}
-			<div>No results</div>
+			<h3>no results</h3>
 		{:else}
+			<h3>{results.length} RESULTS</h3>
 			<ul>
 				{#each results as post}
 					<li>
 						<a href={postLink(post)}>
-							<PostThumbnail {post} width={40} height={40} />
-							{post.title}<br />{dayjs.utc(post.date).format('MMMM D, YYYY')}</a
+							<PostThumbnail {post} width={60} height={60} /><span>
+								{post.title}<br />{dayjs.utc(post.date).format('MMMM D, YYYY')}</span
+							></a
 						>
 					</li>
 				{/each}
