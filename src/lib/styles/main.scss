@@ -137,8 +137,13 @@ nav.sidemenu {
 		}
 	}
 
-	section.recent > ul > li {
-		height: 60px;
+	section.search > ul {
+		margin-bottom: 24px;
+	}
+
+	section.recent > ul > li,
+	section.search > ul > li {
+		min-height: 60px;
 	}
 
 	section.tags > a {
@@ -157,6 +162,15 @@ nav.sidemenu {
 		color: #60beae;
 		font-size: 14px;
 		font-weight: 500;
+	}
+
+	h3 {
+		text-transform: none;
+		color: #60beae;
+		font-size: 14px;
+		font-weight: 500;
+		padding-top: 0px;
+		padding-bottom: 14px;
 	}
 
 	p {
