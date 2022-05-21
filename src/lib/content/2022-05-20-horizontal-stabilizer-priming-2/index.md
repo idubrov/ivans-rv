@@ -5,7 +5,7 @@ time: 2
 tags: ['priming']
 ---
 
-Small priming session to prime all the ribs.
+Small priming session to prime all the remaining ribs.
 
 <!-- more -->
 
