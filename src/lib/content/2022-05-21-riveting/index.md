@@ -1,7 +1,7 @@
 ---
 title: 'Riveting the horizontal stabilizer'
 categories: ['empennage']
-time: 2
+time: 4
 tags: ['riveting']
 draft: true
 ---
@@ -41,3 +41,7 @@ So I fixed them with my wooden block.
 Dimpled skin with the DRDT-2 tool.
 
 ![](2-skin-dimpled.jpeg)
+
+
+
+...riveted nose rib
