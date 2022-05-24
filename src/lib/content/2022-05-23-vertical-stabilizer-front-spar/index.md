@@ -1,8 +1,8 @@
 ---
 title: 'Preparing the front spar assembly'
 categories: ['empennage']
-time: 1
-tags: ['drilling', 'preparing']
+time: 4
+tags: ['drilling', 'preparing', 'sheet metal']
 ---
 
 Going back to rebuild the vertical stabilizer front spar. 
@@ -30,3 +30,8 @@ Then I drilled four of these holes, dimpled them, and riveted the front spar ass
 ![](3-opposite-rivet.jpeg)
 
 Finally, I clecoed everything together until the daytime so I can use my rivet gun to assemble everything.
+
+With a bit more time spent in my garage, I started working on rudder stiffeners. They come in eight pieces of long stock, two stiffeners each. The goal is to cut them to the correct lengths. I started by making an angled cut of each stiffener. The goal is to deburr them on the wheel, making sure the angled cut is all smooth and polished, then to cut them to length and do a final deburring.
+
+![](6-rudder-stiffeners-stock.jpeg)
+![](7-rudder-stiffeners-rough-cut.jpeg)
