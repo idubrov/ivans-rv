@@ -1,10 +1,11 @@
 <script lang="ts">
 	import dayjs from 'dayjs';
-	import { Index } from 'lunr';
+	import lunr from 'lunr';
 	import { getPost } from '$lib/blog';
 	import { postLink } from '$lib/navigation';
 	import PostThumbnail from './PostThumbnail.svelte';
 	import type { PostMetadata } from '$lib/types';
+	const { Index } = lunr;
 
 	export let searchIndex: object;
 
