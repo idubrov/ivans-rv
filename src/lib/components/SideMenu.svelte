@@ -1,7 +1,6 @@
 <script context="module">
 	import dayjs from 'dayjs';
 	import { postLink } from '$lib/navigation';
-	import { dev } from '$app/env';
 </script>
 
 <script lang="ts">
@@ -18,9 +17,7 @@
 </script>
 
 <nav class="sidemenu">
-	{#if dev}
-		<SearchMenu {searchIndex} />
-	{/if}
+	<SearchMenu {searchIndex} />
 	<section class="follow">
 		<a target="_blank" href="https://t.me/ivans_rv"
 			><img
@@ -81,10 +78,4 @@
 			<a href="/tag/{tag}">{tag} </a>
 		{/each}
 	</section>
-	{#if dev}
-		<section class="lesson">
-			<h1>Lesson of the day</h1>
-			<p>Slow and steady wins the race.</p>
-		</section>
-	{/if}
 </nav>
