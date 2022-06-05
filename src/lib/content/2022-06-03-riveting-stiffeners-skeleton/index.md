@@ -3,6 +3,7 @@ title: 'Riveting the stiffeners and assembling the skeleton'
 categories: ['empennage']
 time: 5
 tags: ['dimpling', 'riveting', 'drilling']
+thumbnail: '13-skeleton-partially-assembled.jpeg'
 ---
 
 The next day, after the primer has dried, dimpling time.
