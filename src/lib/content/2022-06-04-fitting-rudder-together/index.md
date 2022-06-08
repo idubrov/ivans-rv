@@ -10,7 +10,7 @@ Today I started a temporary assembly of the skins to the skeleton.
 
 <!-- more -->
 
-First, I did a tiny part: nutplate strip, just because it only took me a few minutes. I opted to counter-sink holes for the "oops" sized rivets (NAS1097AD-3) using the deburring tool. It did leave some amount of chatter, though, but it should not matter as this application is not critical (these rivets are mostly to keep the nutplate from moving).
+First, I did a tiny part: nutplate strip, just because it only took me a few minutes. I opted to countersink holes for the "oops" sized rivets (NAS1097AD-3) using the deburring tool. It did leave some amount of chatter, though, but it should not matter as this application is not critical (these rivets are mostly to keep the nutplate from moving).
 
 ![](0-tiny-nutplate.jpeg)
 

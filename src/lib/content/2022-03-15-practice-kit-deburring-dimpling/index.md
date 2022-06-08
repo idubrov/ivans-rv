@@ -5,7 +5,7 @@ tags: ['mistakes', 'preparing']
 time: 1.5
 ---
 
-Today I was deburring/dimpling all the parts and also counter-sinking the trailing wedge.
+Today I was deburring/dimpling all the parts and also countersinking the trailing wedge.
 
 <!-- more -->
 

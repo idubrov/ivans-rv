@@ -20,7 +20,7 @@ The answer was that upsizing is okay, but I should not expect to get away with t
 ![](3-holes-skin.jpeg)
 
 
-Then I moved to the counterbalance weight. I drilled the hole for the screw (using a #12 drill bit), then dimpled the counterbalance rib and counter-sunk the lead weight. I used a manual deburring tool with the counter-sinking bit installed. The lead is so soft that a couple of turns is all you need. I counter-sunk until the weight sits flat to the rib.
+Then I moved to the counterbalance weight. I drilled the hole for the screw (using a #12 drill bit), then dimpled the counterbalance rib and counter-sunk the lead weight. I used a manual deburring tool with the countersinking bit installed. The lead is so soft that a couple of turns is all you need. I counter-sunk until the weight sits flat to the rib.
 
 I will use a fuel tank sealant ("Pro-Seal") to attach the lead to the rib.
 
