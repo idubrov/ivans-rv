@@ -52,7 +52,9 @@ Finally, I decided to remove the primer from the outside of the counter-balance 
 
 ![](7-primer-is-gone.jpeg)
 
-Another small task I did is to install nut plates on the counter-balance nut plate strip. Also, I filed the counter-balance a bit so it fits without interfering with the rivets. I am not 100% confident it sits flat, though. I wanted to use screws to clamp it and see marks on the lead (since the lead is so soft, the rivet would leave a mark), but I don't have a nut to use with the #10 screws (and I cannot use nut plates and they will lock the screws).
+Another small task I did is to install nut plates on the counter-balance nut plate strip. I used NAS 1097 rivets to attach nut plates to the nut plate strip as they have smaller heads and counter-sinking could be done by turning the deburring tool just a few turns..
+
+Also, I filed the counter-balance a bit so it fits without interfering with the rivets. I am not 100% confident it sits flat, though. I wanted to use screws to clamp it and see marks on the lead (since the lead is so soft, the rivet would leave a mark), but I don't have a nut to use with the #10 screws (and I cannot use nut plates since they will lock the screws).
 
 ![](8-counterweight.jpeg)
 
