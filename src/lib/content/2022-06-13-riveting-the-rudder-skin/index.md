@@ -70,3 +70,7 @@ The last two rivets are going to be even more pain. I can fit the bar over one r
 The rudder is partially riveted (I am still waiting for the rivets for the bottom rib, I did not have the correct size).
 
 ![](10-riveted-rudder.jpeg)
+
+The next day small update: with my custom bucking bar I was able to set the for trailing rivets. They don't look amazing, but they are swelled enough to hold the skin.
+
+![](11-riveted-trailing-rivets.jpeg)
