@@ -3,7 +3,7 @@ title: 'Riveting the stiffeners to the skins'
 categories: ['empennage']
 time: 1.5
 tags: ['riveting']
-thumbnail: '1-servo-fastened.jpeg'
+thumbnail: '0-double-offset-rivet-set.jpeg'
 ---
 
 I got my double offset back riveting set, so I continued riveting the stiffeners to the skins.
