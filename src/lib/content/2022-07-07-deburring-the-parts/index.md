@@ -26,3 +26,7 @@ Then I countersinked the holes. The hardwood provided some support for the pilot
 Finally, I cut the hardwood blocks for bending the elevator skin trim cutout tabs. I haven't figured out where exactly should be the bend line, though.
 
 ![](3-bending-blocks.jpeg)
+
+P.S. After looking a bit more at the trim spar, I decided to redo it. The main issue is that I countersinked all the top holes, however, the last 4 holes are not backed by the hinge. Since my holes are a bit enlarged, they would not provide good support for the blind rivets (even though these rivets require slightly larger holes).
+
+I am also going to re-order E-703 and E-704 ribs. They are okay, but a few holes are a bit oblong. I can't figure out how to make these parts sit tight enough to each other so the spacing of the holes on their flanges matches the counter-balance skin.
