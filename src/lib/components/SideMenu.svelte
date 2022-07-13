@@ -70,6 +70,7 @@
 		<h1>Highlights</h1>
 		<ul>
 			<li><a href="/workbenches">Workbenches</a></li>
+			<li><a href="/rivets">Rivets</a></li>
 		</ul>
 	</section>
 	<section class="tags">
