@@ -1,0 +1,1 @@
+Both of the edges are rolled for the outermost segment.
