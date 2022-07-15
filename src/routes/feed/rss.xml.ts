@@ -12,7 +12,7 @@ dayjs.extend(timezone);
 
 const title = "Ivan's RV-7";
 
-export const get = async () => {
+export const GET = async () => {
 	const posts = await getAllPosts();
 	const body = render(baseUrl(), [...posts].reverse());
 	return {

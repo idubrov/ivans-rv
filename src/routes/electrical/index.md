@@ -39,6 +39,9 @@ Planned electrical equipment / avionics.
 - GMU 11 Magnetometer in the wingtip
   - 2x22AWG CAN BUS shielded cable (from the roll GSA 28), terminated
   - 2x22AWG twisted power / ground
+- Camera in the inner access panel
+  - RG400 cable for video
+  - 2x22AWG twisted power / ground
 
 ## Fuselage
 

@@ -1,7 +1,7 @@
 import { getAllPosts } from '$lib/blog';
 import lunr from 'lunr';
 
-export const get = async () => {
+export const GET = async () => {
 	const posts = await getAllPosts();
 
 	const index = lunr((builder) => {
