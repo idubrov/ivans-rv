@@ -1,11 +1,11 @@
 ---
-title: 'Bending the right elevator leading edge'
+title: 'Rolling the right elevator leading edge'
 categories: ['empennage']
 time: 3
 tags: ['bending']
 ---
 
-Today I bent the right elevator leading edge.
+Today I rolled the right elevator leading edge.
 
 <!-- more -->
 

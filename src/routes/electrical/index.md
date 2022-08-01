@@ -39,6 +39,7 @@ Planned electrical equipment / avionics.
 - GMU 11 Magnetometer in the wingtip
   - 2x22AWG CAN BUS shielded cable (from the roll GSA 28), terminated
   - 2x22AWG twisted power / ground
+  - [mount](https://www.steinair.com/product/gmu-11-wing-tip-mount/)
 - Camera in the inner access panel
   - RG400 cable for video
   - 2x22AWG twisted power / ground
@@ -66,6 +67,10 @@ Planned electrical equipment / avionics.
 - Pitch trim motor
   - 2x22AWG shielded cable for the pitch trim motor (to the GSA 28 pitch servo)
   - 3x22AWG shielded cable for the position (to the GEA 24)
+
+## Notes
+
+- [Holder for rib lightening holes](https://www.digikey.com/en/products/detail/panduit-corp/LHMS-S6-D/1307127)
 
 <!--
 
