@@ -18,7 +18,7 @@ Summary for the rivets used in the RV-7 empennage kit. The data was taken primar
 | AN470AD3  | 179         | 262           |           | N/A        | N        | MS20470AD-3  |                                                        |     
 | AN470AD4  | 319         | 466           |           | N/A        | N        | MS20470AD-4  |                                                        |
 
-Driven rivet specifications (according to the [MIL Spec](https://www.vansaircraft.com/wp-content/uploads/2019/02/MIL-R-47196A_MI.pdf):
+Driven rivet specifications (according to the [MIL Spec](https://www.vansaircraft.com/wp-content/uploads/2019/02/MIL-R-47196A_MI.pdf)):
 
 | Rivet Size | Minimum Diameter | Minimum Thickness | Maximum Thickness |
 | ---------- | ---------------- | ----------------- | ----------------- |

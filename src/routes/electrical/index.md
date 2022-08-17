@@ -74,6 +74,8 @@ Planned electrical equipment / avionics.
 
 <!--
 
+TODO: Another / backup GSU-25?
+
 Shielded cable are MIL-C-27500
 For Garmin, use MIL-W-22759/16 22AWG or larger, unless otherwise specified. Use MIL-C-27500 for all shielded cable connections.
 
