@@ -40,7 +40,7 @@ Planned electrical equipment / avionics.
   - 2x22AWG CAN BUS shielded cable (from the roll GSA 28), terminated
   - 2x22AWG twisted power / ground
   - [mount](https://www.steinair.com/product/gmu-11-wing-tip-mount/)
-- Camera in the inner access panel
+- Camera in the inner access panel (or too annoying for annuals?)
   - RG400 cable for video
   - 2x22AWG twisted power / ground
 
@@ -79,4 +79,5 @@ TODO: Another / backup GSU-25?
 Shielded cable are MIL-C-27500
 For Garmin, use MIL-W-22759/16 22AWG or larger, unless otherwise specified. Use MIL-C-27500 for all shielded cable connections.
 
+Temperature probe: next to the inspection panel?
 -->
