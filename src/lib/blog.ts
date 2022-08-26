@@ -88,6 +88,14 @@ export const CATEGORIES: Category[] = [
 		description: 'Empennage'
 	},
 	{
+		code: 'fuselage',
+		description: 'Fuselage'
+	},
+	{
+		code: 'wings',
+		description: 'Wings',
+	},
+	{
 		code: 'practice-kit',
 		description: 'Practice Kit'
 	},
