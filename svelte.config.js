@@ -30,17 +30,14 @@ const config = {
 			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
 			smartypants: false,
 			layout: {
-				standalone: './src/routes/__layout-standalone.svelte',
-				_: './src/routes/__layout-blog.svelte'
+				standalone: './src/routes/(standalone)/+layout.svelte',
+				_: './src/routes/(blog)/+layout.svelte'
 			}
 		})
 	],
 
 	kit: {
 		adapter: adapter(),
-		prerender: {
-			default: true
-		}
 	},
 
 	extensions: ['.svelte', '.md']

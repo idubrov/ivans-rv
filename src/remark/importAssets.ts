@@ -40,7 +40,7 @@ export function importAssets(): (tree: Root, file: VFile) => Root {
 		let alts: string[] = [];
 
 		// Only collect assets for markdown pages which correspond to the whole directory.
-		if (file.filename.endsWith('/index.md')) {
+		if (file.filename.endsWith('/+page.md') || file.filename.endsWith('/index.md')) {
 			const dir = dirname(file.filename);
 			assets = readdirSync(dir).filter(isAsset);
 			alts = assets.map((asset) => {

@@ -2,7 +2,6 @@
 	import dayjs from 'dayjs';
 	import { postLink } from '$lib/navigation';
 	import type { PostMetadata } from '$lib/types';
-	import { dev } from '$app/env';
 </script>
 
 <script lang="ts">

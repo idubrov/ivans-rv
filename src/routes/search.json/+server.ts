@@ -1,7 +1,10 @@
+import type { RequestHandler } from './$types';
 import { getAllPosts } from '$lib/blog';
 import lunr from 'lunr';
 
-export const GET = async () => {
+export const prerender = true
+
+export const GET: RequestHandler = async () => {
 	const posts = await getAllPosts();
 
 	const index = lunr((builder) => {
@@ -20,11 +23,11 @@ export const GET = async () => {
 		});
 	});
 
-	return {
-		body: index,
-		headers: {
-			'Cache-Control': `max-age=0, s-max-age=${600}`,
-			'Content-Type': 'application/json'
-		}
-	};
+	return new Response(JSON.stringify(index),
+		{
+			headers: {
+				'Cache-Control': `max-age=0, s-max-age=${600}`,
+				'Content-Type': 'application/json'
+			}
+		});
 };

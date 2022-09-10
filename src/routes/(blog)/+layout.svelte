@@ -1,9 +1,4 @@
 <script context="module">
-	import dayjs from 'dayjs';
-	import utc from 'dayjs/plugin/utc.js';
-
-	dayjs.extend(utc);
-
 	export { default as img } from '$lib/components/MarkdownImg.svelte';
 	export { default as a } from '$lib/components/MarkdownLink.svelte';
 </script>
@@ -16,6 +11,7 @@
 	import { galleryKey, assetsKey } from '$lib/types';
 	import { setContext } from 'svelte';
 	import { baseUrl } from '$lib/assets';
+	import dayjs from 'dayjs';
 
 	export let title;
 	export let format;

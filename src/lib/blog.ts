@@ -1,5 +1,5 @@
 import type { Category, CategoryInfo, CurrentPost, PostMetadata } from './types';
-import { dev } from '$app/env';
+import { dev } from '$app/environment';
 
 async function createPost(
 	path: string,
