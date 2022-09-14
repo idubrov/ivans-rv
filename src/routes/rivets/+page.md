@@ -1,5 +1,5 @@
 ---
-title: 'Workbenches'
+title: 'Rivets used in a RV-7'
 layout: standalone
 ---
 
