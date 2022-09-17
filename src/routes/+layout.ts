@@ -15,3 +15,5 @@ export const load: LayoutLoad = async ({ data, fetch }) => {
 		searchIndex
 	};
 };
+
+export const prerender = true;
