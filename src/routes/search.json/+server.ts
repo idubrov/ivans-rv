@@ -2,8 +2,6 @@ import type { RequestHandler } from './$types';
 import { getAllPosts } from '$lib/blog';
 import lunr from 'lunr';
 
-export const prerender = true
-
 export const GET: RequestHandler = async () => {
 	const posts = await getAllPosts();
 

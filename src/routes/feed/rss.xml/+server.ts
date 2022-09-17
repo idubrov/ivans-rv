@@ -8,8 +8,6 @@ import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import timezone from 'dayjs/plugin/timezone.js';
 
-export const prerender = true
-
 dayjs.extend(utc);
 dayjs.extend(timezone);
 

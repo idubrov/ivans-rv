@@ -18,5 +18,3 @@ export const load = async ({ fetch }) => {
 		searchIndex
 	};
 };
-
-export const prerender = true;
