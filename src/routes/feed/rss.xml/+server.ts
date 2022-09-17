@@ -1,12 +1,13 @@
 import type { RequestHandler } from './$types';
-import { getAllPosts } from '../../../lib/blog';
-import { postLink } from '../../../lib/navigation';
-import type { PostMetadata } from '../../../lib/types';
-import { baseUrl } from '../../../lib/assets';
-import image from '../../../lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.jpeg';
+import { getAllPostsMetadata } from '$lib/blog';
+import { postLink } from '$lib/navigation';
+import type { Post } from '$lib/types';
+import { baseUrl } from '$lib/assets';
+import image from '$lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.jpeg';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import timezone from 'dayjs/plugin/timezone.js';
+import { hydratePosts } from '../../../lib/blogClient';
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -14,7 +15,7 @@ dayjs.extend(timezone);
 const title = "Ivan's RV-7";
 
 export const GET: RequestHandler = async () => {
-	const posts = await getAllPosts();
+	const posts = await hydratePosts(await getAllPostsMetadata());
 	const body = render(baseUrl(), [...posts].reverse());
 	return new Response(body, {
 		headers: {
@@ -25,10 +26,7 @@ export const GET: RequestHandler = async () => {
 };
 
 //Be sure to review and replace any applicable content below!
-const render = (
-	base: URL,
-	posts: readonly PostMetadata[]
-) => `<?xml version="1.0" encoding="UTF-8" ?>
+const render = (base: URL, posts: readonly Post[]) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>${title}</title>
@@ -62,7 +60,7 @@ const render = (
 
 // FIXME: should mark with 'webfeedsFeaturedVisual' class instead
 
-function thumbnail(post: PostMetadata): string {
+function thumbnail(post: Post): string {
 	if (!post.thumbnail) {
 		return '';
 	}

@@ -1,11 +1,8 @@
-import { getPostsByTag } from '$lib/blog';
-import PostsList from '$lib/components/PostsList.svelte';
-import type { PostMetadata } from '$lib/types';
-import type { PageLoad } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
+import { hydratePosts } from '$lib/blogClient';
 
-export const load: PageLoad = async ({ params }) => {
-	const posts = await getPostsByTag(params.tag);
+export const load: PageLoad = async ({ data }) => {
 	return {
-		posts: [...posts].reverse()
+		posts: await hydratePosts(data.posts)
 	};
 };

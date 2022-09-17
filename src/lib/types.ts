@@ -15,9 +15,12 @@ export interface PostMetadata extends PostRef {
 	assets: Record<string, Asset>;
 	categories: string[];
 	tags: string[];
-	component: SvelteComponent;
 	time: number;
 	thumbnail?: string;
+}
+
+export interface Post extends PostMetadata {
+	component: SvelteComponent;
 }
 
 export interface CurrentPost {

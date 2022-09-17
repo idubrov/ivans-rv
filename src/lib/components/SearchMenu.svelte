@@ -1,7 +1,7 @@
 <script lang="ts">
 	import dayjs from 'dayjs';
 	import lunr from 'lunr';
-	import { getPost } from '$lib/blog';
+	import { getPost } from '$lib/blogClient';
 	import { postLink } from '$lib/navigation';
 	import PostThumbnail from './PostThumbnail.svelte';
 	import type { PostMetadata } from '$lib/types';

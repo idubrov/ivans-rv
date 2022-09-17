@@ -2,7 +2,7 @@
 title: 'Priming the right elevator understructure parts'
 categories: ['empennage']
 time: 2.5
-tags: [priming']
+tags: ['priming']
 ---
 
 Today I primed the parts for the right elevator.

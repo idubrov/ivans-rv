@@ -1,14 +1,11 @@
-<script context="module" lang="ts">
-	import dayjs from 'dayjs';
-	import { postLink } from '$lib/navigation';
-	import type { PostMetadata } from '$lib/types';
-</script>
-
 <script lang="ts">
+	import dayjs from 'dayjs';
 	import PostThumbnail from './PostThumbnail.svelte';
 	import TimeSpent from './TimeSpent.svelte';
+	import { postLink } from '$lib/navigation';
+	import type { Post } from '$lib/types';
 
-	export let posts: PostMetadata[];
+	export let posts: Post[];
 </script>
 
 <ul class="postslist">

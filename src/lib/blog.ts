@@ -1,76 +1,44 @@
-import type { Category, CategoryInfo, CurrentPost, PostMetadata } from './types';
+import type { Category, CategoryInfo, CurrentPost, Post, PostMetadata } from './types';
 import { dev } from '$app/environment';
+import { browser } from '$app/environment';
+import { resolveCreatePost } from './blogClient';
 
-async function createPost(
-	path: string,
-	resolver: () => Promise<Record<string, any>>
-): Promise<PostMetadata | undefined> {
-	const module = await resolver();
-	if (!module.metadata.key) {
-		console.warn(`Content entry path '${path}' does not have proper format, ignored`);
-		return;
-	}
-	return {
-		component: module.default,
-		key: module.metadata.key,
-		draft: module.metadata.draft,
-		date: module.metadata.date,
-		slug: module.metadata.slug,
-		categories: module.metadata.categories,
-		tags: module.metadata.tags,
-		time: module.metadata.time,
-		title: module.metadata.title,
-		assets: module.metadata.assets,
-		summary: module.metadata.summary,
-		thumbnail: module.metadata.thumbnail
-	};
+if (browser) {
+	throw new Error('This module can only be used on a server!');
 }
 
-async function listPostsInternal(): Promise<readonly PostMetadata[]> {
-	const modules = import.meta.glob('./content/*/index.md');
-	const entries: PostMetadata[] = [];
-	for (const path in modules) {
-		const post = await createPost(path, modules[path]);
-		if (!post) {
-			console.warn(`Content entry path '${path}' does not have proper format, ignored`);
-			continue;
-		}
-		if (post.draft && !dev) {
-			console.info(`Ignoring draft post '${path}' as we are not running in dev mode`);
-			continue;
-		}
-		entries.push(post);
-	}
+type Resolver = () => Promise<Record<string, any>>;
+
+async function listPostsInternal(): Promise<readonly Post[]> {
+	const modules: Record<string, Resolver> = import.meta.glob('./content/*/index.md');
+	const entries = (
+		await Promise.all(Object.keys(modules).map((path) => resolveCreatePost(path, modules[path])))
+	).filter((item): item is Post => typeof item !== 'undefined');
 
 	// Sort from oldest to newest
 	entries.sort((a, b) => a.date.getTime() - b.date.getTime());
 	return Object.freeze(entries);
 }
 
-export const ENTRIES = listPostsInternal();
+export const ENTRIES2 = listPostsInternal();
 
 /**
  * Get all posts ordered from the earliest to the latest.
  */
-export async function getAllPosts(): Promise<readonly PostMetadata[]> {
-	return ENTRIES;
+export async function getAllPostsMetadata(): Promise<readonly PostMetadata[]> {
+	return (await ENTRIES2).map(({ component, ...post }) => post);
 }
 
 export async function getPostsByCategory(category: string): Promise<PostMetadata[]> {
-	return (await ENTRIES).filter((entry) => entry.categories.includes(category));
+	return (await getAllPostsMetadata()).filter((entry) => entry.categories.includes(category));
 }
 
 export async function getPostsByTag(tag: string): Promise<PostMetadata[]> {
-	return (await ENTRIES).filter((entry) => entry.tags.includes(tag));
-}
-
-export async function getPost(key: string): Promise<PostMetadata | undefined> {
-	const posts = await ENTRIES;
-	return posts.find((post) => post.key === key);
+	return (await getAllPostsMetadata()).filter((entry) => entry.tags.includes(tag));
 }
 
 export async function getPostAndSiblings(key: string): Promise<CurrentPost | undefined> {
-	const posts = await ENTRIES;
+	const posts = await getAllPostsMetadata();
 	const pos = posts.findIndex((post) => post.key === key);
 	if (pos === -1) {
 		return undefined;
@@ -93,7 +61,7 @@ export const CATEGORIES: Category[] = [
 	},
 	{
 		code: 'wings',
-		description: 'Wings',
+		description: 'Wings'
 	},
 	{
 		code: 'practice-kit',
@@ -106,7 +74,7 @@ export const CATEGORIES: Category[] = [
 ];
 
 export async function aggregateCategories(): Promise<CategoryInfo[]> {
-	const posts = await getAllPosts();
+	const posts = await getAllPostsMetadata();
 	return (
 		CATEGORIES.map((template) => {
 			const categoryPosts = posts.filter((entry) => entry.categories.includes(template.code));
@@ -122,6 +90,6 @@ export async function aggregateCategories(): Promise<CategoryInfo[]> {
 }
 
 export async function aggregateTags(): Promise<string[]> {
-	const posts = await getAllPosts();
+	const posts = await getAllPostsMetadata();
 	return [...new Set(posts.flatMap((post) => post.tags))].sort();
 }

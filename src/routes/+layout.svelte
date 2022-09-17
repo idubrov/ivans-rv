@@ -16,4 +16,9 @@
 	<slot />
 </main>
 <MainMenu />
-<SideMenu categories={data.categories} tags={data.tags} recent={data.recent} searchIndex={data.searchIndex} />
+<SideMenu
+	categories={data.categories}
+	tags={data.tags}
+	recent={data.recent}
+	searchIndex={data.searchIndex}
+/>

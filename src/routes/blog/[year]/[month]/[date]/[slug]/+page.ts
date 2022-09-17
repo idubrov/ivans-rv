@@ -1,23 +1,14 @@
 import { error } from '@sveltejs/kit';
-import { getPostAndSiblings } from '$lib/blog';
-import type { PostMetadata } from '$lib/types';
+import type { PageLoad } from './$types';
+import { hydratePost } from '$lib/blogClient';
 
-type PageData = {
-	previous?: PostMetadata;
-	current?: PostMetadata;
-	next?: PostMetadata;
-}
-
-export const load = async ({ params }): Promise<PageData> => {
-	const postKey = `${params.year}-${params.month}-${params.date}-${params.slug}`;
-	const postAndSiblings = await getPostAndSiblings(postKey);
-	if (typeof postAndSiblings === 'undefined') {
+export const load: PageLoad = async ({ data }) => {
+	if (typeof data.current === 'undefined') {
 		throw error(404);
 	}
-	const { previous, current, next } = postAndSiblings;
+	const currentComponent = (await hydratePost(data.current)).component;
 	return {
-		previous,
-		current,
-		next
+		...data,
+		currentComponent
 	};
 };

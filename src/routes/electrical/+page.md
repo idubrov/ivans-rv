@@ -15,7 +15,7 @@ Planned electrical equipment / avionics.
 - GAP 26 Heated Pitot Tube
   - Pitot input source (to GSU 25)
   - AOA input source (to GSU 25)
-  - 2x12AWG twisted for pitot heater 
+  - 2x12AWG twisted for pitot heater
 - Van's stall warner
   - 2x22AWG twisted wire
 - Archer antenna for NAV in the wingtip
@@ -62,6 +62,7 @@ Planned electrical equipment / avionics.
   - 1x22AWG autopilot disconnect
 
 ## Empennage
+
 - Flyleds tail light
   - 2x18AWG shielded cable for TAIL-/TAIL+ (to the empennage)
 - Pitch trim motor

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import PostsList from '$lib/components/PostsList.svelte';
+	import PostsList from '$lib/components/PostsList.svelte';
 
-  export let data;
+	export let data;
 </script>
 
 <PostsList posts={data.posts} />

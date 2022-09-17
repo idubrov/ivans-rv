@@ -1,15 +1,15 @@
 import type { RequestHandler } from './$types';
-import { getAllPosts } from '$lib/blog';
+import { getAllPostsMetadata } from '$lib/blog';
 import lunr from 'lunr';
+import { hydratePosts } from '$lib/blogClient';
 
 export const GET: RequestHandler = async () => {
-	const posts = await getAllPosts();
+	const posts = await hydratePosts(await getAllPostsMetadata());
 
 	const index = lunr((builder) => {
 		builder.ref('id');
 		builder.field('title');
 		builder.field('body');
-		//builder.metadataWhitelist = ['position'];
 		posts.forEach((post) => {
 			const body = post.component.render({ format: 'rss' }).html;
 			const doc = {
@@ -21,11 +21,10 @@ export const GET: RequestHandler = async () => {
 		});
 	});
 
-	return new Response(JSON.stringify(index),
-		{
-			headers: {
-				'Cache-Control': `max-age=0, s-max-age=${600}`,
-				'Content-Type': 'application/json'
-			}
-		});
+	return new Response(JSON.stringify(index), {
+		headers: {
+			'Cache-Control': `max-age=0, s-max-age=${600}`,
+			'Content-Type': 'application/json'
+		}
+	});
 };

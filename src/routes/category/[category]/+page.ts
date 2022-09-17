@@ -1,9 +1,8 @@
-import { getPostsByCategory } from '$lib/blog';
-import type { PostMetadata } from "$lib/types";
+import type { PageLoad } from './$types';
+import { hydratePosts } from '$lib/blogClient';
 
-export const load = async ({ params }): Promise<{ posts: PostMetadata[] }> => {
-	const posts = await getPostsByCategory(params.category);
+export const load: PageLoad = async ({ data }) => {
 	return {
-		posts: [...posts].reverse()
+		posts: await hydratePosts(data.posts)
 	};
 };
