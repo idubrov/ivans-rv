@@ -1,7 +1,7 @@
 <script lang="ts">
 	import dayjs from 'dayjs';
 	import lunr from 'lunr';
-	import { getPost } from '$lib/blogClient';
+	import { loadPostByKey } from '$lib/blogClient';
 	import { postLink } from '$lib/navigation';
 	import PostThumbnail from './PostThumbnail.svelte';
 	import type { PostMetadata } from '$lib/types';
@@ -20,7 +20,7 @@
 		} else if (last !== term) {
 			last = term;
 			const searchResults = index.search(term).slice(0, 10);
-			results = await Promise.all(searchResults.map((result) => getPost(result.ref)));
+			results = await Promise.all(searchResults.map((result) => loadPostByKey(result.ref)));
 		}
 	}
 </script>

@@ -1,32 +1,18 @@
-import type { Category, CategoryInfo, CurrentPost, Post, PostMetadata } from './types';
-import { dev } from '$app/environment';
+import type { Category, CategoryInfo, CurrentPost, PostMetadata } from './types';
 import { browser } from '$app/environment';
-import { resolveCreatePost } from './blogClient';
+import { loadPosts } from './blogClient';
 
 if (browser) {
 	throw new Error('This module can only be used on a server!');
 }
 
-type Resolver = () => Promise<Record<string, any>>;
-
-async function listPostsInternal(): Promise<readonly Post[]> {
-	const modules: Record<string, Resolver> = import.meta.glob('./content/*/index.md');
-	const entries = (
-		await Promise.all(Object.keys(modules).map((path) => resolveCreatePost(path, modules[path])))
-	).filter((item): item is Post => typeof item !== 'undefined');
-
-	// Sort from oldest to newest
-	entries.sort((a, b) => a.date.getTime() - b.date.getTime());
-	return Object.freeze(entries);
-}
-
-export const ENTRIES2 = listPostsInternal();
+export const ENTRIES = loadPosts();
 
 /**
  * Get all posts ordered from the earliest to the latest.
  */
 export async function getAllPostsMetadata(): Promise<readonly PostMetadata[]> {
-	return (await ENTRIES2).map(({ component, ...post }) => post);
+	return await ENTRIES;
 }
 
 export async function getPostsByCategory(category: string): Promise<PostMetadata[]> {

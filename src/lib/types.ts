@@ -19,10 +19,6 @@ export interface PostMetadata extends PostRef {
 	thumbnail?: string;
 }
 
-export interface Post extends PostMetadata {
-	component: SvelteComponent;
-}
-
 export interface CurrentPost {
 	previous?: PostMetadata;
 	current: PostMetadata;

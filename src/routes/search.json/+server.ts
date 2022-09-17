@@ -1,10 +1,18 @@
 import type { RequestHandler } from './$types';
 import { getAllPostsMetadata } from '$lib/blog';
 import lunr from 'lunr';
-import { hydratePosts } from '$lib/blogClient';
+import { loadPostAsComponent } from '$lib/blogClient';
 
 export const GET: RequestHandler = async () => {
-	const posts = await hydratePosts(await getAllPostsMetadata());
+	const postsMetadata = await getAllPostsMetadata();
+	const posts = await Promise.all(
+		postsMetadata.map((post) =>
+			loadPostAsComponent(post).then((component) => ({
+				...post,
+				component
+			}))
+		)
+	);
 
 	const index = lunr((builder) => {
 		builder.ref('id');

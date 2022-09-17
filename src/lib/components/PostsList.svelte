@@ -4,6 +4,7 @@
 	import TimeSpent from './TimeSpent.svelte';
 	import { postLink } from '$lib/navigation';
 	import type { Post } from '$lib/types';
+	import { loadPostAsComponent } from '$lib/blogClient.js';
 
 	export let posts: Post[];
 </script>
@@ -20,7 +21,9 @@
 			<a href={postLink(post)}>
 				<PostThumbnail {post} />
 			</a>
-			<svelte:component this={post.component} format="summary" />
+			{#await loadPostAsComponent(post) then component}
+				<svelte:component this={component} format="summary" />
+			{/await}
 			<a href={postLink(post)}>
 				<h3>Continue reading &rarr;</h3>
 			</a>

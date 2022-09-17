@@ -1,17 +1,16 @@
-import type { Post, PostMetadata } from './types';
+import type { PostMetadata } from './types';
 import { dev } from '$app/environment';
+import type { SvelteComponent } from 'svelte';
 
-async function createPost(
+function createPostFromModuleResolver(
 	path: string,
-	resolver: () => Promise<Record<string, any>>
-): Promise<Post | undefined> {
-	const module = await resolver();
+	module: Record<string, any>
+): PostMetadata | undefined {
 	if (!module.metadata.key) {
 		console.warn(`Content entry path '${path}' does not have proper format, ignored`);
 		return;
 	}
-	return {
-		component: module.default,
+	const post = {
 		key: module.metadata.key,
 		draft: module.metadata.draft,
 		date: module.metadata.date,
@@ -24,19 +23,6 @@ async function createPost(
 		summary: module.metadata.summary,
 		thumbnail: module.metadata.thumbnail
 	};
-}
-
-type Resolver = () => Promise<Record<string, any>>;
-
-export async function resolveCreatePost(
-	path: string,
-	resolver: Resolver
-): Promise<Post | undefined> {
-	const post = await createPost(path, resolver);
-	if (!post) {
-		console.warn(`Content entry path '${path}' does not have proper format, ignored`);
-		return undefined;
-	}
 	if (post.draft && !dev) {
 		console.info(`Ignoring draft post '${path}' as we are not running in dev mode`);
 		return undefined;
@@ -44,19 +30,28 @@ export async function resolveCreatePost(
 	return post;
 }
 
-export async function hydratePost(post: PostMetadata): Promise<Post> {
-	const component = (await import(`./content/${post.key}/index.md`)).default;
-	return {
-		...post,
-		component
-	};
+type Resolver = () => Promise<Record<string, any>>;
+
+export async function loadPosts(): Promise<readonly PostMetadata[]> {
+	const modules: Record<string, Resolver> = import.meta.glob('./content/*/index.md');
+
+	const asyncEntries = Object.entries(modules).map(([path, resolver]) =>
+		resolver().then((module) => createPostFromModuleResolver(path, module))
+	);
+	const entries = (await Promise.all(asyncEntries)).filter(
+		(item): item is PostMetadata => typeof item !== 'undefined'
+	);
+
+	// Sort from oldest to newest
+	entries.sort((a, b) => a.date.getTime() - b.date.getTime());
+	return Object.freeze(entries);
 }
 
-export async function getPost(key: string): Promise<PostMetadata | undefined> {
+export async function loadPostAsComponent(post: PostMetadata): Promise<SvelteComponent> {
+	return import(`./content/${post.key}/index.md`).then((module) => module.default);
+}
+
+export async function loadPostByKey(key: string): Promise<PostMetadata | undefined> {
 	const path = `./content/${key}/index.md`;
-	return resolveCreatePost(path, () => import(`./content/${key}/index.md`));
-}
-
-export async function hydratePosts(posts: readonly PostMetadata[]): Promise<Post[]> {
-	return await Promise.all(posts.map(hydratePost));
+	return createPostFromModuleResolver(path, import(path));
 }
