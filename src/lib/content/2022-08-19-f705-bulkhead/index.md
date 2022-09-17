@@ -30,7 +30,7 @@ I did the initial drilling on a milling machine, which made very good holes. How
 
 This is where I made a small mistake. The very first hole I drilled with the electric drill grabbed the drill bit and scratched the part a bit with the drill jaws. I guess that's another reason to use proper aircraft drill bits which are 12" long. Also, a pneumatic drill (but it was very late, so I could not use it), which drills with much higher RPM and tends to grab less. I sanded the scratch mark off, measured the thickness with the micrometer, and it was, on average, 0.031" versus 0.032" in other areas, so should not be an issue.
 
-Then I went to drill the F-705C bar doublers. I went with the following procedure. 
+Then I went to drill the F-705C bar doublers. I went with the following procedure.
 
 First, I measured the dimensions and found that I only need to remove the material from the "short" outboard side (the side that is closer to the bend). The inboard side was on spot (on both of the doublers).
 

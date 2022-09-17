@@ -21,7 +21,7 @@ The foremost flanges of the rib would not sit tight against the skin, so I used 
 
 The nose rib was, perhaps, the hardest part to rivet with the rivet gun. There is very little space and it is hard to see anything without very bright light (which I had!).
 
-Riveting with the gun was the part I was concerned about the most. As it turned out, for no reason. Working on a 3/32" rivet with the gun set to 30 PSI is not too hard and the process is very controllable. My first rivets came out a bit slanted, mostly because they were the first and also because of the difficulty to keep the bar square against the rivet given the spacing and curvature of the rib. 
+Riveting with the gun was the part I was concerned about the most. As it turned out, for no reason. Working on a 3/32" rivet with the gun set to 30 PSI is not too hard and the process is very controllable. My first rivets came out a bit slanted, mostly because they were the first and also because of the difficulty to keep the bar square against the rivet given the spacing and curvature of the rib.
 
 ![](03-nose-rib-riveted.jpeg)
 

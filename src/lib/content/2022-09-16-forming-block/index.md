@@ -24,7 +24,7 @@ Here I made a small mistake. I drilled the tool hole in the block using the part
 
 ![](2-forming-block.jpeg)
 
-Then I used a copying router bit to copy the forming block into another piece of oak to be used as a crushing block. Both blocks and the bolts holding them together make a forming fixture. 
+Then I used a copying router bit to copy the forming block into another piece of oak to be used as a crushing block. Both blocks and the bolts holding them together make a forming fixture.
 
 ![](3-forming-fixture.jpeg)
 

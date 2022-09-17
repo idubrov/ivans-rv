@@ -5,7 +5,7 @@ time: 3
 tags: ['priming']
 ---
 
-Today I primed the parts for the F706 bulkhead. 
+Today I primed the parts for the F706 bulkhead.
 
 <!-- more -->
 

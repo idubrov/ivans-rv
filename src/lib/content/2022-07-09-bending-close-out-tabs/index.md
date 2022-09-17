@@ -40,7 +40,7 @@ This is what the finished part looks like. I deepened the relief holes just a bi
 
 If I get perfect bends on the trim tab, I estimate the gap between the elevator and the trim tab to be about 1/8" (assuming the inboard edge and the trailing edges are aligned). This is just a 1/32" larger than the minimum gap of 3/32". Perfect.
 
-Another concern I had is if the bottom tab pushed against the top tab bend and I got a crack there. There was a little scratch in the primer, so I removed the primer in that area and inspected the part as well as I could. I did not find any crack there. 
+Another concern I had is if the bottom tab pushed against the top tab bend and I got a crack there. There was a little scratch in the primer, so I removed the primer in that area and inspected the part as well as I could. I did not find any crack there.
 
 Then I switched to the trim tab skin. I started rounding all the relief holes as best as I could, to minimize the chance of the skin cracking while doing the trim tabs.
 

@@ -9,8 +9,7 @@ Small priming session to prime all the remaining ribs.
 
 <!-- more -->
 
-This was a short session to prime the ribs. This time I decided to put them on a chicken wire table instead of hanging them, as I thought it would be easier to spray small parts on the table. 
-
+This was a short session to prime the ribs. This time I decided to put them on a chicken wire table instead of hanging them, as I thought it would be easier to spray small parts on the table.
 
 I much did better with the paint flow control this time, with no issues with the primer strikes. However, since I had to spray the paint from multiple directions to cover all rib flanges, I missed a couple. Also, a few flanges were not covered enough -- I probably need better lighting in my paint booth. Otherwise, I don't see too well if I have parts without enough coverage. Also, somebody on VAF gave advice not to use a smoke gray color as it does not contrast much against the base aluminum color. I agree with that, but I love the smoke gray. Looks really nice.
 

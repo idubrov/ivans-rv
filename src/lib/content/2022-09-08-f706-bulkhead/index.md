@@ -5,7 +5,7 @@ time: 2
 tags: ['drilling']
 ---
 
-Today I worked on various parts of the F-706 bulkhead. 
+Today I worked on various parts of the F-706 bulkhead.
 
 <!-- more -->
 

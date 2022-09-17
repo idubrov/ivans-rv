@@ -13,7 +13,7 @@ I started with riveting the leading edge to the spar. Nothing too special, used 
 
 Then was the time to install the top rib. However, before that, I needed to install the rudder counterweight. Per the manual, it needs to be attached with two screws and the nutplate strip with two nut plates.
 
-Since this assembly will be completely inaccessible once the rudder is riveted together, I wanted to glue the counterbalance in its place. One option suggested on the VAF is to use tank sealant, which is what I planned initially. 
+Since this assembly will be completely inaccessible once the rudder is riveted together, I wanted to glue the counterbalance in its place. One option suggested on the VAF is to use tank sealant, which is what I planned initially.
 
 However, after giving it some thought I decided to go with the T-88 structural epoxy instead (which I bought for the trailing edge, but now I am considering using tank sealant for it!). I was expecting epoxy to encase the lead, permanently locking it in place.
 
@@ -24,7 +24,7 @@ So I mixed the epoxy and glued the counterweight in.
 
 What I did not realize is that this epoxy is quite thin, so it was leaking out. Oh well. Should have tried it on something else first, I guess. I still got enough epoxy under the weight to keep it attached.
 
-When I put the screws in, I tried to torque them to the specification. For the #10 bolt, the torque should be 20-25 lbf*in (pound-inches), plus the friction of the nut plate. I estimated the friction to be less than 5 lbf*in, so I put 25 lbf*in on my torque screwdriver, so I get into the proper range.
+When I put the screws in, I tried to torque them to the specification. For the #10 bolt, the torque should be 20-25 lbf*in (pound-inches), plus the friction of the nut plate. I estimated the friction to be less than 5 lbf*in, so I put 25 lbf\*in on my torque screwdriver, so I get into the proper range.
 
 However, while torquing, the nutplate strip started to bend. The issue is that there is no support behind the nut plates. The original design used nuts, so the counterbalance has two counterbores for them. However, if those nuts become loose, there was no way to torque them back. So, the design was changed to use the nut plate strip, but the counterbalance still uses the same mold.
 
@@ -54,7 +54,7 @@ The best part was that I was actually able to get that "click" from my torque sc
 
 After the counter-balance was installed, it was time to rivet the top rib. Most of the rivets on the rib flanges were easy to set, but I had an issue with one side. For some reason, all rivets on one side would cleat to the side. I think this was happening because the skin was a tiny bit offset relative to the rib. I had to drill out a couple of rivets out to start over.
 
-I did a few things to make sure they were set straight. First, I switched to the manual squeezer as it allows me to see what is going on. Second, I pre-squeezed rivets just a tiny bit to make them a bit fatter (but such that they still fit in the dimpled hole). Finally, I used other tools to shift skin just a tiny bit to get the first couple of rivets straight. After the first rivets, everything went well. 
+I did a few things to make sure they were set straight. First, I switched to the manual squeezer as it allows me to see what is going on. Second, I pre-squeezed rivets just a tiny bit to make them a bit fatter (but such that they still fit in the dimpled hole). Finally, I used other tools to shift skin just a tiny bit to get the first couple of rivets straight. After the first rivets, everything went well.
 
 ![](07-rivets-are-okay.jpeg)
 

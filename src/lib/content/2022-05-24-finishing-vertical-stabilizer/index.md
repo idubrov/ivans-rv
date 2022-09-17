@@ -10,7 +10,7 @@ Front spar assembly is complete, time to rivet the vertical stabilizer together!
 
 <!-- more -->
 
-Pretty much the same deal as with the horizontal stabilizer, with minor changes to the process: 
+Pretty much the same deal as with the horizontal stabilizer, with minor changes to the process:
 
 1. I was working a bit faster.
 2. I put the painter's tape on the rivet gun so it does not mar the skin. It was not too bad without it, though. Also, I plan to paint the aircraft, so I don't think it would matter.

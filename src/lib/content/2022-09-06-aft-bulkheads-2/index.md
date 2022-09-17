@@ -5,7 +5,7 @@ time: 2
 tags: ['drilling', 'deburring']
 ---
 
-Today I mostly worked on the F711 bulkhead. 
+Today I mostly worked on the F711 bulkhead.
 
 <!-- more -->
 

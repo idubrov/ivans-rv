@@ -10,7 +10,7 @@ The final (for now!) step was to rivet F705 together.
 
 <!-- more -->
 
-Today I riveted F705 together. I only made one photo that depicts side channels being riveted to their doublers. 
+Today I riveted F705 together. I only made one photo that depicts side channels being riveted to their doublers.
 
 ![](0-assembling.jpeg)
 
@@ -44,6 +44,6 @@ This is what two blocks connected together looked like.
 
 As seen in the photo, the distance was about ~0.030". However, the two other sides were exactly flat. I put the blocks into the mill, used my edge finder to get 0.307" on the "short" side, then drilled the holes. The distance between two holes on the bulkhead channels looked like 1-5/8", so just I assumed that it was exactly that, 1.625".
 
-The instructions suggest drilling with a #10 drill bit, but I did not have a #10 reamer, so I used by #12 reamer instead. The bolt is a bit tight but could be pushed with no issues. Everything matched just fine in the end. 
+The instructions suggest drilling with a #10 drill bit, but I did not have a #10 reamer, so I used by #12 reamer instead. The bolt is a bit tight but could be pushed with no issues. Everything matched just fine in the end.
 
 ![](6-drilled-blocks.jpeg)

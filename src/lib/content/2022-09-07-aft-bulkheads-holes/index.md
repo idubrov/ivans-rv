@@ -5,7 +5,7 @@ time: 2
 tags: ['drilling', 'deburring']
 ---
 
-After some internal debating, I decided to drill the wiring / manual trim holes as per the plans. 
+After some internal debating, I decided to drill the wiring / manual trim holes as per the plans.
 
 <!-- more -->
 
@@ -17,7 +17,7 @@ To prevent holes from migrating while drilling, I marked the desired location by
 
 ![](0-f706-marking-the-hole-with-an-endmill.jpeg)
 
-Then I started drilling the hole. I only drilled it through the F-706B bulkhead, with all other parts removed. The reason is that the F-730 reinforcement plate only covers half of the hole, which would make unibit to wander from the desired location. 
+Then I started drilling the hole. I only drilled it through the F-706B bulkhead, with all other parts removed. The reason is that the F-730 reinforcement plate only covers half of the hole, which would make unibit to wander from the desired location.
 
 First I drilled the hole with the #41, then with the 1/4", and finally with the unibit. One of the holes started moving sideways, so I stopped at 9/16" and used a file to finish the hole. In the end, both of the holes were where I wanted them.
 

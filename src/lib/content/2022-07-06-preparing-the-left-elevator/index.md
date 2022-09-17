@@ -30,7 +30,7 @@ After that, I match-drilled all the understructure holes and all the #30 holes. 
 
 Also, I need to figure out how to bend the trim tab cutout and the trim tab itself. There are various techniques, including making a small bending brake. However, I don't see how can I attach the bending brake to the cutout given that the elevator has a folded trailing edge (seems like RV-14 elevators are riveted, so you actually have two pieces of skin).
 
-I think I will try the method suggested in the manual: use the hardwood bending blocks and double-sided sticky tape to keep these blocks in place. 
+I think I will try the method suggested in the manual: use the hardwood bending blocks and double-sided sticky tape to keep these blocks in place.
 
 ![](3-temporarily-clecoed.jpeg)
 ![](4-temporarily-clecoed-2.jpeg)

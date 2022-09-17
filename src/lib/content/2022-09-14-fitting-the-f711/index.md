@@ -35,4 +35,4 @@ I asked Van's Aircraft about my NAS1241 idea. Also, I asked if they can make me 
 
 Someone on the VAF suggested replacing the flanges, which got me into some thinking. I can replace the flanges, but riveting them to the part would require removing the F-711C bars and maybe using the flush rivets (so they sit under the bars). Or instead, I can extend the flanges and get them under the bars, so they reuse the same AN470 rivets the bars are attached to. At this point, I might as well duplicate the top part of the F-711 instead of making separate flanges. At this point, it would make sense to do the bottom part, too, so I can use these 8 rivets on the bottom to attach the new part to the rest of the F-711. Then I might just duplicate the whole part since it is not that complicated.
 
-So this is my backup plan for now. I think it should not be too hard to trace the existing part. It is a square-ish part, with a rounded bottom (which I can trace from the part itself). 
+So this is my backup plan for now. I think it should not be too hard to trace the existing part. It is a square-ish part, with a rounded bottom (which I can trace from the part itself).

@@ -12,7 +12,7 @@ The last step was to rivet firewall parts together.
 
 Today I riveted the firewall together. However, before that, I received "mock" batteries from EarthX: "C" case and "E" case. They are just plastic boxes that could be used for fitting batteries.
 
-I ordered them to figure out the future work to install batteries. The was a report on VAF saying that you will have to redo some work and also will need to resort to counter-sinking (instead of dimpling) when installing some of the parts in the future. After researching what kind of work will be done in the future, I concluded that I don't need to plan for it. Too many unknowns. 
+I ordered them to figure out the future work to install batteries. The was a report on VAF saying that you will have to redo some work and also will need to resort to counter-sinking (instead of dimpling) when installing some of the parts in the future. After researching what kind of work will be done in the future, I concluded that I don't need to plan for it. Too many unknowns.
 
 In some cases, it would be removing some rivets and upsizing the hole for the bolt. In other cases, I will need to countersink to install nut plates, but since I use NAS1097 rivets for nut plates, I will countersink either way. In both cases, it seems okay to redo some work.
 

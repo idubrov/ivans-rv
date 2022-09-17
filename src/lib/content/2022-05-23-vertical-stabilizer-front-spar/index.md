@@ -5,7 +5,7 @@ time: 4
 tags: ['drilling', 'preparing', 'sheet metal']
 ---
 
-Going back to rebuild the vertical stabilizer front spar. 
+Going back to rebuild the vertical stabilizer front spar.
 
 <!-- more -->
 

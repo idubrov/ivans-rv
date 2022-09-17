@@ -15,7 +15,7 @@ Also, I forgot to bevel the counter-balance skin, so I'll need to remove the pri
 
 ![](0-primed-parts.jpeg)
 
-Then I rebuilt the central bearing assembly. The story is that I did not like the way it was primed and I think I stripped a bit of the primer accidentally while cleaning it. I tried to disassemble it but scratched the powder coat on the brackets a bit. Also, I did not want to use any solvents to strip the part VA-146, just out of an abundance of caution (if solvents get into the bearing and/or damage the seals). So I ordered new parts. 
+Then I rebuilt the central bearing assembly. The story is that I did not like the way it was primed and I think I stripped a bit of the primer accidentally while cleaning it. I tried to disassemble it but scratched the powder coat on the brackets a bit. Also, I did not want to use any solvents to strip the part VA-146, just out of an abundance of caution (if solvents get into the bearing and/or damage the seals). So I ordered new parts.
 
 The tricky moment was to drill them to the horizontal stabilizer (which was already drilled for the previous bearing). Still, brackets are somewhat hard to drill, especially, when guiding through the aluminum. When match-drilling everything, it works fine as you are drilling a new hole. However, when match-drilling to an existing hole, there is a risk of damaging it.
 

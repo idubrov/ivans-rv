@@ -22,9 +22,8 @@ I was kind of too lazy to set up the pneumatic squeezer, so I went with the manu
 
 So far I found only two disadvantages:
 
-* It requires more hands (or clamping parts) whereas with a pneumatic squeezer you can use one hand to hold the part and the second hand to push the squeezer and press the trigger.
-* 4" thin-nose yoke I have does not work with the manual squeezer as it requires a longer set holder. Even my longest flat die does not extend the die enough to squeeze short rivets.
-
+- It requires more hands (or clamping parts) whereas with a pneumatic squeezer you can use one hand to hold the part and the second hand to push the squeezer and press the trigger.
+- 4" thin-nose yoke I have does not work with the manual squeezer as it requires a longer set holder. Even my longest flat die does not extend the die enough to squeeze short rivets.
 
 ![](1-beginning-assembly.jpeg)
 ![](2-nut-plate-installed.jpeg)

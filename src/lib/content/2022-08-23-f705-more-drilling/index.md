@@ -25,7 +25,7 @@ The angle needs to be spaced at 0.125" from the channel, and they give you the s
 
 ![](3-drilling-angles-to-the-channel.jpeg)
 
-The final result is not too exciting, but here it is. 
+The final result is not too exciting, but here it is.
 
 ![](4-final-result.jpeg)
 

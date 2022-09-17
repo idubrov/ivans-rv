@@ -10,7 +10,7 @@ Today I continued riveting the right elevator to the skin.
 
 <!-- more -->
 
-The first step was to prepare the tank sealant. I weighed and mixed it on the scrap piece of aluminum. Delivering that sealant to the stiffeners was a bit of a challenge. My plan was to smear it using the popsicle sticks, which sort of did work. However, since the sealant is so sticky, it is hard to get it off the stick itself. In the end, I got it where I wanted it, but the skin around the area got smears of the tank sealant. 
+The first step was to prepare the tank sealant. I weighed and mixed it on the scrap piece of aluminum. Delivering that sealant to the stiffeners was a bit of a challenge. My plan was to smear it using the popsicle sticks, which sort of did work. However, since the sealant is so sticky, it is hard to get it off the stick itself. In the end, I got it where I wanted it, but the skin around the area got smears of the tank sealant.
 
 ![](0-ready-for-tank-sealant.jpeg)
 ![](1-tank-sealant-in-place.jpeg)

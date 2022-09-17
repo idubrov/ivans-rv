@@ -14,7 +14,7 @@ As a first step, I assembled the component that holds the trim servo in the left
 
 ![](0-trim-servo.jpeg)
 
-Note the smaller heads for the NAS1097 rivets. I could have counter-sinked the trim cover plate for the normal AN426AD3 rivet, but it would have left me with the knife-edge hole. 
+Note the smaller heads for the NAS1097 rivets. I could have counter-sinked the trim cover plate for the normal AN426AD3 rivet, but it would have left me with the knife-edge hole.
 
 ![](1-trim-servo-underside.jpeg)
 

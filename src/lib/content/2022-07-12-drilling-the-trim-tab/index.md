@@ -29,7 +29,7 @@ While researching the blind rivets used in the kit, I collected the [summary of 
 
 ![](4-better-edge-distance.jpeg)
 
-Finally, I drilled and dimpled all the holes. One area where I got very short edge distances was the hinge. I followed the plans and in the end, the shortest distance I got was 0.160", which is less than 2D (0.188"), but still more than the minimum allowed by the MIL Spec (0.156"). Given how many rivets are holding the hinge, it should not be an issue either way. 
+Finally, I drilled and dimpled all the holes. One area where I got very short edge distances was the hinge. I followed the plans and in the end, the shortest distance I got was 0.160", which is less than 2D (0.188"), but still more than the minimum allowed by the MIL Spec (0.156"). Given how many rivets are holding the hinge, it should not be an issue either way.
 
 Now I am waiting for the remaining parts for the left elevator to finish assembly.
 

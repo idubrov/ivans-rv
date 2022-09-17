@@ -5,7 +5,7 @@ time: 4
 tags: ['drilling', 'deburring', 'mistakes']
 ---
 
-Today I spent some time working on the right elevator understructure.  
+Today I spent some time working on the right elevator understructure.
 
 <!-- more -->
 
@@ -31,7 +31,7 @@ Then I proceeded with drilling #30 holes for the rivets attaching both ribs, and
 
 I am sure it is possible to repair it, but since I had two spare ribs (from the left elevator), I decided to re-order the parts (two of them are only about $20, plus shipping and handling). I hope I will get the replacement parts once I get to the left elevator.
 
-So I repeated the whole process of fitting everything together and moved on to drilling the lead. 
+So I repeated the whole process of fitting everything together and moved on to drilling the lead.
 
 The plans suggest using a counterbalance skin as a guide to drill two #12 holes through the lead and into the flanges of both ribs. I did not like the idea to drill without knowing exactly where would I get my exit hole, so I marked the holes on the lead and drilled the #40 hole through it first, using my milling machine. Lead is very soft and grabs the drill bit a lot. I used a lot of lubrication, slow speed and feed. In addition, I partially locked the column on my mill such that it required some good pressure on the feeding lever to feed the drill bit (basically, you want that force to be higher than the "grabbing" force of the drill bit)
 
@@ -54,4 +54,4 @@ Finally, I dimpled the counterweight skin for the screws.
 
 Another piece of work I did today was to deburr both elevator skins to prepare them for priming. For some reason, I decided to do it with the sandpaper, which took a lot of time. I used 320 grit first to do a rough deburring, removing the tool marks, then 400 grit to round the edges.
 
-The next step is to prepare the stiffeners and the skins for the priming and prime them. 
+The next step is to prepare the stiffeners and the skins for the priming and prime them.

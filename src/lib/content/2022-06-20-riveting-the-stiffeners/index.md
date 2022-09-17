@@ -9,7 +9,7 @@ Today I started riveting stiffeners to the skins.
 
 <!-- more -->
 
-The first thing I did was to dimple the trim access reinforcement plate and counter-sink the holes for the nut plates. Instead of dimpling the part and the nut plates, I went with the NAS1097 (also known as ["oops" rivets](https://www.cleavelandtool.com/products/oops-rivet-kit)). They have a smaller head than the "regular" AN426 rivets, which allows two uses. 
+The first thing I did was to dimple the trim access reinforcement plate and counter-sink the holes for the nut plates. Instead of dimpling the part and the nut plates, I went with the NAS1097 (also known as ["oops" rivets](https://www.cleavelandtool.com/products/oops-rivet-kit)). They have a smaller head than the "regular" AN426 rivets, which allows two uses.
 
 The first case is to use them for damaged holes, so you need a larger shank. For example, a hole for the AN426AD3 could be upsized to -4 size. Then you can use a NAS1097AD4 rivet, which will have a factory head size similar to the AN426AD3 rivet.
 

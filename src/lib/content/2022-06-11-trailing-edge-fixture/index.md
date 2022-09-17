@@ -21,7 +21,7 @@ The issue with drilling at an angle is that you cannot use a drill bit: it will 
 
 A center drill is typically used on a lathe to make "centers" on shafts (which could be then used for mounting these shafts in the lathe), but in hobby shops, they are also commonly used instead of spot drills for starting the holes.
 
-It turns out that the #3 center drill pilot drill is 7/64", which is just a bit larger than 3/32". The silver clecos hold 7/64" relatively well (although, there is not much room for an error), and at the same time, a slightly larger hole allows for some lack of precision in the locations of the holes (you will see later why precision might be lacking a bit). Therefore, it is possible to drill the hole with the center drill alone, without the need to swap the tool for a regular drill bit. Also, I found that my drill chuck has a very big runout for some reason, which is not an issue for the center drill since I can put it into an R8 collet! 
+It turns out that the #3 center drill pilot drill is 7/64", which is just a bit larger than 3/32". The silver clecos hold 7/64" relatively well (although, there is not much room for an error), and at the same time, a slightly larger hole allows for some lack of precision in the locations of the holes (you will see later why precision might be lacking a bit). Therefore, it is possible to drill the hole with the center drill alone, without the need to swap the tool for a regular drill bit. Also, I found that my drill chuck has a very big runout for some reason, which is not an issue for the center drill since I can put it into an R8 collet!
 
 This is what my setup looked like:
 
@@ -71,7 +71,7 @@ Meanwhile, I am thinking how am I supposed to rivet the trailing rivets in the b
 
 Currently, I am considering an approach suggested in the practice kit: making a flat bucking bar and using an indirect riveting technique. For the practice kit, I used some scrap which still I have, but it is too short for -4 rivet (it was very springy even for -3, but -3 is relatively easy to set, so it worked out).
 
-My solution was to form a masonry chisel into a bucking bar. I assume that they should be resilient to hammering since they are used for that, they are relatively heavy and strong. Will see how it is going to work out.  
+My solution was to form a masonry chisel into a bucking bar. I assume that they should be resilient to hammering since they are used for that, they are relatively heavy and strong. Will see how it is going to work out.
 
 I don't have the image of the chisel in its original form, but after cutting one unused side of it, it looked like this:
 

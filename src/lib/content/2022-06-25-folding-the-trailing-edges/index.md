@@ -6,7 +6,7 @@ tags: ['bending', 'drilling']
 thumbnail: '6-temporarily-clecoed-2.jpeg'
 ---
 
-Today I made a simple bender and bent both elevators trailing edges. 
+Today I made a simple bender and bent both elevators trailing edges.
 
 <!-- more -->
 
@@ -16,7 +16,7 @@ First, I made a simple bender from two pieces of 2x4 and a piano hinge. I put a 
 
 Then I used the bender to fold the trailing edges of both the left and the right skins. Starting the bend was the hardest as I needed to apply a lot of force and also elevator was pushed away from the bender. To lock it in place, I clamped another long 2x4 directly against the leading edge of the stiffeners to stop the skin from moving.
 
-The resulting bends were okay. 
+The resulting bends were okay.
 
 ![](1-folded-elevator.jpeg)
 
@@ -24,7 +24,7 @@ Here are some examples. The first location is okay.
 
 ![](2-bent-edge.jpeg)
 
-This location looks a bit underbent. I need to fabricate a squeezing tool to finish it. 
+This location looks a bit underbent. I need to fabricate a squeezing tool to finish it.
 
 ![](3-underbent-edge.jpeg)
 

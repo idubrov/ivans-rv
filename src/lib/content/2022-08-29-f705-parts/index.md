@@ -9,7 +9,7 @@ Did a small amount of work to finish the seat stop plate.
 
 <!-- more -->
 
-Today I went to Harbor Freight to buy a bending brake so I can bend the F-705K plate. 
+Today I went to Harbor Freight to buy a bending brake so I can bend the F-705K plate.
 
 ![](0-bending-brake.jpeg)
 

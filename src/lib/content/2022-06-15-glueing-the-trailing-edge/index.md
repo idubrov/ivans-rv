@@ -12,7 +12,7 @@ Today I glued the trailing edge with the tank sealant.
 
 Once I received the rivets to use on the rudder, I riveted the bottom rib. The rivet size that I used is AN426AD4-5. It is, perhaps, a bit too long, but it worked well for most of the holes. The first two holes (the leftmost holes, one on the top and one on the bottom) turned out a bit elongated since there was not enough space for the squeezer. I, perhaps, should have used a bucking bar and the rivet gun -- there is plenty of space for those.
 
-The general theme with these #4 rivets is that they are much harder to set well: the forces are higher and there is less space. I kept a couple of rivets that I would have replaced otherwise. I figured that I will cause more damage trying to fix them, especially given that they are upsized so should have plenty of holding force. 
+The general theme with these #4 rivets is that they are much harder to set well: the forces are higher and there is less space. I kept a couple of rivets that I would have replaced otherwise. I figured that I will cause more damage trying to fix them, especially given that they are upsized so should have plenty of holding force.
 
 ![](0-ad4-rivets-set.jpeg)
 
@@ -36,7 +36,7 @@ Well, overall, it still looks like an airworthy part to me. I would put it in my
 
 With all the rivets set, it was time to do the trailing edge. I did not take enough photos, but generally, the process was to spread the skins using threads pulling one side up, then use a rubber roller to roll tank sealant on the wedge and install it between the skins.
 
-The rubber roller I used is used for printmaking. I have no idea what exactly is it, but I think it worked well. 
+The rubber roller I used is used for printmaking. I have no idea what exactly is it, but I think it worked well.
 
 ![](4-rubber-roller.jpeg)
 

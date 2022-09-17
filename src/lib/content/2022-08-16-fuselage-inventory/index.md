@@ -5,7 +5,7 @@ time: 8
 tags: ['inventory']
 ---
 
-The journey continues! Finally, I received my fuselage crate! 
+The journey continues! Finally, I received my fuselage crate!
 
 <!-- more -->
 
@@ -31,4 +31,3 @@ Finally, after a few days and many hours of inventorying, everything is on the s
 ![](8-various-parts.jpeg)
 
 The next step is to work on the firewall bulkhead.
-

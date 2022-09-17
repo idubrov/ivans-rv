@@ -25,7 +25,7 @@ Then I drilled the holes and removed the vinyl from the skins.
 
 ![](3-all-holes-drilled.jpeg)
 
-The skins and the parts are now waiting to be deburred and primed. 
+The skins and the parts are now waiting to be deburred and primed.
 
 ![](4-vinyl-removed.jpeg)
 ![](5-part-waiting-deburring.jpeg)

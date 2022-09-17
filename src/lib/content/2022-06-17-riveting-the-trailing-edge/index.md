@@ -22,7 +22,7 @@ I used the manual squeezer and flat dies to partially squeeze the rivets square 
 
 You can see that maybe I used a bit too little of the tank sealant -- the skins are not tight to the angle, unfortunately. Also, I did not use the roller tool on the edge (I was afraid that skins will get stretched and will be wavy), which could have helped, too.
 
-Does not look too bad, and it is mostly on the top part only. The bottom of the edge looks better. 
+Does not look too bad, and it is mostly on the top part only. The bottom of the edge looks better.
 
 Then I used the trailing edge dies to squeeze all the rivets. I used the same pattern (every 8th, every 4th, etc).
 
@@ -32,7 +32,7 @@ The final result is still relatively straight. I've got some amount of deflectio
 
 ![](4-still-straight.jpeg)
 
-The shop heads look okay.  
+The shop heads look okay.
 
 ![](5-shop-heads.jpeg)
 

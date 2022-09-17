@@ -26,9 +26,9 @@ It's not the quickest way to counter-sink, but it gives me some better control a
 
 ![](3-fixture-in-use.jpeg)
 
-Finally, I drilled the F-601TD brake plate and the firewall for the brake line connectors. This is where things did not go as planned. 
+Finally, I drilled the F-601TD brake plate and the firewall for the brake line connectors. This is where things did not go as planned.
 
-Stainless steel (well, the alloy firewall uses, which I think is 304) is very nasty to work with. It's somewhat gummy and also it work-hardens: it gets harder to cut if you don't cut it enough! If your tool is not sharp enough and rubs the stainless instead of producing chips, it only makes the part harder and even more difficult to cut chips off. 
+Stainless steel (well, the alloy firewall uses, which I think is 304) is very nasty to work with. It's somewhat gummy and also it work-hardens: it gets harder to cut if you don't cut it enough! If your tool is not sharp enough and rubs the stainless instead of producing chips, it only makes the part harder and even more difficult to cut chips off.
 
 I used my unibit to drill the holes and it was definitely rubbing more than cutting. Initially, I tried to drill the firewall and the reinforcement plate together, but it did not quite work with the unibit. So I drilled the firewall separately. In the end, I did manage to cut the hole (I don't think my tool bit was good, to begin with...), but when I looked from the other side, I found that the tool bent the edges of the hole to the opposite side. I cleaned it, and flattened the hole as much as I could, but got some oil canning in that area of the firewall. Annoying.
 

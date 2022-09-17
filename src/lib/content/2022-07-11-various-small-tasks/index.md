@@ -9,11 +9,11 @@ Today I did a few small tasks.
 
 <!-- more -->
 
-First, I got my new torque wrench. The torque specification for the AN3 bolt is 20-25 lbf*in, plus correction for the nylon nut. I estimated the friction drag of the nylon nut to be about 4 lbf*in (my torque screwdriver would start to click around that setting). Therefore, I aimed for about 27 lbf*in, somewhere in the middle of the range.
+First, I got my new torque wrench. The torque specification for the AN3 bolt is 20-25 lbf*in, plus correction for the nylon nut. I estimated the friction drag of the nylon nut to be about 4 lbf*in (my torque screwdriver would start to click around that setting). Therefore, I aimed for about 27 lbf\*in, somewhere in the middle of the range.
 
 ![](0-new-torque-wrench.jpeg)
 
-The bolts torqued! I get some weird satisfaction applying the torque seal on the fastener. I guess, it generates a sense of "achievement", which generates some dopamine in the brain.  
+The bolts torqued! I get some weird satisfaction applying the torque seal on the fastener. I guess, it generates a sense of "achievement", which generates some dopamine in the brain.
 
 ![](1-bolts-torqued.jpeg)
 
@@ -35,7 +35,7 @@ Finally, I started working on the elevator trim tab.
 
 The first step was to bend the trailing edge. Then I tried attaching it to the trim tab spar and found that the skin was not symmetrical between the top and the bottom. One side was flat and one side had a depression. After 45 minutes of fighting it and getting all kinds of intermediate results, I managed to massage the trim tab such that both sides are relatively flat. I will revisit it once I finish bending the side tabs.
 
-After bending the trailing edge, I put the tab into my bending setup and started bending the bottom outboard side tab. I am getting a smaller mushroom rivet set tomorrow, which I will use to finish the bend. 
+After bending the trailing edge, I put the tab into my bending setup and started bending the bottom outboard side tab. I am getting a smaller mushroom rivet set tomorrow, which I will use to finish the bend.
 
 ![](5-bending-setup.jpeg)
 ![](6-bottom-tab-bent.jpeg)

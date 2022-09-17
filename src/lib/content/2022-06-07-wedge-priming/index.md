@@ -31,10 +31,10 @@ Then I drilled the pilot hole. I actually used #41, which was enough for the pil
 2. Lock the wedge with the cleco clamp.
 3. Countersink. I configured the countersink cage to do the 7 thou past flush, which is a general recommendation from Section 5 of the manual. I used that setting on practice kit #2 and got pretty good results with it.
 
-For the depth control, initially, I thought to use the countersink cage only. I have an indicator stop on the mill, but I thought that the setup is not repeatable enough for it to work (I expected some minor, few thou, differences between the holes). However, it turned out that setup was repeatable enough and it would always stop at the same indicator position. So I used the indicator to verify the depth set by the cage. 
+For the depth control, initially, I thought to use the countersink cage only. I have an indicator stop on the mill, but I thought that the setup is not repeatable enough for it to work (I expected some minor, few thou, differences between the holes). However, it turned out that setup was repeatable enough and it would always stop at the same indicator position. So I used the indicator to verify the depth set by the cage.
 
 This is my custom-made indicator stop for the mill.
- 
+
 ![](2-indicator-stop.jpeg)
 
 With this setup, I got about ~7 thou past the flush, as per the depth gauge. Well, to be honest, it is hard to measure this depth with good repeatability (since even a small movement of the rivet shows different results). It was deep enough that a dimple would fit in it, but would not wobble. The ultimate test would be to fit it once the whole rudder is riveted and see how well it fits.

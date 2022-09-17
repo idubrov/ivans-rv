@@ -17,6 +17,6 @@ Per the plans, the left bracket is located 3/8" from the forward edge and 1-3/8"
 ![](0-servo-supports.jpeg)
 ![](1-servo-fastened.jpeg)
 
-Then I drilled the support brackets to the trim plate. Since these parts are small, I dimpled them before priming (I normally dimple after the priming to make scuffing easier). There are six holes, but I only dimpled the forward four. Based on others' experience, there is very little space above the aft two holes, so instead of dimpling the holes, I counter-sinked the trim plate for the NAS1097 ("oops") rivets, to leave enough space for the shop heads. 
+Then I drilled the support brackets to the trim plate. Since these parts are small, I dimpled them before priming (I normally dimple after the priming to make scuffing easier). There are six holes, but I only dimpled the forward four. Based on others' experience, there is very little space above the aft two holes, so instead of dimpling the holes, I counter-sinked the trim plate for the NAS1097 ("oops") rivets, to leave enough space for the shop heads.
 
 ![](3-brackets-ready.jpeg)
