@@ -12,7 +12,7 @@
 	export let alt: string | undefined = undefined;
 
 	$: origAsset = resolveAsset(src);
-	$: asset = prepareAsset(origAsset ?? { url: src }, '?nf_resize=fit&w=720&h=540');
+	$: asset = origAsset ? prepareAsset(origAsset, '?nf_resize=fit&w=720&h=540') : { url: src };
 
 	let galleryStore: Readable<GalleryOpener>;
 	$: galleryStore = getContext(galleryKey);

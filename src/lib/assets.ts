@@ -38,16 +38,10 @@ export function resolveAsset(src: string): Asset | undefined {
  * @param default_query
  */
 export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
-	const isRemote = asset.url.startsWith('http://') || asset.url.startsWith('https://');
-
 	const pos = asset.url.indexOf('?');
 	const url = pos !== -1 ? asset.url.slice(0, pos) : asset.url;
 	const query = pos !== -1 ? asset.url.slice(pos) : default_query;
 	const parsed = queryString.parse(query);
-
-	if (isRemote) {
-		return asset;
-	}
 
 	const w = dimension(parsed.w);
 	const h = dimension(parsed.h);

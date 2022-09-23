@@ -52,6 +52,5 @@ export async function loadPostAsComponent(post: PostMetadata): Promise<SvelteCom
 }
 
 export async function loadPostByKey(key: string): Promise<PostMetadata | undefined> {
-	const path = `./content/${key}/index.md`;
-	return createPostFromModuleResolver(path, import(path));
+	return createPostFromModuleResolver(`./content/${key}/index.md`, import(`./content/${key}/index.md`));
 }
