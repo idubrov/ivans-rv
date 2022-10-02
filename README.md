@@ -26,4 +26,4 @@ You can preview the production build with `npm run preview`.
 
 ## Published version
 
-Blog is publihed at [https://ivans-rv.idubrov.name/](https://ivans-rv.idubrov.name/).
+Blog is publihed at [https://ivan.aero/](https://ivan.aero/).
