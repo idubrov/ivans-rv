@@ -1,5 +1,5 @@
 ---
-title: 'Continuing riveting the aft fuselage'
+title: 'More of the aft fuselage riveting'
 categories: ['fuselage']
 time: 1
 tags: ['riveting']
