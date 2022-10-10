@@ -33,3 +33,7 @@ This is what shop heads look like.
 Finally, I riveted the ELT brackets with the LP4-3 rivets. The plan to rivet the brackets using the solid rivets on the bottom worked out great.
 
 ![](5-riveted-brackets.jpeg)
+
+Overall, it went well, but I had to upsize several rivets half-size (up to NAS1241) and one rivet to NAS1097 ("oops" rivet). Some, if not most NAS1241 were when I drilled out the rivet for some reason and the hole was big enough to fit NAS1241. Not because of drilling, but rather because the hole got stretched. In some cases, the hole stayed small enough, so I kept AN426. I think the holes that got stretched might be the holes where I had some misalignment when drilling.
+
+The "oops" rivet case was one place where I messed up a rivet a few times, upgraded to NAS1241, and still messed up the rivet two times. Finally, I screwed up drilling out the rivet, so I pretty much only had one chance at fixing it. Luckily, I was able to put the "oops" rivet just fine using the back-riveting.
