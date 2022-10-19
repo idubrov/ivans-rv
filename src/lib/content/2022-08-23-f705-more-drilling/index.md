@@ -15,7 +15,7 @@ First, I made an arbor to mount a counter-sinking bit in a drill chuck. There we
 ![](0-bit-arbor.jpeg)
 ![](1-with-the-bit.jpeg)
 
-Then I moved on to drilling various other holes, drilling all four sides of the bulkhead plus doubles together, and drilling seat stop parts to the top channel.
+Then I moved on to drilling various other holes, drilling all four sides of the bulkhead plus doublers together, and drilling seat stop parts to the top channel.
 
 I used my rivet fan to drill the holes in the seat stop angle (if I understand its purpose correctly). I made a couple of small mistakes here. First, I drilled #30 (well, #31, I now drill all new holes slightly smaller, then use a reamer) instead of #40. However, the fan is drilled with #40, so I had to use silver clecoes to attach it. Since the initial two holes were #30, the fan wasn't positioned as precisely as it could have been. Second, instead of drilling through the fan (which is what fan instructions tell you _not_ to do, though), I marked the holes with the sharpie, then center-punched and drilled them. This allowed a couple of holes to migrate slightly. It's all good in the end but could have caused issues with a more critical part.
 
