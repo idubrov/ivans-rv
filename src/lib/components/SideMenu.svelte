@@ -19,7 +19,7 @@
 <nav class="sidemenu">
 	<SearchMenu {searchIndex} />
 	<section class="follow">
-		<a target="_blank" href="https://t.me/ivans_rv"
+		<a target="_blank" href="https://t.me/ivans_rv" rel="noreferrer"
 			><img
 				src="/icons8-telegram.svg"
 				alt="Telegram icon"

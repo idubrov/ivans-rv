@@ -54,6 +54,7 @@
 			<a
 				href="{asset.downloadUrl}?nf_resize=fit&w=1008&h=1008"
 				target="_blank"
+				rel="noreferrer"
 				data-download-url={asset.downloadUrl}
 			>
 				<img src={asset.url} alt={asset.alt} style={asset.style} />

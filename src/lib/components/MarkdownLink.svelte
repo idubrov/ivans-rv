@@ -9,7 +9,7 @@
 	import { getContext } from 'svelte';
 
 	export let href: string;
-	export let rel: string | undefined = undefined;
+	export let rel: string | undefined = "noreferrer";
 	export let target: string | undefined = undefined;
 
 	let asset: Asset;
