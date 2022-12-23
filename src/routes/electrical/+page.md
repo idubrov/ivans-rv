@@ -11,7 +11,6 @@ Planned electrical equipment / avionics.
   - 3x18AWG shielded cable for POSN-, POSN+, STROBE-, STROBE+
 - Flyleds Combo landing light
   - 3x18AWG twisted for the landing light, the taxi light and the ground
-  - 18AWG for the taxi light
 - GAP 26 Heated Pitot Tube
   - Pitot input source (to GSU 25)
   - AOA input source (to GSU 25)

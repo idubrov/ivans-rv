@@ -28,7 +28,7 @@
 		>
 		<a
 			href="https://feedly.com/i/subscription/feed%2F{encodeURIComponent(
-				new URL('/feed/rss.xml', baseUrl())
+				new URL('/feed/rss.xml', baseUrl()).toString()
 			)}"
 			target="blank"
 			><img

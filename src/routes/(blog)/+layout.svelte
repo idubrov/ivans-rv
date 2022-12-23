@@ -12,6 +12,7 @@
 	import { setContext } from 'svelte';
 	import { baseUrl } from '$lib/assets';
 	import dayjs from 'dayjs';
+	import { postLink } from '$lib/navigation';
 
 	export let title;
 	export let format;
@@ -22,6 +23,7 @@
 	export let next;
 	export let summary;
 	export let assets;
+	export let slug;
 
 	const opener = writable({
 		openAsset() {
@@ -39,6 +41,10 @@
 <svelte:head>
 	{#if format !== 'summary'}
 		<title>{title}</title>
+		<link
+			rel="canonical"
+			href={new URL(postLink({ date: dayjs.utc(date).toDate(), slug }), baseUrl())}
+		/>
 		<meta data-key="description" name="description" content={summary} />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content={title} />

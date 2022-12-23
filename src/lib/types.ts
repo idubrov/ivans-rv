@@ -1,5 +1,3 @@
-import type { SvelteComponent } from 'svelte';
-
 export interface PostRef {
 	// Date of the post. Note that we use UTC dates internally.
 	date: Date;
