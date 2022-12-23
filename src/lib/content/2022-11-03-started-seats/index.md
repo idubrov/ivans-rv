@@ -19,7 +19,7 @@ Then I fabricated the seat hinges (cut to length and removed some hinge eyes).
 
 ![](1-fabricated-seat-hinges.jpeg)
 
-I marked the location of the holes on the hinges and drilled them in my mill. 
+I marked the location of the holes on the hinges and drilled them in my mill.
 
 Finally, using the dimensions from the plans, I put the layout on the floors and drilled the hinges to the floors. I was extra careful to locate the aftmost hinges such that an existing hole through the floor and a rib goes through the center of the hinge (the aftmost hinges share two rivets each with the ribs and the floors).
 

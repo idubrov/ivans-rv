@@ -6,11 +6,11 @@ tags: ['drilling']
 thumbnail: '10-the-seat.jpeg'
 ---
 
-Today was a long session: working on the seats! 
+Today was a long session: working on the seats!
 
 <!-- more -->
 
-I started with drilling the hinges to the seat backs. I measured the location of the two outermost holes, then used a rivet fan to drill the remaining holes. Makes it really easy to place a line of rivets! 
+I started with drilling the hinges to the seat backs. I measured the location of the two outermost holes, then used a rivet fan to drill the remaining holes. Makes it really easy to place a line of rivets!
 
 ![](00-rivet-fan-drilling.jpeg)
 

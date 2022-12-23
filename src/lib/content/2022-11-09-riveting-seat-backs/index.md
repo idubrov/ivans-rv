@@ -6,7 +6,7 @@ tags: ['riveting']
 thumbnail: '3-seat-back-front.jpeg'
 ---
 
-Today I riveted the control pushrods and the seat backs.  
+Today I riveted the control pushrods and the seat backs.
 
 <!-- more -->
 

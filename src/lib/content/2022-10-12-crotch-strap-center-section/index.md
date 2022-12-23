@@ -28,7 +28,7 @@ After that, I used a file to modify the flanges of the seat ribs to allow instal
 
 Then clecoed everything together. I can drill the parts, but probably not rivet them. Since I don't have the center bulkhead, I won't be able to drill and dimple the front part of the skin and the seat ribs.
 
-The Van's FAQ ["A common RV-7/7A and RV-9/9A fuselage construction question"](https://www.vansaircraft.com/faq/a-common-rv-7-7a-and-rv-9-9a-fuselage-construction-question/) allows to countersink instead of dimpling, which would have solved the problem. I prefer dimples, however. 
+The Van's FAQ ["A common RV-7/7A and RV-9/9A fuselage construction question"](https://www.vansaircraft.com/faq/a-common-rv-7-7a-and-rv-9-9a-fuselage-construction-question/) allows to countersink instead of dimpling, which would have solved the problem. I prefer dimples, however.
 
 ![](5-center-section-clecoed.jpeg)
 ![](6-center-section-clecoed-2.jpeg)

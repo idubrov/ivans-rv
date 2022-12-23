@@ -14,7 +14,7 @@ The first thing I did today was to drill the rudder cable fairings to the fusela
 
 ![](0-rudder-cable-fairing.jpeg)
 
-I fit them over the rudder cable to find the location they fit the best, then match-drilled #41 holes with the fuselage. 
+I fit them over the rudder cable to find the location they fit the best, then match-drilled #41 holes with the fuselage.
 
 ![](1-fairing-drilled.jpeg)
 ![](2-fairing-other-side.jpeg)

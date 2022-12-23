@@ -22,7 +22,7 @@ Then I started fitting the F-623 ribs. Due to the curvature of the front part of
 
 Then I fitted the ribs. In the end, I fitted the rib in a way to locate the holes about the same distance from the rib flanges. This gave a good fit on the forward part, which is important because this is where two skins are coming at the 90-degree angle. On the aft side, however, one of the ribs is a bit inside.
 
-I don't think this is going to be an issue since at that location the side skin curves and this curve will extend beyond the  F-623 side ribs.
+I don't think this is going to be an issue since at that location the side skin curves and this curve will extend beyond the F-623 side ribs.
 
 ![](3-fitting-the-rib.jpeg)
 
@@ -45,4 +45,4 @@ Both straps clecoed.
 
 Later I thought that maybe I shouldn't have drilled the straps as these holes should be drilled in assembly with the aft section of the fuselage. Also, the corner ribs themselves could probably be fitted better when the forward side skins F-770 are fitted. Too late now. So far most of the pre-punched holes matched pretty well, so these probably would match well, too.
 
-Still thinking if I want to rivet the center section without the F-704 bulkhead. I think dimpling should not be an issue -- I can dimple the C-Frame style, with the hammer. I probably will have to drill and dimple the holes that attach the seat ribs flanges, though, because I won't be able to dimple those well.   
+Still thinking if I want to rivet the center section without the F-704 bulkhead. I think dimpling should not be an issue -- I can dimple the C-Frame style, with the hammer. I probably will have to drill and dimple the holes that attach the seat ribs flanges, though, because I won't be able to dimple those well.

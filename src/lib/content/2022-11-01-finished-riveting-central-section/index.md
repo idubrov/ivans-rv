@@ -5,11 +5,11 @@ time: 2
 tags: ['riveting']
 ---
 
-A few more short sessions and the center section is riveted together! 
+A few more short sessions and the center section is riveted together!
 
 <!-- more -->
 
-Not much to add here, the seat and the baggage ribs are riveted to the skin. 
+Not much to add here, the seat and the baggage ribs are riveted to the skin.
 
 Sadly, once I turned the part upside down, I found two long scratches on the skin. Not sure what happened, I had blankets on the tables. Probably, it was a cleco. I scuffed the scratches with the maroon Scotch-Brite, and it smooths the scratches to the point you cannot feel them with a nail. Should be okay.
 

@@ -58,4 +58,4 @@ The end result.
 ![](10-right-bracket.jpeg)
 ![](11-left-bracket.jpeg)
 
-I don't know what am I going to use the left bracket for (the right one I am going to use for the ELT), possibly, for the controller board of FlyLeds (which is what I am currently considering for the lighting). There is not much reason to put the controller there, but maybe it will reduce the number of wires going to the panel area. The board only needs three wires: ground, position lights supply, and strobe lights supply.  
+I don't know what am I going to use the left bracket for (the right one I am going to use for the ELT), possibly, for the controller board of FlyLeds (which is what I am currently considering for the lighting). There is not much reason to put the controller there, but maybe it will reduce the number of wires going to the panel area. The board only needs three wires: ground, position lights supply, and strobe lights supply.

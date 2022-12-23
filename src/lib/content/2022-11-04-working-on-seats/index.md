@@ -16,7 +16,7 @@ The first thing was to cut aluminum angles. Not too exciting, but needs to be do
 
 I need to round the corners of two of the angles, so they sit flat to the seat back. I am going to try to use a wooden router with a roundover bit. I tried on a scrap piece, and it is ... doable. It does require some thoroughness: there is a risk of the tool grabbing the angle and throwing it away.
 
-I can probably do it on a mill, too, but since the table of my mill is too short, I will have to move the part multiple times, which would cause some discrepancy in the rounded corner (not that it matters, though). 
+I can probably do it on a mill, too, but since the table of my mill is too short, I will have to move the part multiple times, which would cause some discrepancy in the rounded corner (not that it matters, though).
 
 I should have rounded the corners first because then I wouldn't have had to start the rounding from the very edge. The tricky thing here is feeding the end of the angle in the tool is dangerous: there is a risk of feeding it at the wrong angle such that the tool will grab. Feeding it from the middle in the reverse direction is dangerous because it will be "climb milling", which also tends to grab the part. However, with a very small feed, it is manageable. Or I can turn the angle around and finish at that edge rather than start at it.
 

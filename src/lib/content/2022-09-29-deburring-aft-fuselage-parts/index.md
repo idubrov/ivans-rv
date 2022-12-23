@@ -17,7 +17,7 @@ Then I upsized the holes for the #6 screws, dimpled them, and drilled the holes 
 
 ![](1-skin-holes-fairings.jpeg)
 
-After that, I started the long process of deburring and cleaning all the parts of the aft fuselage. 
+After that, I started the long process of deburring and cleaning all the parts of the aft fuselage.
 
 Also, I assessed the holes on the skins and the parts. Even though some of them turned out to be elongated a bit, overall, I am happy with the result. The elongated holes are still small enough for the NAS1241 rivets ("half-size oops" rivets).
 

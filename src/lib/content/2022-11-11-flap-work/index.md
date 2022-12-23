@@ -5,7 +5,7 @@ time: 1
 tags: ['drilling', 'fabricating']
 ---
 
-Running out of things to do!  
+Running out of things to do!
 
 <!-- more -->
 

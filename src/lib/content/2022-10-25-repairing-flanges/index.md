@@ -19,6 +19,6 @@ I made a washer from a piece of lead that was left from the left elevator and us
 
 ![](1-using-lead-washer.jpeg)
 
-It worked well, the flange is tight now. 
+It worked well, the flange is tight now.
 
 ![](2-better.jpeg)

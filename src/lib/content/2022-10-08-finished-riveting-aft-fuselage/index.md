@@ -26,7 +26,7 @@ This is me pretending I am riveting. Obviously, fake, as you cannot back rivet w
 
 ![](2-pretending-to-rivet.jpeg)
 
-This is what shop heads look like. 
+This is what shop heads look like.
 
 ![](4-shop-heads.jpeg)
 

@@ -22,5 +22,3 @@ Then I dimpled the skin and the ribs.
 
 ![](3-skin-dimpled.jpeg)
 ![](4-ribs-dimpled.jpeg)
-
-

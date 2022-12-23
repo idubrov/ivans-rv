@@ -6,7 +6,7 @@ tags: ['priming']
 thumbnail: '1-parts-primed.jpeg'
 ---
 
-Yet another priming session today. 
+Yet another priming session today.
 
 <!-- more -->
 

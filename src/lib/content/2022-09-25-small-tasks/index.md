@@ -12,7 +12,7 @@ Today I did a few smaller tasks.
 
 First, I drilled the holes for the two additional stiffeners in the tailcone area ([Service Letter 00014](https://www.vansaircraft.com/service-information-and-revisions/sl-00014/)).
 
-Interestingly, my paper plans were an older version without these stiffeners. However, my kit did include the parts needed to comply with the service letter. 
+Interestingly, my paper plans were an older version without these stiffeners. However, my kit did include the parts needed to comply with the service letter.
 
 ![](0-positioning-the-stiffener.jpeg)
 ![](1-stiffeners-in-place.jpeg)
