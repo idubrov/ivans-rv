@@ -18,6 +18,7 @@
 
 <nav class="sidemenu">
 	<SearchMenu {searchIndex} />
+	<!--
 	<section class="follow">
 		<a target="_blank" href="https://t.me/ivans_rv" rel="noreferrer"
 			><img
@@ -38,6 +39,7 @@
 			/></a
 		>
 	</section>
+	-->
 	<section class="recent">
 		<h1>Most recent</h1>
 		<ul class="recent">
