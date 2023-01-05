@@ -19,37 +19,37 @@
 <nav class="sidemenu">
 	<SearchMenu {searchIndex} />
 	<!--
-	<section class="follow">
-		<a target="_blank" href="https://t.me/ivans_rv" rel="noreferrer"
-			><img
-				src="/icons8-telegram.svg"
-				alt="Telegram icon"
-				style="object-fit: cover; width: 24px; height: 24px;"
-			/></a
-		>
-		<a
-			href="https://feedly.com/i/subscription/feed%2F{encodeURIComponent(
-				new URL('/feed/rss.xml', baseUrl()).toString()
-			)}"
-			target="blank"
-			><img
-				src="/icons8-feedly.svg"
-				alt="Feedly icon"
-				style="object-fit: cover; width: 24px; height: 24px;"
-			/></a
-		>
-	</section>
-	-->
+    <section class="follow">
+        <a target="_blank" href="https://t.me/ivans_rv" rel="noreferrer"
+            ><img
+                src="/icons8-telegram.svg"
+                alt="Telegram icon"
+                style="object-fit: cover; width: 24px; height: 24px;"
+            /></a
+        >
+        <a
+            href="https://feedly.com/i/subscription/feed%2F{encodeURIComponent(
+                new URL('/feed/rss.xml', baseUrl()).toString()
+            )}"
+            target="blank"
+            ><img
+                src="/icons8-feedly.svg"
+                alt="Feedly icon"
+                style="object-fit: cover; width: 24px; height: 24px;"
+            /></a
+        >
+    </section>
+    -->
 	<section class="recent">
 		<h1>Most recent</h1>
-		<ul class="recent">
+		<ul>
 			{#each recent as post}
 				<li>
 					<a href={postLink(post)}>
-						<PostThumbnail {post} width={60} height={60} /><span>
-							{post.title}<br />{dayjs.utc(post.date).format('MMMM D, YYYY')}</span
-						></a
-					>
+						<PostThumbnail {post} width={60} height={60} />
+						<span class="title">{post.title}</span>
+						<time>{dayjs.utc(post.date).format('MMMM D, YYYY')}</time>
+					</a>
 				</li>
 			{/each}
 		</ul>

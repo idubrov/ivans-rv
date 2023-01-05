@@ -127,6 +127,13 @@ nav.sidemenu {
 		margin-top: 40px;
 	}
 
+	section.recent span.title {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
 	> section {
 		> ul {
 			margin-top: 10px;
