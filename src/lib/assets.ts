@@ -45,26 +45,26 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 
 	const w = dimension(parsed.w);
 	const h = dimension(parsed.h);
-	const smallResolutionImage =
-		isNetlify() && typeof w !== 'undefined' && w < 1000 && typeof h !== 'undefined' && h < 1000;
 	if (isNetlify()) {
+		// For high DPI screens, keep image resolution high.
+		// FIXME: use srcset
+		const smallResolutionImage = typeof w !== 'undefined' && w < 1000 && typeof h !== 'undefined' && h < 1000;
 		if (smallResolutionImage) {
 			// 2x scale the image
-
 			return {
 				...asset,
 				url: `${url}?nf_resize=${parsed.nf_resize}&w=${w * 2}&h=${h * 2}`,
-				style: `max-width: ${w}px; max-height: ${h}px`
-			};
-		} else {
-			return {
-				...asset,
-				url: `${url}${query}`
+				style: `object-fit: contain; max-width: ${w}px; max-height: ${h}px`
 			};
 		}
+		return {
+			...asset,
+			url: `${url}${query}`
+		};
 	}
 
-	// Netlify simulation for local development
+	// Netlify simulation for the local development
+	// FIXME: make a server path to resize?..
 	switch (parsed.nf_resize) {
 		case 'fit': {
 			let style = 'object-fit: contain;';
