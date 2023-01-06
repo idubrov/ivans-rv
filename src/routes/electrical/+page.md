@@ -68,6 +68,15 @@ Planned electrical equipment / avionics.
   - 2x22AWG shielded cable for the pitch trim motor (to the GSA 28 pitch servo)
   - 3x22AWG shielded cable for the position (to the GEA 24)
 
+## Antennas
+
+- GPS 20A: GA 36 on a glare shield
+- GTR 200 (or GTR 20?): DM C63-2 on the belly (in front of the F-705? another behind F-706?)
+- (or) GNC 255A: Archer antenna in the wingtip, another DM C63-2 on the belly
+- (or) GTN 650: Archer antenna in the wingtip, another DM C63-2 on the belly, GA 36 on a glare shield
+- GTX 45R: CI-105, front fuselage
+- Artex 345: antenna in front of the stabilizer? Inside the baggage area?
+
 ## Notes
 
 - [Holder for rib lightening holes](https://www.digikey.com/en/products/detail/panduit-corp/LHMS-S6-D/1307127)

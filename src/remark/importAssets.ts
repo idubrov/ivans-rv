@@ -155,6 +155,7 @@ function generateScriptBlock(): Content {
 		type: 'html',
 		value: `<script>
     import Mistake from "$lib/components/Mistake.svelte";
+    import YouTube from "$lib/components/YouTube.svelte";
     export let format = "full";
 </script>`
 	};
