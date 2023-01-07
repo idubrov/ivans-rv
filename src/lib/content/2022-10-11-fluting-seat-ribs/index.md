@@ -29,3 +29,5 @@ To optimize the edge distance for the screw holes on the brackets, I drew two li
 ![](3-fitting-the-crotch-strap.jpeg)
 
 The next step would be to drill the four holes from the seat floor, cleco brackets to the floor, then drill the front bracket to the ribs using the angle drill (since I have access to it from the front). Finally, remove the floor and drill the aft bracket.
+
+P.S. See my [update from January 6th, 2023](/blog/2023/01/06/some-setbacks). I would not recommend drilling the four holes for the screws on the straps at this point. Much better to wait until everything in the center section is fully locked together.
