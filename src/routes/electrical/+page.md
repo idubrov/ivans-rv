@@ -55,7 +55,7 @@ Planned electrical equipment / avionics.
   - 2x22 AWG Roll trim (to the GAD 27)
 - Co-pilot control stick
   - 1x22 AWG ground
-  - 1x22 AWG PTT (to the GMA 245)
+  - 1x22 AWG PTT (to the GMA 245)u
   - 2x22 AWG Flaps up/down/gnd (to the GAD 27)
   - 2x22 AWG Pitch trim (to the GAD 27)
   - 2x22 AWG Roll trim (to the GAD 27)
