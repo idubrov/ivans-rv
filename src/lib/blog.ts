@@ -56,6 +56,10 @@ export const CATEGORIES: Category[] = [
 	{
 		code: 'side-project',
 		description: 'Side Projects'
+	},
+	{
+		code: 'engine',
+		description: 'Engine'
 	}
 ];
 
