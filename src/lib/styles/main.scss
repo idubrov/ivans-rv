@@ -465,3 +465,34 @@ ul.postslist {
 		}
 	}
 }
+
+svg {
+	rotate: 11deg;
+
+	shape-rendering: geometricPrecision;
+	text-rendering: geometricPrecision;
+	image-rendering: optimizeQuality;
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+
+	path {
+		stroke-width: 15px;
+		stroke-linecap: square;
+		stroke-miterlimit: 23;
+	}
+
+	path.main {
+		stroke: black;
+		fill: none;
+	}
+
+	path.selection {
+		stroke: transparent;
+		fill: transparent;
+	}
+
+	path.selection:hover {
+		stroke: blue;
+		stroke-width: 20px;
+	}
+}

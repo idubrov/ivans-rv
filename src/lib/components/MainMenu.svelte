@@ -1,6 +1,7 @@
 <nav class="menubar">
 	<a href="/">Home</a>
 	<a href="/blog">Blog</a>
+	<a href="/category">Map</a>
 	<a
 		target="_blank"
 		rel="noreferrer"
