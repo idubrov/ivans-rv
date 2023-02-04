@@ -33,7 +33,7 @@ This is what the hole looks like after deburring.
 
 ![](3-nice-hole.jpeg)
 
-I got all the sixteen holes in no time. Perfectly round, aligned with the center section, with no tearing of the sheet metal. Love it. 
+I got all the sixteen holes in no time. Perfectly round, aligned with the center section, with no tearing of the sheet metal. Love it.
 
 I am seriously considering making dedicated tools for the snap bushings. I find that unibits require some finesse if you want to get perfect holes. If you don't stop at the right moment, it might start chewing into the next hole size. If you stop it too early, you have a partially cut hole that is difficult to restart (it might restart in a different spot). Also, they move the hole sometimes.
 
@@ -45,7 +45,7 @@ I recorded a short video drilling a new hole in some scrap rib.
 
 Then I decided to drill a tail spring rod which I received today. It's an [aftermarket version](https://flyboyaccessories.com/product/vans-type-tailwheel-tapered-rod-spring) from Flyboy Accessories. Should be a direct replacement for the original one. I chose it because I know that shipping from Van's takes some time.
 
-I started by drilling the tail spring mount. It seems to be a relatively soft steel, so did not have any issues with drilling. 
+I started by drilling the tail spring mount. It seems to be a relatively soft steel, so did not have any issues with drilling.
 
 ![](4-drilling-the-mount.jpeg)
 

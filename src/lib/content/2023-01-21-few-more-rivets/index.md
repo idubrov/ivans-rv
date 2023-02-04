@@ -9,7 +9,7 @@ Set a few more rivets on the F-711 bulkhead.
 
 <!-- more -->
 
-Slowly making some more progress on the F-711 bulkhead riveting. It was hard to rivet because a few flanges bent away, and it required using some tricks to pull them to the skin. The most successful trick seems to be the rubber washer. 
+Slowly making some more progress on the F-711 bulkhead riveting. It was hard to rivet because a few flanges bent away, and it required using some tricks to pull them to the skin. The most successful trick seems to be the rubber washer.
 
 Also, the fuselage curvature made it harder, too. Here I switched from my swiveling mushroom flat set to a regular mushroom set as it gave me more control over the gun.
 

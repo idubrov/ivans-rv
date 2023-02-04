@@ -31,4 +31,4 @@ The inside looks pretty good to me. Not an expert, but the color looks like a he
 
 ![](4-inside-the-cylinder.jpeg)
 
-I am probably going to make some minimal effort to keep them, and possibly throw them away a few years later! 
+I am probably going to make some minimal effort to keep them, and possibly throw them away a few years later!

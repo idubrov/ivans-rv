@@ -15,7 +15,7 @@ This is my setup.
 
 ![](0-setup.jpeg)
 
-I used [longeron dies](https://bullerent.com/product/longeron-bending-die-set/) I bought from Buller Enterprises. 
+I used [longeron dies](https://bullerent.com/product/longeron-bending-die-set/) I bought from Buller Enterprises.
 
 ![](1-longeron-dies.jpeg)
 
@@ -47,7 +47,7 @@ Like in the photo below (this is after some bending).
 
 I wasn't sure where to put the 28-1/4" mark relative to the vise jaws. I tried on a test piece and found that the actual angle point of the bend (intersection of both straight lines of an angle) will be about 3/8" ahead of the mark that was exactly against the vise.
 
-My first concern was to make sure I will get enough of the edge distance to the side skin. Since the angle is 5.6°, the offset perpendicular to the edge of the skin would be 3/8" * sin(5.6°), which is 0.037". So, in the worst case, if I move the bend to the wrong location, it should only introduce an error of 0.037", which is not a lot. Second, I checked against both parts F-721A and F-721B, and found that 3/8" offset does make parts to fit better (the angle point does indeed seems to be where I estimated it to be).
+My first concern was to make sure I will get enough of the edge distance to the side skin. Since the angle is 5.6°, the offset perpendicular to the edge of the skin would be 3/8" \* sin(5.6°), which is 0.037". So, in the worst case, if I move the bend to the wrong location, it should only introduce an error of 0.037", which is not a lot. Second, I checked against both parts F-721A and F-721B, and found that 3/8" offset does make parts to fit better (the angle point does indeed seems to be where I estimated it to be).
 
 So I moved the longerons 3/8" out of the vise. I think I could have made a sharper turn if I used the hammer, but this should work okay. My only remaining concern is how well it will fit the F-704 part (and the skin).
 
@@ -57,7 +57,7 @@ The bending process is to pull the first longeron such that the distance between
 
 ![](7-downbend.jpeg)
 
-Then, pull the second longeron in the opposite direction such that the distance is 5-1/2" (2-3/4" * 2).
+Then, pull the second longeron in the opposite direction such that the distance is 5-1/2" (2-3/4" \* 2).
 
 Finally, I added the twist, but without trying to make it perfect. I will adjust it later as necessary.
 

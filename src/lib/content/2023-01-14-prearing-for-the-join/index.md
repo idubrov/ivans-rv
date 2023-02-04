@@ -17,7 +17,7 @@ Next, I made another sawhorse.
 
 ![](1-sawhorse.jpeg)
 
-Few other minor things, like dimpling the holes in the aft fuselage which will match the flange holes of the baggage ribs, clecoing, and screwing in the floors. 
+Few other minor things, like dimpling the holes in the aft fuselage which will match the flange holes of the baggage ribs, clecoing, and screwing in the floors.
 
 I was hoping my back-ordered parts will arrive today, but I misread the day of the week, they should arrive tomorrow. So I did a few other little things, like fabricating F-717 longerons and deburring the front longerons.
 

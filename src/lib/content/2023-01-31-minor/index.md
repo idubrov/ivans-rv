@@ -19,4 +19,4 @@ Also, put the remaining engine parts on the shelf after spraying them with the L
 
 And that was it for today. It's kind of cold here (33°F), in San Antonio, TX.
 
-Waiting for a new F-715-L rib. I didn't like one hole in my second attempt, let's see if my third attempt will be successful. 
+Waiting for a new F-715-L rib. I didn't like one hole in my second attempt, let's see if my third attempt will be successful.

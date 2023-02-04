@@ -9,7 +9,7 @@ Today I purchased a used engine to use as a core!
 
 <!-- more -->
 
-The engine is an IO-360-M1 engine built at Aero Sport Power in 2006. 
+The engine is an IO-360-M1 engine built at Aero Sport Power in 2006.
 
 ![](0-front-view.jpeg)
 ![](1-side-view.jpeg)

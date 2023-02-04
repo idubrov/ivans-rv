@@ -14,7 +14,6 @@ Just a short session. First, I riveted the sides to the F-704 central section. I
 
 I still managed to get few "smileys" when I was holding the rivet gun with my left hand. The most annoying were two last rivets. I got "smileys", drilled them out, then got both of them "smiley" again! The good thing is that I had plastic cap on the gun, and anodized parts have a hard "shell", so no marks on the part. Also, drilling the rivets was easy, no damage to the holes, so all is good.
 
-
 ![](0-heavy-bar.jpeg)
 
 Sides riveted. Also, I relieved side sections a bit to fit the bushings (after consulting with Vans' Builders Support).

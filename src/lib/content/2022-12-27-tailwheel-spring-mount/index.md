@@ -5,7 +5,7 @@ time: 3
 tags: ['fabricating', 'drilling']
 ---
 
-Today I went back to the aft fuselage and fitted the WD-409 part. 
+Today I went back to the aft fuselage and fitted the WD-409 part.
 
 <!-- more -->
 
@@ -16,7 +16,7 @@ I spent some time opening the cut-out on the bottom skin to fit the mount, to ge
 ![](0-fitting-the-mount.jpeg)
 ![](2-bottom-view.jpeg)
 
-I will probably need to grind the skin some more once I powder-coat the part. 
+I will probably need to grind the skin some more once I powder-coat the part.
 
 After that, I proceeded to match-drill with the F-711. I was hesitant to match-drill since I didn't want to ruin the holes in the F-711 part in case the drill would wander on the steel part.
 
@@ -31,4 +31,4 @@ Finally, I drilled the holes for the keeper rivets estimating their location bas
 
 I was happy with how the part turned out. Up until the moment when I wondered why the plans do not tell me where to drill the hole for the tail spring. After a bit of research I have realized that when you get the whole assembly, it comes pre-drilled to the spring. So now I need to figure out what to do about it. Drilling to an existing spring is probably not going to work well -- it would require some smart fixturing to locate the hole precisely.
 
-I am probably going to buy a new tail spring, then drill it to the mount in my mill (I can also do a taper pin mod at the same time). And I can sell the original assembly, as I don't need anything else from it (I am planning for a different tail wheel). 
+I am probably going to buy a new tail spring, then drill it to the mount in my mill (I can also do a taper pin mod at the same time). And I can sell the original assembly, as I don't need anything else from it (I am planning for a different tail wheel).

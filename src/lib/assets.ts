@@ -48,7 +48,8 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 	if (isNetlify()) {
 		// For high DPI screens, keep image resolution high.
 		// FIXME: use srcset
-		const smallResolutionImage = typeof w !== 'undefined' && w < 1000 && typeof h !== 'undefined' && h < 1000;
+		const smallResolutionImage =
+			typeof w !== 'undefined' && w < 1000 && typeof h !== 'undefined' && h < 1000;
 		if (smallResolutionImage) {
 			// 2x scale the image
 			return {

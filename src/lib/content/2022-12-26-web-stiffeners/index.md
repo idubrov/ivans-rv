@@ -5,7 +5,7 @@ time: 3
 tags: ['fabricating', 'machining']
 ---
 
-Today I made F-704M parts, the web stiffeners. 
+Today I made F-704M parts, the web stiffeners.
 
 <!-- more -->
 

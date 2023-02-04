@@ -35,5 +35,3 @@ I put the parts together and installed the cotter pin.
 Finally, I drilled the holes for the nutplates in the crotch strap brackets so I can prime them together with the parts for the aileron trim.
 
 ![](7-holes-for-nutplates.jpeg)
-
-

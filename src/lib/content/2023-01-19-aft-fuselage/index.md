@@ -15,6 +15,5 @@ There are two shims and one doubler per side. Terrible! The shims allow the skin
 
 There is a slight crease / dent on the skin, but overall it looks okay. The fuselage is not fully straight if I put a ruler against it, but Van's support says it is not a structural issue. They suggested using shims, but I think I have enough of them. Won't be pretty, but will be structurally sound.
 
-
 ![](0-shims-and-doublers.jpeg)
 ![](1-skin-is-okay.jpeg)

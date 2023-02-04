@@ -44,6 +44,7 @@ Planned electrical equipment / avionics.
   - 2x22AWG twisted power / ground
 
 ## Central Fuselage
+
 - Roll trim motor
   - 2x22AWG shielded cable for the roll trim motor (to the GSA 28 roll servo)
   - 3x22AWG shielded cable for the position (to the GEA 24)
@@ -125,11 +126,12 @@ Planned electrical equipment / avionics.
   - 3x22AWG shielded cable for the position (to the GEA 24)
 
 Total
- - 1x CAN BUS
- - 2x tubes
- - 9x 22AWG wires
- - 3x 3x22AWG shielded cable
- - 1x 2X22AWG shielded cable
+
+- 1x CAN BUS
+- 2x tubes
+- 9x 22AWG wires
+- 3x 3x22AWG shielded cable
+- 1x 2X22AWG shielded cable
 
 ## Notes
 

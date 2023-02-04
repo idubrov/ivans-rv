@@ -10,11 +10,11 @@ Finally, split the case!
 
 <!-- more -->
 
-I started with the removal of the accessory case and everything that is in that area (idler gears shafts, oil pump, that nut behind the camshaft). Removing the nut behind the camshaft was a bit tricky. Even though my cylinder wrench did fit, I was only able to turn it about 5° before it got stuck. After some manipulations, I was able to remove the nut by only grabbing it partially. However, I don't think it will work well for installing the nut, so I will need to figure out a better wrench. 
+I started with the removal of the accessory case and everything that is in that area (idler gears shafts, oil pump, that nut behind the camshaft). Removing the nut behind the camshaft was a bit tricky. Even though my cylinder wrench did fit, I was only able to turn it about 5° before it got stuck. After some manipulations, I was able to remove the nut by only grabbing it partially. However, I don't think it will work well for installing the nut, so I will need to figure out a better wrench.
 
 After that, I removed all the fasteners on the case perimeter and moved to the thru-studs. The idea was to remove them first, to simplify the case splitting.
 
-There is a trick to use washers to pull the studs, but it's known that they might leave marks on the case. Well, somebody did use washers on my case. All thru-studs have marks around them. 
+There is a trick to use washers to pull the studs, but it's known that they might leave marks on the case. Well, somebody did use washers on my case. All thru-studs have marks around them.
 
 ![](0-washer-marks.jpeg)
 

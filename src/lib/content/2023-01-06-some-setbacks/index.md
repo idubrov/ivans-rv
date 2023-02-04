@@ -11,7 +11,7 @@ Today was a day of disappointment.
 
 <Mistake />
 
-The first setback was the tail spring. Even though the description said it is a direct replacement for Van's tail spring, I asked FlyBoy Accessories if there are any differences. Blake responded and said that it is done to the same standards, but Vans' changed the diameter of a thin end from 0.635" to 0.644". 
+The first setback was the tail spring. Even though the description said it is a direct replacement for Van's tail spring, I asked FlyBoy Accessories if there are any differences. Blake responded and said that it is done to the same standards, but Vans' changed the diameter of a thin end from 0.635" to 0.644".
 
 This potentially means that the tail wheel I want (JD Air one) would not fit well. I asked JD Air what is the diameter of the hole in their yoke, and Darwin replied that indeed they have 0.643"-0.645". Bummer.
 
@@ -33,4 +33,4 @@ The third issue I found once I tried to screw the floors. It turned out that my 
 
 The good thing is that all other holes on the floors aligned well with existing parts, so I only need to fix the crotch straps. There are two options. Option #1 would be to replace the straps. However, drilling them out might be a bit of an issue. Option #2 would be to remove nutplates from them, then rivet a backing plate to the "lips", re-drill for the correct location, then rivet the new nutplates.
 
-I think I am going with option #1 as it looks cleaner to me. I was not fully happy with how I riveted them anyway (some rivets are not very tight). 
+I think I am going with option #1 as it looks cleaner to me. I was not fully happy with how I riveted them anyway (some rivets are not very tight).
