@@ -481,17 +481,12 @@ svg {
 		stroke-miterlimit: 23;
 	}
 
-	path.main {
+	path {
 		stroke: black;
-		fill: none;
-	}
-
-	path.selection {
-		stroke: transparent;
 		fill: transparent;
 	}
 
-	path.selection:hover {
+	path.outline:hover {
 		stroke: blue;
 		stroke-width: 20px;
 	}
