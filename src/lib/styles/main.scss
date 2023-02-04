@@ -467,16 +467,17 @@ ul.postslist {
 }
 
 svg {
-	rotate: 11deg;
+	&.sideview {
+		rotate: 11deg;
+	}
 
 	shape-rendering: geometricPrecision;
 	text-rendering: geometricPrecision;
-	image-rendering: optimizeQuality;
 	fill-rule: evenodd;
 	clip-rule: evenodd;
 
 	path {
-		stroke-width: 15px;
+		stroke-width: 18px;
 		stroke-linecap: square;
 		stroke-miterlimit: 23;
 	}
@@ -486,8 +487,7 @@ svg {
 		fill: transparent;
 	}
 
-	path.outline:hover {
+	a g:hover path {
 		stroke: blue;
-		stroke-width: 20px;
 	}
 }
