@@ -3,6 +3,7 @@ title: 'Joining the fuselage'
 categories: ['fuselage']
 time: 4
 tags: ['drilling']
+thumbnail: '1-side-skin.jpeg'
 ---
 
 Got home from my business trip to CA, so back to building!
