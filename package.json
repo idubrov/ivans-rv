@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0",
-		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/kit": "^1.7.1",
 		"@types/js-yaml": "^4.0.5",
 		"@types/lunr": "^2.3.4",
 		"@types/mdast": "^3.0.10",
