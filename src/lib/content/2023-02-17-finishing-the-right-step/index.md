@@ -1,7 +1,7 @@
 ---
 title: 'Finishing the right step'
 categories: ['fuselage']
-time: 3
+time: 4
 tags: ['drilling']
 
 ---
