@@ -2,7 +2,7 @@
 title: 'Fitting the top rudder fairing and rolling the leading edge'
 categories: ['empennage']
 time: 5
-tags: ['composites', 'fairings', 'bending', 'mistakes']
+tags: ['fairings', 'bending', 'mistakes']
 thumbnail: '7-vs-and-rudder-together.jpeg'
 ---
 
