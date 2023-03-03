@@ -3,6 +3,7 @@ title: 'Ruining some parts'
 categories: ['fuselage']
 time: 1.5
 tags: ['drilling']
+thumbnail: '1-rudder-system.jpeg'
 ---
 
 Today was a day to ruin a few parts!
