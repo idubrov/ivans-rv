@@ -1,8 +1,8 @@
 ---
 title: 'Drilling the floor stiffeners'
 categories: ['fuselage']
-time: 2
-tags: ['drilling']
+time: 3
+tags: ['drilling', 'mistakes']
 thumbnail: '3-holes-drilled.jpeg'
 ---
 
@@ -27,3 +27,31 @@ Then I drilled the holes in the angles and checked that edge distances look good
 Finally, drilled the holes with my angle drill. First, to #40, then upsized to #30. I actually like how the drill works in thick materials -- it pulls itself into the existing hole. I think it self-aligns much better than reamers do.
 
 ![](3-holes-drilled.jpeg)
+
+Update: well, after I thought I was done, I looked at the holes and realized that the front part of the F-704 bulkhead was not clecoed to the skin and was not in the correct position. So the holes in the F-704 came out quite elongated.
+
+After filing the skin with the round file (to "elongate" them the same way as the hole in the F-704 was elongated) I reamed the holes to #30.
+
+This is what it looks like from the inside.
+
+![](4-the-hole.jpeg)
+
+The edge distance on the stiffeners came out to be ~0.230" and ~0.240", which is more than the minimum as per the MIL Spec, 0.219".
+
+The hole looks clean.
+
+![](5-the-hole-2.jpeg)
+
+Now the question, is what to do next?
+
+One option is to put AN426AD4 rivets. However, their head is bigger, and there might be not enough material in the F-704 flange and the F-776 center bottom skin for the countersink.
+
+Another option is to use NAS1097AD4 rivets. Since their head is the same size as a regular AN426AD3, they should require the same countersink size.
+
+The third option would be to dimple everything and hope that I can fit the floor stiffeners. However, this is exactly what plans say not to do. Not sure exactly why. However, even in that case, the aluminum angle is pretty thin and won't have too much material for the "substructure" countersink (flush plus 0.007").
+
+The fourth option would be to put a universal rivet, AN470AD4 there. Like this:
+
+![](6-hole-with-the-universal-rivet.jpeg)
+
+Finally, the fifth option is to countersink the forward bottom skin. Based on my calculations, the depth of a countersink for an AN426AD4 rivet is ~0.039, and the forward bottom skin thickness is 0.040".
