@@ -55,3 +55,5 @@ The fourth option would be to put a universal rivet, AN470AD4 there. Like this:
 ![](6-hole-with-the-universal-rivet.jpeg)
 
 Finally, the fifth option is to countersink the forward bottom skin. Based on my calculations, the depth of a countersink for an AN426AD4 rivet is ~0.039, and the forward bottom skin thickness is 0.040".
+
+P.S. The Van's support thinks that countersinking for AN426AD4 rivet (as per the plans) should not be an issue as it only a single hole. Also, edge distance on the floor stiffener is not an issue too.
