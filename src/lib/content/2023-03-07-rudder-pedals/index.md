@@ -26,7 +26,7 @@ I had a 1" plug which I used to connect two blocks together. Then I measured the
 
 ![](1-measuring-the-angle.jpeg)
 
-Then I machined a simple fixture to offset the block in the vise. Like a primitive sine plate. It came out at 0.088"
+Then I machined a simple fixture to offset the block in the vise. Like a primitive sine plate. It came out at 0.088".
 
 ![](2-machined-offset.jpeg)
 
@@ -39,6 +39,8 @@ I used an end mill to drill the initial hole of 3/4".
 ![](4-initial-hole.jpeg)
 
 Then I continued with the boring head to upsize the hole to about 1.004", which was the diameter of the tube.
+
+The depth of the hole on the "deeper" side is 0.650". I positioned the cutter over the block, lowered it until it touches the bearing on the "high" spot, then marked that as a zero on my indicator. Bored to the depth of the 0.650".
 
 ![](5-boring-the-hole.jpeg)
 
