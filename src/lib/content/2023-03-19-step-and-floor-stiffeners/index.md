@@ -1,7 +1,7 @@
 ---
 title: 'The left external step and the floor stiffeners'
 categories: ['fuselage']
-time: 2
+time: 1.5
 tags: ['drilling']
 ---
 
