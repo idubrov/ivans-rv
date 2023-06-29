@@ -363,7 +363,8 @@ article.markdown {
 	padding: 18px 20px;
 }
 
-article.markdown > section.content {
+article.markdown > section.content,
+article.standalone {
 	// Lists
 	ul {
 		list-style: disc;
