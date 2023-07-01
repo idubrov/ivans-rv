@@ -324,10 +324,8 @@ const panel_to_left_stick: Route = ["central", "f704.l", "f716.l1", "f716.l2"];
 const panel_to_right_stick: Route = ["central", "f704.r", "f716.r1", "f716.r2"];
 const panel_to_aft_left: Route = ["central", ...tunnel_left];
 const panel_to_aft_right: Route = ["central", ...tunnel_right];
-
-// FIXME: can use fuselage sides?
-const panel_to_left_wing = ["central", "f783.l", "f782.l"] as const;
-const panel_to_right_wing = ["central", "f783.r", "f782.r"] as const;
+const panel_to_left_wing = ["central", "f783.l", "f782.l", "lw"] as const;
+const panel_to_right_wing = ["central", "f783.r", "f782.r", "rw"] as const;
 
 
 export const WIRES: Record<string, Wire> = {
