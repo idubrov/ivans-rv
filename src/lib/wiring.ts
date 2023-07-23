@@ -166,10 +166,10 @@ export const DEVICES: Record<DeviceName, Device> = {
     description: "Archer NAV antenna in the wingtip"
   },
   "com1": {
-    description: "COM1 antenna"
+    description: "DM C63-2 COM1 antenna"
   },
   "com2": {
-    description: "COM2 antenna"
+    description: "DM C63-2 COM2 antenna"
   },
   "gtp59": {
     description: "Garmin GTP 59 temperature probe"
