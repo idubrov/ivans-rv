@@ -3,6 +3,7 @@ title: 'Installed the flaps actuator'
 categories: ['fuselage']
 time: 4
 tags: ['drilling', 'fabrication', 'assembly']
+thumbnail: '5-flap-actuator-installed.jpeg'
 ---
 
 Today I installed the WD-613-EF flap actuator and ruined the F-741A tunnel cover support cover brackets.
