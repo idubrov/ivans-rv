@@ -3,10 +3,6 @@ import type { Asset, PreparedAsset } from '$lib/types';
 import { getContext } from 'svelte';
 import { assetsKey } from '$lib/types';
 
-export function isNetlify(): boolean {
-	return import.meta.env.VITE_NETLIFY === 'true';
-}
-
 export function lightGalleryLicense(): string | undefined {
 	return import.meta.env.VITE_LIGHTGALLERY_LICENSE;
 }
@@ -45,59 +41,23 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 
 	const w = dimension(parsed.w);
 	const h = dimension(parsed.h);
-	if (isNetlify()) {
-		// For high DPI screens, keep image resolution high.
-		// FIXME: use srcset
-		const smallResolutionImage =
-			typeof w !== 'undefined' && w < 1000 && typeof h !== 'undefined' && h < 1000;
-		if (smallResolutionImage) {
-			// 2x scale the image
-			return {
-				...asset,
-				url: `${url}?nf_resize=${parsed.nf_resize}&w=${w * 2}&h=${h * 2}`,
-				style: `object-fit: contain; max-width: ${w}px; max-height: ${h}px`
-			};
-		}
+
+	// For high DPI screens, keep image resolution high.
+	// FIXME: use srcset
+	const smallResolutionImage =
+		typeof w !== 'undefined' && w < 1000 && typeof h !== 'undefined' && h < 1000;
+	if (smallResolutionImage) {
+		// 2x scale the image
 		return {
 			...asset,
-			url: `${url}${query}`
+			url: `${url}?nf_resize=${parsed.nf_resize}&w=${w * 2}&h=${h * 2}`,
+			style: `object-fit: contain; max-width: ${w}px; max-height: ${h}px`
 		};
 	}
-
-	// Netlify simulation for the local development
-	// FIXME: make a server path to resize?..
-	switch (parsed.nf_resize) {
-		case 'fit': {
-			let style = 'object-fit: contain;';
-			if (typeof parsed.w === 'string') {
-				style += ` max-width: ${parsed.w}px;`;
-			}
-			if (typeof parsed.h === 'string') {
-				style += ` max-height: ${parsed.h}px;`;
-			}
-			return {
-				...asset,
-				style
-			};
-		}
-		case 'smartcrop': {
-			let style = 'object-fit: cover;';
-			if (typeof parsed.w === 'string') {
-				style += ` max-width: ${parsed.w}px;`;
-			}
-			if (typeof parsed.h === 'string') {
-				style += ` max-height: ${parsed.h}px;`;
-			}
-			return {
-				...asset,
-				style
-			};
-		}
-		default:
-			console.warn(`Resize type ${parsed.nf_resize} is not supported!`);
-			break;
-	}
-	return asset;
+	return {
+		...asset,
+		url: `${url}${query}`
+	};
 }
 
 function dimension(value: string | (string | null)[] | null): number | undefined {
