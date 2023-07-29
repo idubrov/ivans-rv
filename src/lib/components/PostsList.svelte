@@ -3,10 +3,10 @@
 	import PostThumbnail from './PostThumbnail.svelte';
 	import TimeSpent from './TimeSpent.svelte';
 	import { postLink } from '$lib/navigation';
-	import type { Post } from '$lib/types';
+	import type { PostMetadata } from '$lib/types';
 	import { loadPostAsComponent } from '$lib/blogClient.js';
 
-	export let posts: Post[];
+	export let posts: PostMetadata[];
 </script>
 
 <ul class="postslist">

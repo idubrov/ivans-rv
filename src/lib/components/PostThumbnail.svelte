@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PostMetadata } from '$lib/types';
-	import SmartImg from './SmartImg.svelte';
+	import { prepareAsset } from '$lib/assets';
 	export let post: PostMetadata;
 	export let width = 720;
 	export let height = 540;
@@ -16,8 +16,13 @@
 		return { url, alt };
 	}
 	$: thumbnail = selectThumbnail();
+
+	$: asset = prepareAsset({
+		url: thumbnail.url,
+		alt: thumbnail.alt
+	});
 </script>
 
 {#if thumbnail.url}
-	<SmartImg class="thumbnail" src={thumbnail.url} alt={thumbnail.alt} />
+	<img class="thumbnail" src={asset.url} alt={asset.alt} style={asset.style} />
 {/if}
