@@ -27,8 +27,8 @@ In the end, everything turned out fine. I got the angles for both sides.
 
 This completes the preparation of the fuselage. Almost -- the remaining work is the hinges that attach the cowling. I thought, I have the correct material, but turns out these hinges come with the finishing kit which I don't have. I can skip that part, but that would mean one of two things:
 
-* I can dimple the skin and the firewall flanges now, but that will make it harder to match-drill the hinges later.
-* I can skip the dimpling, but then I will either need to countersink the skin or dimple two layers at once.
+- I can dimple the skin and the firewall flanges now, but that will make it harder to match-drill the hinges later.
+- I can skip the dimpling, but then I will either need to countersink the skin or dimple two layers at once.
 
 So instead I decided to order a short piece of the hinge. I only need 14-1/2", so a 3' long hinge should be enough. Unfortunately, that means I will have to wait for a week or two. Will see if I can progress on other parts.
 

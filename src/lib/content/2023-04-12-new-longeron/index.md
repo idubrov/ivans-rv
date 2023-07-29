@@ -21,6 +21,6 @@ Finally, I started to deburr the forward side skins.
 
 ![](0-deburning-the-skins.jpeg)
 
-Now the plan is to prime the left longeron, the forward side skins, and the side plates. This is the minimum amount of parts to start putting the fuselage together. 
+Now the plan is to prime the left longeron, the forward side skins, and the side plates. This is the minimum amount of parts to start putting the fuselage together.
 
 Then I will drill the right longeron. Drilling the front 7 holes for the engine mount is going to be tricky -- need to make sure the holes align with the holes in the skin! I saw some good ideas on VAF on how to do it, so I will try that.

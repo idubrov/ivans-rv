@@ -30,4 +30,3 @@ Next, I relieved some flanges of the F-706 bulkhead assembly -- to allow for the
 Then I drilled the holes for the nutplates on the F-715 seat ribs and selected the parts I am going to prime next (seat ribs and all the short longerons and the floor stiffeners).
 
 ![](3-parts-to-prime.jpeg)
-

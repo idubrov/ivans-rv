@@ -10,7 +10,7 @@ The same bend as yesterday, but for the right skin.
 
 <!-- more -->
 
-The same process as yesterday: bending the aft lower part of the side skins. This is the first part of the process, with the wooden block. 
+The same process as yesterday: bending the aft lower part of the side skins. This is the first part of the process, with the wooden block.
 
 ![](0-the-right-skin-bend.jpeg)
 

@@ -9,7 +9,7 @@ Today I countersinked both longerons and continued deburring the parts.
 
 <!-- more -->
 
-Not much to say here, a lot of holes to countersink. I used my electric drill at low speed (450 RPM), which worked nicely. Before counter-sinking I brushed some Boelube on the longerons, which helped. 
+Not much to say here, a lot of holes to countersink. I used my electric drill at low speed (450 RPM), which worked nicely. Before counter-sinking I brushed some Boelube on the longerons, which helped.
 
 ![](0-longeron-contersinked.jpeg)
 

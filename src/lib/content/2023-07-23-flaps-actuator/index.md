@@ -36,4 +36,3 @@ Then I went back to the F-680 block attachment where I did not install the nutpl
 ![](5-nutplate-doesnt-fit-2.jpeg)
 
 In the end, I decided not to install the forward nutplate (I guess, the alternative would be to use a Click Bond nutplate).
-

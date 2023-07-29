@@ -9,7 +9,7 @@ Today I drilled the F-786A top J-stiffeners to the aft skins, then drilled the F
 
 <!-- more -->
 
-First, the J-stiffeners. I did not want to get inside the fuselage to hold the stiffeners to the skin, so I reached as much as I could from the front and the back, aligned the centerline, then drilled. It worked out okay in the end. The right stiffener is drilled a bit off the centerline in one section, but since my line was closer to the vertex of the bend, it still has enough edge distance. 
+First, the J-stiffeners. I did not want to get inside the fuselage to hold the stiffeners to the skin, so I reached as much as I could from the front and the back, aligned the centerline, then drilled. It worked out okay in the end. The right stiffener is drilled a bit off the centerline in one section, but since my line was closer to the vertex of the bend, it still has enough edge distance.
 
 I am always nervous drilling through the material where I have a flange behind it (especially, given that these flanges already have very short edge distances for some reason), so I place a scrap shim to stop the drill bit. All the holes aligned well with no issues.
 
@@ -21,4 +21,4 @@ I turned out okay, but the very top hole (the one shared with the bulkhead) is a
 
 ![](1-reinforcing-ribs.jpeg)
 
-Finally, I drilled the holes in the F-709 bulkhead (the rear one). There are three nutplates on each side that need to be installed into the bulkhead (but you won't know about it until you get to the fairings, it's on the DWG 44). The issue, however, is that due to the fluting on the F-709, the nutplates don't fit. I am thinking of getting some of the small Click-Bond nutplates (CB6014), to see if they would fit between the flutes. 
+Finally, I drilled the holes in the F-709 bulkhead (the rear one). There are three nutplates on each side that need to be installed into the bulkhead (but you won't know about it until you get to the fairings, it's on the DWG 44). The issue, however, is that due to the fluting on the F-709, the nutplates don't fit. I am thinking of getting some of the small Click-Bond nutplates (CB6014), to see if they would fit between the flutes.

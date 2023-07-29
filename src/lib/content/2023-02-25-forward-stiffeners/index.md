@@ -13,7 +13,7 @@ The first step I did was to fit the angle clip to the right side stiffener. Sinc
 
 ![](0-drilling-the-angle-clip.jpeg)
 
-To drill the hole through the firewall angle I used the same technique. However, since I had to bend the drill bit a bit too much, it snapped! 
+To drill the hole through the firewall angle I used the same technique. However, since I had to bend the drill bit a bit too much, it snapped!
 
 ![](1-drill-bit-snapped.jpeg)
 

@@ -20,7 +20,7 @@ It turned out that the width of the overlap is about 3/4". If a hole is drilled 
 
 So I used my mill to locate the #40 holes on the longeron, with the holes placed at 3/8" + 0.025" from the edge of the angle. I biased the holes by 0.025" to get just a bit more edge distance on the aluminum (sacrificing a bit of an edge distance on steel).
 
-Then I clamped the longeron and drilled the #40 holes through the steel. This time I used an air drill to drill the steel, and it worked well. I think I am starting to like the air drill. 
+Then I clamped the longeron and drilled the #40 holes through the steel. This time I used an air drill to drill the steel, and it worked well. I think I am starting to like the air drill.
 
 ![](1-longeron-clamped.jpeg)
 
@@ -49,7 +49,6 @@ After drilling the longerons, I started to work on an F-684 gusset. However, I l
 
 ![](7-the-gusset.jpeg)
 
-You can see that the holes that were supposed to be upsized to 1/4" are not where they should be. I can still make these parts work, but after doing some research, I found that several builders had edge distance issues on that part. So I decided to fabricate a new one, but slightly larger. Also, I think I can actually make the notch narrower. 
+You can see that the holes that were supposed to be upsized to 1/4" are not where they should be. I can still make these parts work, but after doing some research, I found that several builders had edge distance issues on that part. So I decided to fabricate a new one, but slightly larger. Also, I think I can actually make the notch narrower.
 
-It looks to me that the reason it is so wide is to allow the bend line to be at 9/16". However, if I bend the part before doing the notch, I think it should work out okay? Will see once I get my 2024-T3 0.063 sheet stock.  
-
+It looks to me that the reason it is so wide is to allow the bend line to be at 9/16". However, if I bend the part before doing the notch, I think it should work out okay? Will see once I get my 2024-T3 0.063 sheet stock.

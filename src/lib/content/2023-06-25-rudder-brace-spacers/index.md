@@ -6,7 +6,7 @@ tags: ['fabricating', 'drilling']
 thumbnail: '2-rudder-pedals.jpeg'
 ---
 
-Today I made a couple of parts for the fuselage. 
+Today I made a couple of parts for the fuselage.
 
 <!-- more -->
 

@@ -3,7 +3,6 @@ title: 'Finishing the right step'
 categories: ['fuselage']
 time: 4
 tags: ['drilling']
-
 ---
 
 Finished the right external step, and started the left one.
@@ -26,7 +25,7 @@ So I decided to replace the block with the other one, and order a new one as wel
 
 ![](2-block-drilled.jpeg)
 
-This is the inside view of the skin where the step attaches. I probably need to open the hole just a bit more to allow for the welding fillets to fit. 
+This is the inside view of the skin where the step attaches. I probably need to open the hole just a bit more to allow for the welding fillets to fit.
 
 ![](3-skin-view.jpeg)
 
@@ -47,7 +46,7 @@ To expedite the trimming of the F-623 corner rib, I marked the locations of the 
 ![](6-the-nibbler.jpeg)
 ![](7-cutout-nibbled.jpeg)
 
-Shortened the pipe by estimating how much do I need to remove and using the block to mark the line. 
+Shortened the pipe by estimating how much do I need to remove and using the block to mark the line.
 
 ![](8-shortening-pipe.jpeg)
 

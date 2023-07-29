@@ -27,7 +27,7 @@ However, putting the bolt back was a major pain. I didn't have any means to turn
 
 Finally, I drilled two bolt holes (on each side) that attach the reinforcement angle. One of the bolts will be used to attach the fuel tank bracket and another hole I need to countersink and possibly dimple the skin for the screw. I'm thinking to dimple the outer skin (side skins) and to countersink the bottom skin and the lower longeron.
 
-As of now, I put the temporary bolts. 
+As of now, I put the temporary bolts.
 
 ![](3-tank-attachment-holes.jpeg)
 

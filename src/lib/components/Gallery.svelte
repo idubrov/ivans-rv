@@ -9,7 +9,7 @@
 	import type { Assets, Asset } from '$lib/types';
 	import { lightGalleryLicense, prepareAsset } from '$lib/assets';
 	import { afterUpdate } from 'svelte';
-	import type {LightGallerySettings} from "lightgallery/lg-settings";
+	import type { LightGallerySettings } from 'lightgallery/lg-settings';
 
 	export let assets: Assets = {};
 
@@ -29,7 +29,7 @@
 			plugins: [lgThumbnail],
 			speed: 500,
 			zoomFromOrigin: false,
-			...(licenseKey && { licenseKey }),
+			...(licenseKey && { licenseKey })
 		});
 		opener = {
 			openAsset(asset: Asset) {

@@ -32,7 +32,7 @@ So I switched to the installation of the flaps. I drilled the holes for the F-68
 
 I positioned the block flush with the ribs. This placed the hole closer to the rib which made holding the nut a little tricky. Also, it required me to torque the bolt, not the nut (later I realized I am supposed to install the nut plates, oops).
 
-While installing the actuator I managed to send a small washer into a small gap between the baggage rib and the skin. Luckily, I was able to fish it out with the magnet used from the outside of the skin (since aluminum skin is not magnetic). 
+While installing the actuator I managed to send a small washer into a small gap between the baggage rib and the skin. Luckily, I was able to fish it out with the magnet used from the outside of the skin (since aluminum skin is not magnetic).
 
 This is a dramatic depiction of the event.
 

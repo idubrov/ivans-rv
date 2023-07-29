@@ -14,9 +14,9 @@ The overall idea was to locate the holes on my mill from specific reference surf
 
 For the blocks themselves, I used the following reference surfaces:
 
-* The side that goes flat to the skin. The holes are 3/8" from that surface.
-* The forward edge of the block. The first hole is 3/8" from that surface and the second hole is 2-3/8" from it. This accounts for the small differences in the length of the blocks (although it probably doesn't matter that much, the difference between the blocks is probably less than 0.010").
-* The face that goes to the angle. The holes are drilled from that surface. In the case drill wanders a bit, these holes will be located precisely (while the exit holes might be a bit off).
+- The side that goes flat to the skin. The holes are 3/8" from that surface.
+- The forward edge of the block. The first hole is 3/8" from that surface and the second hole is 2-3/8" from it. This accounts for the small differences in the length of the blocks (although it probably doesn't matter that much, the difference between the blocks is probably less than 0.010").
+- The face that goes to the angle. The holes are drilled from that surface. In the case drill wanders a bit, these holes will be located precisely (while the exit holes might be a bit off).
 
 Initially, I placed the edge of the bearing blocks at 3-5/8", which is the original 3" as per plans, plus half the difference of the bearing block length (2-3/4" versus 4"). However, given that these pedals have the brakes on the back, and there was some interference with the firewall angles, I moved them aft by 3/8", getting a 4" distance from the firewall to the edge of the bearing blocks.
 
@@ -50,7 +50,6 @@ One issue I see is that if I place the rudder brace to the outboard of the firew
 
 ![](7-some-alignment-issues.jpeg)
 
-I think I can put the brace inboard, but then riveting it might be a problem. There is about a 1/8" gap between the firewall angle and the firewall recess. With the rudder brace being 1/16", it leaves me 1/16" for the rivet head. 
+I think I can put the brace inboard, but then riveting it might be a problem. There is about a 1/8" gap between the firewall angle and the firewall recess. With the rudder brace being 1/16", it leaves me 1/16" for the rivet head.
 
 The factory head of the universal rivet seems to be smaller than that, so that's one option. The other option would be to use a flush rivet. Or, I can squash the shop head to be less than 0.063". This is also possible, the minimum thickness for a -4 rivet is 0.050".
-
