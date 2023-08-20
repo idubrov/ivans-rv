@@ -3,9 +3,10 @@ title: 'Baggage bulkhead panels'
 categories: ['fuselage']
 time: 1.5
 tags: ['drilling']
+thumbnail: '3-panels-drilled.jpeg'
 ---
 
- Today I worked a bit on the baggage bulkhead panels F-751 and F-652.
+Today I worked a bit on the baggage bulkhead panels F-751 and F-652.
 
 <!-- more -->
 
