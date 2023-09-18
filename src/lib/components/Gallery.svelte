@@ -32,7 +32,7 @@
 			...(licenseKey && { licenseKey })
 		});
 		opener = {
-			openAsset(asset: Asset) {
+			openAsset(asset: { url: string }) {
 				const pos = asset.url.indexOf('?');
 				const assetUrl = pos !== -1 ? asset.url.slice(0, pos) : asset.url;
 				const item = gallery.galleryItems.findIndex((el) => el.downloadUrl === assetUrl);
@@ -58,7 +58,7 @@
 				rel="noreferrer"
 				data-download-url={asset.downloadUrl}
 			>
-				<img src={asset.url} alt={asset.meta.alt} style={asset.style} />
+				<img src={asset.url} alt={asset.meta?.alt} style={asset.style} />
 			</a>
 		{/each}
 	</section>

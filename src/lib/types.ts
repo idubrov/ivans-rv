@@ -31,7 +31,7 @@ export interface Meta {
 
 export interface Asset {
 	url: string;
-	meta: Meta;
+	meta?: Meta;
 }
 
 export type Assets = Record<string, Asset>;
@@ -54,7 +54,7 @@ export const galleryKey = Symbol('gallery');
  * Open given asset in the light gallery. Provided via readable store in the `galleryKey` context.
  */
 export interface GalleryOpener {
-	openAsset(asset: Asset): boolean;
+	openAsset(asset: { url: string }): boolean;
 }
 
 export interface PreparedAsset extends Asset {

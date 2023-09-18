@@ -12,14 +12,14 @@
 	export let rel: string | undefined = 'noreferrer';
 	export let target: string | undefined = undefined;
 
-	let asset: Asset;
+	let asset: Asset | undefined;
 	$: {
 		asset = resolveAsset(href);
 		if (asset) {
+			// This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
 			// FIXME: we also default in MarkdownLink
 			href = `${asset.url}?nf_resize=fit&w=720&h=540`;
 		} else {
-			// This image is a local asset, relative to the content. Replace source with an actual URL from the assets map.
 			const crossLink = resolveCrossLink(href);
 			if (crossLink) {
 				href = crossLink;
@@ -31,7 +31,7 @@
 
 	let galleryStore: Readable<GalleryOpener>;
 	$: galleryStore = getContext(galleryKey);
-	function openGallery(e) {
+	function openGallery(e: Event) {
 		if (asset && get(galleryStore).openAsset(asset)) {
 			e.preventDefault();
 		}

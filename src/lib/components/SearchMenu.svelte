@@ -11,8 +11,8 @@
 
 	const index = Index.load(searchIndex);
 	let last: string | undefined;
-	let results: PostMetadata[];
-	async function search(e) {
+	let results: PostMetadata[] | undefined;
+	async function search(e: any) {
 		const term = e.target.value.trim();
 		if (!term) {
 			results = undefined;
@@ -20,7 +20,9 @@
 		} else if (last !== term) {
 			last = term;
 			const searchResults = index.search(term).slice(0, 10);
-			results = await Promise.all(searchResults.map((result) => loadPostByKey(result.ref)));
+			results = (await Promise.all(
+				searchResults.map((result) => loadPostByKey(result.ref))
+			)).filter((post): post is PostMetadata => post !== undefined);
 		}
 	}
 </script>

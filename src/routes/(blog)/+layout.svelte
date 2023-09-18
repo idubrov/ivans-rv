@@ -14,15 +14,25 @@
 	import dayjs from 'dayjs';
 	import { postLink } from '$lib/navigation';
 
+	/** @type {string} */
 	export let title;
+	/** @type {string} */
 	export let format;
+	/** @type {string} */
 	export let date;
+	/** @type {number} */
 	export let time;
+	/** @type {string} */
 	export let key;
+	/** @type {import("$lib/types").PostMetadata} */
 	export let previous;
+	/** @type {import("$lib/types").PostMetadata} */
 	export let next;
+	/** @type {string} */
 	export let summary;
+	/** @type {Record<string, import("$lib/types").Asset>} */
 	export let assets;
+	/** @type {string} */
 	export let slug;
 
 	const opener = writable({
@@ -43,7 +53,7 @@
 		<title>{title}</title>
 		<link
 			rel="canonical"
-			href={new URL(postLink({ date: dayjs.utc(date).toDate(), slug }), baseUrl())}
+			href={new URL(postLink({ date: dayjs.utc(date).toDate(), slug }), baseUrl()).toString()}
 		/>
 		<meta data-key="description" name="description" content={summary} />
 		<meta property="og:type" content="article" />

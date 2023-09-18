@@ -9,8 +9,11 @@
 	import { galleryKey, assetsKey } from '$lib/types';
 	import { setContext } from 'svelte';
 
+	/** @type {string} */
 	export let title;
+	/** @type {string} */
 	export let format;
+	/** @type {Record<string, import("$lib/types").Asset>} */
 	export let assets;
 
 	const opener = writable({
