@@ -23,9 +23,15 @@ export interface CurrentPost {
 	next?: PostMetadata;
 }
 
+export interface Meta {
+	alt: string;
+	width: number;
+	height: number;
+}
+
 export interface Asset {
 	url: string;
-	alt?: string;
+	meta: Meta;
 }
 
 export type Assets = Record<string, Asset>;

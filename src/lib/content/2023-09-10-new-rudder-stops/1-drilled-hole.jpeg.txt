@@ -1,1 +1,0 @@
-Hole has reasonable edge distances everywhere.

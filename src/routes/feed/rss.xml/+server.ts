@@ -77,7 +77,7 @@ function thumbnail(post: Post): string {
 	}
 
 	const asset = post.assets[post.thumbnail];
-	return `<p><img src="${asset.url}" alt="${asset.alt}" /></p>`;
+	return `<p><img src="${asset.url}" alt="${asset.meta.alt}" /></p>`;
 }
 
 export const prerender = true;

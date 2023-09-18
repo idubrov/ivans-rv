@@ -1,1 +1,0 @@
-Corners rounded on reinforcement angles.

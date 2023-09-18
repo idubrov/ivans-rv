@@ -1,6 +1,7 @@
 "use strict";
 import { dirname, join } from "path";
 import { readdirSync, readFileSync } from "fs";
+import yaml from "js-yaml";
 const SUMMARY_START = {
   type: "svelteBlock",
   value: '{#if format === "summary" || format === "full" || format === "rss"}',
@@ -24,22 +25,14 @@ const BODY_END = {
 export function importAssets() {
   return (tree, file) => {
     let assets = [];
-    let alts = [];
+    let metas = [];
     if (file.filename.endsWith("/+page.md") || file.filename.endsWith("/index.md")) {
       const dir = dirname(file.filename);
       assets = readdirSync(dir).filter(isAsset);
-      alts = assets.map((asset) => {
-        try {
-          return readFileSync(join(dir, `${asset}.txt`), "utf8");
-        } catch (e) {
-          if (process.env.NETLIFY) {
-            throw e;
-          }
-          console.warn(
-            `Image '${asset}' does not have an alt text associated with it, ignoring in dev.`
-          );
-          return "";
-        }
+      metas = assets.map((asset) => {
+        const metaPath = join(dir, asset.replace(/.jpeg$/, ".meta.yaml"));
+        const metaContent = readFileSync(metaPath, "utf8");
+        return yaml.load(metaContent);
       });
     }
     const more = tree.children.findIndex(
@@ -56,7 +49,7 @@ export function importAssets() {
       tree.children.splice(0, 0, BODY_START);
       tree.children.push(BODY_END);
     }
-    const moduleScript = generateModuleScriptBlock(assets, alts, summary, file.filename);
+    const moduleScript = generateModuleScriptBlock(assets, metas, summary, file.filename);
     const script = generateScriptBlock();
     tree.children.splice(0, 0, moduleScript);
     tree.children.splice(1, 0, script);
@@ -84,7 +77,7 @@ function parsePostRef(path) {
     date: postDate
   };
 }
-function generateModuleScriptBlock(assets, alts, summary, path) {
+function generateModuleScriptBlock(assets, metas, summary, path) {
   const postRef = parsePostRef(path);
   let ref = "";
   if (postRef) {
@@ -100,7 +93,7 @@ function generateModuleScriptBlock(assets, alts, summary, path) {
 ${assets.map((asset, index) => `    import asset${index} from "./${asset}";`).join("\n")}
     const assets = {
 ${assets.map(
-      (asset, index) => `        "${asset}": { url: asset${index}, alt: ${JSON.stringify(alts[index])} },`
+      (asset, index) => `        "${asset}": { url: asset${index}, meta: ${JSON.stringify(metas[index])} },`
     ).join("\n")}
 };
 	const summary = ${JSON.stringify(summary)};

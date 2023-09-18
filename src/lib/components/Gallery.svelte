@@ -58,7 +58,7 @@
 				rel="noreferrer"
 				data-download-url={asset.downloadUrl}
 			>
-				<img src={asset.url} alt={asset.alt} style={asset.style} />
+				<img src={asset.url} alt={asset.meta.alt} style={asset.style} />
 			</a>
 		{/each}
 	</section>

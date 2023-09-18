@@ -16,7 +16,7 @@
 
 	let galleryStore: Readable<GalleryOpener>;
 	$: galleryStore = getContext(galleryKey);
-	function openGallery(e) {
+	function openGallery() {
 		get(galleryStore).openAsset(asset);
 	}
 	$: effectiveStyle = `${asset.style ?? ''} ${style ?? ''}`.trim();
@@ -24,8 +24,8 @@
 
 {#if origAsset && galleryStore}
 	<a href={asset.url} on:click|preventDefault={openGallery} target="_blank" rel="noreferrer">
-		<img src={asset.url} alt={alt ?? asset.alt} style={effectiveStyle} />
+		<img src={asset.url} alt={alt ?? asset.meta?.alt} style={effectiveStyle} />
 	</a>
 {:else}
-	<img src={asset.url} alt={alt ?? asset.alt} style={effectiveStyle} />
+	<img src={asset.url} alt={alt ?? asset.meta?.alt} style={effectiveStyle} />
 {/if}

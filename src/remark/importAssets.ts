@@ -1,6 +1,8 @@
 import { dirname, join } from 'path';
 import { readdirSync, readFileSync } from 'fs';
-import type { Content, Root } from 'mdast';
+import type { RootContent, Root } from 'mdast';
+import yaml from "js-yaml";
+import type { Meta } from '$lib/types';
 
 interface VFile {
 	filename: string;
@@ -10,25 +12,25 @@ const SUMMARY_START = {
 	type: 'svelteBlock',
 	value: '{#if format === "summary" || format === "full" || format === "rss"}',
 	name: 'if'
-} as unknown as Content;
+} as unknown as RootContent;
 
 const SUMMARY_END = {
 	type: 'svelteBlock',
 	value: '{/if}',
 	name: 'if'
-} as unknown as Content;
+} as unknown as RootContent;
 
 const BODY_START = {
 	type: 'svelteBlock',
 	value: '{#if format === "full" || format === "rss"}',
 	name: 'if'
-} as unknown as Content;
+} as unknown as RootContent;
 
 const BODY_END = {
 	type: 'svelteBlock',
 	value: '{/if}',
 	name: 'if'
-} as unknown as Content;
+} as unknown as RootContent;
 
 /**
  * Import static assets co-located with markdown content. Imported assets are available in `assets` map that
@@ -37,24 +39,16 @@ const BODY_END = {
 export function importAssets(): (tree: Root, file: VFile) => Root {
 	return (tree: Root, file: VFile) => {
 		let assets: string[] = [];
-		let alts: string[] = [];
+		let metas: Meta[] = [];
 
 		// Only collect assets for markdown pages which correspond to the whole directory.
 		if (file.filename.endsWith('/+page.md') || file.filename.endsWith('/index.md')) {
 			const dir = dirname(file.filename);
 			assets = readdirSync(dir).filter(isAsset);
-			alts = assets.map((asset) => {
-				try {
-					return readFileSync(join(dir, `${asset}.txt`), 'utf8');
-				} catch (e) {
-					if (process.env.NETLIFY) {
-						throw e;
-					}
-					console.warn(
-						`Image '${asset}' does not have an alt text associated with it, ignoring in dev.`
-					);
-					return '';
-				}
+			metas = assets.map((asset) => {
+				const metaPath = join(dir, asset.replace(/.jpeg$/, ".meta.yaml"));
+				const metaContent = readFileSync(metaPath, 'utf8');
+				return yaml.load(metaContent) as Meta;
 			});
 		}
 
@@ -74,7 +68,7 @@ export function importAssets(): (tree: Root, file: VFile) => Root {
 		}
 
 		// FIXME: append to an existing block, if necessary.
-		const moduleScript = generateModuleScriptBlock(assets, alts, summary, file.filename);
+		const moduleScript = generateModuleScriptBlock(assets, metas, summary, file.filename);
 		const script = generateScriptBlock();
 		tree.children.splice(0, 0, moduleScript);
 		tree.children.splice(1, 0, script);
@@ -110,10 +104,10 @@ function parsePostRef(path: string): { key: string; date: Date; slug: string } |
 
 function generateModuleScriptBlock(
 	assets: string[],
-	alts: string[],
+	metas: Meta[],
 	summary: string | undefined,
 	path: string
-): Content {
+): RootContent {
 	const postRef = parsePostRef(path);
 	let ref = '';
 	// For blogs posts, we generate date, slug and a key as well.
@@ -132,7 +126,7 @@ ${assets.map((asset, index) => `    import asset${index} from "./${asset}";`).jo
 ${assets
 	.map(
 		(asset, index) =>
-			`        "${asset}": { url: asset${index}, alt: ${JSON.stringify(alts[index])} },`
+			`        "${asset}": { url: asset${index}, meta: ${JSON.stringify(metas[index])} },`
 	)
 	.join('\n')}
 };
@@ -150,7 +144,7 @@ ${ref}
 	};
 }
 
-function generateScriptBlock(): Content {
+function generateScriptBlock(): RootContent {
 	return {
 		type: 'html',
 		value: `<script>
@@ -161,7 +155,7 @@ function generateScriptBlock(): Content {
 	};
 }
 
-function mergeParagraphs(children: Content[]): string {
+function mergeParagraphs(children: RootContent[]): string {
 	return children
 		.flatMap((e) =>
 			e.type === 'paragraph' ? mergeParagraphs(e.children) : e.type === 'text' ? e.value : ''

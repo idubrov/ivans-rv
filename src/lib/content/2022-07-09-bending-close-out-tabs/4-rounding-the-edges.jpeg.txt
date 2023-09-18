@@ -1,1 +1,0 @@
-Rounding the edges of the trim tab.

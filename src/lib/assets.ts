@@ -22,8 +22,8 @@ export function resolveAsset(src: string): Asset | undefined {
 	const asset = pos != -1 ? assets[src.slice(startPos, pos)] : assets[src.slice(startPos)];
 	if (asset) {
 		return {
+			...asset,
 			url: `${asset.url}${query}`,
-			alt: asset.alt
 		};
 	}
 }

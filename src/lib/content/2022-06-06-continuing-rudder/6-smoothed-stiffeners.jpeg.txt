@@ -1,1 +1,0 @@
--H stiffeners are smoothed.

@@ -1,1 +1,0 @@
-Removed another half of the chisel.

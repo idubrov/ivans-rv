@@ -1,1 +1,0 @@
-An estimation of the edge distance on F-710B.
