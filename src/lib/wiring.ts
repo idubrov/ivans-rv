@@ -344,7 +344,7 @@ export const WIRES: Record<string, Wire> = {
 	'land.lw': {
 		description:
 			'Landing wires in the left wing (landing power, landing ground and a taxi light wire)',
-		from: 'switches',
+		from: 'gad27',
 		to: 'land.lw',
 		gauge: '2x14AWG twisted',
 		chokes: panel_to_left_wing
@@ -417,7 +417,7 @@ export const WIRES: Record<string, Wire> = {
 	'land.rw': {
 		description:
 			'Landing wires in the right wing (landing power, landing ground and a taxi light wire)',
-		from: 'switches',
+		from: 'gad27',
 		to: 'land.rw',
 		gauge: '2x14AWG twisted',
 		chokes: panel_to_right_wing
@@ -636,9 +636,9 @@ export const WIRES: Record<string, Wire> = {
 		chokes: []
 	},
 	'gsa28.pitch.disc': {
-		description: 'Autopilot disconnect/CWS for the GSA 28 roll servo',
+		description: 'Autopilot disconnect/CWS for the GSA 28 pitch servo',
 		from: 'stick.left',
-		to: 'gsa28.roll',
+		to: 'gsa28.pitch',
 		gauge: '22AWG',
 		chokes: ['f716.l1', 'f716.l2', ...tunnel_left]
 	},

@@ -60,6 +60,10 @@ export const CATEGORIES: Category[] = [
 	{
 		code: 'engine',
 		description: 'Engine'
+	},
+	{
+		code: 'avionics',
+		description: 'Avionics'
 	}
 ];
 
