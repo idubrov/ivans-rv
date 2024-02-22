@@ -3,7 +3,7 @@ title: 'Finishing the vertical fairings'
 categories: ['fuselage']
 time: 2
 tags: ['fiberglass']
-thumbnail: '1-parts-primed.jpeg'
+thumbnail: '0-parts-primed.jpeg'
 ---
 
 Okay, back to building!
@@ -19,8 +19,8 @@ After repairing the crack in the top fairing of the rudder, I finished both the 
 Finally, I sprayed the fairings with the regular coat of Stewart Systems EkoPoxy. The finish is okay, but not perfect. 
 It's only a temporary coating that will protect the fiberglass from UV light. I will probably sand it off when I am painting the airplane.
 
-![](1-parts-primed.jpeg)
+![](0-parts-primed.jpeg)
 
 P.S. While being on the break, I've built a clone of an MSX computer. We had one of these at my elementary school.
 
-![](2-msx-clone.jpeg)
+![](1-msx-clone.jpeg)
