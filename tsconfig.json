@@ -10,6 +10,7 @@
 		"module": "es2022",
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
+		"strictFunctionTypes": true,
 		"sourceMap": true,
 		"strict": true,
 		"target": "es2022"
