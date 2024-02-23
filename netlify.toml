@@ -7,3 +7,8 @@ from = "https://ivans-rv.idubrov.name/*"
 to = "https://ivan.aero/:splat"
 status = 301
 force = true
+
+[[headers]]
+for = "/*"
+    [headers.values]
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline';font-src 'self' fonts.gstatic.com;style-src 'self' 'unsafe-inline' fonts.googleapis.com"
