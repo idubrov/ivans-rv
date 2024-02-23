@@ -51,7 +51,7 @@ export function prepareAsset(asset: Asset, default_query = ''): PreparedAsset {
 		return {
 			...asset,
 			url: `${url}?nf_resize=${parsed.nf_resize}&w=${w * 2}&h=${h * 2}`,
-			style: `object-fit: contain; max-width: ${w}px; max-height: ${h}px`
+			style: `object-fit: contain; max-width: ${w}px; max-height: ${h}px; height: auto;`
 		};
 	}
 	return {
