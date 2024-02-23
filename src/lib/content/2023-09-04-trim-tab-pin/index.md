@@ -1,6 +1,6 @@
 ---
 title: 'Installing trim tab pin'
-categories: ['fuselage']
+categories: ['empennage']
 time: 0.5
 tags: ['assembling']
 ---

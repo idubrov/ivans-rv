@@ -1,6 +1,6 @@
 ---
 title: 'Horizontal stabilizer fairings'
-categories: ['fuselage']
+categories: ['empennage']
 time: 2
 tags: ['fiberglass']
 ---

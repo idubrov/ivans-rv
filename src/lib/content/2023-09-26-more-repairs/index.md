@@ -1,6 +1,6 @@
 ---
 title: 'Unexpected crack in the rudder fairing'
-categories: ['fuselage']
+categories: ['empennage']
 time: 2
 tags: ['fiberglass', 'mistakes']
 thumbnail: '1-crack-repair.jpeg'

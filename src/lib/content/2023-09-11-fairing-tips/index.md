@@ -1,6 +1,6 @@
 ---
 title: 'Closing the tips of elevators fairings'
-categories: ['fuselage']
+categories: ['empennage']
 time: 2
 tags: ['fiberglass']
 ---

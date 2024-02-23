@@ -1,6 +1,6 @@
 ---
 title: 'Repairing the vertical stabilizer fairing'
-categories: ['fuselage']
+categories: ['empennage']
 time: 3
 tags: ['fiberglass', 'mistakes']
 thumbnail: '7-nutplates-installed.jpeg'

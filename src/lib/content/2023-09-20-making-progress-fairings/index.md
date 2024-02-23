@@ -1,6 +1,6 @@
 ---
 title: 'Back to the fairings!'
-categories: ['fuselage']
+categories: ['empennage']
 time: 4
 tags: ['fiberglass']
 ---

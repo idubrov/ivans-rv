@@ -1,6 +1,6 @@
 ---
 title: 'Closing the stabilizer end caps'
-categories: ['fuselage']
+categories: ['empennage']
 time: 1
 tags: ['fiberglass']
 ---

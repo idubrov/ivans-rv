@@ -1,6 +1,6 @@
 ---
 title: 'Preparing the fairings'
-categories: ['fuselage']
+categories: ['empennage']
 time: 3
 tags: ['fiberglass', 'fairings']
 ---

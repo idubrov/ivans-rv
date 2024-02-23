@@ -1,6 +1,6 @@
 ---
 title: 'Vertical stabilizer fairing'
-categories: ['fuselage']
+categories: ['empennage']
 time: 1.5
 tags: ['fiberglass']
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Fitting the bottom rudder fairing'
-categories: ['fuselage']
+categories: ['empennage']
 time: 1.5
 tags: ['fiberglass']
 thumbnail: '2-end-result.jpeg'

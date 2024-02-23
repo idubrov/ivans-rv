@@ -1,6 +1,6 @@
 ---
 title: 'Finishing the top fairings'
-categories: ['fuselage']
+categories: ['empennage']
 time: 2
 tags: ['fiberglass']
 thumbnail: '3-more-sanding.jpeg'

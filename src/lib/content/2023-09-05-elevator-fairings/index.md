@@ -1,6 +1,6 @@
 ---
 title: 'Started working on elevator fairings'
-categories: ['fuselage']
+categories: ['empennage']
 time: 2
 tags: ['fiberglass', 'fairings']
 ---
