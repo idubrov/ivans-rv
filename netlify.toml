@@ -11,4 +11,4 @@ force = true
 [[headers]]
 for = "/*"
     [headers.values]
-    Content-Security-Policy = "default-src 'self' 'unsafe-inline';font-src 'self' fonts.gstatic.com;style-src 'self' 'unsafe-inline' fonts.googleapis.com"
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline';font-src 'self' fonts.gstatic.com;style-src 'self' 'unsafe-inline' fonts.googleapis.com;frame-src www.youtube-nocookie.com"
