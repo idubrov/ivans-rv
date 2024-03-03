@@ -1,4 +1,3 @@
-
 ---
 title: 'Finishing the countersinks on the wing spars'
 categories: ['wing']
