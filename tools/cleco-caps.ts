@@ -1,16 +1,50 @@
-const diameter = 10.70; // 10.45
+
+// ABS
+
+// Speed settings
+// const initial_speed = 15;
+// const base_speed = 30;
+// const speed = 90;
+
+// Temperature settings
+// const fan = 80;
+// const bed_temp = 110;
+// const extruder_temp = 250;
+// const nevermore = true;
+
+// TPU
+
+// Speed settings
+const initial_speed = 10;
+const base_speed = 15;
+const speed = 45;
+//const pressure_advance = 0.04;
+
+// Temperature settings
+const fan = 80;
+const bed_temp = 60;
+const extruder_temp = 230;
+const nevermore = false;
+const pressure_advance = 0.075;
+//
+// 10.70 ABS
+// 10.20 TPU
+const diameter = 10.20;
 const hole = 4;
 const height = 4.0;
 
-const num_x = 8;
-const num_y = 8;
+const num_x = 10;
+const num_y = 10;
+// const num_x = 2;
+// const num_y = 2;
+
 
 const retract_speed = 2400;
 const hop_height = 0.2;
 const center_x = 119/2;
 const center_y = 119/2;
-const stride_x = 14;
-const stride_y = 14;
+const stride_x = 12;
+const stride_y = 12;
 
 const width = 0.4;
 const thickness = 0.2;
@@ -19,10 +53,8 @@ const segments = 60;
 const extrusion_diameter = 0.365;
 const filament_diameter = 1.75;
 const extrusion_rate = Math.pow(extrusion_diameter / filament_diameter, 2);
-const initial_speed = 15;
-const base_speed = 30;
-const speed = 90;
-const fan = 80;
+
+
 export class PrintHead {
 	constructor(
 		private x: number,
@@ -82,7 +114,7 @@ function print_part_base(tool: PrintHead, x: number, y: number) {
 	const min_y = y0 - r1;
 	const max_y = y0 + r1;
 	console.log(`
-EXCLUDE_OBJECT_DEFINE NAME='cap-${x}-${y}' CENTER=${x0.toFixed(5)},${y0.toFixed(5)} POLYGON=[[${min_x},${min_y}],[${max_x},${min_y}],[${max_x},${max_y}],[${min_x},${max_y}]]
+EXCLUDE_OBJECT_DEFINE NAME='cap-${x}-${y}' CENTER=${x0.toFixed(5)},${y0.toFixed(5)} POLYGON=[[${min_x.toFixed(5)},${min_y.toFixed(5)}],[${max_x.toFixed(5)},${min_y.toFixed(5)}],[${max_x.toFixed(5)},${max_y.toFixed(5)}],[${min_x.toFixed(5)},${max_y.toFixed(5)}]]
 EXCLUDE_OBJECT_START NAME='cap-${x}-${y}'
 `);
 
@@ -141,13 +173,13 @@ EXCLUDE_OBJECT_END NAME='cap-${x}-${y}'
 }
 
 console.log(`
-PRINT_START BED=110 EXTRUDER=250
+PRINT_START BED=${bed_temp.toFixed(5)} EXTRUDER=${extruder_temp.toFixed(5)}
 G21 ; set units to millimeters
 G90 ; use absolute coordinates
 M83 ; use relative distances for extrusion
 M107 ; no fan for the first layer
-ENABLE_NEVERMORE
-NOZZLE_PURGE
+${nevermore ? 'ENABLE_NEVERMORE ; enable nevermore' : ''}
+SET_PRESSURE_ADVANCE ADVANCE=${pressure_advance.toFixed(5)}
 `);
 
 const tool = new PrintHead(-1, -1, -1);
@@ -177,7 +209,6 @@ for (let section = 0; section < total_sections; section += 1) {
 }
 
 console.log(`
-G1 E-1 F${retract_speed.toFixed(5)} ; final retract
 M107 ; turn fan off
 PRINT_END
 `);
