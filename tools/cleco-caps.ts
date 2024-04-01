@@ -1,43 +1,23 @@
-
-// ABS
-
-// Speed settings
-// const initial_speed = 15;
-// const base_speed = 30;
-// const speed = 90;
-
-// Temperature settings
-// const fan = 80;
-// const bed_temp = 110;
-// const extruder_temp = 250;
-// const nevermore = true;
-
 // TPU
 
 // Speed settings
 const initial_speed = 10;
 const base_speed = 15;
 const speed = 45;
-//const pressure_advance = 0.04;
+const pressure_advance = 0.075;
 
 // Temperature settings
 const fan = 80;
 const bed_temp = 60;
 const extruder_temp = 230;
 const nevermore = false;
-const pressure_advance = 0.075;
-//
-// 10.70 ABS
-// 10.20 TPU
+
 const diameter = 10.20;
 const hole = 4;
 const height = 4.0;
 
 const num_x = 10;
 const num_y = 10;
-// const num_x = 2;
-// const num_y = 2;
-
 
 const retract_speed = 2400;
 const hop_height = 0.2;
