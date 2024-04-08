@@ -35,3 +35,5 @@ Then I started on the stabilizer fairings. This is after covering them with micr
 ![](4-stabilizer-fairings.jpeg)
 
 Unfortunately, the manifold on my compressor broke so I won't be able to continue with priming of the stabilizer fairings until I repair the compressor.
+
+![](5-broken-manifold.jpeg)
