@@ -35,3 +35,7 @@ The left side vent line.
 And some of the experimental bends.
 
 ![](3-experiments.jpeg)
+
+Also, I got an aftermarker fuel vents.
+
+[](4-fuel-vent.jpeg)
