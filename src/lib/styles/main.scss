@@ -468,14 +468,14 @@ ul.postslist {
 }
 
 svg {
-	&.sideview {
-		rotate: 11deg;
-	}
-
 	shape-rendering: geometricPrecision;
 	text-rendering: geometricPrecision;
 	fill-rule: evenodd;
 	clip-rule: evenodd;
+
+	&.sideview {
+		rotate: 11deg;
+	}
 
 	path {
 		stroke-width: 18px;

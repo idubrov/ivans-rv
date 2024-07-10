@@ -41,6 +41,5 @@
 		<section class="content">
 			<slot />
 		</section>
-		<Gallery {assets} bind:opener={$opener} />
 	</article>
 {/if}
