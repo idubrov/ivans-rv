@@ -14,7 +14,7 @@ Here are the new ribs on the shelf:
 
 ![](./0-replacement-ribs.jpeg)
 
-The first step I have been doing over the last two weeks was to adjust the flanges using the fluting tool and a [flange adjustment tool]((http://www.rv7-factory.com/?p=1096)).
+The first step I have been doing over the last two weeks was to adjust the flanges using the fluting tool and a [flange adjustment tool](http://www.rv7-factory.com/?p=1096).
 
 ![](./1-flange-adjustment-tool.jpeg)
 
