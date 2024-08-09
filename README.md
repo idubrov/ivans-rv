@@ -27,3 +27,11 @@ You can preview the production build with `npm run preview`.
 ## Published version
 
 Blog is publihed at [https://ivan.aero/](https://ivan.aero/).
+
+## Update the dependencies
+
+Run the following command to update the dependencies:
+
+```bash
+npx npm-check-updates --interactive 
+```
