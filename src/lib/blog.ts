@@ -46,7 +46,7 @@ export const CATEGORIES: Category[] = [
 		description: 'Fuselage'
 	},
 	{
-		code: 'wings',
+		code: 'wing',
 		description: 'Wings'
 	},
 	{
