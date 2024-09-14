@@ -1,5 +1,5 @@
 ---
-title: 'Priming the stiffeners'
+title: 'Priming the aileron stiffeners'
 categories: ['wing']
 time: 1.5
 tags: ['priming']
