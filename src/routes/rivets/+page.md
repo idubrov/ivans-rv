@@ -6,7 +6,7 @@ layout: standalone
 Summary for the rivets used in the RV-7 empennage kit. The data was taken primarily from the https://www.baysupply.com and was not verified. Use at your own risk.
 
 | Rivet     | Shear (lbf) | Tensile (lbf) | Hole (in) | Grip range | Flush?   | Other P/N    | Notes                                                  |
-| --------- | ----------- | ------------- | --------- | ---------- | -------- | ------------ | ------------------------------------------------------ |
+|-----------|-------------|---------------|-----------|------------|----------|--------------|--------------------------------------------------------|
 | CS4-4     | 155         | 205           | .129-.136 | .059-.256  | Y (120º) | GSMC42-44APG | Used for attaching fairings                            |
 | MK-319-BS | 258         | 292           | .113-.117 | .000-.090  | Y (120º) | TLPK319BS    | Similar to AN426AD3                                    |
 | BSPQ-5-4  | 525         | 450           | .160-.164 | .126-.250  | N        | BSPQ-05-04   | Tensile similar to AN470AD4, shear similar to AN470AD5 |
@@ -18,6 +18,9 @@ Summary for the rivets used in the RV-7 empennage kit. The data was taken primar
 | AN470AD3  | 179         | 262           |           | N/A        | N        | MS20470AD-3  |                                                        |
 | AN470AD4  | 319         | 466           |           | N/A        | N        | MS20470AD-4  |                                                        |
 | CCC-32    | 230         | 280           | .097-.100 | .020-.125  | Y (120°) | SSK32SUBS    |                                                        |
+| AACQ-4-4  | 210         | 325           | .129-.133 | .188-.250  | Y (120°) | AK44BS       |                                                        |
+| CR3213-4  | 664         | 285           | .129-.132 |            | N        |              |                                                        |
+| CR3243-4  | 814         | 345           | .143-.146 |            | N        | Other        | Oversize rivet                                         |
 
 Driven rivet specifications (according to the [MIL Spec](https://www.vansaircraft.com/wp-content/uploads/2019/02/MIL-R-47196A_MI.pdf)):
 
