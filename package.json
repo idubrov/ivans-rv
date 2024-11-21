@@ -16,6 +16,9 @@
 		"genmeta": "tsx -- src/genmeta.ts",
 		"gen-cleco-caps": "tsx -- tools/cleco-caps.ts"
 	},
+	"optionalDependencies": {
+		"@rollup/rollup-linux-x64-gnu": "4.27.3"
+	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.6",
 		"@sveltejs/kit": "^2.8.1",
