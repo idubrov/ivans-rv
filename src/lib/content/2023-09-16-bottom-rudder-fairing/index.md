@@ -6,7 +6,7 @@ tags: ['fiberglass']
 thumbnail: '2-end-result.jpeg'
 ---
 
-A little bit of fitting of the bottom rudder fairing.  
+A little bit of fitting of the bottom rudder fairing.
 
 <!-- more -->
 

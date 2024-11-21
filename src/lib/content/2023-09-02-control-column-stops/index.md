@@ -27,7 +27,7 @@ In the full down position, I get ~22.8° of down travel.
 
 ![](3-down-elevator-position.jpeg)
 
-When the elevator is full up, only one horn is touching the stop. I also opted to not trim the angle to the size in the plans. That could have saved some small amount of weight, but I did not know how to trim it. I did not want to make the left part of the stop stick out since the hinge doesn't even touch it. On the other hand, I did not want to remove it in case I file the right side a bit more (I can still go up about 1°) and if that would make the left hinge touch the stop (I doubt it, though). So I kind of went lazy and left it the way it was. 
+When the elevator is full up, only one horn is touching the stop. I also opted to not trim the angle to the size in the plans. That could have saved some small amount of weight, but I did not know how to trim it. I did not want to make the left part of the stop stick out since the hinge doesn't even touch it. On the other hand, I did not want to remove it in case I file the right side a bit more (I can still go up about 1°) and if that would make the left hinge touch the stop (I doubt it, though). So I kind of went lazy and left it the way it was.
 
 ![](4-up-stop.jpeg)
 
@@ -55,4 +55,4 @@ Changing it later would be a major pain, though.
 
 After checking the fit, I had to repeat the process because I needed to torque the jam nuts on the pushrod, and torquing the rear one required me to remove the bellcrank, so I could pull the pushrod to the back to reach the jam nut with the torque wrench.
 
-In the end, I torqued for the final specifications the control column itself, the bellcrank, and the F-789 pushrod both to the bellcrank and to the control column. Will see if I need to undo it later. 
+In the end, I torqued for the final specifications the control column itself, the bellcrank, and the F-789 pushrod both to the bellcrank and to the control column. Will see if I need to undo it later.

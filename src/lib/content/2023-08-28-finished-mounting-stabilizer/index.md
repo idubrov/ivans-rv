@@ -24,7 +24,7 @@ Then I drilled the bottom hole on the vertical stabilizer. I removed the stabili
 
 Then, I put it back, upsized the hole for the AN4 bolt, and drilled two other holes. The manual says to double-check the edge distance on both the VS-410PP hinge bracket and the WD-409 tailwheel mount.
 
-Since the tailwheel mount is inside the fuselage, it is a bit tricky to measure the edge distance. What I did is I put a small aluminum strip such that its top edge is aligned with the WD-409 tailwheel mount top edge and then marked the location of the bottom hole. This way, I could move the strip to the outside and mark the location of the tailwheel mount against the hinge bracket. 
+Since the tailwheel mount is inside the fuselage, it is a bit tricky to measure the edge distance. What I did is I put a small aluminum strip such that its top edge is aligned with the WD-409 tailwheel mount top edge and then marked the location of the bottom hole. This way, I could move the strip to the outside and mark the location of the tailwheel mount against the hinge bracket.
 
 The overlap was slightly above 3/4", which gives that 3/8" edge distance they are asking for.
 

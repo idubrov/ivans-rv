@@ -49,7 +49,7 @@ export async function loadPosts(): Promise<readonly PostMetadata[]> {
 
 type ComponentProps = {
 	format: string;
-}
+};
 
 export async function loadPostAsComponent(post: PostMetadata): Promise<Component<ComponentProps>> {
 	return import(`./content/${post.key}/index.md`).then((module) => module.default);

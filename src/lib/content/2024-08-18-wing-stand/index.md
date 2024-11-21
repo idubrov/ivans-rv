@@ -6,7 +6,7 @@ tags: ['preparing']
 thumbnail: '0-wing-stand.jpeg'
 ---
 
-I spent some time working on a wing stand. 
+I spent some time working on a wing stand.
 
 <!-- more -->
 
@@ -24,4 +24,4 @@ The threaded rods could be adjusted by moving the nuts up and down.
 
 They are not fully complete yet, I still need to do the support for the rear spar, but I will do that once I cleco the rear spar so I know where to put the supports.
 
-Also, I got a reply from the Builder's support about my wing ribs, and it wasn't much more than a list of educational materials. A bit disappointing, I was hoping for a bit more specific guidance. I think I will replace the worst 3 ribs. The rest seem to be fine. 
+Also, I got a reply from the Builder's support about my wing ribs, and it wasn't much more than a list of educational materials. A bit disappointing, I was hoping for a bit more specific guidance. I think I will replace the worst 3 ribs. The rest seem to be fine.

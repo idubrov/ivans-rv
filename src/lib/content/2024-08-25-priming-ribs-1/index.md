@@ -6,7 +6,7 @@ tags: ['priming']
 thumbnail: '1-primed-ribs.jpeg'
 ---
 
-Sunday was the priming day. 
+Sunday was the priming day.
 
 <!-- more -->
 
@@ -22,4 +22,4 @@ Here is the drying rack.
 
 ![](./1-primed-ribs.jpeg)
 
-Because I need to prime parts soon after they are scuffed (so I cannot do them in short breaks during the work week), I think, it will take me two more weekends to prime all the ribs. 
+Because I need to prime parts soon after they are scuffed (so I cannot do them in short breaks during the work week), I think, it will take me two more weekends to prime all the ribs.

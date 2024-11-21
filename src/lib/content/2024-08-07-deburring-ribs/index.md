@@ -6,7 +6,7 @@ tags: ['preparing']
 thumbnail: '0-nose-rib-gap.jpeg'
 ---
 
-There was another pause due to vacation time and some other DIY projects, and now back to deburring of the ribs. 
+There was another pause due to vacation time and some other DIY projects, and now back to deburring of the ribs.
 
 <!-- more -->
 

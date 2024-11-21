@@ -18,9 +18,8 @@ I used the Dremel with a cutoff wheel to open the seam fully (only the length th
 
 ![](1-crack-repair.jpeg)
 
-After that, I moved on to the vertical stabilizer fairing. Since it will house the beacon, I wanted it to be removable. I used the ClickBond nutplates to attach the fairing to the skin. I was too lazy to drill the holes for the nutplates, especially given that I don't have the jig to drill for the K1000-06 nutplates. 
+After that, I moved on to the vertical stabilizer fairing. Since it will house the beacon, I wanted it to be removable. I used the ClickBond nutplates to attach the fairing to the skin. I was too lazy to drill the holes for the nutplates, especially given that I don't have the jig to drill for the K1000-06 nutplates.
 
 ![](2-clickbond-nutplates.jpeg)
 
 I love them, they are so easy to install. The price, though... a different story. $5 a piece!
-

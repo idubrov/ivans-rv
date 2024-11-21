@@ -16,7 +16,7 @@ The situation with the LCP parts is still not fully resolved, so I continued wor
 
 After repairing the crack in the top fairing of the rudder, I finished both the vertical stabilizer fairing and the top rudder fairing with the System Three Clear Coat epoxy. It flows really well and seals the surface.
 
-Finally, I sprayed the fairings with the regular coat of Stewart Systems EkoPoxy. The finish is okay, but not perfect. 
+Finally, I sprayed the fairings with the regular coat of Stewart Systems EkoPoxy. The finish is okay, but not perfect.
 It's only a temporary coating that will protect the fiberglass from UV light. I will probably sand it off when I am painting the airplane.
 
 ![](0-parts-primed.jpeg)

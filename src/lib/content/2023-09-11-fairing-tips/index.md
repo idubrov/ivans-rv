@@ -5,7 +5,7 @@ time: 2
 tags: ['fiberglass']
 ---
 
-Got my fiberglass cloth, so worked a little bit on closing the fairing tips.  
+Got my fiberglass cloth, so worked a little bit on closing the fairing tips.
 
 <!-- more -->
 

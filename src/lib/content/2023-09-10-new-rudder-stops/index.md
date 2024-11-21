@@ -6,7 +6,7 @@ tags: ['fabricating']
 thumbnail: '4-other-side.jpeg'
 ---
 
-While waiting for my fiberglass supplies, I fabricated new rudder stops. 
+While waiting for my fiberglass supplies, I fabricated new rudder stops.
 
 <!-- more -->
 
@@ -36,4 +36,4 @@ The distance to the elevator.
 
 ![](5-elevator-distance.jpeg)
 
-In total, it took me probably 2.5 hours to make the first one, with all the sanding and filing. Also, at first, I drilled the holes per plans and then realized that the bottom aft hole wouldn't get enough edge distance on the upper edge. The second rudder stop, the right one, took only half an hour because I used the left one as a template. 
+In total, it took me probably 2.5 hours to make the first one, with all the sanding and filing. Also, at first, I drilled the holes per plans and then realized that the bottom aft hole wouldn't get enough edge distance on the upper edge. The second rudder stop, the right one, took only half an hour because I used the left one as a template.

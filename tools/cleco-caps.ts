@@ -12,7 +12,7 @@ const bed_temp = 60;
 const extruder_temp = 230;
 const nevermore = false;
 
-const diameter = 10.20;
+const diameter = 10.2;
 const hole = 4;
 const height = 4.0;
 
@@ -21,8 +21,8 @@ const num_y = 10;
 
 const retract_speed = 2400;
 const hop_height = 0.2;
-const center_x = 119/2;
-const center_y = 119/2;
+const center_x = 119 / 2;
+const center_y = 119 / 2;
 const stride_x = 12;
 const stride_y = 12;
 
@@ -33,7 +33,6 @@ const segments = 60;
 const extrusion_diameter = 0.365;
 const filament_diameter = 1.75;
 const extrusion_rate = Math.pow(extrusion_diameter / filament_diameter, 2);
-
 
 export class PrintHead {
 	constructor(
@@ -58,11 +57,7 @@ G1 E1 F${retract_speed.toFixed(5)} ; unretract
 		this.z = z;
 	}
 
-	print_to(
-		x: number,
-		y: number,
-		z: number = this.z
-	) {
+	print_to(x: number, y: number, z: number = this.z) {
 		const dx = x - this.x;
 		const dy = y - this.y;
 		const dz = z - this.z;
@@ -71,9 +66,9 @@ G1 E1 F${retract_speed.toFixed(5)} ; unretract
 		this.z = z;
 
 		const e = extrusion_rate * Math.sqrt(dx * dx + dy * dy + dz * dz);
-		const xmove = (dx !== 0) ? ` X${x.toFixed(5)}` : '';
-		const ymove = (dy !== 0) ? ` Y${y.toFixed(5)}` : '';
-		const zmove = (dz !== 0) ? ` Z${z.toFixed(5)}` : '';
+		const xmove = dx !== 0 ? ` X${x.toFixed(5)}` : '';
+		const ymove = dy !== 0 ? ` Y${y.toFixed(5)}` : '';
+		const zmove = dz !== 0 ? ` Z${z.toFixed(5)}` : '';
 		return `G1${xmove}${ymove}${zmove}E${e.toFixed(5)}`;
 	}
 }
@@ -124,7 +119,7 @@ G1 F${base_speed * 60}
 	}
 	console.log(`
 EXCLUDE_OBJECT_END NAME='cap-${x}-${y}' 
-	`)
+	`);
 }
 
 function print_vase_segment(tool: PrintHead, x: number, y: number, from: number, layers: number) {
@@ -167,23 +162,28 @@ const start_x = center_x - ((num_x - 1) * stride_x) / 2.0;
 const start_y = center_y - ((num_y - 1) * stride_y) / 2.0;
 for (let y = 0; y < num_y; y += 1) {
 	for (let x = 0; x < num_x; x += 1) {
-		const real_x = y % 2 == 0 ? x : (num_x - 1 - x);
+		const real_x = y % 2 == 0 ? x : num_x - 1 - x;
 		print_part_base(tool, real_x, y);
-
 	}
 }
 
 console.log(`
 ; Turn on the fan
-M106 S${Math.round(fan / 100 * 255.0)} ; turn fan on
+M106 S${Math.round((fan / 100) * 255.0)} ; turn fan on
 `);
 
 for (let section = 0; section < total_sections; section += 1) {
 	for (let y = 0; y < num_y; y += 1) {
 		for (let x = 0; x < num_x; x += 1) {
 			const section_thickness = layers_per_section * thickness;
-			const real_x = y % 2 == 0 ? x : (num_x - 1 - x);
-			print_vase_segment(tool, real_x, y,thickness + section * section_thickness, layers_per_section);
+			const real_x = y % 2 == 0 ? x : num_x - 1 - x;
+			print_vase_segment(
+				tool,
+				real_x,
+				y,
+				thickness + section * section_thickness,
+				layers_per_section
+			);
 		}
 	}
 }

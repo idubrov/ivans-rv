@@ -1,6 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig, searchForWorkspaceRoot } from 'vite';
-import { netlifyEmulator } from "./src/netlifyEmulator"
+import { netlifyEmulator } from './src/netlifyEmulator';
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
@@ -10,10 +10,7 @@ export default defineConfig({
 	},
 	server: {
 		fs: {
-			allow: [
-				searchForWorkspaceRoot(process.cwd()),
-				'/static',
-			],
-		},
-	},
+			allow: [searchForWorkspaceRoot(process.cwd()), '/static']
+		}
+	}
 });

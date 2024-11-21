@@ -38,7 +38,7 @@ I checked all the boltholes against the spars, and they fit nicely. The holes in
 
 Then I cut the lightening holes in the spacers. I had a 1" hole saw but decided to use a 7/8" instead. A 1" saw would have cut oversized holes (it wasn't really a saw for metal, just some hole saw from Home Depot I had).
 
-Also, I drilled the holes for the nutplates using the specification of the K1000-3 nutplates (their holes are spaced at 11/16"). 
+Also, I drilled the holes for the nutplates using the specification of the K1000-3 nutplates (their holes are spaced at 11/16").
 
 ![](5-lightening-holes.jpeg)
 
@@ -46,7 +46,6 @@ Finally, primed the parts.
 
 ![](6-parts-primed.jpeg)
 
-And assembled them with the nutplates. I did some test fitting, and everything fits nicely 
+And assembled them with the nutplates. I did some test fitting, and everything fits nicely
 
 ![](7-assembled-parts.jpeg)
-

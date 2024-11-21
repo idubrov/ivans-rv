@@ -26,7 +26,7 @@ Then I started assembling everything. The first rivet was an LP4-3 rivet to atta
 
 ![](./2-riveting-the-counterbalance.jpeg)
 
-Then I riveted the skins to the top flange of the spar. I wrapped my bucking bar with some tape to raise its front part. With the back of the bar resting on the bottom flange of the spar, the slanted front end of it is exactly perpendicular to the top rivets. 
+Then I riveted the skins to the top flange of the spar. I wrapped my bucking bar with some tape to raise its front part. With the back of the bar resting on the bottom flange of the spar, the slanted front end of it is exactly perpendicular to the top rivets.
 
 ![](./3-bucking-bar.jpeg)
 

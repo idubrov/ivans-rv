@@ -5,7 +5,7 @@ time: 1.5
 tags: ['fiberglass']
 ---
 
-More fairing work, this time it is a vertical stabilizer!  
+More fairing work, this time it is a vertical stabilizer!
 
 <!-- more -->
 

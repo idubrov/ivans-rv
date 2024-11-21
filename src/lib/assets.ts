@@ -23,7 +23,7 @@ export function resolveAsset(src: string): Asset | undefined {
 	if (asset) {
 		return {
 			...asset,
-			url: `${asset.url}${query}`,
+			url: `${asset.url}${query}`
 		};
 	}
 }

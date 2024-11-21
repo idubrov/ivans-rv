@@ -6,7 +6,7 @@ tags: ['deburring']
 thumbnail: '5-both-wings.jpeg'
 ---
 
-Over the week I was deburring the main ribs of the wing. 
+Over the week I was deburring the main ribs of the wing.
 
 <!-- more -->
 

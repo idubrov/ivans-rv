@@ -21,4 +21,4 @@ Then I fixed my air compressor and primed the horizontal stabilizer fairings and
 ![](2-horizontal-stabilizer-fairings.jpeg)
 ![](3-replacement-aileron-bracket.jpeg)
 
-Finally, I installed the horizontal stabilizer fairings and removed the empennage. 
+Finally, I installed the horizontal stabilizer fairings and removed the empennage.

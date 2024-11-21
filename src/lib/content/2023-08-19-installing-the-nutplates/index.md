@@ -11,7 +11,6 @@ The next step was to install the nutplates to the F-706 bulkhead assembly.
 
 This was a long a tedious process. For each of the screw hole, I had to screw the nutplate on the front side, drill the holes, then countersink them for the NAS1097AD3 rivets, and, finally, rivet the nutplate.
 
-
 ![](0-nutplates-installed.jpeg)
 
 Other small thing I did was to cut the slots in the F-652 panels.

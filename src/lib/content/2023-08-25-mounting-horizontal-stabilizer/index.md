@@ -31,7 +31,7 @@ Then I positioned the stabilizer, measured everything many times, and drilled th
 
 The important edge distance is the one on the longeron, and it seems like for the angle the answer is that the load is mostly in tension, not in shear.
 
-My F-710B angle was kind of okay. It was possible to make it just a tiny bit longer on one side, but the edge distances I got are good enough, I think. The best you can get is about 5/16" (since the longeron without the leg is 5/8" wide), and whatever you lack in "nesting" will reduce that distance even more. 
+My F-710B angle was kind of okay. It was possible to make it just a tiny bit longer on one side, but the edge distances I got are good enough, I think. The best you can get is about 5/16" (since the longeron without the leg is 5/8" wide), and whatever you lack in "nesting" will reduce that distance even more.
 
 This is what I got in the end.
 

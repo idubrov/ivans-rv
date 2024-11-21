@@ -5,7 +5,7 @@ time: 3
 tags: ['fiberglass', 'fairings']
 ---
 
-Over the last few days, I worked a bit more on the fairings. 
+Over the last few days, I worked a bit more on the fairings.
 
 <!-- more -->
 

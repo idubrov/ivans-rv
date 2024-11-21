@@ -12,7 +12,7 @@ Today I riveted the aileron stiffeners to the skins.
 
 The procedure is pretty much the same as for the elevators: use back-riveting. I was only able to get good, consistent results if I was looking at the rivet gun from the side. For some reason, if I was looking down at the skin, I was getting too many "smeared" rivets, even though I was holding the tip of the back-riveting set. I am not sure why, maybe, I was applying too much pressure or the gun wasn't fully perpendicular. Or maybe I just was a bit rusty.
 
-Either way, I back-riveted all the rivets except the trailing ones. 
+Either way, I back-riveted all the rivets except the trailing ones.
 
 ![](./0-backriveting-stiffeners.jpeg)
 
@@ -29,4 +29,3 @@ The ding is still there, but it is relatively small. I think I'll be able to fil
 Finally, I used the tool I had made when I bent the trailing edges of the elevators to do the same for the ailerons.
 
 ![](./3-bending-the-trailing-edge.jpeg)
-

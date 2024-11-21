@@ -33,5 +33,5 @@ Blog is publihed at [https://ivan.aero/](https://ivan.aero/).
 Run the following command to update the dependencies:
 
 ```bash
-npx npm-check-updates --interactive 
+npx npm-check-updates --interactive
 ```

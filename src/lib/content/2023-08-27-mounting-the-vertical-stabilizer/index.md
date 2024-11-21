@@ -42,4 +42,4 @@ This is what the parts sandwich looks like.
 
 I test-fit the rudder, and it fits fine. There is some slight tightness, I think, due to the central hinges being just a tiny bit off to the side.
 
-Also, the rudder would have interfered with the garage door if I had to open it. Kind of felt risky that way, so I need to turn the plane around to work on the empennage. 
+Also, the rudder would have interfered with the garage door if I had to open it. Kind of felt risky that way, so I need to turn the plane around to work on the empennage.

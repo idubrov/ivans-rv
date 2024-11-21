@@ -14,7 +14,7 @@ Riveted everything I should have to the rear spars: the reinforcement fork and t
 
 ![](0-riveting-the-spars.jpeg)
 
-I put the factory heads of the rivets on the outside since it looks nicer that way. 
+I put the factory heads of the rivets on the outside since it looks nicer that way.
 
 Generally, it is recommended to put the factory head on the side with the thinner material (which would be the inside side of the spar), but it is acceptable either way. Also, squeezing rivets does not produce as much deformation on the shop head side as bucking does, so it is not as critical.
 

@@ -6,7 +6,7 @@ layout: standalone
 Summary for the rivets used in the RV-7 empennage kit. The data was taken primarily from the https://www.baysupply.com and was not verified. Use at your own risk.
 
 | Rivet     | Shear (lbf) | Tensile (lbf) | Hole (in) | Grip range | Flush?   | Other P/N    | Notes                                                  |
-|-----------|-------------|---------------|-----------|------------|----------|--------------|--------------------------------------------------------|
+| --------- | ----------- | ------------- | --------- | ---------- | -------- | ------------ | ------------------------------------------------------ |
 | CS4-4     | 155         | 205           | .129-.136 | .059-.256  | Y (120º) | GSMC42-44APG | Used for attaching fairings                            |
 | MK-319-BS | 258         | 292           | .113-.117 | .000-.090  | Y (120º) | TLPK319BS    | Similar to AN426AD3                                    |
 | BSPQ-5-4  | 525         | 450           | .160-.164 | .126-.250  | N        | BSPQ-05-04   | Tensile similar to AN470AD4, shear similar to AN470AD5 |

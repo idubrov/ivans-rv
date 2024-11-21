@@ -15,4 +15,3 @@ Today I cleaned and primed the remaining aileron parts: the ribs, the spars, and
 ![](./0-parts-primed.jpeg)
 
 After the primer dried, I riveted the doublers to the spars.
-

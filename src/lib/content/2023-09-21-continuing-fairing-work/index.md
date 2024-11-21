@@ -60,11 +60,10 @@ Then I installed all the nutplates for the screws. I did not stagger the aft nut
 
 ![](7-nutplates-installed.jpeg)
 
-I looked at the RV-14 rudder instructions (which are very similar in construction), and they do put one hole in that brace, so I might do it as well. I'll probably use the same ClickBond nutplate there. 
+I looked at the RV-14 rudder instructions (which are very similar in construction), and they do put one hole in that brace, so I might do it as well. I'll probably use the same ClickBond nutplate there.
 
 The reason I was looking at the RV-14 plans is that I was considering replacing my rudder with an RV-14 one. It has the same form factor, but seems like it has a better internal design (all the stiffeners are tied together, and to the spar to form "ribs"). Will see. I might do it later.
 
 And, at the very end, I put the FlyLeds controller into its designated location. All the holes matched just fine, and the box I bought for it fits perfectly (the box name is specified on the controller PCB -- good job, Flyleds!).
 
 ![](8-flyleds-location.jpeg)
-

@@ -5,7 +5,7 @@ time: 1
 tags: ['fiberglass']
 ---
 
-Today I glued the end caps to the horizontal stabilizer fairings.  
+Today I glued the end caps to the horizontal stabilizer fairings.
 
 <!-- more -->
 
@@ -31,4 +31,4 @@ Finally, once the epoxy cured, I trimmed the outside and sanded them to get slig
 
 ![](4-caps-trimmed.jpeg)
 
-There are at least a couple of things I am doing wrong, but hopefully, they won't impact the final quality too much. For example, I don't use peel ply, so probably get a bit too much of the epoxy. Also, epoxy doesn't stick well to the glass surface, so I need to sand it every time. Another thing is that I might be getting some contaminants in the mix. Not sure how much that matters for small pieces like these. 
+There are at least a couple of things I am doing wrong, but hopefully, they won't impact the final quality too much. For example, I don't use peel ply, so probably get a bit too much of the epoxy. Also, epoxy doesn't stick well to the glass surface, so I need to sand it every time. Another thing is that I might be getting some contaminants in the mix. Not sure how much that matters for small pieces like these.

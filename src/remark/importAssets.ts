@@ -1,7 +1,7 @@
 import { dirname, join } from 'path';
 import { readdirSync, readFileSync } from 'fs';
 import type { RootContent, Root } from 'mdast';
-import yaml from "js-yaml";
+import yaml from 'js-yaml';
 import type { Meta } from '$lib/types';
 
 interface VFile {
@@ -46,7 +46,7 @@ export function importAssets(): (tree: Root, file: VFile) => Root {
 			const dir = dirname(file.filename);
 			assets = readdirSync(dir).filter(isAsset);
 			metas = assets.map((asset) => {
-				const metaPath = join(dir, asset.replace(/.jpeg$/, ".meta.yaml"));
+				const metaPath = join(dir, asset.replace(/.jpeg$/, '.meta.yaml'));
 				const metaContent = readFileSync(metaPath, 'utf8');
 				return yaml.load(metaContent) as Meta;
 			});

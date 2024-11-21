@@ -1,4 +1,3 @@
-
 ---
 title: 'Starting work on the wings'
 categories: ['wing']
@@ -21,4 +20,4 @@ Here is the first countersink on the real part:
 
 ![](0-first-real-countersink.jpeg)
 
-I did not take a lot of photos, so the only other one I have is after I turned the wing spar. The top flange (which is against the table) is now fully complete. I installed the nutplates on the bottom flange, but haven't countersunk them yet. 
+I did not take a lot of photos, so the only other one I have is after I turned the wing spar. The top flange (which is against the table) is now fully complete. I installed the nutplates on the bottom flange, but haven't countersunk them yet.

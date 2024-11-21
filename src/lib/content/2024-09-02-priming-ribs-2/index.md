@@ -25,4 +25,3 @@ The issue has been noted by other builders on Facebook, and now there is a VAF d
 Here is a video of me flexing the new and the old parts. The new one seems to be way more flimsy, due to inferior stiffeners.
 
 <YouTube video="Azl3g-UjlM4" title="Underformed ribs flexing" width={360} height={270} />
-

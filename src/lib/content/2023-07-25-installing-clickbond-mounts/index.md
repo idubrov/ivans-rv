@@ -9,7 +9,7 @@ A short session of installing Click Bond mounts.
 
 <!-- more -->
 
-Since I plan to rivet aft top skins early (despite all the recommendations to wait until the end!), I wanted to install mounts for the static line. I decided to use Click Bond mounts for that. I am not too worried about electrical wiring, as it will be possible to install mounts later. However, the static line mounts run on the longeron, and gluing mounts would be harder once top skins are riveted. 
+Since I plan to rivet aft top skins early (despite all the recommendations to wait until the end!), I wanted to install mounts for the static line. I decided to use Click Bond mounts for that. I am not too worried about electrical wiring, as it will be possible to install mounts later. However, the static line mounts run on the longeron, and gluing mounts would be harder once top skins are riveted.
 
 I used CB9302 miniature mounts which fit the longeron just fine.
 

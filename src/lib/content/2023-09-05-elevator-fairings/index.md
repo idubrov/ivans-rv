@@ -13,7 +13,7 @@ First, I added K1000-4 nutplates to both elevators such that I can add extra cou
 
 ![](0-weight-nutplate.jpeg)
 
-Since I wanted to fiberglass over the counterbalance weights, I rounded them with a file so I could put cloth over the edges. I probably need to round edges a bit more. 
+Since I wanted to fiberglass over the counterbalance weights, I rounded them with a file so I could put cloth over the edges. I probably need to round edges a bit more.
 
 ![](1-rounded-the-counterbalance.jpeg)
 
@@ -23,4 +23,4 @@ Since the holes on the skins are very close to the outboard rib flanges, I made 
 
 ![](2-drilled-dimpled-fairing.jpeg)
 
-I ordered my "composite" supplies from Aircraft Spruce, will see how it goes. 
+I ordered my "composite" supplies from Aircraft Spruce, will see how it goes.

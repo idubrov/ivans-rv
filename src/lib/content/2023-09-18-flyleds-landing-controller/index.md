@@ -6,7 +6,7 @@ tags: ['soldering', 'assembling']
 thumbnail: '2-assembled-light.jpeg'
 ---
 
-Slight change of plans -- I got my FlyLeds order, so I decided to assemble the landing lights and the controller.  
+Slight change of plans -- I got my FlyLeds order, so I decided to assemble the landing lights and the controller.
 
 <!-- more -->
 

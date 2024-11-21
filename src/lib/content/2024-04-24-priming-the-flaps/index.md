@@ -6,7 +6,7 @@ tags: ['priming']
 thumbnail: '1-skins.jpeg'
 ---
 
-Not much, just doing all the routine of deburring, scuffing, cleaning, and priming! 
+Not much, just doing all the routine of deburring, scuffing, cleaning, and priming!
 
 <!-- more -->
 

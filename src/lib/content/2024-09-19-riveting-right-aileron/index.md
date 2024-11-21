@@ -16,7 +16,7 @@ The plan was to cut off the flange with an elongated hole and to rivet a new one
 
 ![](./0-planned-repair.jpeg)
 
-New flange clecoed. The original flange has a very small edge distance from the hole (because of how it and its neighbor flange are formed), so I made it a bit bigger. 
+New flange clecoed. The original flange has a very small edge distance from the hole (because of how it and its neighbor flange are formed), so I made it a bit bigger.
 
 ![](./1-new-flange.jpeg)
 

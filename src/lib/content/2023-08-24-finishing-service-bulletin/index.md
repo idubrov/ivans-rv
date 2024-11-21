@@ -6,7 +6,7 @@ tags: ['riveting', 'drilling']
 thumbnail: '6-final-product.jpeg'
 ---
 
-Today I assembled the flaps actuator support channel, finished the service bulletin, and drilled the elevator's hinge point. 
+Today I assembled the flaps actuator support channel, finished the service bulletin, and drilled the elevator's hinge point.
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ The mechanism assembled.
 
 I will have to watch for the electrical wires, it seems like there might be some interference with the nut plate for side covers.
 
-Then I finished the SB-00036 service bulletin. Since I drilled enough rivets to fit my hand and the bucking bar in, I used solid rivets. For the "bottom" rivets (actually, they are the top rivets as the stabilizer is upside down), I simply put the bar on the skin and held it such that it is perpendicular to the shop head. 
+Then I finished the SB-00036 service bulletin. Since I drilled enough rivets to fit my hand and the bucking bar in, I used solid rivets. For the "bottom" rivets (actually, they are the top rivets as the stabilizer is upside down), I simply put the bar on the skin and held it such that it is perpendicular to the shop head.
 
 For the "top" rivets (bottom), I used wooden blocks to raise the bucking bar to the right height so I didn't have to hold it in my hand. Then, the procedure was the same: just keep it straight.
 
@@ -55,7 +55,7 @@ With that, I followed the plans and drilled the hinge point. I used my brass tub
 
 I removed the elevators and upsized the holes to the final side. When I put them back, I realized that the hole was a bit too close to the tube! This is apparently a common issue, and I knew about it, but just forgot!
 
-In my case, the hole is far enough that I can tighten the nut (but only on one side, on the other side the distance is a tad smaller). This requires some slight filing of the nut. Also, I had to file a washer under the nut a bit, due to the welding bead around the tube. 
+In my case, the hole is far enough that I can tighten the nut (but only on one side, on the other side the distance is a tad smaller). This requires some slight filing of the nut. Also, I had to file a washer under the nut a bit, due to the welding bead around the tube.
 
 ![](9-bolt-is-close.jpeg)
 

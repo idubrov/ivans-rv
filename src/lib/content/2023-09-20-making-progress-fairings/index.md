@@ -9,7 +9,7 @@ Back to the vertical stabilizer and the bottom rudder fairings.
 
 <!-- more -->
 
-Since I want to mount a beacon light on the top of the vertical stabilizer, I need a way to fasten it inside of the fairing. The idea is to push the light such that it sticks from the top of the fairing, then clamp it from the bottom with a plate. 
+Since I want to mount a beacon light on the top of the vertical stabilizer, I need a way to fasten it inside of the fairing. The idea is to push the light such that it sticks from the top of the fairing, then clamp it from the bottom with a plate.
 
 There is a warning on VAF that the red flashes might reflect into the cockpit if mounted that way. I'll see how it goes. An alternative was to mount it either on top of the fuselage (either on top of the turtle deck or on the bottom of the fuselage) or on top of the rudder top fairing.
 
@@ -19,7 +19,7 @@ The fuselage bottom is too low, I don't think it will be visible well. The rudde
 
 If it reflects too much I can either block the front of the light or I can lower it a bit -- with the mounting style I am planning to do, it should be easy to adjust the height.
 
-This is how I want to mount the beacon. 
+This is how I want to mount the beacon.
 
 ![](0-tail-beacon.jpeg)
 
@@ -45,7 +45,7 @@ Parallel to that work, I was working on the bottom rudder fairing. I created a l
 
 ![](5-bottom-fairing-cap.jpeg)
 
-However, this didn't go exactly as planned. The outside cap delaminated from the inside. Not sure what has happened. I don't remember which epoxy I used (for all my previous work I used T-88 epoxy, but since I was running out of it, I bought Aeropoxy). I think, what happened is that I sanded the laminate to make it stick, but I forgot to clean it. So probably all that dust was the reason for poor bonding. No big deal, I can add a new top layer. Two inside layers of fiberglass cloth stuck well (although, the corners are not great), so I just need to add a new top layer. 
+However, this didn't go exactly as planned. The outside cap delaminated from the inside. Not sure what has happened. I don't remember which epoxy I used (for all my previous work I used T-88 epoxy, but since I was running out of it, I bought Aeropoxy). I think, what happened is that I sanded the laminate to make it stick, but I forgot to clean it. So probably all that dust was the reason for poor bonding. No big deal, I can add a new top layer. Two inside layers of fiberglass cloth stuck well (although, the corners are not great), so I just need to add a new top layer.
 
 ![](6-cap-delaminated.jpeg)
 

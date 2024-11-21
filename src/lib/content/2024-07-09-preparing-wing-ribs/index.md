@@ -6,7 +6,7 @@ tags: ['preparing']
 thumbnail: '3-fluted-ribs.jpeg'
 ---
 
-I got the ribs about a month ago, but I was busy with some vacation time and some other DIY projects. 
+I got the ribs about a month ago, but I was busy with some vacation time and some other DIY projects.
 
 <!-- more -->
 
@@ -27,6 +27,3 @@ There is still much work to deburr them, which would be my next step.
 Also, I got my Andair FS2020 fuel valve (this is the one with return lines)!
 
 ![](./4-andair-fuel-valve.jpeg)
-
-
-

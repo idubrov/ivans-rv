@@ -27,5 +27,3 @@ In the past, I had issues priming small parts because they tend to fly around wh
 [This is the design](/STLs/PrimeStiffenerHolder.stl) I came with, will see if it works.
 
 ![](./3-priming-holder.jpeg)
-
-

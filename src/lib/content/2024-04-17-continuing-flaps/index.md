@@ -24,7 +24,7 @@ After that, I drilled every third hole and put a cleco in them.
 
 ![](3-holes-drilled.jpeg)
 
-The final operation was to countersink the spar. The plans call for a +0.007" countersink on the spar (7 thou deeper than a flush countersink), so skin can nest into it. I used a rivet to estimate the result. 
+The final operation was to countersink the spar. The plans call for a +0.007" countersink on the spar (7 thou deeper than a flush countersink), so skin can nest into it. I used a rivet to estimate the result.
 
 ![](4-countersunk-holes.jpeg)
 
