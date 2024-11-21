@@ -7,7 +7,8 @@ import image from '$lib/content/2022-05-04-vertical-stabilizer/3-skin-clecoed-2.
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
 import timezone from 'dayjs/plugin/timezone.js';
-import type { SvelteComponent } from 'svelte';
+import type { Component } from 'svelte';
+import { render } from 'svelte/server';
 import { loadPostAsComponent } from '$lib/blogClient';
 
 dayjs.extend(utc);
@@ -15,7 +16,7 @@ dayjs.extend(timezone);
 
 const title = "Ivan's RV-7";
 
-type Post = PostMetadata & { component: SvelteComponent };
+type Post = PostMetadata & { component: Component<any> };
 
 export const GET: RequestHandler = async () => {
 	const postsMetadata = await getAllPostsMetadata();
@@ -27,7 +28,7 @@ export const GET: RequestHandler = async () => {
 			}))
 		)
 	);
-	const body = render(baseUrl(), [...posts].reverse());
+	const body = renderRss(baseUrl(), [...posts].reverse());
 	return new Response(body, {
 		headers: {
 			'Cache-Control': `max-age=0, s-max-age=${600}`,
@@ -37,7 +38,7 @@ export const GET: RequestHandler = async () => {
 };
 
 //Be sure to review and replace any applicable content below!
-const render = (base: URL, posts: readonly Post[]) => `<?xml version="1.0" encoding="UTF-8" ?>
+const renderRss = (base: URL, posts: readonly Post[]) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>${title}</title>
@@ -59,7 +60,7 @@ const render = (base: URL, posts: readonly Post[]) => `<?xml version="1.0" encod
 <link>${new URL(postLink(post), base)}</link>
 <description><![CDATA[
 	${thumbnail(post)}
-	${post.component.render({ format: 'rss' }).html}
+	${render(post.component, { props: { format: 'rss' } }).body}
 ]]></description>
 <pubDate>${dayjs.utc(post.date).tz('US/Central', true).toISOString()}</pubDate>
 </item>`

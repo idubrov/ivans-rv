@@ -1,6 +1,6 @@
 import type { PostMetadata } from './types';
 import { dev } from '$app/environment';
-import type { SvelteComponent } from 'svelte';
+import type { Component } from 'svelte';
 
 function createPostFromModuleResolver(
 	path: string,
@@ -51,7 +51,7 @@ type ComponentProps = {
 	format: string;
 }
 
-export async function loadPostAsComponent(post: PostMetadata): Promise<SvelteComponent<ComponentProps>> {
+export async function loadPostAsComponent(post: PostMetadata): Promise<Component<ComponentProps>> {
 	return import(`./content/${post.key}/index.md`).then((module) => module.default);
 }
 
