@@ -1,4 +1,5 @@
-import type { RequestHandler } from './$types';
+// import type { RequestHandler } from './$types';
+import { render } from 'svelte/server';
 import { getAllPostsMetadata } from '$lib/blog';
 import lunr from 'lunr';
 import { loadPostAsComponent } from '$lib/blogClient';
@@ -19,7 +20,7 @@ export const GET: RequestHandler = async () => {
 		builder.field('title');
 		builder.field('body');
 		posts.forEach((post) => {
-			const body = post.component.render({ format: 'rss' }).html;
+			const body = render(post.component, { format: 'rss' }).html;
 			const doc = {
 				id: post.key,
 				title: post.title,
