@@ -75,10 +75,4 @@
 			<li><a href="/rivets">Rivets</a></li>
 		</ul>
 	</section>
-	<section class="tags">
-		<h1>Tags</h1>
-		{#each tags as tag}
-			<a href="/tag/{tag}">{tag} </a>
-		{/each}
-	</section>
 </nav>
