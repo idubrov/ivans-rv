@@ -3,8 +3,12 @@ import { getPostAndSiblings } from '$lib/blog';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {
-	const postKey = `${params.year}-${params.month}-${params.date}-${params.slug}`;
-	const postAndSiblings = await getPostAndSiblings(postKey);
+	const postAndSiblings = await getPostAndSiblings({
+		year: parseInt(params.year, 10),
+		month: parseInt(params.month, 10),
+		date: parseInt(params.date, 10),
+		slug: params.slug
+	});
 	if (typeof postAndSiblings === 'undefined') {
 		throw error(404);
 	}

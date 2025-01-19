@@ -1,4 +1,4 @@
-import type { Category, CategoryInfo, CurrentPost, PostMetadata } from './types';
+import type { Category, CategoryInfo, CurrentPost, PostMetadata, PostRef } from './types';
 import { browser } from '$app/environment';
 import { loadPosts } from './blogClient';
 
@@ -23,9 +23,15 @@ export async function getPostsByTag(tag: string): Promise<PostMetadata[]> {
 	return (await getAllPostsMetadata()).filter((entry) => entry.tags.includes(tag));
 }
 
-export async function getPostAndSiblings(key: string): Promise<CurrentPost | undefined> {
+export async function getPostAndSiblings(ref: PostRef): Promise<CurrentPost | undefined> {
 	const posts = await getAllPostsMetadata();
-	const pos = posts.findIndex((post) => post.key === key);
+	const pos = posts.findIndex(
+		(post) =>
+			post.ref.year === ref.year &&
+			post.ref.month === ref.month &&
+			post.ref.date === ref.date &&
+			post.ref.slug === ref.slug
+	);
 	if (pos === -1) {
 		return undefined;
 	}

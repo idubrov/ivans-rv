@@ -21,7 +21,7 @@
 			<a href={postLink(post)}>
 				<PostThumbnail {post} />
 			</a>
-			{#await loadPostAsComponent(post) then component}
+			{#await loadPostAsComponent(post.ref) then component}
 				<svelte:component this={component} format="summary" />
 			{/await}
 			<a href={postLink(post)}>

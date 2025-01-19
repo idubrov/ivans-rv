@@ -1,12 +1,13 @@
 export interface PostRef {
-	// Date of the post. Note that we use UTC dates internally.
-	date: Date;
+	year: number;
+	month: number;
+	date: number;
 	slug: string;
 }
 
-// FIXME: ...
-export interface PostMetadata extends PostRef {
-	key: string;
+export interface PostMetadata {
+	ref: PostRef;
+	date: Date;
 	draft: boolean;
 	title: string;
 	summary: string;

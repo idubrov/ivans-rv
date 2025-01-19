@@ -1,5 +1,6 @@
 ---
 title: 'Deburring Tools'
+layout: standalone
 ---
 
 My deburring setup is currently the following:

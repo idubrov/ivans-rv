@@ -4,12 +4,13 @@ import { getAllPostsMetadata } from '$lib/blog';
 import lunr from 'lunr';
 import { loadPostAsComponent } from '$lib/blogClient';
 import type { RequestHandler } from '@sveltejs/kit';
+import { postSearchId } from '$lib/search';
 
 export const GET: RequestHandler = async () => {
 	const postsMetadata = await getAllPostsMetadata();
 	const posts = await Promise.all(
 		postsMetadata.map((post) =>
-			loadPostAsComponent(post).then((component) => ({
+			loadPostAsComponent(post.ref).then((component) => ({
 				...post,
 				component
 			}))
@@ -23,7 +24,7 @@ export const GET: RequestHandler = async () => {
 		posts.forEach((post) => {
 			const body = render(post.component, { props: { format: 'rss' } }).body;
 			const doc = {
-				id: post.key,
+				id: postSearchId(post.ref),
 				title: post.title,
 				body
 			};

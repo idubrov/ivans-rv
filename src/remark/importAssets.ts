@@ -2,7 +2,7 @@ import { dirname, join } from 'path';
 import { readdirSync, readFileSync } from 'fs';
 import type { RootContent, Root } from 'mdast';
 import yaml from 'js-yaml';
-import type { Meta } from '$lib/types';
+import type { Meta, PostRef } from '$lib/types';
 
 interface VFile {
 	filename: string;
@@ -80,25 +80,20 @@ function isAsset(name: string) {
 	return name.endsWith('.jpeg');
 }
 
-function parsePostRef(path: string): { key: string; date: Date; slug: string } | undefined {
+function parsePostRef(path: string): PostRef | undefined {
 	const PATH_REGEXP =
-		/content\/(?<year>\d{4})-(?<month>\d{2})-(?<date>\d{2})-(?<slug>[^/]+)\/index.md$/;
+		/content\/(?<year2>\d{4})\/(?<year>\d{4})-(?<month>\d{2})-(?<date>\d{2})-(?<slug>[^/]+)\/index.md$/;
 
 	const matcher = path.match(PATH_REGEXP);
 	if (!matcher) {
 		return;
 	}
 
-	const year = parseInt(matcher.groups!.year, 10);
-	const month = parseInt(matcher.groups!.month, 10);
-	const date = parseInt(matcher.groups!.date, 10);
-	const postDate = new Date(Date.UTC(year, month - 1, date));
-	const slug: string = matcher.groups!.slug;
-	const key = postKey(postDate, slug);
 	return {
-		key,
-		slug,
-		date: postDate
+		year: parseInt(matcher.groups!.year, 10),
+		month: parseInt(matcher.groups!.month, 10),
+		date: parseInt(matcher.groups!.date, 10),
+		slug: matcher.groups!.slug
 	};
 }
 
@@ -110,12 +105,10 @@ function generateModuleScriptBlock(
 ): RootContent {
 	const postRef = parsePostRef(path);
 	let ref = '';
-	// For blogs posts, we generate date, slug and a key as well.
+	// For blogs posts, we a post reference as well
 	if (postRef) {
 		ref = `
-	metadata.key = ${JSON.stringify(postRef.key)},
-	metadata.slug = ${JSON.stringify(postRef.slug)},
-	metadata.date = new Date(${JSON.stringify(postRef.date.toISOString())}),
+	metadata.ref = ${JSON.stringify(postRef)},
 `;
 	}
 	return {
@@ -162,11 +155,4 @@ function mergeParagraphs(children: RootContent[]): string {
 		)
 		.filter((e) => !!e)
 		.join(' ');
-}
-
-function postKey(postDate: Date, slug: string): string {
-	const year = postDate.getUTCFullYear().toString().padStart(4, '0');
-	const month = (postDate.getUTCMonth() + 1).toString().padStart(2, '0');
-	const date = postDate.getUTCDate().toString().padStart(2, '0');
-	return `${year}-${month}-${date}-${slug}`;
 }

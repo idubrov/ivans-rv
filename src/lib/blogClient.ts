@@ -1,4 +1,4 @@
-import type { PostMetadata } from './types';
+import type { PostMetadata, PostRef } from './types';
 import { dev } from '$app/environment';
 import type { Component } from 'svelte';
 
@@ -6,15 +6,15 @@ function createPostFromModuleResolver(
 	path: string,
 	module: Record<string, any>
 ): PostMetadata | undefined {
-	if (!module.metadata.key) {
+	if (!module.metadata.ref) {
 		console.warn(`Content entry path '${path}' does not have proper format, ignored`);
 		return;
 	}
+	const ref: PostRef = module.metadata.ref;
 	const post = {
-		key: module.metadata.key,
+		ref: module.metadata.ref,
+		date: new Date(Date.UTC(ref.year, ref.month - 1, ref.date)),
 		draft: module.metadata.draft,
-		date: module.metadata.date,
-		slug: module.metadata.slug,
 		categories: module.metadata.categories,
 		tags: module.metadata.tags,
 		time: module.metadata.time,
@@ -33,7 +33,7 @@ function createPostFromModuleResolver(
 type Resolver = () => Promise<Record<string, any>>;
 
 export async function loadPosts(): Promise<readonly PostMetadata[]> {
-	const modules: Record<string, Resolver> = import.meta.glob('./content/*/index.md');
+	const modules: Record<string, Resolver> = import.meta.glob('./content/*/*/index.md');
 
 	const asyncEntries = Object.entries(modules).map(([path, resolver]) =>
 		resolver().then((module) => createPostFromModuleResolver(path, module))
@@ -51,13 +51,21 @@ type ComponentProps = {
 	format: string;
 };
 
-export async function loadPostAsComponent(post: PostMetadata): Promise<Component<ComponentProps>> {
-	return import(`./content/${post.key}/index.md`).then((module) => module.default);
+function importPost(ref: PostRef) {
+	return import(`./content/${ref.year}/${postPath(ref)}/index.md`);
 }
 
-export async function loadPostByKey(key: string): Promise<PostMetadata | undefined> {
-	return createPostFromModuleResolver(
-		`./content/${key}/index.md`,
-		await import(`./content/${key}/index.md`)
-	);
+export async function loadPostAsComponent(ref: PostRef): Promise<Component<ComponentProps>> {
+	return importPost(ref).then((module) => module.default);
+}
+
+export async function loadPostBySearchKey(ref: PostRef): Promise<PostMetadata | undefined> {
+	return createPostFromModuleResolver(postPath(ref), await importPost(ref));
+}
+
+function postPath(ref: PostRef): string {
+	const year = ref.year.toString().padStart(4, '0');
+	const month = ref.month.toString().padStart(2, '0');
+	const date = ref.date.toString().padStart(2, '0');
+	return `${year}-${month}-${date}-${ref.slug}`;
 }

@@ -1,10 +1,11 @@
 <script lang="ts">
 	import dayjs from 'dayjs';
 	import lunr from 'lunr';
-	import { loadPostByKey } from '$lib/blogClient';
+	import { loadPostBySearchKey } from '$lib/blogClient';
 	import { postLink } from '$lib/navigation';
 	import PostThumbnail from './PostThumbnail.svelte';
 	import type { PostMetadata } from '$lib/types';
+	import { parsePostSearchId } from '$lib/search.js';
 	const { Index } = lunr;
 
 	export let searchIndex: object;
@@ -21,7 +22,10 @@
 			last = term;
 			const searchResults = index.search(term).slice(0, 10);
 			results = (await Promise.all(
-				searchResults.map((result) => loadPostByKey(result.ref))
+				searchResults
+					.map((result => parsePostSearchId(result.ref)))
+					.filter(ref => typeof ref !== "undefined")
+					.map(loadPostBySearchKey)
 			)).filter((post): post is PostMetadata => post !== undefined);
 		}
 	}

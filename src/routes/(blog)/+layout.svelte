@@ -13,6 +13,7 @@
 	import { baseUrl } from '$lib/assets';
 	import dayjs from 'dayjs';
 	import { postLink } from '$lib/navigation';
+	import { postSearchId } from '$lib/search';
 
 	/** @type {string} */
 	export let title;
@@ -22,8 +23,8 @@
 	export let date;
 	/** @type {number} */
 	export let time;
-	/** @type {string} */
-	export let key;
+	/** @type {import("$lib/types").PostRef} */
+	export let ref;
 	/** @type {import("$lib/types").PostMetadata} */
 	export let previous;
 	/** @type {import("$lib/types").PostMetadata} */
@@ -32,8 +33,6 @@
 	export let summary;
 	/** @type {Record<string, import("$lib/types").Asset>} */
 	export let assets;
-	/** @type {string} */
-	export let slug;
 
 	const opener = writable({
 		openAsset() {
@@ -42,6 +41,10 @@
 	});
 	setContext(galleryKey, opener);
 	setContext(assetsKey, assets);
+
+	if (typeof ref === "undefined") {
+		throw new Error(`Missing post reference for the post ${title}`);
+	}
 
 	$: sorted = [...Object.keys(assets)].sort();
 	$: thumbnail = assets[sorted[0]];
@@ -53,7 +56,7 @@
 		<title>{title}</title>
 		<link
 			rel="canonical"
-			href={new URL(postLink({ date: dayjs.utc(date).toDate(), slug }), baseUrl()).toString()}
+			href={new URL(postLink({ ref }), baseUrl()).toString()}
 		/>
 		<meta data-key="description" name="description" content={summary} />
 		<meta property="og:type" content="article" />
@@ -70,7 +73,7 @@
 {#if format === 'summary' || format === 'rss'}
 	<slot />
 {:else}
-	<article id={key} class="markdown">
+	<article id={postSearchId(ref)} class="markdown">
 		<h1>
 			{title}<TimeSpent {time} />
 		</h1>
