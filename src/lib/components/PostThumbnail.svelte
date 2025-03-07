@@ -9,7 +9,7 @@
 		const assetKey = post.thumbnail ?? [...Object.keys(post.assets)].sort()[0];
 		const asset = post.assets[assetKey];
 		if (!asset) {
-			throw new Error(`Thumbnail not found for post '${post.key}'!`);
+			throw new Error(`Thumbnail not found for post '${post.ref.slug}'!`);
 		}
 		const url = asset && `${asset.url}?nf_resize=smartcrop&w=${width}&h=${height}`;
 		return { ...asset, url };

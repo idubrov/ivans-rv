@@ -2,75 +2,7 @@ export type Device = {
 	description: string;
 };
 
-export type DeviceName =
-	| 'flyleds'
-	| 'strpos.lw'
-	| 'strpos.rw'
-	| 'land.lw'
-	| 'land.rw'
-	| 'tail'
-	| 'beacon'
-	| 'gsa28.pitch'
-	| 'gsa28.roll'
-	| 'trim.pitch'
-	| 'trim.roll'
-	| 'artex345'
-	| 'gap26'
-	| 'gsu25'
-	| 'g5'
-	| 'stall'
-	| 'nav1'
-	| 'com1'
-	| 'com2'
-	| 'gtp59'
-	| 'gad27'
-	| 'gmu11'
-	| 'stick.left'
-	| 'stick.right'
-	| 'camera'
-	| 'gea24'
-	| 'gma245'
-	| 'flaps'
-	| 'switches'
-	| 'gnc255'
-	| 'gtr225'
-	| 'gdu460.left'
-	| 'gdu460.right'
-	| 'fusebox'
-	| 'static'
-	| 'fuel.left'
-	| 'fuel.right'
-	| 'lemo.left'
-	| 'lemo.right';
-
-export type ChokePointName =
-	| 'f704.l'
-	| 'f704.r'
-	| 'f704.ol'
-	| 'f704.or'
-	| 'f705.l'
-	| 'f705.r'
-	| 'f706.l'
-	| 'f706.r'
-	| 'f715.l'
-	| 'f715.r'
-	| 'f716.l1'
-	| 'f716.l2'
-	| 'f716.l3'
-	| 'f716.l4'
-	| 'f716.r1'
-	| 'f716.r2'
-	| 'f716.r3'
-	| 'f716.r4'
-	| 'lw'
-	| 'rw'
-	| 'central'
-	| 'f782.l'
-	| 'f782.r'
-	| 'f783.l'
-	| 'f783.r';
-
-export type Point = ChokePointName | Device;
+export type Point = ChokePointName | DeviceName;
 
 const connectivity: [Point, Point][] = [
 	['f715.l', 'f716.l1'],
@@ -111,7 +43,7 @@ export type Wire = {
 	gauge: WireGauge;
 };
 
-export const DEVICES: Record<DeviceName, Device> = {
+export const DEVICES = {
 	flyleds: {
 		description: 'Flyleds controller'
 	},
@@ -131,7 +63,7 @@ export const DEVICES: Record<DeviceName, Device> = {
 		description: 'Flyleds tail beacon'
 	},
 	beacon: {
-		description: 'Turtle deck beacon'
+		description: 'Vertical stabilizer beacon'
 	},
 	'gsa28.pitch': {
 		description: 'Pitch servo'
@@ -229,9 +161,11 @@ export const DEVICES: Record<DeviceName, Device> = {
 	'lemo.right': {
 		description: 'Right LEMO connector'
 	}
-};
+} satisfies Record<string, Device>;
 
-export const CHOKEPOINTS: Record<ChokePointName, ChokePoint> = {
+export type DeviceName = keyof typeof DEVICES;
+
+export const CHOKEPOINTS = {
 	'f704.l': {
 		description: 'Left snap bushing (in the center) on the F-704 bulkhead'
 	},
@@ -314,9 +248,13 @@ export const CHOKEPOINTS: Record<ChokePointName, ChokePoint> = {
 	'f783.r': {
 		description: 'Electrical snap bushing on the right F-783-R cover support rib'
 	}
-};
+} satisfies Record<string, ChokePoint>;
 
-type Route = readonly ChokePointName[];
+export type ChokePointName = keyof typeof CHOKEPOINTS;
+
+//: Record<ChokePointName, ChokePoint> =
+
+export type Route = readonly ChokePointName[];
 
 // Some standard routes
 const tunnel_left: Route = ['f705.l', 'f706.l'];
@@ -329,8 +267,8 @@ const panel_to_left_stick: Route = ['central', 'f704.l', 'f716.l1', 'f716.l2'];
 const panel_to_right_stick: Route = ['central', 'f704.r', 'f716.r1', 'f716.r2'];
 const panel_to_aft_left: Route = ['central', ...tunnel_left];
 const panel_to_aft_right: Route = ['central', ...tunnel_right];
-const panel_to_left_wing = ['central', 'f783.l', 'f782.l', 'lw'] as const;
-const panel_to_right_wing = ['central', 'f783.r', 'f782.r', 'rw'] as const;
+const panel_to_left_wing: Route = ['central', 'f783.l', 'f782.l', 'lw'];
+const panel_to_right_wing: Route = ['central', 'f783.r', 'f782.r', 'rw'];
 
 export const WIRES: Record<string, Wire> = {
 	// Left wing
@@ -643,7 +581,7 @@ export const WIRES: Record<string, Wire> = {
 		chokes: ['f716.l1', 'f716.l2', ...tunnel_left]
 	},
 	beacon: {
-		description: 'Turtle deck beacon',
+		description: 'Vertical stabilizer beacon',
 		from: 'switches',
 		to: 'beacon',
 		gauge: '2x22AWG twisted',
