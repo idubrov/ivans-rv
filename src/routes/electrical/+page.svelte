@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	import { queryWiresByChokepoints } from '$lib/wiring';
+	import { queryWiresByChokepoints } from '$lib/wiring/query';
 
 	const wiresByChokepoints = queryWiresByChokepoints();
 </script>
