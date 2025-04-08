@@ -85,6 +85,7 @@ export const CONNECTIONS: Record<string, Connection> = {
 	},
 	stall: {
 		description: 'Stall warning wire',
+		// Could connect to GAD27 as well
 		from: 'gea24',
 		to: 'stall',
 		gauge: '2x22AWG twisted',
