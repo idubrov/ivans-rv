@@ -52,6 +52,12 @@ export const DEVICES = {
 		description: 'Garmin GSU 25 ADAHRS',
 		canbus: true,
 	},
+	gtn650xi: {
+		description: 'Garmin 650Xi GPS/NAV/COMM/MFD',
+	},
+	gtx45r: {
+		description: 'Garmin GTX 45r Transponder',
+	},
 	g5: {
 		description: 'Garmin G5',
 		canbus: true,
@@ -77,6 +83,11 @@ export const DEVICES = {
 	},
 	gad27: {
 		description: 'Garmin GAD 27 electronic adapter unit',
+		canbus: true,
+	},
+	// FIXME: only needed if using an actual navigator
+	gad29: {
+		description: 'ARINC 429 interface',
 		canbus: true,
 	},
 	gmu11: {
@@ -106,8 +117,8 @@ export const DEVICES = {
 	switches: {
 		description: 'Panel switches'
 	},
+	// FIXME: if not using GTN 650Xi?
 	gnc215: {
-		// FIXME: only certified?
 		description: 'Garmin GNC 215 COM/NAV radio',
 	},
 	gtr205: {
@@ -120,6 +131,10 @@ export const DEVICES = {
 	},
 	'gdu460.right': {
 		description: 'Garmin GDU 460 right display',
+		canbus: true,
+	},
+	gha15: {
+		description: 'Garmin height advisor (?)',
 		canbus: true,
 	},
 	fusebox: {
