@@ -8,7 +8,7 @@ Concerns to validate / query / verify:
 
 Basic layout
 
-Left: G3X
+Left: G3X, G5
 Middle: autopilot panel, GTN 650Xi navigator, COM radio, audio panel
 Right: G3X
 

@@ -17,6 +17,7 @@ export type WireGauge =
 	| '2x14AWG twisted'
 	| '2x18AWG twisted'
 	| '2x22AWG twisted'
+	| '2x20AWG twisted'
 	| '2x22AWG canbus'
 	| '18AWG'
 	| '22AWG'
@@ -134,7 +135,7 @@ export const CONNECTIONS: Record<string, Connection> = {
 		description: 'Power wire for the GSA 28 roll servo',
 		from: 'fusebox',
 		to: 'gsa28.roll',
-		gauge: '2x22AWG twisted',
+		gauge: '2x20AWG twisted',
 		routing: ROUTES.panel_to_right_wing
 	},
 	'gsa28.roll.trim': {
@@ -318,7 +319,7 @@ export const CONNECTIONS: Record<string, Connection> = {
 		description: 'Power for the GSA 28 pitch servo',
 		from: 'fusebox',
 		to: 'gsa28.pitch',
-		gauge: '2x22AWG twisted',
+		gauge: '2x20AWG twisted',
 		routing: ROUTES.panel_to_aft_right
 	},
 	'gsa28.pitch.trim': {

@@ -52,6 +52,7 @@ export const DEVICES = {
 		description: 'Garmin GSU 25 ADAHRS',
 		canbus: true,
 	},
+	// FIXME: also, acts as a GPS source for GTX 45R?
 	gtn650xi: {
 		description: 'Garmin 650Xi GPS/NAV/COMM/MFD',
 	},
@@ -85,7 +86,7 @@ export const DEVICES = {
 		description: 'Garmin GAD 27 electronic adapter unit',
 		canbus: true,
 	},
-	// FIXME: only needed if using an actual navigator
+	// FIXME: only needed if using an actual navigator GTN 650
 	gad29: {
 		description: 'ARINC 429 interface',
 		canbus: true,

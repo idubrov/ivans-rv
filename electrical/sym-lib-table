@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Garmin")(type "KiCad")(uri "${KIPRJMOD}/Garmin.kicad_sym")(options "")(descr ""))
+  (lib (name "Misc")(type "KiCad")(uri "${KIPRJMOD}/Misc.kicad_sym")(options "")(descr ""))
+  (lib (name "FlyLeds")(type "KiCad")(uri "${KIPRJMOD}/FlyLeds.kicad_sym")(options "")(descr ""))
+)

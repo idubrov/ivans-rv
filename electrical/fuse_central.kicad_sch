@@ -1,0 +1,783 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b986385f-5f52-49fd-a4e1-955c78288e5e")
+	(paper "USLetter")
+	(title_block
+		(title "RV-7 Electrical")
+		(date "2025-08-19")
+		(rev "1")
+		(company "Ivan Dubrov")
+	)
+	(lib_symbols
+		(symbol "Misc:RAY_ALLEN_T2_TRIM"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RAY_ALLEN_T2_TRIM_0_1"
+				(rectangle
+					(start -10.16 -1.27)
+					(end 8.89 -11.43)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RAY_ALLEN_T2_TRIM_1_0"
+				(pin input line
+					(at -15.24 -5.08 0)
+					(length 5.08)
+					(name "TRIM_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "GRY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -7.62 0)
+					(length 5.08)
+					(name "TRIM_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "WHT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 13.97 -3.81 180)
+					(length 5.08)
+					(name "SENSE_HI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "ORN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 13.97 -6.35 180)
+					(length 5.08)
+					(name "SENSE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "GRN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 13.97 -8.89 180)
+					(length 5.08)
+					(name "SENSE_LO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "BLU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(bus_entry
+		(at 107.95 57.15)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bfe884c-5daa-4238-83c4-94a990a5ba50")
+	)
+	(bus_entry
+		(at 186.69 55.88)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8261e156-6c93-485a-a24e-d7dd952e8ca5")
+	)
+	(bus_entry
+		(at 186.69 58.42)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "873f5c25-4437-43f1-8635-0ae57a5a7e6a")
+	)
+	(bus_entry
+		(at 186.69 60.96)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc89421-ba28-4fc5-80d1-345e62b1dbb2")
+	)
+	(bus_entry
+		(at 107.95 59.69)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9e27250-4e95-402e-8604-aa82449b07b4")
+	)
+	(wire
+		(pts
+			(xy 110.49 59.69) (xy 132.08 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "105dbc22-3907-4ca8-98d2-b30b43b18565")
+	)
+	(bus
+		(pts
+			(xy 102.87 57.15) (xy 107.95 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16bb0c43-64ad-4b41-ad75-a6033d265fdf")
+	)
+	(wire
+		(pts
+			(xy 180.34 113.03) (xy 184.15 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21db5eaa-0481-4262-bfc7-aea93abe3c2a")
+	)
+	(bus
+		(pts
+			(xy 180.34 97.79) (xy 184.15 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d825383-07f0-475e-907c-0f096cf9b61f")
+	)
+	(wire
+		(pts
+			(xy 161.29 63.5) (xy 184.15 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eb1756c-9860-4826-bfbe-37087db3baa8")
+	)
+	(bus
+		(pts
+			(xy 180.34 100.33) (xy 184.15 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33c61cb9-d3e1-4486-b1fa-d9707b811a1b")
+	)
+	(bus
+		(pts
+			(xy 186.69 55.88) (xy 203.2 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c596102-2c6a-43a6-b0c0-6dc0e36e1224")
+	)
+	(bus
+		(pts
+			(xy 107.95 59.69) (xy 107.95 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3deb9506-defa-454b-8ef4-d8693d79d7d1")
+	)
+	(bus
+		(pts
+			(xy 180.34 105.41) (xy 184.15 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42d73f1b-8c10-43e8-aa3b-3ff725ac4563")
+	)
+	(wire
+		(pts
+			(xy 161.29 60.96) (xy 184.15 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e47c20-5ac4-418e-b0f5-e030f9bdd077")
+	)
+	(wire
+		(pts
+			(xy 161.29 58.42) (xy 184.15 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a9736d9-a02a-444e-b7f1-567bedd71f6d")
+	)
+	(wire
+		(pts
+			(xy 110.49 62.23) (xy 132.08 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aacfe2d-e390-4c4e-b6c2-b3525218c962")
+	)
+	(wire
+		(pts
+			(xy 180.34 115.57) (xy 184.15 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6765fc29-d752-4215-8cbd-3d7b826bc029")
+	)
+	(bus
+		(pts
+			(xy 186.69 55.88) (xy 186.69 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68447de0-9ceb-4d3f-b3c1-e567dd52c9bb")
+	)
+	(bus
+		(pts
+			(xy 180.34 107.95) (xy 184.15 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "948b707f-14b3-472a-9d21-f07fd92bcccf")
+	)
+	(bus
+		(pts
+			(xy 186.69 58.42) (xy 186.69 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c27ec275-9179-4ee4-bfdd-9e3a1cf07fb2")
+	)
+	(wire
+		(pts
+			(xy 180.34 110.49) (xy 184.15 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf47eaed-5d5c-4368-93cf-3bea216f36ee")
+	)
+	(wire
+		(pts
+			(xy 180.34 92.71) (xy 184.15 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d99509ef-4117-416a-9533-89c5ca3760aa")
+	)
+	(bus
+		(pts
+			(xy 180.34 95.25) (xy 184.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5b79155-8f48-43a5-ad0f-6e42dac8313b")
+	)
+	(wire
+		(pts
+			(xy 180.34 102.87) (xy 184.15 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f45f0137-674c-4b09-9de5-9626738ad505")
+	)
+	(label "ROLL_TRIM.TRIM2"
+		(at 111.76 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2fd1bb7b-81b5-49fb-ab5f-5113cc16f421")
+	)
+	(label "ROLL.SENSE_HI"
+		(at 163.83 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b428042-4853-49ad-9808-c9890de01411")
+	)
+	(label "ROLL.SENSE"
+		(at 163.83 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa08b6be-6aaf-45cd-8eed-26c5590c282f")
+	)
+	(label "ROLL_TRIM.TRIM1"
+		(at 111.76 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7b4cc02-3c12-43e9-9382-80850b9ea6d8")
+	)
+	(label "ROLL.SENSE_LO"
+		(at 163.83 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe1fd617-4525-41fb-94f4-9d5548d77c6c")
+	)
+	(hierarchical_label "RIGHT_THRU{POSN}"
+		(shape output)
+		(at 184.15 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "466c3437-6a1f-427d-a27c-e2d5e900d81a")
+	)
+	(hierarchical_label "PITCH_TRIM{SENSE}"
+		(shape output)
+		(at 180.34 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52d0a29b-3c1f-40e8-90e0-a1f9c5e190c9")
+	)
+	(hierarchical_label "ROLL_TRIM{SENSE}"
+		(shape output)
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "70a2903d-cc7a-488a-9943-eb3214f22a69")
+	)
+	(hierarchical_label "LEFT{POSN}"
+		(shape input)
+		(at 180.34 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "915bc2a9-55dd-4dbc-a5f8-b362afee90b4")
+	)
+	(hierarchical_label "PITCH_AP_THRU_12V"
+		(shape output)
+		(at 184.15 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9410ade6-b49a-40d9-9595-eaac05f0bb06")
+	)
+	(hierarchical_label "CWS_AFT"
+		(shape bidirectional)
+		(at 180.34 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d46fafb-8fe3-4d9f-a49e-a0b287693745")
+	)
+	(hierarchical_label "CWS_WING"
+		(shape bidirectional)
+		(at 184.15 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9eab3244-5893-4daa-a281-998939bbe2d5")
+	)
+	(hierarchical_label "RIGHT{POSN}"
+		(shape input)
+		(at 180.34 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a5b27fa3-14ec-4bfa-ad0e-8dcd4b5a03dd")
+	)
+	(hierarchical_label "STROBE_12V"
+		(shape input)
+		(at 180.34 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "adb01f31-2be8-464f-acf1-0784bb3cfe99")
+	)
+	(hierarchical_label "ROLL_TRIM{TRIM}"
+		(shape input)
+		(at 102.87 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ae40f26f-c33c-480b-a969-8186b7861e71")
+	)
+	(hierarchical_label "PITCH_TRIM{TRIM}"
+		(shape input)
+		(at 180.34 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b09b288b-7129-4576-9482-7bd29ac33e68")
+	)
+	(hierarchical_label "THRU{CAN}"
+		(shape bidirectional)
+		(at 184.15 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b759689c-8e2d-4b8b-abcf-bec2e80ba64b")
+	)
+	(hierarchical_label "POS_12V"
+		(shape input)
+		(at 180.34 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b86ba8c4-de7d-4818-b39e-4863413f1c95")
+	)
+	(hierarchical_label "POS_THRU_12V"
+		(shape output)
+		(at 184.15 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c26a2335-8f1d-48c2-b0be-abda14d9c240")
+	)
+	(hierarchical_label "BEACON_THRU_12V"
+		(shape output)
+		(at 184.15 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd334096-ab89-4b9b-9321-6f6611218b1b")
+	)
+	(hierarchical_label "{CAN}"
+		(shape bidirectional)
+		(at 180.34 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cff23f03-f899-4e8e-b081-ff1369fcf604")
+	)
+	(hierarchical_label "STROBE_THRU_12V"
+		(shape output)
+		(at 184.15 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d188e6d5-7718-44f8-bac5-1e0dd5dbbaaa")
+	)
+	(hierarchical_label "LEFT_THRU{POSN}"
+		(shape output)
+		(at 184.15 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d341e58a-e1b9-4939-82fb-3edcda022c3c")
+	)
+	(hierarchical_label "PITCH_TRIM_THRU{SENSE}"
+		(shape input)
+		(at 184.15 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e15cf054-df4a-4b4d-a692-c26301140fa2")
+	)
+	(hierarchical_label "PITCH_TRIM_THRU{TRIM}"
+		(shape output)
+		(at 184.15 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e406d336-989f-4557-881b-417c3d600bc2")
+	)
+	(hierarchical_label "PITCH_AP_12V"
+		(shape input)
+		(at 180.34 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eb6dd745-26f2-42d5-b836-f65193ec99a5")
+	)
+	(hierarchical_label "BEACON_12V"
+		(shape input)
+		(at 180.34 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ecaf1f41-621e-43ce-9e8d-81fbf5a8ea65")
+	)
+	(symbol
+		(lib_id "Misc:RAY_ALLEN_T2_TRIM")
+		(at 147.32 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edaa0acb-8079-4721-a2e3-d7140c402c67")
+		(property "Reference" "U5"
+			(at 146.685 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ROLL TRIM"
+			(at 146.685 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "GRN"
+			(uuid "bc073b68-708d-49bf-b017-7fb6a79cd070")
+		)
+		(pin "ORN"
+			(uuid "53d27444-7a1a-4422-832b-45b61b78f30c")
+		)
+		(pin "BLU"
+			(uuid "0f808737-ba89-4670-9907-1fc8d2ac498a")
+		)
+		(pin "GRY"
+			(uuid "7073f192-6c70-4389-a324-459e7e86cd9a")
+		)
+		(pin "WHT"
+			(uuid "a48e2b6d-d69e-4a07-9bde-e55cc4f9527b")
+		)
+		(instances
+			(project ""
+				(path "/8f70a519-989e-4461-b188-ee220b2df3e4/48c90ea3-f239-40ed-a156-b375cc20b5a8"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
