@@ -1,8 +1,8 @@
 ---
-title: 'Priming the top skins.'
+title: 'Riveting the top skins.'
 categories: ['wing']
-time: 1
-tags: ['priming']
+time: 4
+tags: ['riveting']
 thumbnail: '0-skin-primed.jpeg'
 ---
 
