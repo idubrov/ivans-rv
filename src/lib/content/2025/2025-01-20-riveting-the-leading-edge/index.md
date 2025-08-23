@@ -42,7 +42,7 @@ The end result (photo taken by the borescope).
 
 ![](./4-rivets.jpeg)
 
-On the outermost main rib, the flanges are lifted during the riveting process. I checked with the gauge, and I cannot reach the rivet stem with the feeler gauge, so I don't consider them to be of any concern. Thinner flanges tend to lift when I rivet them with AD4 rivets. 
+On the outermost main rib, the flanges are lifted during the riveting process. I checked with the gauge, and I cannot reach the rivet stem with the feeler gauge, so I don't consider them to be of any concern. Thinner flanges tend to lift when I rivet them with AD4 rivets.
 
 ![](./5-flanges-lifted.jpeg)
 
@@ -50,6 +50,6 @@ After riveting the leading edge, I installed the fuel tank on the main rib. I st
 
 ![](./6-fuel-tank-installed.jpeg)
 
-The fit of the fuel tank is very good. Everything matched perfectly. 
+The fit of the fuel tank is very good. Everything matched perfectly.
 
 ![](./7-the-seam-is-good.jpeg)

@@ -5,7 +5,6 @@ Concerns to validate / query / verify:
 3. Make sure all relevant pins are connected
 4. Labeling scheme?
 
-
 Basic layout
 
 Left: G3X, G5

@@ -31,4 +31,3 @@ Cutting the access hole in the inboard rib and drilling holes for the reinforcem
 Finally, clecoing the ribs to the skin for match-drilling.
 
 ![](./6-clecoed-everything.jpeg)
-

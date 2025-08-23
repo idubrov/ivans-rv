@@ -6,7 +6,7 @@ tags: ['riveting']
 thumbnail: '0-top-skin-riveted.jpeg'
 ---
 
-Over the last few weeks my son and I finished riveting the top skins and replacing the bad rivets. 
+Over the last few weeks my son and I finished riveting the top skins and replacing the bad rivets.
 
 <!-- more -->
 

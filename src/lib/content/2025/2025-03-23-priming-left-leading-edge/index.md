@@ -6,7 +6,7 @@ tags: ['riveting']
 thumbnail: '0-primed-ribs.jpeg'
 ---
 
-Today I primed the parts of the left leading edge. 
+Today I primed the parts of the left leading edge.
 
 <!-- more -->
 

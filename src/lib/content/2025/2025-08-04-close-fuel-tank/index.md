@@ -20,6 +20,6 @@ After that, I "installed" the balloon on the vent line. When I was testing my ri
 
 ![](./2-sealing-the-balloon.jpeg)
 
-This is actually my right fuel tank which I want to re-test (with just the balloon, without spraying it), just to make sure it is still doesn't leak. 
+This is actually my right fuel tank which I want to re-test (with just the balloon, without spraying it), just to make sure it is still doesn't leak.
 
 ![](./3-balloon-installed.jpeg)

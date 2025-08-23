@@ -10,7 +10,7 @@ Today I mixed the tank sealant from a can and riveted the fuel flange and the fu
 
 <!-- more -->
 
-Nothing too special, just a normal sealant plus riveting operation. 
+Nothing too special, just a normal sealant plus riveting operation.
 
 This is the fuel flange.
 

@@ -6,7 +6,7 @@ tags: ['assembling']
 thumbnail: '0-stainless-tie-down-rings.jpeg'
 ---
 
-It took a bit of work to install the tie-down ring and some of the aileron hardware. 
+It took a bit of work to install the tie-down ring and some of the aileron hardware.
 
 <!-- more -->
 

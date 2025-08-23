@@ -20,4 +20,3 @@ The cover plate with everything attached to it (and covered with sealant).
 
 ![](./1-exterior-side.jpeg)
 ![](./2-inside-view.jpeg)
-

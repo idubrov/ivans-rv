@@ -6,7 +6,7 @@ tags: ['riveting']
 thumbnail: '1-inboard-bracket-outside.jpeg'
 ---
 
-Today I riveted the aileron brackets. 
+Today I riveted the aileron brackets.
 
 <!-- more -->
 

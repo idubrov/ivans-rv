@@ -6,7 +6,7 @@ tags: ['riveting']
 thumbnail: '3-more-riveting.jpeg'
 ---
 
-Couple of short sessions over the last few days riveting the left leading edge. 
+Couple of short sessions over the last few days riveting the left leading edge.
 
 <!-- more -->
 

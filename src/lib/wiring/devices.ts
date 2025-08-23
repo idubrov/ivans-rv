@@ -30,11 +30,11 @@ export const DEVICES = {
 	},
 	'gsa28.pitch': {
 		description: 'Pitch servo',
-		canbus: true,
+		canbus: true
 	},
 	'gsa28.roll': {
 		description: 'Roll servo',
-		canbus: true,
+		canbus: true
 	},
 	'trim.pitch': {
 		description: 'Pitch trim servo'
@@ -50,22 +50,22 @@ export const DEVICES = {
 	},
 	gsu25: {
 		description: 'Garmin GSU 25 ADAHRS',
-		canbus: true,
+		canbus: true
 	},
 	// FIXME: also, acts as a GPS source for GTX 45R?
 	gtn650xi: {
-		description: 'Garmin 650Xi GPS/NAV/COMM/MFD',
+		description: 'Garmin 650Xi GPS/NAV/COMM/MFD'
 	},
 	gtx45r: {
-		description: 'Garmin GTX 45r Transponder',
+		description: 'Garmin GTX 45r Transponder'
 	},
 	g5: {
 		description: 'Garmin G5',
-		canbus: true,
+		canbus: true
 	},
 	gmc507: {
 		description: 'Garmin Autopilot Control',
-		canbus: true,
+		canbus: true
 	},
 	stall: {
 		description: 'OP-46 stall warner'
@@ -84,16 +84,16 @@ export const DEVICES = {
 	},
 	gad27: {
 		description: 'Garmin GAD 27 electronic adapter unit',
-		canbus: true,
+		canbus: true
 	},
 	// FIXME: only needed if using an actual navigator GTN 650
 	gad29: {
 		description: 'ARINC 429 interface',
-		canbus: true,
+		canbus: true
 	},
 	gmu11: {
 		description: 'Garmin GMU 11 magnetometer',
-		canbus: true,
+		canbus: true
 	},
 	'stick.left': {
 		description: 'Left control stick (pilot)'
@@ -106,11 +106,11 @@ export const DEVICES = {
 	},
 	gea24: {
 		description: 'Garmin GEA 24 engine indication system',
-		canbus: true,
+		canbus: true
 	},
 	gma245: {
 		description: 'Garmin GMA 245 audio panel',
-		canbus: true,
+		canbus: true
 	},
 	flaps: {
 		description: 'Flaps motor'
@@ -120,23 +120,23 @@ export const DEVICES = {
 	},
 	// FIXME: if not using GTN 650Xi?
 	gnc215: {
-		description: 'Garmin GNC 215 COM/NAV radio',
+		description: 'Garmin GNC 215 COM/NAV radio'
 	},
 	gtr205: {
 		description: 'Garmin GTR 205A COM radio',
-		canbus: true,
+		canbus: true
 	},
 	'gdu460.left': {
 		description: 'Garmin GDU 460 left display',
-		canbus: true,
+		canbus: true
 	},
 	'gdu460.right': {
 		description: 'Garmin GDU 460 right display',
-		canbus: true,
+		canbus: true
 	},
 	gha15: {
 		description: 'Garmin height advisor (?)',
-		canbus: true,
+		canbus: true
 	},
 	fusebox: {
 		description: 'Fuse box'

@@ -6,7 +6,7 @@ tags: ['drilling']
 thumbnail: '0-left-leading-edge.jpeg'
 ---
 
-While finishing my work on the right wing, I started working on the left wing. 
+While finishing my work on the right wing, I started working on the left wing.
 
 <!-- more -->
 
@@ -14,7 +14,7 @@ The first step was to drill the leading edge.
 
 ![](./0-left-leading-edge.jpeg)
 
-The right wing I did the recommended way -- by match-drilling the holes while everything is assembled. However, these new ribs are very floppy and therefore it is very easy to get some small misalignments between the holes in the skin and the holes in the ribs. Match-drilling is supposed to capture these misalignments, but the issue I had is that these flanges kept moving a bit while I was installing and removing the clecoes. 
+The right wing I did the recommended way -- by match-drilling the holes while everything is assembled. However, these new ribs are very floppy and therefore it is very easy to get some small misalignments between the holes in the skin and the holes in the ribs. Match-drilling is supposed to capture these misalignments, but the issue I had is that these flanges kept moving a bit while I was installing and removing the clecoes.
 
 For that reason, for the left wing I tried a different approach: I upsized all the holes as they were using #40 reamer. I did not notice any issues during re-assembly, so I think I will do the same for the top skins (but I will probably stil match-drill the holes in the skins where I have "rigid" ribs).
 

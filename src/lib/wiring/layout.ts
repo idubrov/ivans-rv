@@ -119,11 +119,10 @@ export const ROUTES = {
 	panel_to_aft_left,
 	panel_to_aft_right,
 	panel_to_left_wing,
-	panel_to_right_wing,
+	panel_to_right_wing
 } satisfies Record<string, Route>;
 
 export type Point = ChokePointName | DeviceName;
-
 
 const connectivity: [Point, Point][] = [
 	['f715.l', 'f716.l1'],

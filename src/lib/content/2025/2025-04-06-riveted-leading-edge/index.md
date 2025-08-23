@@ -35,4 +35,3 @@ Then, as the last step, I squeezed all the rivets attaching the leading edge to 
 View of the inside of the leading edge.
 
 ![](./4-inside-view.jpeg)
-
