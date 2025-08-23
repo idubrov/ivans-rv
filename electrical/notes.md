@@ -30,3 +30,13 @@ Colors
 
 SENSE bus: 3x22AWG (orange / green / blue)
 TRIM bus: 3x22 AWG (gray / white)
+
+Principles:
+
+- Short names for longest running wires
+
+Alerts:
+
+- XPDR fail
+- Bus voltage (GEA24)
+-

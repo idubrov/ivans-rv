@@ -102,7 +102,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "GAD27"
+	(symbol "GAD27_J271"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -149,15 +149,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "GAD27_1_0"
+		(symbol "GAD27_J271_1_0"
 			(pin bidirectional line
 				(at -29.21 26.67 0)
 				(length 5.08)
@@ -269,7 +261,7 @@
 			(pin input line
 				(at -29.21 8.89 0)
 				(length 5.08)
-				(name "DISCRETE_1"
+				(name "DISCRETE_IN_1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -287,7 +279,7 @@
 			(pin input line
 				(at -29.21 6.35 0)
 				(length 5.08)
-				(name "DISCRETE_2"
+				(name "DISCRETE_IN_2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -305,7 +297,7 @@
 			(pin input line
 				(at -29.21 3.81 0)
 				(length 5.08)
-				(name "DISCRETE_3"
+				(name "DISCRETE_IN_3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -323,7 +315,7 @@
 			(pin input line
 				(at -29.21 1.27 0)
 				(length 5.08)
-				(name "DISCRETE_4"
+				(name "DISCRETE_IN_4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -341,7 +333,7 @@
 			(pin input line
 				(at -29.21 -1.27 0)
 				(length 5.08)
-				(name "DISCRETE_5"
+				(name "DISCRETE_IN_5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -359,7 +351,7 @@
 			(pin input line
 				(at -29.21 -3.81 0)
 				(length 5.08)
-				(name "DISCRETE_6"
+				(name "DISCRETE_IN_6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -377,7 +369,7 @@
 			(pin input line
 				(at -29.21 -6.35 0)
 				(length 5.08)
-				(name "DISCRETE_7"
+				(name "DISCRETE_IN_7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -392,7 +384,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at -29.21 -8.89 0)
 				(length 5.08)
 				(name "DISCRETE_IN_8"
@@ -410,7 +402,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at -29.21 -11.43 0)
 				(length 5.08)
 				(name "DISCRETE_IN_9"
@@ -987,7 +979,7 @@
 				)
 			)
 		)
-		(symbol "GAD27_1_1"
+		(symbol "GAD27_J271_1_1"
 			(rectangle
 				(start -24.13 32.004)
 				(end 24.13 -36.83)
@@ -999,18 +991,59 @@
 					(type none)
 				)
 			)
-			(text "J271"
-				(at -3.048 29.718 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "GAD27_J272"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 11.176 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "GAD27_2_0"
+		(property "Value" ""
+			(at -26.67 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -26.67 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -26.67 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at -26.67 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GAD27_J272_1_0"
 			(pin power_in line
-				(at -31.75 26.67 0)
+				(at -29.21 6.35 0)
 				(length 5.08)
 				(name "PITCH_TRIM_POWER_IN"
 					(effects
@@ -1027,8 +1060,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -31.75 24.13 0)
+			(pin power_in line
+				(at -29.21 3.81 0)
 				(length 5.08)
 				(name "PITCH_TRIM_POWER_GND"
 					(effects
@@ -1046,7 +1079,7 @@
 				)
 			)
 			(pin power_in line
-				(at -31.75 21.59 0)
+				(at -29.21 1.27 0)
 				(length 5.08)
 				(name "ROLL_TRIM_POWER_IN"
 					(effects
@@ -1063,8 +1096,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -31.75 19.05 0)
+			(pin power_in line
+				(at -29.21 -1.27 0)
 				(length 5.08)
 				(name "ROLL_TRIM_POWER_GND"
 					(effects
@@ -1082,7 +1115,7 @@
 				)
 			)
 			(pin power_in line
-				(at -31.75 16.51 0)
+				(at -29.21 -3.81 0)
 				(length 5.08)
 				(name "YAW_TRIM_POWER_IN"
 					(effects
@@ -1099,8 +1132,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -31.75 13.97 0)
+			(pin power_in line
+				(at -29.21 -6.35 0)
 				(length 5.08)
 				(name "YAW_TRIM_POWER_GND"
 					(effects
@@ -1118,7 +1151,7 @@
 				)
 			)
 			(pin power_out line
-				(at 26.67 26.67 180)
+				(at 29.21 6.35 180)
 				(length 5.08)
 				(name "ROLL_TRIM_OUT_1"
 					(effects
@@ -1136,7 +1169,7 @@
 				)
 			)
 			(pin power_out line
-				(at 26.67 24.13 180)
+				(at 29.21 3.81 180)
 				(length 5.08)
 				(name "ROLL_TRIM_OUT_2"
 					(effects
@@ -1154,7 +1187,7 @@
 				)
 			)
 			(pin power_out line
-				(at 26.67 21.59 180)
+				(at 29.21 1.27 180)
 				(length 5.08)
 				(name "PITCH_TRIM_OUT_1"
 					(effects
@@ -1172,7 +1205,7 @@
 				)
 			)
 			(pin power_out line
-				(at 26.67 19.05 180)
+				(at 29.21 -1.27 180)
 				(length 5.08)
 				(name "PITCH_TRIM_OUT_2"
 					(effects
@@ -1190,7 +1223,7 @@
 				)
 			)
 			(pin power_out line
-				(at 26.67 16.51 180)
+				(at 29.21 -3.81 180)
 				(length 5.08)
 				(name "YAW_TRIM_OUT_1"
 					(effects
@@ -1208,7 +1241,7 @@
 				)
 			)
 			(pin power_out line
-				(at 26.67 13.97 180)
+				(at 29.21 -6.35 180)
 				(length 5.08)
 				(name "YAW_TRIM_OUT_2"
 					(effects
@@ -1226,10 +1259,10 @@
 				)
 			)
 		)
-		(symbol "GAD27_2_1"
+		(symbol "GAD27_J272_1_1"
 			(rectangle
-				(start -26.67 31.75)
-				(end 21.59 11.43)
+				(start -24.13 8.89)
+				(end 24.13 -8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -1238,18 +1271,59 @@
 					(type none)
 				)
 			)
-			(text "J272"
-				(at -2.54 29.972 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "GAD27_TB273"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 11.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "GAD27_3_0"
+		(property "Value" ""
+			(at -27.94 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -27.94 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -27.94 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at -27.94 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GAD27_TB273_1_0"
 			(pin power_in line
-				(at -29.21 26.67 0)
+				(at -27.94 7.62 0)
 				(length 5.08)
 				(name "KEEP_ALIVE_POWER_IN"
 					(effects
@@ -1267,7 +1341,7 @@
 				)
 			)
 			(pin power_out line
-				(at -29.21 24.13 0)
+				(at -27.94 5.08 0)
 				(length 5.08)
 				(name "KEEP_ALIVE_POWER_VOUT"
 					(effects
@@ -1285,7 +1359,7 @@
 				)
 			)
 			(pin power_in line
-				(at -29.21 21.59 0)
+				(at -27.94 2.54 0)
 				(length 5.08)
 				(name "LIGHT_1_POWER"
 					(effects
@@ -1303,7 +1377,7 @@
 				)
 			)
 			(pin power_in line
-				(at -29.21 19.05 0)
+				(at -27.94 0 0)
 				(length 5.08)
 				(name "LIGHT_2_POWER"
 					(effects
@@ -1321,7 +1395,7 @@
 				)
 			)
 			(pin power_in line
-				(at -29.21 16.51 0)
+				(at -27.94 -2.54 0)
 				(length 5.08)
 				(name "FLAP_POWER_IN"
 					(effects
@@ -1339,7 +1413,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -29.21 13.97 0)
+				(at -27.94 -5.08 0)
 				(length 5.08)
 				(name "FLAP_POWER_GROUND"
 					(effects
@@ -1357,7 +1431,7 @@
 				)
 			)
 			(pin power_out line
-				(at 27.94 24.13 180)
+				(at 27.94 5.08 180)
 				(length 5.08)
 				(name "FLAP_POWER_OUT_1"
 					(effects
@@ -1375,7 +1449,7 @@
 				)
 			)
 			(pin power_out line
-				(at 27.94 21.59 180)
+				(at 27.94 2.54 180)
 				(length 5.08)
 				(name "FLAP_POWER_OUT_2"
 					(effects
@@ -1393,7 +1467,7 @@
 				)
 			)
 			(pin power_out line
-				(at 27.94 19.05 180)
+				(at 27.94 0 180)
 				(length 5.08)
 				(name "LIGHT_1_OUTPUT"
 					(effects
@@ -1411,7 +1485,7 @@
 				)
 			)
 			(pin power_out line
-				(at 27.94 16.51 180)
+				(at 27.94 -2.54 180)
 				(length 5.08)
 				(name "LIGHT_2_OUTPUT"
 					(effects
@@ -1429,24 +1503,16 @@
 				)
 			)
 		)
-		(symbol "GAD27_3_1"
+		(symbol "GAD27_TB273_1_1"
 			(rectangle
-				(start -24.13 31.75)
-				(end 22.86 10.16)
+				(start -22.86 10.16)
+				(end 22.86 -7.62)
 				(stroke
 					(width 0)
 					(type default)
 				)
 				(fill
 					(type none)
-				)
-			)
-			(text "TB273"
-				(at -0.254 29.972 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 		)
@@ -1531,7 +1597,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -11.43 -2.54 0)
 				(length 5.08)
 				(name "GND"
@@ -1549,7 +1615,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin output line
 				(at 11.43 -1.27 180)
 				(length 5.08)
 				(name "TEMP"
@@ -1570,7 +1636,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "GMU11"
+	(symbol "GEA24_J241"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1617,9 +1683,775 @@
 				(hide yes)
 			)
 		)
-		(symbol "GMU11_0_1"
+		(symbol "GEA24_J241_0_1"
 			(rectangle
 				(start -16.51 -1.27)
+				(end 16.51 -17.78)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GEA24_J241_1_0"
+			(pin bidirectional line
+				(at -21.59 -3.81 0)
+				(length 5.08)
+				(name "CAN_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -21.59 -6.35 0)
+				(length 5.08)
+				(name "CAN_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -21.59 -10.16 0)
+				(length 5.08)
+				(name "RS-232_RX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -21.59 -12.7 0)
+				(length 5.08)
+				(name "RS-232_TX"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -21.59 -15.24 0)
+				(length 5.08)
+				(name "GROUND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 21.59 -6.35 180)
+				(length 5.08)
+				(name "AIRCRAFT_POWER_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 21.59 -8.89 180)
+				(length 5.08)
+				(name "AIRCRAFT_POWER_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 21.59 -11.43 180)
+				(length 5.08)
+				(name "GROUND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "GEA24_J242"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GEA24_J242_0_1"
+			(rectangle
+				(start -13.97 -1.27)
+				(end 13.97 -34.29)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GEA24_J242_1_0"
+			(pin bidirectional line
+				(at -19.05 -3.81 0)
+				(length 5.08)
+				(name "CHT1_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -6.35 0)
+				(length 5.08)
+				(name "CHT1_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -8.89 0)
+				(length 5.08)
+				(name "CHT2_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -11.43 0)
+				(length 5.08)
+				(name "CHT2_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -13.97 0)
+				(length 5.08)
+				(name "CHT3_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -16.51 0)
+				(length 5.08)
+				(name "CHT3_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -19.05 0)
+				(length 5.08)
+				(name "CHT4_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -21.59 0)
+				(length 5.08)
+				(name "CHT4_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -24.13 0)
+				(length 5.08)
+				(name "CHT5_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -26.67 0)
+				(length 5.08)
+				(name "CHT5_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -29.21 0)
+				(length 5.08)
+				(name "CHT6_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -19.05 -31.75 0)
+				(length 5.08)
+				(name "CHT6_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -3.81 180)
+				(length 5.08)
+				(name "EGT1_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -6.35 180)
+				(length 5.08)
+				(name "EGT1_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -8.89 180)
+				(length 5.08)
+				(name "EGT2_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -11.43 180)
+				(length 5.08)
+				(name "EGT2_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -13.97 180)
+				(length 5.08)
+				(name "EGT3_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -16.51 180)
+				(length 5.08)
+				(name "EGT3_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -19.05 180)
+				(length 5.08)
+				(name "EGT_4_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -21.59 180)
+				(length 5.08)
+				(name "EGT4_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -24.13 180)
+				(length 5.08)
+				(name "EGT_5_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -26.67 180)
+				(length 5.08)
+				(name "EGT5_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -29.21 180)
+				(length 5.08)
+				(name "EGT6_LO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 19.05 -31.75 180)
+				(length 5.08)
+				(name "EGT6_HI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "GEA24_J243"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GEA24_J243_0_1"
+			(rectangle
+				(start -12.7 -1.27)
+				(end 15.24 -17.78)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "GMU11"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 -0.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GMU11_0_1"
+			(rectangle
+				(start -16.51 -2.54)
 				(end 16.51 -15.24)
 				(stroke
 					(width 0)
@@ -1760,7 +2592,7 @@
 		)
 		(symbol "GMU11_1_1"
 			(text "J111"
-				(at 0.508 -2.54 0)
+				(at -13.716 -1.016 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1820,7 +2652,7 @@
 		(symbol "GSA28_0_1"
 			(rectangle
 				(start -15.24 12.7)
-				(end 15.24 -11.43)
+				(end 15.24 -12.7)
 				(stroke
 					(width 0)
 					(type default)
@@ -1831,8 +2663,8 @@
 			)
 		)
 		(symbol "GSA28_1_0"
-			(pin unspecified line
-				(at -17.78 8.89 0)
+			(pin bidirectional line
+				(at -17.78 10.16 0)
 				(length 2.54)
 				(name "CAN_H"
 					(effects
@@ -1849,8 +2681,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -17.78 6.35 0)
+			(pin bidirectional line
+				(at -17.78 7.62 0)
 				(length 2.54)
 				(name "CAN_L"
 					(effects
@@ -1904,7 +2736,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -17.78 -1.27 0)
+				(at -17.78 -2.54 0)
 				(length 2.54)
 				(name "ID_STRAP_1"
 					(effects
@@ -1922,7 +2754,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -17.78 -3.81 0)
+				(at -17.78 -5.08 0)
 				(length 2.54)
 				(name "ID_STRAP_2"
 					(effects
@@ -1940,7 +2772,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -17.78 -6.35 0)
+				(at -17.78 -7.62 0)
 				(length 2.54)
 				(name "ID_STRAP_3"
 					(effects
@@ -1958,7 +2790,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -17.78 -8.89 0)
+				(at -17.78 -10.16 0)
 				(length 2.54)
 				(name "ID_STRAP_4"
 					(effects
@@ -1975,8 +2807,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 17.78 7.62 180)
+			(pin power_in line
+				(at 17.78 8.89 180)
 				(length 2.54)
 				(name "AIRCRAFT_GROUND"
 					(effects
@@ -1993,8 +2825,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 17.78 5.08 180)
+			(pin power_in line
+				(at 17.78 6.35 180)
 				(length 2.54)
 				(name "AIRCRAFT_POWER"
 					(effects
@@ -2084,7 +2916,7 @@
 				)
 			)
 			(pin input line
-				(at 17.78 -7.62 180)
+				(at 17.78 -8.89 180)
 				(length 2.54)
 				(name "CWS/DISCONNECT"
 					(effects
@@ -2104,7 +2936,7 @@
 		)
 		(symbol "GSA28_1_1"
 			(text "J281"
-				(at -0.254 10.922 0)
+				(at -12.192 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2114,7 +2946,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "GSU25"
+	(symbol "GSU25_J251"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2161,15 +2993,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "GSU25_1_0"
+		(symbol "GSU25_J251_1_0"
 			(pin bidirectional line
 				(at -22.86 7.62 0)
 				(length 5.08)
@@ -2315,7 +3139,7 @@
 				)
 			)
 		)
-		(symbol "GSU25_1_1"
+		(symbol "GSU25_J251_1_1"
 			(rectangle
 				(start -17.78 10.16)
 				(end 17.78 -3.81)
@@ -2327,16 +3151,57 @@
 					(type none)
 				)
 			)
-			(text "J251"
-				(at -14.986 11.684 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "GSU25_J252"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(symbol "GSU25_2_0"
+		(property "Value" ""
+			(at -74.93 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -74.93 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -74.93 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at -74.93 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GSU25_J252_1_0"
 			(pin power_out line
 				(at -25.4 7.62 0)
 				(length 5.08)
@@ -2590,7 +3455,7 @@
 				)
 			)
 		)
-		(symbol "GSU25_2_1"
+		(symbol "GSU25_J252_1_1"
 			(rectangle
 				(start -20.32 10.16)
 				(end 20.32 -12.7)
@@ -2602,18 +3467,128 @@
 					(type none)
 				)
 			)
-			(text "J252"
-				(at -17.018 11.684 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "GTP59"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GTP59_0_1"
+			(rectangle
+				(start -5.08 -1.27)
+				(end 5.08 -11.43)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GTP59_1_0"
+			(pin power_in line
+				(at -10.16 -3.81 0)
+				(length 5.08)
+				(name "POWER"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "WHT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -10.16 -6.35 0)
+				(length 5.08)
+				(name "SENSE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "BLU"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 -8.89 0)
+				(length 5.08)
+				(name "LOW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "ORN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 			)
 		)
 		(embedded_fonts no)
 	)
-	(symbol "GTX45R"
+	(symbol "GTX45R_P3251"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2660,15 +3635,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "GTX45R_1_0"
+		(symbol "GTX45R_P3251_1_0"
 			(pin power_in line
 				(at -25.4 10.16 0)
 				(length 5.08)
@@ -2706,24 +3673,6 @@
 				)
 			)
 			(pin input line
-				(at -25.4 5.08 0)
-				(length 5.08)
-				(name "AIRCRAFT_POWER_2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "61"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
 				(at -25.4 2.54 0)
 				(length 5.08)
 				(name "AIRCRAFT_POWER_2"
@@ -2741,7 +3690,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -25.4 0 0)
 				(length 5.08)
 				(name "AIRCRAFT_GROUND"
@@ -2759,7 +3708,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -25.4 -2.54 0)
 				(length 5.08)
 				(name "AIRCRAFT_GROUND"
@@ -2769,7 +3718,7 @@
 						)
 					)
 				)
-				(number "31"
+				(number "41"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3227,11 +4176,29 @@
 					)
 				)
 			)
+			(pin input line
+				(at 25.4 -35.56 180)
+				(length 5.08)
+				(name "ANTENNA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "XPDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
-		(symbol "GTX45R_1_1"
+		(symbol "GTX45R_P3251_1_1"
 			(rectangle
 				(start -20.32 12.7)
-				(end 20.32 -34.29)
+				(end 20.32 -38.1)
 				(stroke
 					(width 0)
 					(type default)
@@ -3240,72 +4207,77 @@
 					(type none)
 				)
 			)
-			(text "P3251"
-				(at -16.51 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(pin input line
+				(at -25.4 5.08 0)
+				(length 5.08)
+				(name "AIRCRAFT_POWER_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "61"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 			)
 		)
-		(symbol "GTX45R_2_0"
-			(pin output line
-				(at -25.4 10.16 0)
-				(length 5.08)
-				(name "ETHERNET_OUT_1B"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+		(embedded_fonts no)
+	)
+	(symbol "GTX45R_P3252"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 14.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(pin output line
-				(at -25.4 7.62 0)
-				(length 5.08)
-				(name "ETHERNET_OUT_1A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+		)
+		(property "Value" ""
+			(at -8.89 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Footprint" ""
+			(at -8.89 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -8.89 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at -8.89 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GTX45R_P3252_1_0"
 			(pin input line
-				(at -25.4 5.08 0)
-				(length 5.08)
-				(name "ETHERNET_IN_1B"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -25.4 2.54 0)
+				(at -22.86 10.16 0)
 				(length 5.08)
 				(name "ETHERNET_IN_1A"
 					(effects
@@ -3322,17 +4294,53 @@
 					)
 				)
 			)
-			(pin output line
-				(at -25.4 -1.27 0)
+			(pin input line
+				(at -22.86 7.62 0)
 				(length 5.08)
-				(name "ETHERNET_OUT_2B"
+				(name "ETHERNET_IN_1B"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -22.86 5.08 0)
+				(length 5.08)
+				(name "ETHERNET_OUT_1A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -22.86 2.54 0)
+				(length 5.08)
+				(name "ETHERNET_OUT_1B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3341,7 +4349,25 @@
 				)
 			)
 			(pin input line
-				(at -25.4 -3.81 0)
+				(at -22.86 -1.27 0)
+				(length 5.08)
+				(name "ETHERNET_IN_2A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -22.86 -3.81 0)
 				(length 5.08)
 				(name "ETHERNET_IN_2B"
 					(effects
@@ -3359,7 +4385,7 @@
 				)
 			)
 			(pin output line
-				(at -25.4 -6.35 0)
+				(at -22.86 -6.35 0)
 				(length 5.08)
 				(name "ETHERNET_OUT_2A"
 					(effects
@@ -3376,17 +4402,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 -8.89 0)
+			(pin output line
+				(at -22.86 -8.89 0)
 				(length 5.08)
-				(name "ETHERNET_IN_2A"
+				(name "ETHERNET_OUT_2B"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3395,7 +4421,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 7.62 180)
+				(at 27.94 7.62 180)
 				(length 5.08)
 				(name "RS-232_OUT_4"
 					(effects
@@ -3413,7 +4439,7 @@
 				)
 			)
 			(pin input line
-				(at 25.4 5.08 180)
+				(at 27.94 5.08 180)
 				(length 5.08)
 				(name "RS-232_IN_4"
 					(effects
@@ -3431,7 +4457,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 25.4 2.54 180)
+				(at 27.94 2.54 180)
 				(length 5.08)
 				(name "RS-232_GND_4"
 					(effects
@@ -3449,7 +4475,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -1.27 180)
+				(at 27.94 -1.27 180)
 				(length 5.08)
 				(name "RS-422_A"
 					(effects
@@ -3467,7 +4493,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -3.81 180)
+				(at 27.94 -3.81 180)
 				(length 5.08)
 				(name "RS-422_B"
 					(effects
@@ -3485,24 +4511,16 @@
 				)
 			)
 		)
-		(symbol "GTX45R_2_1"
+		(symbol "GTX45R_P3252_1_1"
 			(rectangle
-				(start -20.32 12.7)
-				(end 20.32 -11.43)
+				(start -17.78 12.7)
+				(end 22.86 -11.43)
 				(stroke
 					(width 0)
 					(type default)
 				)
 				(fill
 					(type none)
-				)
-			)
-			(text "P3252"
-				(at -16.51 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 		)

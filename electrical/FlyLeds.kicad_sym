@@ -51,8 +51,8 @@
 		)
 		(symbol "BEACON_0_1"
 			(rectangle
-				(start -7.62 -1.27)
-				(end 7.62 -8.89)
+				(start -5.08 -1.27)
+				(end 5.08 -13.97)
 				(stroke
 					(width 0)
 					(type default)
@@ -64,43 +64,7 @@
 		)
 		(symbol "BEACON_1_0"
 			(pin unspecified line
-				(at -12.7 -3.81 0)
-				(length 5.08)
-				(name "SELECT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "YLW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -12.7 -6.35 0)
-				(length 5.08)
-				(name "SYNC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "BLU"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 12.7 -3.81 180)
+				(at -10.16 -3.81 0)
 				(length 5.08)
 				(name "+12V"
 					(effects
@@ -118,7 +82,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 12.7 -6.35 180)
+				(at -10.16 -6.35 0)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -128,6 +92,42 @@
 					)
 				)
 				(number "BLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 -8.89 0)
+				(length 5.08)
+				(name "SELECT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "YLW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -10.16 -11.43 0)
+				(length 5.08)
+				(name "SYNC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "BLU"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -187,8 +187,8 @@
 		)
 		(symbol "ESSENTIAL_CONTROLLER_0_1"
 			(rectangle
-				(start -15.24 -2.54)
-				(end 17.78 -25.4)
+				(start -16.51 -2.54)
+				(end 16.51 -27.94)
 				(stroke
 					(width 0)
 					(type default)
@@ -200,79 +200,7 @@
 		)
 		(symbol "ESSENTIAL_CONTROLLER_1_0"
 			(pin unspecified line
-				(at -20.32 -5.08 0)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -20.32 -7.62 0)
-				(length 5.08)
-				(name "LEFT_POSN-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -20.32 -10.16 0)
-				(length 5.08)
-				(name "LEFT_STROBE-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -20.32 -12.7 0)
-				(length 5.08)
-				(name "LEFT_POSN+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -20.32 -15.24 0)
+				(at -21.59 -5.08 0)
 				(length 5.08)
 				(name "POSITION_+12V"
 					(effects
@@ -290,79 +218,7 @@
 				)
 			)
 			(pin unspecified line
-				(at -20.32 -17.78 0)
-				(length 5.08)
-				(name "RIGHT_STROBE-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -20.32 -20.32 0)
-				(length 5.08)
-				(name "TAIL_SHIELD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -20.32 -22.86 0)
-				(length 5.08)
-				(name "TAIL-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 22.86 -6.35 180)
-				(length 5.08)
-				(name "FLOOD_+12V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 22.86 -8.89 180)
+				(at -21.59 -7.62 0)
 				(length 5.08)
 				(name "STROBE_+12V"
 					(effects
@@ -380,7 +236,61 @@
 				)
 			)
 			(pin unspecified line
-				(at 22.86 -11.43 180)
+				(at -21.59 -10.16 0)
+				(length 5.08)
+				(name "FLOOD_+12V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -21.59 -13.97 0)
+				(length 5.08)
+				(name "LEFT_POSN+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -21.59 -16.51 0)
+				(length 5.08)
+				(name "LEFT_POSN-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -21.59 -19.05 0)
 				(length 5.08)
 				(name "LEFT_STROBE+"
 					(effects
@@ -398,16 +308,16 @@
 				)
 			)
 			(pin unspecified line
-				(at 22.86 -13.97 180)
+				(at -21.59 -21.59 0)
 				(length 5.08)
-				(name "RIGHT_STROBE+"
+				(name "LEFT_STROBE-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "12"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -416,7 +326,79 @@
 				)
 			)
 			(pin unspecified line
-				(at 22.86 -16.51 180)
+				(at -21.59 -25.4 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 21.59 -5.08 180)
+				(length 5.08)
+				(name "TAIL+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 21.59 -7.62 180)
+				(length 5.08)
+				(name "TAIL-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 21.59 -10.16 180)
+				(length 5.08)
+				(name "TAIL_SHIELD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 21.59 -13.97 180)
 				(length 5.08)
 				(name "RIGHT_POSN+"
 					(effects
@@ -434,7 +416,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 22.86 -19.05 180)
+				(at 21.59 -16.51 180)
 				(length 5.08)
 				(name "RIGHT_POSN-"
 					(effects
@@ -452,16 +434,34 @@
 				)
 			)
 			(pin unspecified line
-				(at 22.86 -21.59 180)
+				(at 21.59 -19.05 180)
 				(length 5.08)
-				(name "TAIL+"
+				(name "RIGHT_STROBE+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 21.59 -21.59 180)
+				(length 5.08)
+				(name "RIGHT_STROBE-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -669,7 +669,7 @@
 			)
 		)
 		(symbol "TAIL_DRAGGER_MAX_1_0"
-			(pin unspecified line
+			(pin power_in line
 				(at 11.43 -5.08 180)
 				(length 5.08)
 				(name "LANDING"
@@ -687,7 +687,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 11.43 -7.62 180)
 				(length 5.08)
 				(name "TAXI"
@@ -705,7 +705,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 11.43 -10.16 180)
 				(length 5.08)
 				(name "GROUND"
@@ -775,8 +775,8 @@
 		)
 		(symbol "TAIL_LIGHT_0_1"
 			(rectangle
-				(start -3.81 -1.27)
-				(end 3.81 -8.89)
+				(start -5.08 -1.27)
+				(end 5.08 -8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -788,7 +788,7 @@
 		)
 		(symbol "TAIL_LIGHT_1_0"
 			(pin unspecified line
-				(at 8.89 -3.81 180)
+				(at -10.16 -3.81 0)
 				(length 5.08)
 				(name "TAIL+"
 					(effects
@@ -806,7 +806,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 8.89 -6.35 180)
+				(at -10.16 -6.35 0)
 				(length 5.08)
 				(name "TAIL-"
 					(effects

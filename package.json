@@ -14,7 +14,8 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
 		"postbuild": "npx svelte-sitemap --domain https://ivan.aero",
 		"genmeta": "tsx -- src/genmeta.ts",
-		"gen-cleco-caps": "tsx -- tools/cleco-caps.ts"
+		"gen-cleco-caps": "tsx -- tools/cleco-caps.ts",
+		"gen-bundles": "node tools/bundles.mjs"
 	},
 	"optionalDependencies": {
 		"@rollup/rollup-linux-x64-gnu": "4.30.1"
@@ -45,6 +46,7 @@
 		"rehype-autolink-headings": "^7.1.0",
 		"rehype-slug": "^6.0.0",
 		"ress": "^5.0.2",
+		"s-expression": "^3.1.1",
 		"sass": "^1.83.4",
 		"sharp": "^0.33.5",
 		"svelte": "^5.19.0",

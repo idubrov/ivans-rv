@@ -105,7 +105,7 @@ Planned electrical equipment / avionics.
 - GTR 200 (or GTR 20?): DM C63-2 on the belly (in front of the F-705? another behind F-706?)
 - (or) GNC 255A: Archer antenna in the wingtip, another DM C63-2 on the belly
 - (or) GTN 650: Archer antenna in the wingtip, another DM C63-2 on the belly, GA 36 on a glare shield
-- GTX 45R: CI-105, front fuselage
+- GTX 45R: CI-105, rear fuselage
 - Artex 345: antenna in front of the stabilizer? Inside the baggage area?
 
 ## Chokepoints
