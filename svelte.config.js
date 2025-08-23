@@ -1,9 +1,10 @@
 import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
+import { sveltePreprocess } from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import { importAssets } from './importAssets.js';
+import { join } from "node:path";
 
 // Make variables visible for the vite
 if (process.env.NETLIFY) {
@@ -21,7 +22,7 @@ const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: [
-		preprocess({
+		sveltePreprocess({
 			preserve: ['module']
 		}),
 		mdsvex({
@@ -30,8 +31,8 @@ const config = {
 			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
 			smartypants: false,
 			layout: {
-				standalone: './src/routes/(standalone)/+layout.svelte',
-				_: './src/routes/(blog)/+layout.svelte'
+				standalone: join(import.meta.dirname, './src/routes/(standalone)/+layout.svelte'),
+				_: join(import.meta.dirname, './src/routes/(blog)/+layout.svelte'),
 			}
 		})
 	],
