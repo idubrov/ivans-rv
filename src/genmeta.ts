@@ -1,6 +1,6 @@
-import path from 'path';
+import path from 'node:path';
 import { readdir, readFile, writeFile, lstat } from 'fs/promises';
-import sizeOf from 'image-size';
+import { imageSizeFromFile } from 'image-size/fromFile';
 import yaml from 'js-yaml';
 import type { Meta } from '$lib/types';
 import { fileURLToPath } from 'url';
@@ -12,9 +12,9 @@ async function checkDirectory(directory: string) {
 		const stats = await lstat(filePath);
 		if (stats.isDirectory()) {
 			await checkDirectory(filePath);
-		} else if (stats.isFile() && file.endsWith('.jpeg')) {
-			const dimensions = sizeOf(path.join(directory, file));
-			const metaFile = file.replace('.jpeg', '.meta.yaml');
+		} else if (stats.isFile() && (file.endsWith('.jpeg') || file.endsWith('.png'))) {
+			const dimensions = await imageSizeFromFile(path.join(directory, file));
+			const metaFile = file.replace(/\.jpeg|\.png/, '.meta.yaml');
 			const metaFilePath = path.join(directory, metaFile);
 			let meta: Meta;
 			try {

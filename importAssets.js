@@ -30,7 +30,7 @@ export function importAssets() {
       const dir = dirname(file.filename);
       assets = readdirSync(dir).filter(isAsset);
       metas = assets.map((asset) => {
-        const metaPath = join(dir, asset.replace(/.jpeg$/, ".meta.yaml"));
+        const metaPath = join(dir, asset.replace(/\.jpeg|\.png$/, ".meta.yaml"));
         const metaContent = readFileSync(metaPath, "utf8");
         return yaml.load(metaContent);
       });
@@ -57,7 +57,7 @@ export function importAssets() {
   };
 }
 function isAsset(name) {
-  return name.endsWith(".jpeg");
+  return name.endsWith(".jpeg") || name.endsWith(".png");
 }
 function parsePostRef(path) {
   const PATH_REGEXP = /content\/(?<year2>\d{4})\/(?<year>\d{4})-(?<month>\d{2})-(?<date>\d{2})-(?<slug>[^/]+)\/index.md$/;

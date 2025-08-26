@@ -2,7 +2,7 @@
 title: 'Riveting the top skins.'
 categories: ['wing']
 time: 4
-tags: ['riveting']
+tags: ['priming']
 thumbnail: '0-skin-primed.jpeg'
 ---
 

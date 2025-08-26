@@ -86,7 +86,3 @@ function decomposeBundle(signals: string[]): CableInfo[] {
 	}
 	return info;
 }
-
-function includesCable(signals: string[], signals2: string[]) {
-	return undefined;
-}

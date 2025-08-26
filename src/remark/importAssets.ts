@@ -46,7 +46,7 @@ export function importAssets(): (tree: Root, file: VFile) => Root {
 			const dir = dirname(file.filename);
 			assets = readdirSync(dir).filter(isAsset);
 			metas = assets.map((asset) => {
-				const metaPath = join(dir, asset.replace(/.jpeg$/, '.meta.yaml'));
+				const metaPath = join(dir, asset.replace(/\.jpeg|\.png$/, '.meta.yaml'));
 				const metaContent = readFileSync(metaPath, 'utf8');
 				return yaml.load(metaContent) as Meta;
 			});
@@ -77,7 +77,7 @@ export function importAssets(): (tree: Root, file: VFile) => Root {
 }
 
 function isAsset(name: string) {
-	return name.endsWith('.jpeg');
+	return name.endsWith('.jpeg') || name.endsWith('.png');
 }
 
 function parsePostRef(path: string): PostRef | undefined {

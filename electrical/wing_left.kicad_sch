@@ -344,7 +344,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -11.43 -2.54 0)
 					(length 5.08)
 					(name "GND"
@@ -362,7 +362,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at 11.43 -1.27 180)
 					(length 5.08)
 					(name "TEMP"
@@ -742,6 +742,157 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Misc:SWITCH"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SWITCH_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.905 -3.81)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.905 -3.81)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SWITCH_1_0"
+				(pin bidirectional line
+					(at -7.62 -3.81 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 -3.81 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(bus_entry
+		(at 96.52 137.16)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f3ddf53-5cae-4bdc-917c-3fdcd1148d35")
 	)
 	(bus_entry
 		(at 96.52 110.49)
@@ -789,7 +940,7 @@
 		(uuid "a61b2df7-75a5-4a45-8b33-0b11082bae32")
 	)
 	(bus_entry
-		(at 96.52 135.89)
+		(at 96.52 168.91)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -905,6 +1056,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 139.7) (xy 40.64 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29784981-eb44-42ef-844b-ef7eb36aec6a")
+	)
+	(wire
+		(pts
 			(xy 67.31 91.44) (xy 67.31 93.98)
 		)
 		(stroke
@@ -965,6 +1126,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 139.7) (xy 93.98 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76093b90-681c-4ad6-a44e-d524293af4b5")
+	)
+	(wire
+		(pts
 			(xy 39.37 114.3) (xy 39.37 116.84)
 		)
 		(stroke
@@ -995,7 +1166,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 138.43) (xy 93.98 138.43)
+			(xy 50.8 171.45) (xy 93.98 171.45)
 		)
 		(stroke
 			(width 0)
@@ -1005,7 +1176,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 138.43) (xy 50.8 134.62)
+			(xy 50.8 171.45) (xy 50.8 167.64)
 		)
 		(stroke
 			(width 0)
@@ -1052,6 +1223,16 @@
 			(type default)
 		)
 		(uuid "9716b464-62f1-4c22-bfc5-e30b6aa15fde")
+	)
+	(bus
+		(pts
+			(xy 96.52 137.16) (xy 96.52 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "991a94e2-b5aa-4e66-99c7-75fcf4ef61c3")
 	)
 	(wire
 		(pts
@@ -1115,7 +1296,7 @@
 	)
 	(bus
 		(pts
-			(xy 96.52 110.49) (xy 96.52 135.89)
+			(xy 96.52 110.49) (xy 96.52 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1142,6 +1323,16 @@
 			(type default)
 		)
 		(uuid "f4b50d46-e5f9-4cbf-9dd9-20789118a873")
+	)
+	(wire
+		(pts
+			(xy 45.72 139.7) (xy 40.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd8d82b2-14dd-4747-ba3b-7e3ba47ac6c1")
 	)
 	(label "LEFT_STROBE+"
 		(at 68.58 54.61 0)
@@ -1172,6 +1363,16 @@
 			(justify left bottom)
 		)
 		(uuid "70c0940e-015c-4d6c-8a2a-4968063968c4")
+	)
+	(label "STALL_SENSOR"
+		(at 80.01 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9008c02c-3a19-4a9a-9de0-2990bc8d6fab")
 	)
 	(label "LEFT_LAND"
 		(at 82.55 71.12 0)
@@ -1204,7 +1405,7 @@
 		(uuid "a3698251-ecbb-4f23-844e-730fff3b7f72")
 	)
 	(label "NAV"
-		(at 90.17 138.43 0)
+		(at 90.17 171.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1334,7 +1535,7 @@
 	)
 	(symbol
 		(lib_id "Misc:ANTENNA")
-		(at 50.8 128.27 0)
+		(at 50.8 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1342,24 +1543,26 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "613566a5-d346-4459-95e0-9a966818fe8e")
-		(property "Reference" "LW5"
-			(at 50.165 124.46 0)
+		(property "Reference" "LW6"
+			(at 53.34 163.1949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "ARCHER MODEL 1 LEFT"
-			(at 50.165 127 0)
+			(at 53.34 165.7349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 128.27 0)
+			(at 50.8 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1368,7 +1571,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 128.27 0)
+			(at 50.8 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1377,7 +1580,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 128.27 0)
+			(at 50.8 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,7 +1594,7 @@
 		(instances
 			(project ""
 				(path "/8f70a519-989e-4461-b188-ee220b2df3e4/e072061e-a93d-46df-af9c-1a54acb5961b"
-					(reference "LW5")
+					(reference "LW6")
 					(unit 1)
 				)
 			)
@@ -1672,6 +1875,141 @@
 			(project ""
 				(path "/8f70a519-989e-4461-b188-ee220b2df3e4/e072061e-a93d-46df-af9c-1a54acb5961b"
 					(reference "LW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Misc:SWITCH")
+		(at 53.34 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d71cf185-c0ba-4b6c-8300-24fb5cc8b259")
+		(property "Reference" "LW5"
+			(at 53.34 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STALL SENSOR"
+			(at 53.34 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4527c300-9f35-41c7-a084-9bec6855dd48")
+		)
+		(pin "2"
+			(uuid "d76a5f2a-d0f8-4cd6-a88a-53c2606a07e5")
+		)
+		(instances
+			(project ""
+				(path "/8f70a519-989e-4461-b188-ee220b2df3e4/e072061e-a93d-46df-af9c-1a54acb5961b"
+					(reference "LW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Misc:GND")
+		(at 40.64 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d83b937c-af2e-4138-89bb-6e218e806a89")
+		(property "Reference" "#PWR016"
+			(at 37.846 139.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4cc5f003-71f5-45c8-8887-caad4621d395")
+		)
+		(instances
+			(project "electrical"
+				(path "/8f70a519-989e-4461-b188-ee220b2df3e4/e072061e-a93d-46df-af9c-1a54acb5961b"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
