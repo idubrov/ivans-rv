@@ -6,6 +6,8 @@ export type CableInfo = {
 	signals: string[];
 	// If includes a dedicated ground wire.
 	ground?: true;
+	// Details about wire colors
+	colors?: string;
 };
 
 /**
@@ -65,58 +67,66 @@ export const CABLES: CableInfo[] = [
 	{
 		name: 'Garmin Control Wheel Steering / disconnect',
 		gauge: '22AWG',
-		signals: ['CWS']
+		signals: ['CWS'],
+		colors: 'white',
 	},
 	{
 		name: 'Left wing FlyLeds cable',
-		gauge: '3x18AWG shielded',
+		gauge: '3x20AWG shielded',
 		signals: ['LEFT_POSN+', 'LEFT_POSN-', 'LEFT_STROBE+', 'LEFT_STROBE-']
 	},
 	{
 		name: 'Left wing landing light',
 		gauge: '2x14AWG twisted',
 		signals: ['LEFT_LAND'],
-		ground: true
+		ground: true,
+		colors: 'red for power, black for ground',
 	},
 	{
 		name: 'Left wing taxi light',
 		gauge: '18AWG',
-		signals: ['LEFT_TAXI']
+		signals: ['LEFT_TAXI'],
+		colors: 'red',
 	},
 	{
 		name: 'Right wing FlyLeds cable',
-		gauge: '3x18AWG shielded',
+		gauge: '3x20AWG shielded',
 		signals: ['RIGHT_POSN+', 'RIGHT_POSN-', 'RIGHT_STROBE+', 'RIGHT_STROBE-']
 	},
 	{
 		name: 'Right wing landing light',
 		gauge: '2x14AWG twisted',
 		signals: ['RIGHT_LAND'],
-		ground: true
+		ground: true,
+		colors: 'red for power, black for ground',
 	},
 	{
 		name: 'Right wing taxi light',
 		gauge: '18AWG',
-		signals: ['RIGHT_TAXI']
+		signals: ['RIGHT_TAXI'],
+		colors: 'red',
 	},
 	{
 		name: 'Left wing fuel',
 		gauge: '2x22AWG twisted',
-		signals: ['LEFT_FUEL']
+		signals: ['LEFT_FUEL'],
+		colors: 'white for signal, black for ground',
 	},
 	{
 		name: 'Right wing fuel',
 		gauge: '2x22AWG twisted',
-		signals: ['RIGHT_FUEL']
+		signals: ['RIGHT_FUEL'],
+		colors: 'white for signal, black for ground',
 	},
 	{
 		name: 'Pitot tube temperature signal',
-		gauge: '2x22AWG twisted',
-		signals: ['PITOT_TEMP']
+		gauge: '22AWG',
+		signals: ['PITOT_TEMP'],
+		colors: 'white',
 	},
 	{
 		name: 'Tail light',
-		gauge: '2x18AWG shielded',
+		gauge: '2x22AWG shielded',
 		signals: ['TAIL+', 'TAIL-']
 	},
 	{
@@ -176,12 +186,14 @@ export const CABLES: CableInfo[] = [
 	{
 		name: 'GMU 11 power #1',
 		gauge: '2x22AWG twisted',
-		signals: ['GMU_12V_1']
+		signals: ['GMU_12V_1'],
+		colors: 'red for power, black for ground',
 	},
 	{
 		name: 'GMU 11 power #2',
 		gauge: '2x22AWG twisted',
-		signals: ['GMU_12V_2']
+		signals: ['GMU_12V_2'],
+		colors: 'red for power, black for ground',
 	},
 	{
 		name: 'GTX 45r power #1',

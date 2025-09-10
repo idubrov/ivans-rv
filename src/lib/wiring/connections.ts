@@ -11,6 +11,7 @@ import { type Route, ROUTES } from './layout';
 export type WireGauge =
 	| '2x18AWG shielded'
 	| '3x18AWG shielded'
+	| '3x20AWG shielded'
 	| '2x22AWG shielded'
 	| '3x22AWG shielded'
 	| '2x12AWG twisted'

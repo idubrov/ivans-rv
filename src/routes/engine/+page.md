@@ -17,4 +17,4 @@ Lycoming documents to review:
 - SI171 Spectrometric Oil Analysis
 - SI1462 Propeller Oil Control Leak Tests
 
-Sealing pipe threads: https://vansairforce.net/community/showthread.php?t=101085
+Sealing pipe threads: https://vansairforce.net/threads/misconceptions-about-pipe-threads.101085/
